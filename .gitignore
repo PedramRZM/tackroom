@@ -1,0 +1,12 @@
+# agent tooling
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md
+.env.agents.local
+.codex-home/
+.kimi-home/
+.playwright-mcp/
+
+# python
+__pycache__/
+*.pyc

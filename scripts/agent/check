@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Health check for the claude--template repository itself.
+#   scripts/agent/check           everything
+#   scripts/agent/check --quick   skip the slower validators
+# Exit codes: 0 all passed, 1 a check failed.
+set -uo pipefail
+cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+quick=0; [ "${1:-}" = "--quick" ] && quick=1
+failed=0; ran=0
+run() {
+  local name="$1" out start; shift; ran=$((ran + 1)); start=$SECONDS
+  if out="$("$@" 2>&1)"; then echo "ok    $name ($((SECONDS - start))s)"
+  else failed=$((failed + 1)); echo "FAIL  $name ($((SECONDS - start))s): $*"; printf '%s\n' "$out" | tail -n 40 | sed 's/^/      /'; fi
+}
+full() { [ "$quick" -eq 0 ] && run "$@"; return 0; }
+
+py() { uv run --quiet --no-project --python '>=3.11' python "$@"; }
+compile_all() {
+  python3 -m py_compile template/.claude/hooks/*.py template/scripts/agent/next-task \
+    template/.claude/skills/dream/scripts/*.py tools/setup &&
+  py -m py_compile tools/refs.py &&
+  bash -n template/.claude/hooks/session-context.sh template/scripts/agent/check \
+    template/scripts/agent/claude-with template/scripts/agent/github-labels tools/refs
+}
+parse_config() {
+  py -c "
+import json, tomllib
+for f in ('template/.claude/settings.json', 'template/opencode.json', 'template/.codex/hooks.json'):
+    json.load(open(f))
+for f in ('template/.codex/config.toml', 'template/.codex/agents/reviewer.toml', 'refs/sources/watch.toml'):
+    tomllib.load(open(f, 'rb'))
+"
+}
+# This repository runs on its own template. The copy at the root must not drift from template/.
+same_as_template() {
+  diff -r -x tests -x __pycache__ -x settings.local.json -x worktrees template/.claude .claude &&
+  diff template/CLAUDE.md CLAUDE.md &&
+  for f in next-task claude-with keys.example; do diff "template/scripts/agent/$f" "scripts/agent/$f" || return 1; done
+}
+short_instructions() { # AGENTS.md files are read every session; keep them small
+  local n; for f in AGENTS.md template/AGENTS.md; do n=$(wc -l < "$f"); [ "$n" -le 100 ] || { echo "$f has $n lines (limit 100)"; return 1; }; done
+}
+skill_limits() { # portable skill front matter: name matches folder, description within the strictest harness limit
+  py - <<'PY'
+import re, sys
+from pathlib import Path
+bad = []
+for skill in sorted(Path("template/.claude/skills").iterdir()):
+    text = (skill / "SKILL.md").read_text()
+    front = text.split("---", 2)[1]
+    name = re.search(r"(?m)^name:\s*(.+)$", front).group(1).strip()
+    desc = re.search(r"(?m)^description:\s*(.+)$", front).group(1).strip()
+    if name != skill.name or not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", name): bad.append(f"{skill.name}: name '{name}'")
+    if not 1 <= len(desc) <= 1024: bad.append(f"{skill.name}: description is {len(desc)} characters (limit 1024)")
+    if len(text.splitlines()) > 500: bad.append(f"{skill.name}: SKILL.md over 500 lines")
+print("\n".join(bad)); sys.exit(1 if bad else 0)
+PY
+}
+
+run  compile            compile_all
+run  config-parses      parse_config
+run  guard-tests        template/.claude/hooks/tests/test_guard.sh
+run  root-matches-template same_as_template
+run  instruction-size   short_instructions
+run  skill-limits       skill_limits
+full skills-validate    claude plugin validate template/.claude/skills
+full agents-validate    claude plugin validate template/.claude/agents
+
+[ "$failed" -eq 0 ] && echo "all $ran checks passed" || echo "$failed of $ran checks failed"
+[ "$failed" -eq 0 ]
