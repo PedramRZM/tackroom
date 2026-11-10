@@ -64,10 +64,13 @@ Things the sources recommend that this repository does not have yet, most import
    `refs/notes/anthropic-claude-dev-blog.md` (i)). Start small: ten to twenty real prompts per
    skill that should and should not trigger it.
 2. **A run of the whole task loop on real work**, and a few weeks of dream passes, to find out
-   what in `WORKFLOW.md` is friction.
-3. **Codex and the vendor launchers have not been run.**
-4. **The sandbox has not been run** on the build machine (`docs/claude-code.md`).
-5. **Saved articles sometimes lose tables, code blocks and figures.** Notes that relied on a
+   what in `WORKFLOW.md` is friction. The same goes for `kickoff` on a real idea.
+3. **Two research passes were stopped early**: testing and performance, and new projects and
+   stack selection. `docs/testing.md` and `docs/new-project.md` say which parts rest on few
+   sources (server-side performance, random-input testing, any comparison of stacks).
+4. **Codex and the vendor launchers have not been run.**
+5. **The sandbox has not been run** on the build machine (`docs/claude-code.md`).
+6. **Saved articles sometimes lose tables, code blocks and figures.** Notes that relied on a
    live page say so.
-6. **About a dozen talks had no captions**, including both "What's new in Claude Code"
+7. **About a dozen talks had no captions**, including both "What's new in Claude Code"
    sessions (`refs/notes/talks-anthropic-and-others.md`, "Failed or missing").

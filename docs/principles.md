@@ -95,9 +95,10 @@ that exists only in `AGENTS.md`). Codex and OpenCode behaviour is from their doc
 
 ## 6. Skills are small, single-purpose, and described by when to use them
 
-Template: eight skills, each in one category. Descriptions name the situations and phrases that
-should trigger them. Each has a Gotchas section meant to grow. The three with side effects
-(`dream`, `careful`, `lock-tests`) can only be started by the user.
+Template: eleven skills, each in one category. Descriptions name the situations and phrases
+that should trigger them. Each has a Gotchas section meant to grow. Four can only be started by
+the user (`kickoff`, `dream`, `careful`, `lock-tests`), so they cost nothing in context until
+used; seven are listed to the model.
 
 Why: Anthropic's skills post: a skill should fit one category, the description is a trigger and
 not a summary, the Gotchas section is the highest-signal content, and verification skills had
@@ -108,8 +109,9 @@ Stanford study found the model did what a skill said 55% of the time without the
 loaded, so a skill that restates default behaviour is wasted context
 (`notes/devcon-1-skills-context-memory.md` (e)).
 
-Status: Claude Code's validator passes all eight; a live session listed the five
-model-invocable ones and hid the three user-only ones. None has an eval yet, which the same
+Status: Claude Code's validator passes all eleven. A live session, run when there were eight,
+listed the five model-invocable ones and hid the three user-only ones; `kickoff`, `write-tests`
+and `performance` were added later and have not been used. None has an eval yet, which the same
 sources say is the real test (principle 12). There is a serious case for fewer still: Lopopolo
 reports "Zero skills in my repos", and that his team saw lower token use and higher eval scores
 after deleting hundreds of skills in favour of a few plus docs (`notes/x-posts.md`, "Skills").

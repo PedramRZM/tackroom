@@ -3,7 +3,8 @@
   "permissions": {
     "allow": [
       "Bash(scripts/agent/check *)",
-      "Bash(scripts/agent/next-task *)"
+      "Bash(scripts/agent/next-task *)",
+      "Bash(scripts/agent/ratchet *)"
     ],
     "ask": [
       "Bash(gh pr merge *)",

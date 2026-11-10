@@ -31,9 +31,11 @@ what the code can answer.
 
 - Write `docs/specs/<slug>.md` when the work crosses a module or service boundary, changes a
   schema or public API, or will be split across several tasks. Keep it under about 150 lines.
-- A decision about architecture, the data model or infrastructure is recorded first, alone, in
-  `docs/decisions/NNNN-<slug>.md` (context, decision, consequences, alternatives rejected), and
-  the user reviews it before any task that depends on it is marked ready.
+- A choice that is hard to reverse (architecture, the data model, a public name, a new
+  dependency or service, anything involving money) is the user's to make. Present two or three
+  real options with the effort of each, whether it is easy or hard to undo, and your
+  recommendation, then wait. Record the outcome first, alone, in
+  `docs/decisions/NNNN-<slug>.md`, before any task that depends on it is marked ready.
 
 ## Filing
 

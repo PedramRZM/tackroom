@@ -38,8 +38,10 @@ Then, in the project:
   hook when a turn ends with changed files.
 - **Guardrails enforced by hooks**, not by asking: no reading secret-looking files, no wide
   deletes, no force-push, no push to a protected branch, no merging.
-- **Eight skills**: `spec`, `task`, `verify`, `second-opinion`, `wrap-up`, and three you start
-  yourself: `dream`, `careful`, `lock-tests`.
+- **Eleven skills**: `spec`, `task`, `verify`, `write-tests`, `performance`, `second-opinion`,
+  `wrap-up`, and four you start yourself: `kickoff`, `dream`, `careful`, `lock-tests`.
+- **A ratchet** for any number you care about (`scripts/agent/ratchet`): bundle size, queries
+  per request, a score. It can only get better.
 - **A workflow** (`WORKFLOW.md`): epics and tasks with acceptance criteria that are checks, in
   issues or in files, with evidence on the pull request.
 - **Memory that corrects itself**: notes in `.agents/memory/`, and a `dream` pass that reviews
@@ -54,7 +56,9 @@ agents loading, the memory rules, task selection, the setup script, and one full
 Written from documentation and not run: everything for Codex, the vendor launchers, the Bash
 sandbox configuration, and claiming tasks on GitHub. Each of those files says so at the top.
 
-Not done at all: evals for the skills, and a real task taken through the whole workflow.
+Not done at all: evals for the skills, and a real task taken through the whole workflow. The
+three newest skills (`kickoff`, `write-tests`, `performance`) have only been validated for
+format, not used.
 `docs/keeping-current.md` lists the gaps in order.
 
 ## Docs
@@ -64,6 +68,8 @@ Not done at all: evals for the skills, and a real task taken through the whole w
 - `docs/memory-and-dreaming.md`: the memory tiers and the dream pass
 - `docs/loops.md`: turn, goal, time and proactive loops, with the lines to type
 - `docs/tasks.md`: tasks, backlog and epics
+- `docs/new-project.md`: from an idea to an agent-ready repository; choosing stack and architecture
+- `docs/testing.md`: what to test, how to get a model to write real tests, performance
 - `docs/other-harnesses.md`: Codex, OpenCode, vendor CLIs, and GLM, DeepSeek and Kimi models
 - `docs/keeping-current.md`: the upkeep routine and known gaps
 

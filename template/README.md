@@ -12,6 +12,7 @@ without overwriting anything). This file is not copied.
 | `WORKFLOW.md` | How a task moves from idea to merged | Keep the tracker line that applies |
 | `scripts/agent/check` | The one command that says the repository is healthy | Replace the detection with real commands |
 | `scripts/agent/next-task` | Picks the next ready task by a fixed rule | Nothing |
+| `scripts/agent/ratchet` | Guards a number so it can only get better | Call it from `check` for what you measure |
 | `.agents/memory/` | Project memory: index, inbox, files written by the dream pass | Nothing |
 | `docs/decisions/`, `docs/specs/`, `docs/plans/` | Decision records, specs for larger work, plans in flight | Nothing |
 | `.github/pull_request_template.md` | Evidence per acceptance criterion, risk, how to revert | Nothing |
@@ -30,8 +31,11 @@ without overwriting anything). This file is not copied.
 | `skills/verify` | Prove a change works: checks, behaviour, evidence per criterion |
 | `skills/spec` | Turn a request into tasks with acceptance criteria |
 | `skills/task` | Work one task through to a pull request |
+| `skills/write-tests` | Which level to test at, and how to write a test that can fail |
+| `skills/performance` | Measure, change one thing, prove the gain, guard it |
 | `skills/second-opinion` | Fresh-context review against the task |
 | `skills/wrap-up` | Leave the work so a new session can continue |
+| `skills/kickoff` | From an idea to a small, running, agent-ready repository (you start it) |
 | `skills/dream` | Review finished sessions, correct memory, propose instruction changes (you start it) |
 | `skills/careful` | Block destructive commands for the session (you start it) |
 | `skills/lock-tests` | Block edits to tests for the session (you start it) |

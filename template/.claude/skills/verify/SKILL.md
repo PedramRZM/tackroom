@@ -49,5 +49,13 @@ Paste the lines the command printed. Do not describe a result you did not see.
 
 ## This project
 
-Add the checks that are specific to this repository here as they are discovered: the pages
-worth looking at, the seed data a check needs, the command that resets state.
+Add what is specific to this repository as it is discovered. The most useful things to have
+here are the ones that let an agent drive the real app without help:
+
+- how to start it, and how to tell it is healthy;
+- how to sign in as a seed user, and what that user can reach;
+- for each main feature: how to get to it, the data it needs, what a correct result looks like;
+- the command that resets state.
+
+When these steps are repeated often, put them in one small command-line script the agent can
+call, and keep this section pointing at it.

@@ -17,7 +17,7 @@ full() { [ "$quick" -eq 0 ] && run "$@"; return 0; }
 py() { uv run --quiet --no-project --python '>=3.11' python "$@"; }
 compile_all() {
   python3 -m py_compile template/.claude/hooks/*.py template/scripts/agent/next-task \
-    template/.claude/skills/dream/scripts/*.py tools/setup &&
+    template/.claude/skills/dream/scripts/*.py template/scripts/agent/ratchet tools/setup &&
   py -m py_compile tools/refs.py &&
   bash -n template/.claude/hooks/session-context.sh template/scripts/agent/check \
     template/scripts/agent/claude-with template/scripts/agent/github-labels tools/refs
@@ -35,7 +35,7 @@ for f in ('template/.codex/config.toml', 'template/.codex/agents/reviewer.toml',
 same_as_template() {
   diff -r -x tests -x __pycache__ -x settings.local.json -x worktrees template/.claude .claude &&
   diff template/CLAUDE.md CLAUDE.md &&
-  for f in next-task claude-with keys.example; do diff "template/scripts/agent/$f" "scripts/agent/$f" || return 1; done
+  for f in next-task claude-with keys.example ratchet; do diff "template/scripts/agent/$f" "scripts/agent/$f" || return 1; done
 }
 short_instructions() { # AGENTS.md files are read every session; keep them small
   local n; for f in AGENTS.md template/AGENTS.md; do n=$(wc -l < "$f"); [ "$n" -le 100 ] || { echo "$f has $n lines (limit 100)"; return 1; }; done
@@ -57,12 +57,33 @@ print("\n".join(bad)); sys.exit(1 if bad else 0)
 PY
 }
 
+prompts_verbatim() { # every prompt in prompts/README.md must appear word for word in its cited source
+  py - <<'PY'
+import re, sys
+from pathlib import Path
+norm = lambda t: re.sub(r"\s+", " ", t.translate(str.maketrans("‘’“”", "''\"\""))).strip()
+text = Path("prompts/README.md").read_text(encoding="utf-8")
+entries = re.findall(r"Source: `([^`]+)`.*?\n```\n(.*?)\n```", text, flags=re.S)
+bad = []
+for source, prompt in entries:
+    path = Path(source)
+    if not path.exists():
+        bad.append(f"missing source: {source}")
+    elif norm(prompt) not in norm(path.read_text(encoding="utf-8")):
+        bad.append(f"not verbatim in {source}: {prompt[:70]}...")
+print(f"{len(entries)} prompts checked")
+print("\n".join(bad))
+sys.exit(1 if bad or not entries else 0)
+PY
+}
+
 run  compile            compile_all
 run  config-parses      parse_config
 run  guard-tests        template/.claude/hooks/tests/test_guard.sh
 run  root-matches-template same_as_template
 run  instruction-size   short_instructions
 run  skill-limits       skill_limits
+run  prompts-verbatim   prompts_verbatim
 full skills-validate    claude plugin validate template/.claude/skills
 full agents-validate    claude plugin validate template/.claude/agents
 

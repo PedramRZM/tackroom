@@ -38,6 +38,7 @@
       "git commit *": "allow",
       "scripts/agent/check*": "allow",
       "scripts/agent/next-task*": "allow",
+      "scripts/agent/ratchet*": "allow",
       "cat *.env*": "deny",
       "git push*": "ask",
       "git push*--force*": "deny",
@@ -53,27 +54,66 @@
     "zai": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Z.ai GLM (coding plan)",
-      "options": { "baseURL": "https://api.z.ai/api/coding/paas/v4", "apiKey": "{env:ZAI_API_KEY}" },
+      "options": {
+        "baseURL": "https://api.z.ai/api/coding/paas/v4",
+        "apiKey": "{env:ZAI_API_KEY}"
+      },
       "models": {
-        "glm-5.3": { "name": "GLM-5.3", "limit": { "context": 1000000, "output": 65536 } },
-        "glm-5.3-flash": { "name": "GLM-5.3 Flash", "limit": { "context": 1000000, "output": 65536 } }
+        "glm-5.3": {
+          "name": "GLM-5.3",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        },
+        "glm-5.3-flash": {
+          "name": "GLM-5.3 Flash",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        }
       }
     },
     "deepseek-direct": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "DeepSeek",
-      "options": { "baseURL": "https://api.deepseek.com", "apiKey": "{env:DEEPSEEK_API_KEY}" },
+      "options": {
+        "baseURL": "https://api.deepseek.com",
+        "apiKey": "{env:DEEPSEEK_API_KEY}"
+      },
       "models": {
-        "deepseek-flash": { "name": "DeepSeek Flash", "limit": { "context": 1000000, "output": 65536 } },
-        "deepseek-v4-pro": { "name": "DeepSeek V4 Pro", "limit": { "context": 1000000, "output": 65536 } }
+        "deepseek-flash": {
+          "name": "DeepSeek Flash",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        },
+        "deepseek-v4-pro": {
+          "name": "DeepSeek V4 Pro",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        }
       }
     },
     "kimi": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Moonshot Kimi (platform)",
-      "options": { "baseURL": "https://api.moonshot.ai/v1", "apiKey": "{env:MOONSHOT_API_KEY}" },
+      "options": {
+        "baseURL": "https://api.moonshot.ai/v1",
+        "apiKey": "{env:MOONSHOT_API_KEY}"
+      },
       "models": {
-        "kimi-k3.1-pro": { "name": "Kimi K3.1 Pro", "limit": { "context": 1000000, "output": 65536 } }
+        "kimi-k3.1-pro": {
+          "name": "Kimi K3.1 Pro",
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        }
       }
     }
   }
