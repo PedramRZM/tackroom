@@ -1,0 +1,14 @@
+{
+  "type": "post",
+  "url": "https://x.com/claudeai/status/2036503583667933400",
+  "title": "Before each tool call, a classifier reviews it for potentially destructive actions. Safe actions proceed autom",
+  "author": "Claude (@claudeai)",
+  "date": "2026-03-24",
+  "site": "x.com",
+  "via": "fxtwitter",
+  "chars": 275,
+  "likes": 2013,
+  "replying_to": "2036503582166393240",
+  "collection": "x-posts",
+  "fetched_at": "2026-11-10T20:41:10Z"
+}

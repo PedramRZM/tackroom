@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-code-plugins",
+  "title": "Customize Claude Code with plugins",
+  "date": "2025-10-09",
+  "site": "Anthropic",
+  "description": "Claude Code now supports plugins: custom collections of slash commands, agents, MCP servers, and hooks that install with a single command. Share your Claude Code setup with plugins Slash commands, agents, MCP servers, and hooks are all extension points you can use to customize your experience with...",
+  "via": "direct",
+  "chars": 4599,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:25Z"
+}

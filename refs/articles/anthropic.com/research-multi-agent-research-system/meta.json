@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/multi-agent-research-system",
+  "title": "How we built our multi-agent research system",
+  "date": "2025-06-13",
+  "site": "AnthropicAI",
+  "description": "On the the engineering challenges and lessons learned from building Claude's Research system",
+  "via": "direct",
+  "chars": 24097,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:17Z"
+}

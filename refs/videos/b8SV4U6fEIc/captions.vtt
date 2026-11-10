@@ -1,0 +1,331 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.050 --> 00:00:05.430
+In our research, 97% of permission
+prompts in Claude Code get approved.
+
+00:00:05.940 --> 00:00:09.800
+These permission prompts appear
+whenever Claude proposes an action,
+
+00:00:09.920 --> 00:00:15.440
+like running a command, fetching
+from the web, or editing a file.
+
+00:00:16.450 --> 00:00:19.230
+Approving or denying each
+one gives you control,
+
+00:00:19.550 --> 00:00:24.440
+but it can lead to approval fatigue,
+especially on multi-step tasks.
+
+00:00:25.180 --> 00:00:28.637
+So a few months ago,
+we introduced Auto Mode.
+
+00:00:28.720 --> 00:00:31.657
+Auto Mode checks for potentially harmful
+
+00:00:31.740 --> 00:00:37.060
+actions while letting Claude complete
+long-running work with fewer interruptions.
+
+00:00:37.280 --> 00:00:42.460
+But if you're no longer approving each
+action, what determines if it's safe to run?
+
+00:00:43.060 --> 00:00:45.917
+Let's look at how Auto Mode works and how
+
+00:00:46.000 --> 00:00:49.140
+you can configure it
+for your environment and team.
+
+00:00:49.820 --> 00:00:53.680
+It would be easy to assume Claude
+is now approving its own actions,
+
+00:00:53.980 --> 00:00:59.080
+but that would make Claude its own reviewer,
+introducing bias through shared code.
+
+00:01:00.020 --> 00:01:04.400
+That's like writing, reviewing,
+and merging your own pull request.
+
+00:01:05.120 --> 00:01:09.657
+Instead, when Claude proposes an action,
+it runs through a classifier,
+
+00:01:09.740 --> 00:01:14.180
+a separate check that screens
+the action and approves or denies it.
+
+00:01:14.920 --> 00:01:18.400
+The classifier sees your messages
+in Claude's tool calls.
+
+00:01:18.620 --> 00:01:23.280
+It doesn't see Claude's reasoning,
+responses to you, or tool output.
+
+00:01:23.520 --> 00:01:28.440
+So it isn't influenced by them. It
+compares each action against your intent.
+
+00:01:29.200 --> 00:01:30.850
+And approves the ones that match.
+
+00:01:31.040 --> 00:01:34.357
+What it specifically checks for is Claude
+
+00:01:34.440 --> 00:01:39.100
+reaching beyond what you intended, towards
+something irreversible or destructive.
+
+00:01:39.910 --> 00:01:44.160
+Like deleting remote branches when
+you only asked it to tidy up locally.
+
+00:01:44.500 --> 00:01:47.140
+If the classifier denies an action,
+
+00:01:47.500 --> 00:01:51.320
+Claude usually tries to find
+a safer way to proceed on its own.
+
+00:01:51.580 --> 00:01:54.760
+For example, if a force
+push to main gets denied,
+
+00:01:55.100 --> 00:01:57.537
+Claude might try to push
+to a new branch instead.
+
+00:01:57.620 --> 00:02:03.060
+If it keeps getting denied, auto-mode
+pauses and you approve the action yourself.
+
+00:02:03.520 --> 00:02:05.960
+Any webpages or files Claude reads
+
+00:02:06.460 --> 00:02:08.677
+could carry hidden instructions that try
+
+00:02:08.760 --> 00:02:11.160
+to steer it away
+from your original intent.
+
+00:02:11.560 --> 00:02:15.220
+So before that content
+enters Claude's context,
+
+00:02:15.980 --> 00:02:18.277
+a server-side probe
+scans every tool result
+
+00:02:18.360 --> 00:02:20.877
+for malicious instructions and floods
+
+00:02:20.960 --> 00:02:25.680
+anything suspicious with a warning
+to treat the content skeptically.
+
+00:02:25.900 --> 00:02:28.757
+Then, the classifier
+checks whether Claude's
+
+00:02:28.840 --> 00:02:31.720
+next action still lines up
+with what you asked for.
+
+00:02:31.880 --> 00:02:34.400
+So an attack has to clear both layers.
+
+00:02:34.720 --> 00:02:38.520
+We tested this by running prompt
+injection attacks against Claude Code.
+
+00:02:38.880 --> 00:02:41.240
+With probes and auto-mode enabled,
+
+00:02:41.660 --> 00:02:45.920
+the attack success rate
+in our evaluations dropped to zero.
+
+00:02:46.220 --> 00:02:49.540
+But not every action needs
+to go through the classifier.
+
+00:02:49.880 --> 00:02:53.737
+Your deny, ask, and allow rules run first.
+
+00:02:53.820 --> 00:02:58.700
+Then, a tier check decides which actions
+the classifier needs to see.
+
+00:02:58.960 --> 00:03:02.460
+Most of what Claude does
+is read-only or recoverable,
+
+00:03:02.560 --> 00:03:06.420
+like searching your codebase
+or editing files in your project.
+
+00:03:06.860 --> 00:03:09.560
+These actions skip the classifier.
+
+00:03:09.800 --> 00:03:14.840
+On the other hand, riskier operations
+like shell commands, web fetches,
+
+00:03:14.980 --> 00:03:18.260
+or anything that reaches
+outside of your environment
+
+00:03:18.460 --> 00:03:20.220
+are sent through the classifier.
+
+00:03:20.440 --> 00:03:23.297
+By default, the classifier only counts
+
+00:03:23.380 --> 00:03:26.880
+your working directory
+in git remotes as internal.
+
+00:03:27.140 --> 00:03:29.600
+That means everything
+else appears external,
+
+00:03:29.900 --> 00:03:32.140
+including your own
+company's infrastructure.
+
+00:03:32.600 --> 00:03:37.400
+So to get the most out of auto-mode,
+it's worth configuring it.
+
+00:03:37.740 --> 00:03:40.360
+Start by defining your environment.
+
+00:03:41.060 --> 00:03:43.900
+Admins can set this in managed settings,
+
+00:03:44.140 --> 00:03:47.480
+which every developer
+in your organization inherits.
+
+00:03:47.580 --> 00:03:50.637
+Developers can add their own
+entries in user settings.
+
+00:03:50.720 --> 00:03:54.220
+But they can't remove
+what admins already set.
+
+00:03:54.520 --> 00:03:58.560
+Use the environment field to describe
+your infrastructure in plain English,
+
+00:03:58.740 --> 00:04:03.560
+such as your GitHub org, cloud
+buckets, and internal services.
+
+00:04:03.960 --> 00:04:07.040
+Setting environment replaces
+Claude's built-in entries,
+
+00:04:07.320 --> 00:04:10.120
+so add the default string to keep them.
+
+00:04:10.550 --> 00:04:13.010
+If you need more fine-grained control,
+
+00:04:13.510 --> 00:04:14.950
+use allow for exceptions,
+
+00:04:15.390 --> 00:04:19.807
+soft deny for actions that should be
+blocked unless you explicitly ask,
+
+00:04:19.890 --> 00:04:24.850
+and hard deny for actions that should
+be blocked no matter what you ask.
+
+00:04:25.030 --> 00:04:30.090
+These fields are guidance the classifier
+factors into each check, not hard rules.
+
+00:04:30.600 --> 00:04:34.470
+For hard limits, add deny rules
+to block matching tool calls,
+
+00:04:34.710 --> 00:04:38.310
+and ask rules to force
+a prompt even in auto-mode.
+
+00:04:38.650 --> 00:04:40.610
+Allow rules also work too.
+
+00:04:41.110 --> 00:04:43.527
+But anything broad enough to grant
+
+00:04:43.610 --> 00:04:47.850
+arbitrary code execution
+is also sent to the classifier.
+
+00:04:48.070 --> 00:04:52.050
+All right, that's auto-mode.
+We started with a question.
+
+00:04:52.270 --> 00:04:58.230
+If you're no longer approving each action,
+how are they reviewed and now you know?
+
+00:04:58.490 --> 00:05:02.487
+A classifier that reads
+your messages but not Claude's,
+
+00:05:02.570 --> 00:05:05.087
+a deal check that reserves it for actions
+
+00:05:05.170 --> 00:05:06.590
+that are hard to undo,
+
+00:05:06.970 --> 00:05:10.150
+a probe that scans it
+for hidden instructions,
+
+00:05:10.610 --> 00:05:13.130
+and a trust boundary that you configure.
+
+00:05:13.740 --> 00:05:17.840
+Together, they catch what
+manual human reviews might miss.
+
+00:05:18.720 --> 00:05:21.280
+When you are rolling it out, start narrow.
+
+00:05:21.620 --> 00:05:24.620
+Watch what gets denied
+and then widen it from there.
+
+00:05:24.990 --> 00:05:28.990
+For high-stake operations like changes
+to your production infrastructure,
+
+00:05:29.510 --> 00:05:31.890
+you should review
+Claude's actions yourself.
+
+00:05:32.470 --> 00:05:35.910
+Or build your own evals
+to gain more confidence.
+
+00:05:36.310 --> 00:05:41.070
+To learn more about our safety research,
+read our blog post linked below.
+

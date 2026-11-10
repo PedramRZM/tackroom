@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/ai-ci-cd-on-call",
+  "title": "How Claude Tag serves as Anthropic’s first responder for CI/CD failures",
+  "author": "Sachin Malhotra",
+  "date": "2026-08-18",
+  "site": "Anthropic",
+  "description": "How Anthropic runs AI incident response for CI/CD: an engineer on our Continuous Integration team walks through the Claude Tag agent that detects, triages, and resolves CI failures.",
+  "via": "direct",
+  "chars": 12983,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:45Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/steering-claude-code-skills-hooks-rules-subagents-and-more",
+  "title": "Steering Claude Code: when to use CLAUDE.md, skills, hooks, and subagents",
+  "date": "2026-06-18",
+  "site": "Anthropic",
+  "description": "Seven ways to steer Claude Code—CLAUDE.md files, rules, skills, subagents, hooks, and more—and when to use each, based on context cost and authority.",
+  "via": "direct",
+  "chars": 18365,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:41Z"
+}

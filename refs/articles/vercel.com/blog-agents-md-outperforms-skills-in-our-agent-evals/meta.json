@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals",
+  "title": "AGENTS.md outperforms skills in our agent evals",
+  "author": "Jude Gao",
+  "date": "2026-01-27",
+  "site": "Vercel",
+  "description": "A compressed 8KB docs index in AGENTS.md achieved 100% on Next.js 16 API evals. Skills maxed at 79%. Here's what we learned and how to set it up.",
+  "via": "direct",
+  "chars": 10763,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:00Z"
+}

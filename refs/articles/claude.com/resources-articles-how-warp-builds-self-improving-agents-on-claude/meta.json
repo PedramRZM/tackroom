@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/how-warp-builds-self-improving-agents-on-claude",
+  "title": "How Warp builds self-improving agents on Claude",
+  "author": "Michael Segner",
+  "date": "2026-08-26",
+  "site": "Anthropic",
+  "description": "How Warp devised a simple development pattern that anyone can use to create self-improving agents.",
+  "via": "direct",
+  "chars": 11098,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:58Z"
+}

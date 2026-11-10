@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-code-mods",
+  "title": "Customize Claude Code with mods in TypeScript",
+  "date": "2026-10-01",
+  "site": "Anthropic",
+  "description": "Mods are small TypeScript functions that change how Claude Code works. Rewrite prompts, block risky commands, add custom UI, or replace built-in features. Write one yourself or ask Claude Code to write it, then share it as a plugin.",
+  "via": "direct",
+  "chars": 4694,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:29Z"
+}

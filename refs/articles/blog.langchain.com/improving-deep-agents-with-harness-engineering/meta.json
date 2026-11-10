@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://blog.langchain.com/improving-deep-agents-with-harness-engineering/",
+  "title": "Improving Deep Agents with harness engineering",
+  "author": "Vivek Trivedy",
+  "date": "2026-02-17",
+  "site": "langchain.com",
+  "description": "Harness engineering improved LangChain's coding agent from Top 30 to Top 5 on Terminal Bench using self-verification, tracing, and context optimization.",
+  "via": "direct",
+  "chars": 12912,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:15:17Z"
+}

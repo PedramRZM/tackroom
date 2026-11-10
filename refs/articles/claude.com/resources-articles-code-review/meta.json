@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/code-review",
+  "title": "Code Review for Claude Code",
+  "date": "2026-03-09",
+  "site": "Anthropic",
+  "description": "Claude Code now dispatches a team of agents on every PR to catch bugs that skims miss. Available in research preview for Team and Enterprise.",
+  "via": "direct",
+  "chars": 4216,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:17Z"
+}

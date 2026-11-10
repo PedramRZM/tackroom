@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/preview-review-and-merge-with-claude-code",
+  "title": "Preview, review, and merge with Claude Code",
+  "date": "2026-02-20",
+  "site": "Anthropic",
+  "description": "Preview running apps, auto-review diffs, and monitor PRs — all from Claude Code on desktop. Go from writing code to merging in one place.",
+  "via": "direct",
+  "chars": 2817,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:23Z"
+}

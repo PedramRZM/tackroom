@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+  "title": "Code Review is now generally available",
+  "date": "2026-10-15",
+  "site": "Anthropic",
+  "description": "Catch more bugs before they reach production. Code Review is generally available for Claude Team and Enterprise organizations.",
+  "via": "direct",
+  "chars": 2306,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:20Z"
+}

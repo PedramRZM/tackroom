@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/building-effective-agent-automations/",
+  "title": "Building effective agent automations / claude.dev Blog",
+  "author": "Lance Martin; CJ Avilla",
+  "date": "2026-10-08",
+  "site": "claude.dev Blog",
+  "description": "A reference implementation walkthrough with common failure modes",
+  "via": "jina",
+  "chars": 19838,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:36Z"
+}

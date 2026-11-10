@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/trustworthy-agents",
+  "title": "Trustworthy agents in practice",
+  "date": "2026-04-09",
+  "site": "AnthropicAI",
+  "description": "Five principles for building AI agents that balance autonomy with safety, with defenses spanning the model, harness, tools, and environment.",
+  "via": "direct",
+  "chars": 13252,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:23Z"
+}

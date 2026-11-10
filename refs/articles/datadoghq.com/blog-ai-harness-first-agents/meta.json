@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://www.datadoghq.com/blog/ai/harness-first-agents/",
+  "title": "Closing the verification loop: Observability-driven harnesses for building with agents | Datadog",
+  "author": "Alp Keles; Jai Menon; Sesh Nalla; Vyom Shah",
+  "date": "2026-03-09",
+  "site": "Datadog",
+  "description": "Learn how Datadog verifies AI-generated systems at scale using deterministic testing, formal methods, and observability-driven feedback loops.",
+  "via": "direct",
+  "chars": 18439,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:15:18Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/build-plugins-for-claude",
+  "title": "Build plugins for Claude with the directory submission portal",
+  "date": "2026-09-25",
+  "site": "Anthropic",
+  "description": "Submit plugins to the Claude directory through a new directory submission portal. Package MCP connectors and Agent Skills, track your plugin through review, and see how it's used and found once it's live",
+  "via": "direct",
+  "chars": 3320,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:27Z"
+}

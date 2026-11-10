@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/building-agents-with-the-claude-agent-sdk",
+  "title": "Building agents with the Claude Agent SDK",
+  "date": "2025-09-29",
+  "site": "Anthropic",
+  "description": "How to get started with the Claude Agent SDK and best practices for using it.",
+  "via": "direct",
+  "chars": 14543,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:39Z"
+}

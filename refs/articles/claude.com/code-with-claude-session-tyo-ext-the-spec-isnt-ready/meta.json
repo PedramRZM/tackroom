@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/code-with-claude/session/tyo-ext-the-spec-isnt-ready",
+  "title": "The last mile is the spec | Session | Code w/ Claude 2026",
+  "date": "2026-06-11",
+  "site": "Anthropic",
+  "description": "After six months of enterprise AI work in Japan, Tsukumo Labs keeps hitting one wall. They turn opt-in desktop traces into reviewed specs that run as Claude-powered agents, and the hard part is segmenting noisy, cross-app activity into stable patterns. For most Claude-powered products, the bottleneck isn't the model or the harness, it's the missing observation layer upstream of every prompt.",
+  "via": "direct",
+  "chars": 2687,
+  "collection": "code-with-claude-2026",
+  "fetched_at": "2026-11-10T20:14:00Z"
+}

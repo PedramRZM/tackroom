@@ -1,0 +1,63 @@
+---
+title: "Plugins"
+date: "2026-01-01"
+url: "https://opencode.ai/docs/cli/plugins/"
+site: "opencode.ai"
+type: "doc"
+via: "direct"
+---
+# Plugins
+
+Plugins configured in `opencode.json(c)` that expose a TUI component are loaded automatically by the CLI. To learn how
+to build plugins, see [Building plugins](https://opencode.ai/docs/build/plugins). You do not need to add the same package to `cli.json`. The CLI
+gets the active plugin list from the connected OpenCode server, so this also works when the server is remote.
+
+Use `cli.json` for CLI-only plugins. These plugins run locally in the terminal and remain active when the CLI connects
+to a remote server:
+
+```
+{
+  "plugins": [
+    "opencode.example",
+    "opencode.example@1.0.0",
+    "@example/opencode-tui",
+    "@example/opencode-tui@1.0.0",
+    "./plugins/status",
+    "../plugins/status",
+    "/home/user/plugins/status",
+    "file:///home/user/plugins/status"
+  ]
+}
+```
+Entries are processed in order. Prefix an ID or wildcard with `-` to disable matching plugins:
+
+```
+{
+  "plugins": ["*", "-opencode.notifications", "-team.*"]
+}
+```
+Pass plugin options with the object form:
+
+```
+{
+  "plugins": [
+    {
+      "package": "@example/opencode-tui",
+      "options": {
+        "compact": true
+      }
+    }
+  ]
+}
+```
+OpenCode also discovers plugins under the global config directory and project `.opencode` directories. Each plugin uses
+the same layout as a published package, with server and TUI entrypoints kept together.
+
+```
+<global-config>/plugins/status/index.ts
+<global-config>/plugins/status/tui.ts
+<project>/.opencode/plugins/status/index.ts
+<project>/.opencode/plugins/status/tui.ts
+```
+Discovered plugins can import `@opencode/plugin/tui` directly; OpenCode resolves the package at runtime. See
+[Building TUI plugins](https://opencode.ai/docs/build/plugins/cli) for examples.

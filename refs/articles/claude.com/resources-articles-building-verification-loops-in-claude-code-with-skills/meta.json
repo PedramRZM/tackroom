@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills",
+  "title": "Building verification loops in Claude Code with skills",
+  "author": "Delba de Oliveira",
+  "date": "2026-07-22",
+  "site": "Anthropic",
+  "description": "How Anthropic builds verification loops in Claude Code: turn your manual checks into skills so Claude tests, fixes, and verifies its own work.",
+  "via": "direct",
+  "chars": 11352,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:42Z"
+}

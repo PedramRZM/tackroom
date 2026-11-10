@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
+  "title": "Building an agentic harness that outlasts the model (2026) - Shopify",
+  "author": "Zack Deveau",
+  "date": "2026-07-29",
+  "site": "Shopify",
+  "description": "We built an agentic code review and test oracle harness that discovers vulnerabilities, proves them with real tests, and provides Shopify-tuned fixes.",
+  "via": "direct",
+  "chars": 11852,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:15:05Z"
+}

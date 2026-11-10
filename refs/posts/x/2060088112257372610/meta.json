@@ -1,0 +1,13 @@
+{
+  "type": "post",
+  "url": "https://x.com/mitchellh/status/2060088112257372610",
+  "title": "I've got an agent in a loop optimizing a renderer with the goal to minimize frame times (and tests to measure)",
+  "author": "Mitchell Hashimoto (@mitchellh)",
+  "date": "2026-05-28",
+  "site": "x.com",
+  "via": "fxtwitter",
+  "chars": 1609,
+  "likes": 10618,
+  "collection": "x-posts",
+  "fetched_at": "2026-11-10T20:42:00Z"
+}

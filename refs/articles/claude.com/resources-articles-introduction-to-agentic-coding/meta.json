@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/introduction-to-agentic-coding",
+  "title": "Introduction to agentic coding",
+  "date": "2025-10-30",
+  "site": "Anthropic",
+  "description": "Move from fragmented AI code snippets to deploying integrated features with agentic coding that understands your entire codebase. AI-assisted coding has evolved rapidly over the last few years. Tools that once suggested the next line now predict entire functions by analyzing patterns in your code.",
+  "via": "direct",
+  "chars": 12706,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:05Z"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "doc",
+  "url": "https://code.claude.com/docs/en/claude-security.md",
+  "title": "Scan your codebase for vulnerabilities",
+  "site": "code.claude.com",
+  "via": "direct",
+  "chars": 16781,
+  "collection": "claude-code-docs",
+  "fetched_at": "2026-11-10T20:02:04Z"
+}

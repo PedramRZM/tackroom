@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/auth/",
+  "title": "Authentication",
+  "date": "2026-11-09",
+  "site": "Qwen Code Docs",
+  "description": "Qwen Code’s first-run /auth menu has five top-level options. Pick the one that matches how you want to run the CLI:",
+  "via": "direct",
+  "chars": 28910,
+  "collection": "model-routes",
+  "fetched_at": "2026-11-10T20:12:57Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/redesigning-source-control",
+  "title": "Redesigning source control at Anthropic",
+  "date": "2026-10-13",
+  "site": "AnthropicAI",
+  "description": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+  "via": "direct",
+  "chars": 22311,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:18Z"
+}

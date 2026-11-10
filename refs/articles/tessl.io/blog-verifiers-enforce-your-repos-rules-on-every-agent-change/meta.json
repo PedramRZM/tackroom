@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://tessl.io/blog/verifiers-enforce-your-repos-rules-on-every-agent-change",
+  "title": "Verifiers: enforce your repo's rules on every agent change",
+  "date": "2026-10-15",
+  "site": "Tessl",
+  "description": "Enforce repo rules on every agent change with Tessl Verifiers. Automate checks beyond linting to catch issues early. Learn how to implement them.",
+  "via": "direct",
+  "chars": 7128,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:14Z"
+}

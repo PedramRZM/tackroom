@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/how-to-configure-hooks",
+  "title": "Claude Code power user customization: How to configure hooks",
+  "date": "2025-12-11",
+  "site": "Anthropic",
+  "description": "Learn how to configure Claude Code hooks to automate repetitive tasks, enforce project rules, and inject dynamic context into your coding sessions.",
+  "via": "direct",
+  "chars": 18276,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:49Z"
+}

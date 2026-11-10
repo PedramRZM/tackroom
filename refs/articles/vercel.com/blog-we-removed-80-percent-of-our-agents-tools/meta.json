@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools",
+  "title": "We removed 80% of our agent’s tools",
+  "author": "Andrew Qu",
+  "date": "2025-12-22",
+  "site": "Vercel",
+  "description": "We spent months building a sophisticated text-to-sql agent, but as it turns out, sometimes simpler is better. Giving it the ability to execute arbitrary bash commands outperformed everything we built. We call this a file system agent.",
+  "via": "direct",
+  "chars": 7620,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:04Z"
+}

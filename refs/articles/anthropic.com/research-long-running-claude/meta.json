@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/long-running-claude",
+  "title": "Long-running Claude for scientific computing",
+  "date": "2026-03-23",
+  "site": "AnthropicAI",
+  "description": "Claude Opus 4.6 autonomously built a differentiable cosmological solver over several days, compressing months of scientific computing work.",
+  "via": "direct",
+  "chars": 12242,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:15Z"
+}

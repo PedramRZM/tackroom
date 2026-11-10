@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/",
+  "title": "Conductor: Introducing context-driven development for Gemini CLI",
+  "author": "Keith Ballinger; Jay Kornder; Sherzat Aitbayev",
+  "date": "2025-12-17",
+  "site": "developers.googleblog.com",
+  "description": "Conductor for Gemini CLI enables context-driven development. Formalize specs and plans in Markdown to control AI agents & keep code consistent.",
+  "via": "direct",
+  "chars": 5550,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:15:10Z"
+}

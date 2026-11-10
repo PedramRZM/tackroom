@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/",
+  "title": "Agent Design Is Still Hard",
+  "author": "Armin Ronacher",
+  "date": "2025-11-21",
+  "site": "Armin Ronacher's Thoughts and Writings",
+  "description": "My Agent abstractions keep breaking somewhere I don’t expect.",
+  "via": "direct",
+  "chars": 15035,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:39Z"
+}

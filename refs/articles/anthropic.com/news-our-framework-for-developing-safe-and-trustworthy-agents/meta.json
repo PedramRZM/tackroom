@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents",
+  "title": "Our framework for safe and trustworthy agents",
+  "date": "2025-08-04",
+  "site": "AnthropicAI",
+  "description": "Five principles for AI agents: human control, transparency, alignment with human values, privacy protection, and security against misuse.",
+  "via": "direct",
+  "chars": 9725,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:25Z"
+}

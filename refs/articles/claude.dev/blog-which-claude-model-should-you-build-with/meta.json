@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
+  "title": "Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku / claude.dev Blog",
+  "author": "Addy Osmani",
+  "date": "2026-11-09",
+  "site": "claude.dev Blog",
+  "description": "Which Claude model to pick, what they cost, and how to use them together.",
+  "via": "jina",
+  "chars": 23152,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:28Z"
+}

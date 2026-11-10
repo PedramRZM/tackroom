@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/build/plugins/server/",
+  "title": "Server",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Build the server part of an OpenCode plugin: tools, hooks, integrations, commands, and agents.",
+  "via": "direct",
+  "chars": 61852,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:52Z"
+}

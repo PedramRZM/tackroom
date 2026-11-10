@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/zero-trust-for-ai-agents",
+  "title": "Zero Trust for AI agents",
+  "date": "2026-05-27",
+  "site": "Anthropic",
+  "description": "A Zero Trust framework for deploying autonomous AI agents in the enterprise, covering current threats, a tiered architecture, an eight-phase implementation workflow, and agentic SOAR.",
+  "via": "direct",
+  "chars": 2971,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:34Z"
+}

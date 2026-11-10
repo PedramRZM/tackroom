@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/testing-if-bash-is-all-you-need",
+  "title": "Testing if \"bash is all you need",
+  "author": "Ankur Goyal",
+  "date": "2026-01-13",
+  "site": "Vercel",
+  "description": "We tested bash vs SQL agents on structured data queries. SQL dominated, but combining both tools achieved 100% accuracy. Try the open-source eval harness.",
+  "via": "direct",
+  "chars": 7599,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:15Z"
+}

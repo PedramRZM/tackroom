@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow",
+  "title": "Dreaming with a dynamic workflow | Claude Cookbook",
+  "date": "2026-11-02",
+  "site": "Claude Cookbook",
+  "description": "Build a small working dream for your agents. A Managed Agents dynamic workflow reads finished sessions, distills them into a wiki-style memory store that future sessions mount read-only, and can run every night from cron.",
+  "via": "direct",
+  "chars": 63511,
+  "collection": "memory-dreaming",
+  "fetched_at": "2026-11-10T20:21:27Z"
+}

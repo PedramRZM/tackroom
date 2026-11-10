@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/spending-your-effort/",
+  "title": "Using Claude Code: Spending your effort / claude.dev Blog",
+  "author": "Thariq Shihipar",
+  "date": "2026-09-25",
+  "site": "claude.dev Blog",
+  "description": "What effort really is and when to use which level in Claude Code, from my own tests of three builds and a deep dive into Terminal-Bench 3.0 on Opus 5.5 and Fable 5.1.",
+  "via": "jina",
+  "chars": 12904,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:53Z"
+}

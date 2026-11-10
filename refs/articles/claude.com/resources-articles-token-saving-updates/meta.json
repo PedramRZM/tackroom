@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/token-saving-updates",
+  "title": "Token-saving updates on the Anthropic API",
+  "date": "2025-03-13",
+  "site": "Anthropic",
+  "description": "Claude now offers cache-aware rate limits, simplified prompt caching, and token-efficient tool use to help developers increase throughput and cut costs. We've made several updates to the Anthropic API that let developers significantly increase throughput and reduce token usage with Claude 3.",
+  "via": "direct",
+  "chars": 5398,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:08Z"
+}

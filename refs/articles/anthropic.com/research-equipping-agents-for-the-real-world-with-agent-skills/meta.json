@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills",
+  "title": "Equipping agents with Agent Skills",
+  "date": "2025-10-16",
+  "site": "AnthropicAI",
+  "description": "Introducing Agent Skills: organized folders of instructions, scripts, and resources that give Claude the procedural knowledge real work requires.",
+  "via": "direct",
+  "chars": 8765,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:09Z"
+}

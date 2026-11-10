@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/how-anthropic-teams-use-claude-code",
+  "title": "How Anthropic teams use Claude Code",
+  "date": "2025-07-24",
+  "site": "Anthropic",
+  "description": "Teams across Anthropic use Claude Code for everything from debugging production issues and navigating unfamiliar codebases to building custom automation tools. Here's how.",
+  "via": "direct",
+  "chars": 7888,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:50Z"
+}

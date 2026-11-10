@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://developers.openai.com/blog/custom-code-review-rules-for-codex",
+  "title": "Custom Code Review rules for Codex | OpenAI Developers",
+  "date": "2026-07-20",
+  "site": "OpenAI Developers",
+  "description": "Provide more detailed rules for Codex to spot issues and better adhere your conventions during code review.",
+  "via": "direct",
+  "chars": 8849,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:30Z"
+}

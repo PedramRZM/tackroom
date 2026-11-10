@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://developers.openai.com/blog/skills-shell-tips",
+  "title": "Shell + Skills + Compaction: Tips for long-running agents that do real work | OpenAI Developers",
+  "date": "2026-02-11",
+  "site": "OpenAI Developers",
+  "description": "Practical patterns for building with skills, hosted shell, and server-side compaction in the Responses API.",
+  "via": "direct",
+  "chars": 11875,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:09:54Z"
+}

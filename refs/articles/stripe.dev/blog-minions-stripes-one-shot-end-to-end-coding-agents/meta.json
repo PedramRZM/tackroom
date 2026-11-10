@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+  "title": "Minions: Stripe’s one-shot, end-to-end coding agents",
+  "author": "Alistair Gray",
+  "date": "2026-02-09",
+  "site": "Stripepress",
+  "description": "Minions are Stripe’s homegrown coding agents, responsible for more than a thousand pull requests merged each week. Though humans review the code, minions write it from start to finish. Learn how they work, and how we built them.",
+  "via": "direct",
+  "chars": 9302,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:11:13Z"
+}

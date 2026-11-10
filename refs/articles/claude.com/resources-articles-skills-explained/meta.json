@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/skills-explained",
+  "title": "Skills explained: How Skills compares to prompts, Projects, MCP, and subagents",
+  "date": "2026-03-05",
+  "site": "Anthropic",
+  "description": "Skills are an increasingly powerful tool for creating custom AI workflows and agents, but where do they fit in the Claude stack? We explain what tool to use when - and how they all work together.",
+  "via": "direct",
+  "chars": 21014,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:53Z"
+}

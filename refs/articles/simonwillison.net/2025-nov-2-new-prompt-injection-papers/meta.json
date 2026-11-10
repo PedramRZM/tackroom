@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2025/Nov/2/new-prompt-injection-papers/",
+  "title": "New prompt injection papers: Agents Rule of Two and The Attacker Moves Second",
+  "author": "Simon Willison",
+  "date": "2025-11-02",
+  "site": "Simon Willison’s Weblog",
+  "description": "Two interesting new papers regarding LLM security and prompt injection came to my attention this weekend. Agents Rule of Two: A Practical Approach to AI Agent Security The first is …",
+  "via": "direct",
+  "chars": 8574,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:38Z"
+}

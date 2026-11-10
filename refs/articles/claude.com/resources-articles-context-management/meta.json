@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/context-management",
+  "title": "Managing context on the Claude Developer Platform",
+  "date": "2025-09-29",
+  "site": "Anthropic",
+  "description": "New context editing and memory tools enable Claude agents to handle long-running tasks without hitting context limits.",
+  "via": "direct",
+  "chars": 4777,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:12Z"
+}

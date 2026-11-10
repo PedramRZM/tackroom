@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/infrastructure-noise",
+  "title": "Infrastructure noise in agentic coding evals",
+  "date": "2026-02-05",
+  "site": "AnthropicAI",
+  "description": "Agentic coding benchmarks are treated as precise measures of model capability, but infrastructure configuration alone can meaningfully shift scores.",
+  "via": "direct",
+  "chars": 11655,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:13Z"
+}

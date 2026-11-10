@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+  "title": "How Anthropic secures its AI-native software development lifecycle",
+  "author": "Jason Clinton",
+  "date": "2026-07-21",
+  "site": "Anthropic",
+  "description": "Anthropic Deputy CISO Jason Clinton details how the Security Engineering team secures an AI-native SDLC where AI authors 80% of merged code.",
+  "via": "direct",
+  "chars": 19354,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:52Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.humanlayer.dev/blog/long-context-isnt-the-answer",
+  "title": "Long-Context Isn't the Answer",
+  "date": "2026-03-23",
+  "site": "humanlayer.dev",
+  "description": "We tried Opus with 1M context for coding agents, and now we're switching back. It turns out it's not about the size of the context window - it's about the quality.",
+  "via": "direct",
+  "chars": 8091,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:01Z"
+}

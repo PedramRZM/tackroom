@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/how-we-made-v0-an-effective-coding-agent",
+  "title": "How we made v0 an effective coding agent",
+  "author": "Max Leiter",
+  "date": "2026-01-07",
+  "site": "Vercel",
+  "description": "v0’s composite AI pipeline boosts reliability by fixing errors in real time. Learn how dynamic system prompts, LLM Suspense, and autofixers work together to deliver stable, working web app generations at scale.",
+  "via": "direct",
+  "chars": 6378,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:20Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/console/harnesses/claude-code/",
+  "title": "Claude Code",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Use Console and Go models from Claude Code.",
+  "via": "direct",
+  "chars": 2050,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:57Z"
+}

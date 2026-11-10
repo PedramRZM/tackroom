@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/policies/",
+  "title": "Policies",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Allow or deny OpenCode actions on named resources, with managed and organization policy outranking user and project configuration.",
+  "via": "direct",
+  "chars": 11445,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:44Z"
+}

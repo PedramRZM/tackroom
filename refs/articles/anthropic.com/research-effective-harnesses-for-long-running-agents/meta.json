@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+  "title": "Effective harnesses for long-running agents",
+  "date": "2025-11-26",
+  "site": "AnthropicAI",
+  "description": "How an initializer agent and an incremental coding agent help the Claude Agent SDK make steady progress across many context windows.",
+  "via": "direct",
+  "chars": 10120,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:07Z"
+}

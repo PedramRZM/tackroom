@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://addyosmani.com/blog/code-review-ai/",
+  "title": "AI writes code faster. Your job is still to prove it works. | AddyOsmani.com",
+  "author": "Addy Osmani",
+  "date": "2026-01-07",
+  "site": "AddyOsmani.com",
+  "description": "AI did not kill code review. It made the burden of proof explicit. Ship changes with evidence like manual verification and automated tests, then use review f...",
+  "via": "direct",
+  "chars": 13233,
+  "collection": "people-osmani",
+  "fetched_at": "2026-11-10T20:14:23Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/automate-security-reviews-with-claude-code",
+  "title": "Automate security reviews with Claude Code",
+  "date": "2025-08-06",
+  "site": "Anthropic",
+  "description": "Meta Description (238 characters): \\\"Introducing automated security reviews in Claude Code. Use the new /security-review command and GitHub Actions integration to identify and fix vulnerabilities before they reach production. Catch SQL injection, XSS, and authentication flaws automatically.",
+  "via": "direct",
+  "chars": 3583,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:22Z"
+}

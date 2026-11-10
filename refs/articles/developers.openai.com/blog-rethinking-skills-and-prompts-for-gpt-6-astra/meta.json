@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+  "title": "Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers",
+  "date": "2026-09-11",
+  "site": "OpenAI Developers",
+  "description": "Revisit skill descriptions, AGENTS.md, and task prompts to avoid bloated context.",
+  "via": "direct",
+  "chars": 5778,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:34Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/the-advisor-strategy",
+  "title": "The advisor strategy: Give Sonnet an intelligence boost with Opus",
+  "author": "Eric Simmons; CEO; Founder; Bolt",
+  "date": "2026-04-09",
+  "site": "Anthropic",
+  "description": "Pair Opus as an advisor with Sonnet or Haiku as an executor, and get Opus-level intelligence in your agents at a fraction of the cost.",
+  "via": "direct",
+  "chars": 6551,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:43Z"
+}

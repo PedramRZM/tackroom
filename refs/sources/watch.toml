@@ -1,0 +1,39 @@
+# Sources that `tools/refs watch` checks for new or changed material.
+#
+# [[list]]  a page that lists URLs (sitemap, llms.txt, feed, or an HTML index).
+#           `include` is a regex; a URL that matches and was not seen before is reported.
+#           `base` (optional) also resolves relative href="/..." links against it.
+# [[page]]  a single page whose content hash is compared with the last marked state.
+#
+# After reviewing the report, fetch what matters with `tools/refs article|video|post`,
+# then run `tools/refs watch --mark` so the same items are not reported again.
+
+[[list]]
+name = "claude-dev-blog"
+list = "https://claude.dev/sitemap.xml"
+include = '^https://claude\.dev/blog/.+'
+
+[[list]]
+name = "claude-com-articles"
+list = "https://claude.com/sitemap.xml"
+include = '^https://claude\.com/resources/articles/[^/]+$'
+
+[[list]]
+name = "claude-com-guides"
+list = "https://claude.com/sitemap.xml"
+include = '^https://claude\.com/resources/guides/[^/]+$'
+
+[[list]]
+name = "claude-code-docs"
+list = "https://code.claude.com/docs/llms.txt"
+include = '^https://code\.claude\.com/docs/en/.+\.md$'
+
+[[list]]
+name = "anthropic-engineering"
+list = "https://www.anthropic.com/engineering"
+include = '^https://www\.anthropic\.com/(engineering|research)/[a-z0-9-]+$'
+base = "https://www.anthropic.com"
+
+[[page]]
+name = "claude-code-changelog"
+url = "https://code.claude.com/docs/en/changelog.md"

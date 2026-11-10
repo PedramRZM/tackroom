@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/agents-judgment-calls",
+  "title": "How AI agents shape experts’ judgment calls",
+  "date": "2026-10-27",
+  "site": "AnthropicAI",
+  "description": "In a randomized trial, professional analysts working with an AI coding agent went with the option the agent was randomly assigned to favor 86% of the time. We look at what this means for human oversight of AI-assisted work.",
+  "via": "direct",
+  "chars": 19315,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:50Z"
+}

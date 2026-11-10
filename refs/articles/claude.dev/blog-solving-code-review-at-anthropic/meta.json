@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+  "title": "How the Claude Code team does code review / claude.dev Blog",
+  "author": "Addy Osmani; Morgan Westlee Lunt; Qing Wang",
+  "date": "2026-10-15",
+  "site": "claude.dev Blog",
+  "description": "How do you review code at the volume agents produce it? On the Claude Code team, once we had high coverage and deep reviews, we started optimizing for the minimum amount of human review time that doesn't raise reverts or incidents.",
+  "via": "jina",
+  "chars": 20616,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:34Z"
+}

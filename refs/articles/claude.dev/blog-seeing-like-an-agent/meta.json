@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/seeing-like-an-agent/",
+  "title": "Seeing like an agent: how we design tools in Claude Code / claude.dev Blog",
+  "author": "Thariq Shihipar",
+  "date": "2026-04-10",
+  "site": "claude.dev Blog",
+  "description": "Learn how the Claude Code team designs, tests, and evolves tools by thinking from the model's point of view.",
+  "via": "jina",
+  "chars": 10978,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:23Z"
+}

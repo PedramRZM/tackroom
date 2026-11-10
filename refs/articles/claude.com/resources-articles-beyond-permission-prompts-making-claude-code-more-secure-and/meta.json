@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous",
+  "title": "Beyond permission prompts: making Claude Code more secure and autonomous",
+  "date": "2025-10-08",
+  "site": "Anthropic",
+  "description": "In Claude Code, Claude writes, tests, and debugs code alongside you, navigating your codebase, editing multiple files, and running commands to verify its work.",
+  "via": "direct",
+  "chars": 7503,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:29Z"
+}

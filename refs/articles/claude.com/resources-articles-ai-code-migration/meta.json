@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/ai-code-migration",
+  "title": "How Anthropic runs large-scale code migrations with Claude Code",
+  "date": "2026-07-16",
+  "site": "Anthropic",
+  "description": "How Anthropic runs large-scale AI code migrations with Claude Code: a six-step process and an open-source starter kit, from Bun's million-line Zig-to-Rust port.",
+  "via": "direct",
+  "chars": 21337,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:47Z"
+}

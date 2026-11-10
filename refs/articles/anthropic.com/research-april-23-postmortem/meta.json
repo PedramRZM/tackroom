@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/april-23-postmortem",
+  "title": "An update on Claude Code quality reports",
+  "date": "2026-04-23",
+  "site": "AnthropicAI",
+  "description": "We traced recent reports of Claude Code quality issues to three separate changes. Here's what happened, what we fixed, and what we're changing.",
+  "via": "direct",
+  "chars": 10463,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:51Z"
+}

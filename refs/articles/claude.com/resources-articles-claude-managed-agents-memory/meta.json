@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-managed-agents-memory",
+  "title": "Memory for Claude Managed Agents: agents that learn across sessions",
+  "author": "Yusuke Kaji; General Manager; AI",
+  "date": "2026-04-23",
+  "site": "Anthropic",
+  "description": "Memory for Claude Managed Agents is a built-in memory layer that lets agents learn across sessions, improve over time, and share what they've learned.",
+  "via": "direct",
+  "chars": 4667,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:16Z"
+}

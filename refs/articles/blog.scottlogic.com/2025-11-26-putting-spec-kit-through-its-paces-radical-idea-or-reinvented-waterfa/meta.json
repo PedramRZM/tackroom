@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://blog.scottlogic.com/2025/11/26/putting-spec-kit-through-its-paces-radical-idea-or-reinvented-waterfall.html",
+  "title": "Putting Spec Kit Through Its Paces: Radical Idea or Reinvented Waterfall?",
+  "author": "Colin Eberhardt",
+  "date": "2025-11-26",
+  "site": "Scott Logic",
+  "description": "Spec-Driven Development promises reliable, specification-led software generation, but in practice I found the workflow slow, heavy, and less effective than iterative prompting. This post walks through a real-world test using Spec Kit and explains why traditional AI-assisted development still outpaces SDD by a wide margin.",
+  "via": "direct",
+  "chars": 22204,
+  "collection": "task-management",
+  "fetched_at": "2026-11-10T20:17:47Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://cursor.com/blog/dynamic-context-discovery",
+  "title": "Dynamic context discovery · Cursor",
+  "author": "Jediah Katz",
+  "date": "2026-01-06",
+  "site": "Cursor",
+  "description": "As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own.",
+  "via": "direct",
+  "chars": 6762,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:11:12Z"
+}

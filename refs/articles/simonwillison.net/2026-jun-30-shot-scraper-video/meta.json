@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/",
+  "title": "Have your agent record video demos of its work with shot-scraper video",
+  "author": "Simon Willison",
+  "date": "2026-06-30",
+  "site": "Simon Willison’s Weblog",
+  "description": "shot-scraper video is a new command introduced in today’s shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to …",
+  "via": "direct",
+  "chars": 8361,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:31Z"
+}

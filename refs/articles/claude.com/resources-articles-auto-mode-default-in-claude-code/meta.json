@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/auto-mode-default-in-claude-code",
+  "title": "Auto mode is now the default in Claude Code for Pro, Max, Ultra, and Team plans",
+  "author": "Kai Zhou; Staff Software Engineer",
+  "date": "2026-08-07",
+  "site": "Anthropic",
+  "description": "Claude Code will soon run auto mode by default for Pro, Max, Ultra, and Team plans, enabling longer-running autonomous work, and catching more dangerous commands.",
+  "via": "direct",
+  "chars": 19250,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:25Z"
+}

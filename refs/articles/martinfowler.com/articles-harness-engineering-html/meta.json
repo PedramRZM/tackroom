@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/articles/harness-engineering.html",
+  "title": "Harness engineering for coding agent users",
+  "author": "Birgitta Böckeler",
+  "date": "2026-04-02",
+  "site": "martinfowler.com",
+  "description": "A mental model for building trust in coding agents through feedforward guides, feedback sensors, and iterative harness engineering.",
+  "via": "direct",
+  "chars": 17430,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:25Z"
+}

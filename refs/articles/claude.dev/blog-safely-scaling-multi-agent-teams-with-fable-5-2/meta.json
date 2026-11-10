@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+  "title": "Safely scaling multi-agent teams with Claude Fable 5.2 / claude.dev Blog",
+  "author": "Barry Zhang; Tianyi Peng; Elle Najt; Keller Scholl; Lance Martin",
+  "date": "2026-11-09",
+  "site": "claude.dev Blog",
+  "description": "How a team of 1,000 agents running an early version of Claude Fable 5.2 reproduced a formal proof of Fermat's Last Theorem with general tools, a shared database, and layered safety controls.",
+  "via": "jina",
+  "chars": 23557,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:30Z"
+}

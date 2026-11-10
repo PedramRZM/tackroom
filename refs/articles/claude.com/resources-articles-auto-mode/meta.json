@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/auto-mode",
+  "title": "Auto mode for Claude Code",
+  "date": "2026-03-24",
+  "site": "Anthropic",
+  "description": "Auto mode lets Claude Code make permission decisions with built-in safeguards — fewer interruptions than default, less risk than skipping permissions.",
+  "via": "direct",
+  "chars": 3260,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:23Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/introducing-react-best-practices",
+  "title": "Introducing: React Best Practices",
+  "author": "Shu Ding",
+  "date": "2026-01-14",
+  "site": "Vercel",
+  "description": "We've encapsulated 10+ years of React and Next.js optimization knowledge into react-best-practices, a structured repository optimized for AI agents and LLMs.",
+  "via": "direct",
+  "chars": 4798,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:24Z"
+}

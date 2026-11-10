@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/using-claude-code-session-management-and-1m-context",
+  "title": "Using Claude Code: session management and 1M context",
+  "date": "2026-04-15",
+  "site": "Anthropic",
+  "description": "Learn how to manage context in Claude Code—when to continue, rewind, compact, or clear a session, and how subagents keep parent context clean.",
+  "via": "direct",
+  "chars": 8387,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:41Z"
+}

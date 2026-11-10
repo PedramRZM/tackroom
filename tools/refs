@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Wrapper for tools/refs.py: pins the dependency and runs Python isolated (-I),
+# so nothing in the downloaded material or the working directory is importable.
+set -euo pipefail
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec uv run --quiet --no-project --with 'trafilatura>=2,<3' python -I "$here/refs.py" "$@"

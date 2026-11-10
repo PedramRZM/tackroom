@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://github.blog/ai-and-ml/github-copilot/automate-repository-tasks-with-github-agentic-workflows/",
+  "title": "Automate repository tasks with GitHub Agentic Workflows",
+  "author": "Don Syme; Peli de Halleux",
+  "date": "2026-02-13",
+  "site": "The GitHub Blog",
+  "description": "Build automations using coding agents in GitHub Actions to handle triage, documentation, code quality, and more.",
+  "via": "direct",
+  "chars": 14900,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:28Z"
+}

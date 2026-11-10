@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/",
+  "title": "Using Claude Code: The unreasonable effectiveness of HTML / claude.dev Blog",
+  "author": "Thariq Shihipar",
+  "date": "2026-05-20",
+  "site": "claude.dev Blog",
+  "description": "How and why members of the Claude Code team use HTML instead of Markdown to produce richer, more readable, and easily shareable outputs.",
+  "via": "jina",
+  "chars": 16065,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:18Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+  "title": "Getting the most out of Opus 5.5 in Claude and Claude Code / claude.dev Blog",
+  "author": "Addy Osmani",
+  "date": "2026-09-22",
+  "site": "claude.dev Blog",
+  "description": "How to prompt Opus 5.5, steer a long run, and check your results in Claude apps and Claude Code.",
+  "via": "jina",
+  "chars": 15429,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:00Z"
+}

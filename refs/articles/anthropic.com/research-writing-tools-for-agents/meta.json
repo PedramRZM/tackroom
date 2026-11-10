@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/writing-tools-for-agents",
+  "title": "Writing effective tools for AI agents",
+  "date": "2025-09-11",
+  "site": "AnthropicAI",
+  "description": "Our most effective techniques for writing, evaluating, and refining tools for AI agents, including how to use Claude Code to improve them.",
+  "via": "direct",
+  "chars": 21348,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:21Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/complete-guide-to-building-skills-for-claude",
+  "title": "A complete guide to building skills for Claude",
+  "date": "2026-01-29",
+  "site": "Anthropic",
+  "description": "How to build skills that give Claude reusable context for your workflows. Covers technical requirements, testing approaches, and workflow patterns from early adopters.",
+  "via": "direct",
+  "chars": 2527,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:55Z"
+}

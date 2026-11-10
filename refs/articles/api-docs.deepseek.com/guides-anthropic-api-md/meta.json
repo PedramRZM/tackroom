@@ -1,0 +1,10 @@
+{
+  "type": "doc",
+  "url": "https://api-docs.deepseek.com/guides/anthropic_api.md",
+  "title": "Using the Anthropic API",
+  "site": "api-docs.deepseek.com",
+  "via": "direct",
+  "chars": 29440,
+  "collection": "model-routes",
+  "fetched_at": "2026-11-10T20:10:12Z"
+}

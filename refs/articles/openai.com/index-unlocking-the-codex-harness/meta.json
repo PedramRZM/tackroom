@@ -1,0 +1,11 @@
+{
+  "type": "article",
+  "url": "https://openai.com/index/unlocking-the-codex-harness/",
+  "title": "Unlocking the Codex harness: how we built the App Server",
+  "site": "openai.com",
+  "via": "jina",
+  "chars": 18575,
+  "collection": "industry",
+  "warning": "http 403 text/html; charset=UTF-8",
+  "fetched_at": "2026-11-10T20:09:46Z"
+}

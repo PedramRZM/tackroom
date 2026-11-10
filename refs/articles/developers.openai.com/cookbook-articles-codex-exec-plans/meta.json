@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://developers.openai.com/cookbook/articles/codex_exec_plans",
+  "title": "Using PLANS.md for multi-hour problem solving",
+  "date": "2025-10-01",
+  "site": "OpenAI Developers",
+  "description": "Codex and the gpt-5.2-codex model (recommended) can be used to implement complex tasks that take significant time to research, design, and i",
+  "via": "direct",
+  "chars": 16368,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:09:55Z"
+}

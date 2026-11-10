@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/claude-code-best-practices",
+  "title": "Claude Code Best Practices",
+  "date": "2025-04-18",
+  "site": "AnthropicAI",
+  "description": "A blog post covering tips and tricks that have proven effective for using Claude Code across various codebases, languages, and environments.",
+  "via": "direct",
+  "chars": 26291,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:58Z"
+}

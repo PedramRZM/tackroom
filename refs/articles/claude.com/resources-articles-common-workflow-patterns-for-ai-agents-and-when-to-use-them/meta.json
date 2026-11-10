@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/common-workflow-patterns-for-ai-agents-and-when-to-use-them",
+  "title": "Common workflow patterns for AI agents",
+  "date": "2026-03-05",
+  "site": "Anthropic",
+  "description": "Practical guidance on how to structure agent tasks using three common workflow patterns, with tradeoffs and benefits for each.",
+  "via": "direct",
+  "chars": 13478,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:14Z"
+}

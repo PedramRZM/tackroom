@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents",
+  "title": "Effective context engineering for AI agents",
+  "date": "2025-09-29",
+  "site": "AnthropicAI",
+  "description": "In this post, we explore strategies for effectively curating and managing their context.",
+  "via": "direct",
+  "chars": 21408,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:06Z"
+}

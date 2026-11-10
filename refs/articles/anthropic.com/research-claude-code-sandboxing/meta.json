@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/claude-code-sandboxing",
+  "title": "Making Claude Code safer with sandboxing",
+  "date": "2025-10-20",
+  "site": "AnthropicAI",
+  "description": "Learn how sandboxing in Claude Code uses filesystem and network isolation to protect developers, reduce permission prompts, and increase autonomy.",
+  "via": "direct",
+  "chars": 7254,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:59Z"
+}

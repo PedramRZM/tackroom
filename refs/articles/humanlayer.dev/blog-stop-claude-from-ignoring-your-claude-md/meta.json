@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.humanlayer.dev/blog/stop-claude-from-ignoring-your-claude-md",
+  "title": "Getting Claude to Actually Read Your CLAUDE.md",
+  "date": "2026-03-17",
+  "site": "Getting Claude to Actually Read Your CLAUDE.md",
+  "description": "Using conditional XML blocks to make Claude pay attention to the right instructions at the right time.",
+  "via": "direct",
+  "chars": 2648,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:04Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/",
+  "title": "A harness for every task: dynamic workflows in Claude Code / claude.dev Blog",
+  "author": "Thariq Shihipar; Sid Bidasaria",
+  "date": "2026-06-02",
+  "site": "claude.dev Blog",
+  "description": "Claude Code can now write and orchestrate its own multi-agent harness on the fly. Here's how dynamic workflows work, and the patterns that get the most out of them.",
+  "via": "jina",
+  "chars": 19641,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:12Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/skills",
+  "title": "Introducing Agent Skills",
+  "author": "Anwar Haneef; GM; Head",
+  "date": "2025-10-16",
+  "site": "Anthropic",
+  "description": "Claude can now use Skills to improve how it performs specific tasks. Skills are folders that include instructions, scripts, and resources that Claude can load when needed. Claude will only access a skill when it's relevant to the task at hand.",
+  "via": "direct",
+  "chars": 6391,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:03Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://github.com/dyoshikawa/rulesync/releases/latest",
+  "title": "Release v43.8.0 · dyoshikawa/rulesync",
+  "date": "2026-11-08",
+  "site": "GitHub",
+  "description": "What's Changed Behavior Changes mcp (Google Antigravity IDE / CLI / plugin): the canonical timeout (milliseconds) is now written as Antigravity's timeoutSeconds (integer seconds, rounded up; a ne...",
+  "via": "direct",
+  "chars": 4324,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:14:03Z"
+}

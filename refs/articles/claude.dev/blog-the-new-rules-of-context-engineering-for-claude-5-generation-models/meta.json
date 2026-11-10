@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/",
+  "title": "The new rules of context engineering for Claude 5 generation models / claude.dev Blog",
+  "author": "Thariq Shihipar",
+  "date": "2026-07-24",
+  "site": "claude.dev Blog",
+  "description": "We removed over 80% of Claude Code's system prompt for more advanced models. How to apply the lessons we learned to your own context engineering in Claude Code and with your own agents.",
+  "via": "jina",
+  "chars": 11644,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:04Z"
+}

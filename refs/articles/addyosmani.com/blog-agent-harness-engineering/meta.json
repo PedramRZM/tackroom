@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://addyosmani.com/blog/agent-harness-engineering/",
+  "title": "Agent Harness Engineering | AddyOsmani.com",
+  "author": "Addy Osmani",
+  "date": "2026-04-19",
+  "site": "AddyOsmani.com",
+  "description": "A coding agent is the model plus everything you build around it: prompts, tools, context policies, hooks, sandboxes, feedback loops. Harness engineering is t...",
+  "via": "direct",
+  "chars": 20981,
+  "collection": "people-osmani",
+  "fetched_at": "2026-11-10T20:14:11Z"
+}

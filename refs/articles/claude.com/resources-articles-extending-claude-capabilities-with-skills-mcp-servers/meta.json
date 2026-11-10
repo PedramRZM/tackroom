@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/extending-claude-capabilities-with-skills-mcp-servers",
+  "title": "Extending Claude's capabilities with skills and MCP",
+  "date": "2025-12-19",
+  "site": "Anthropic",
+  "description": "Learn how skills and MCP work together to build agents that follow your workflows and use external tools effectively. Best practices and real-world examples.",
+  "via": "direct",
+  "chars": 12648,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:02Z"
+}

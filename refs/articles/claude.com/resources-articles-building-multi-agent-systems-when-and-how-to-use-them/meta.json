@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/building-multi-agent-systems-when-and-how-to-use-them",
+  "title": "When to use multi-agent systems (and when not to)",
+  "date": "2026-01-23",
+  "site": "Anthropic",
+  "description": "When to use multi-agent systems—and when not to. Anthropic's guidance on orchestrator patterns, building on our multi-agent research system.",
+  "via": "direct",
+  "chars": 24071,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:11Z"
+}

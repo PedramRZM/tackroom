@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.humanlayer.dev/blog/show-me-skill",
+  "title": "show-me: a coding agent skill for compact visual representations",
+  "date": "2026-08-12",
+  "site": "humanlayer.dev",
+  "description": "A small skill that makes coding agents explain software with diagrams, trees, diffs, and focused visual artifacts.",
+  "via": "direct",
+  "chars": 8364,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:03Z"
+}

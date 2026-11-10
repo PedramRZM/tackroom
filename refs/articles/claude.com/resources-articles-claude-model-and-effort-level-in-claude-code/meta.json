@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-model-and-effort-level-in-claude-code",
+  "title": "Claude Code effort level and model selection",
+  "author": "Lydia Hallie",
+  "date": "2026-07-07",
+  "site": "Anthropic",
+  "description": "Anthropic's guide to the Claude Code effort level and model selection: when to raise or lower effort—low, medium, high, and max—and how to choose between Claude Fable, Opus, and Sonnet.",
+  "via": "direct",
+  "chars": 12987,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:32Z"
+}

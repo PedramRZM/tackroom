@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+  "title": "The lethal trifecta for AI agents: private data, untrusted content, and external communication",
+  "author": "Simon Willison",
+  "date": "2025-06-16",
+  "site": "Simon Willison’s Weblog",
+  "description": "If you are a user of LLM systems that use tools (you can call them “AI agents” if you like) it is critically important that you understand the risk of …",
+  "via": "direct",
+  "chars": 9993,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:43Z"
+}

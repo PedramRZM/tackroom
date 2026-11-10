@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/a-guide-to-cost-visibility-and-control-in-claude",
+  "title": "A guide to cost visibility and control in Claude",
+  "date": "2026-08-04",
+  "site": "Anthropic",
+  "description": "How IT admins can see and manage Claude costs, including spend caps, model controls, usage analytics, and API features like prompt caching and batch processing.",
+  "via": "direct",
+  "chars": 7332,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:10Z"
+}

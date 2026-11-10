@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/subagents-in-claude-code",
+  "title": "How and when to use subagents in Claude Code",
+  "date": "2026-04-07",
+  "site": "Anthropic",
+  "description": "When to delegate research, parallelize tasks, or get a fresh review with Claude Code subagents—and when to stick with the main session.",
+  "via": "direct",
+  "chars": 17152,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:07Z"
+}

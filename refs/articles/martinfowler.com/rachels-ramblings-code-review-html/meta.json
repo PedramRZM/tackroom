@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/rachels-ramblings/code-review.html",
+  "title": "Maybe We Shouldn't Be Reviewing All This Code",
+  "author": "Rachel Laycock",
+  "date": "2026-09-02",
+  "site": "martinfowler.com",
+  "description": "Or, perhaps the problem isn't that AI has broken code review, maybe it’s that we've been using code review to solve the wrong problems",
+  "via": "direct",
+  "chars": 6910,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:14:33Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/getting-started-with-claude-code-mods/",
+  "title": "Getting started with Claude Code mods / claude.dev Blog",
+  "author": "Addy Osmani",
+  "date": "2026-10-01",
+  "site": "claude.dev Blog",
+  "description": "Mods are hooks that ship inside plugins and run inside your Claude Code session. Build one from an empty folder, then tour two larger mods.",
+  "via": "jina",
+  "chars": 27169,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:42Z"
+}

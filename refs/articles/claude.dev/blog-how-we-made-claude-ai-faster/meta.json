@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+  "title": "How we made claude.ai 3x faster in two weeks / claude.dev Blog",
+  "author": "Raymond Wang; Sam Attard; Issac G",
+  "date": "2026-09-23",
+  "site": "claude.dev Blog",
+  "description": "Inside our performance sprint: the benchmarks Claude built, the loop each Slack thread ran, and the guardrails that let us ship 3,000 changes safely.",
+  "via": "jina",
+  "chars": 23313,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:57Z"
+}

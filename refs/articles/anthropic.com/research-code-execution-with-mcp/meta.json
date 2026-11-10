@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/code-execution-with-mcp",
+  "title": "Code execution with MCP for efficient agents",
+  "date": "2025-11-04",
+  "site": "AnthropicAI",
+  "description": "Learn how code execution with the Model Context Protocol enables agents to handle more tools while using fewer tokens, reducing context overhead by up to 98.7%.",
+  "via": "direct",
+  "chars": 9413,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:01Z"
+}

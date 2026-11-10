@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/network/",
+  "title": "Network",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Configure proxies and custom certificate authorities.",
+  "via": "direct",
+  "chars": 3890,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:55Z"
+}

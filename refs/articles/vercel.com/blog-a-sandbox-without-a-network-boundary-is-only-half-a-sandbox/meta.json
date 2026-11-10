@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/a-sandbox-without-a-network-boundary-is-only-half-a-sandbox",
+  "title": "A sandbox without a network boundary is only half a sandbox",
+  "author": "Brandon Tuttle",
+  "date": "2026-08-10",
+  "site": "Vercel",
+  "description": "Running untrusted code safely requires more than separating it from the host. You also have to control what that code can reach.",
+  "via": "direct",
+  "chars": 11174,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:46Z"
+}

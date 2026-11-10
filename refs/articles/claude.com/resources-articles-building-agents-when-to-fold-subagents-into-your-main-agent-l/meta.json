@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+  "title": "Building agents: When to fold subagents into your main agent loop",
+  "author": "Diane Sarkis",
+  "date": "2026-10-22",
+  "site": "Anthropic",
+  "description": "When to consider using fewer subagents and how to migrate the into your main loop.",
+  "via": "direct",
+  "chars": 18644,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:09Z"
+}

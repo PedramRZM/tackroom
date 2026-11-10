@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://engineering.atspotify.com/2025/12/feedback-loops-background-coding-agents-part-3",
+  "title": "Background Coding Agents: Predictable Results Through Strong Feedback Loops (Honk, Part 3) | Spotify Engineering",
+  "author": "Max Charas; Marc Bruggmann",
+  "date": "2025-12-09",
+  "site": "Spotify Engineering",
+  "description": "This is part 3 in our series about Spotify's journey with background coding agents (internal codename: “Honk”) and the future of large-scale software maintenance. See also , , and .",
+  "via": "direct",
+  "chars": 8043,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:23Z"
+}

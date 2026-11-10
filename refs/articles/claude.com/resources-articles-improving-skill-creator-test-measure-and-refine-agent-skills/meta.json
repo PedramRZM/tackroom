@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/improving-skill-creator-test-measure-and-refine-agent-skills",
+  "title": "Improving skill-creator: Test, measure, and refine Agent Skills",
+  "date": "2026-03-03",
+  "site": "Anthropic",
+  "description": "Skill authors now have tools to verify their skills work, catch regressions, and improve descriptions—no coding required.",
+  "via": "direct",
+  "chars": 6013,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:00:57Z"
+}

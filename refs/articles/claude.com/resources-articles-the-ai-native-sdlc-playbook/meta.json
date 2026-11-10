@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/the-ai-native-sdlc-playbook",
+  "title": "The AI-native SDLC playbook",
+  "author": "Louis Claxton",
+  "date": "2026-08-21",
+  "site": "Anthropic",
+  "description": "Anthropic's stage-by-stage playbook for the AI-native SDLC: how teams plan, design, build, test, deploy, and maintain software with Claude.",
+  "via": "direct",
+  "chars": 46369,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:58Z"
+}

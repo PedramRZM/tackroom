@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/cli/providers/",
+  "title": "Providers",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Connect provider accounts and manage credentials from the CLI and TUI.",
+  "via": "direct",
+  "chars": 4759,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:48Z"
+}

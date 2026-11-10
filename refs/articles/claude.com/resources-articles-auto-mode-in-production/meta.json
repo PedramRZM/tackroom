@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/auto-mode-in-production",
+  "title": "Running auto mode in production",
+  "author": "Molly Vorwerck",
+  "date": "2026-08-07",
+  "site": "Anthropic",
+  "description": "How customers like Nuro, Gusto, and Garner Health use auto mode to drive safer, longer running coding workflows.",
+  "via": "direct",
+  "chars": 9287,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:27Z"
+}

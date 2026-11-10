@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://addyosmani.com/blog/code-agent-orchestra/",
+  "title": "The Code Agent Orchestra - what makes multi-agent coding work | AddyOsmani.com",
+  "author": "Addy Osmani",
+  "date": "2026-03-26",
+  "site": "AddyOsmani.com",
+  "description": "The shift from conductor to orchestrator: how to coordinate teams of AI coding agents in real-world software workflows. From subagents to Agent Teams to purp...",
+  "via": "direct",
+  "chars": 30237,
+  "collection": "people-osmani",
+  "fetched_at": "2026-11-10T20:14:13Z"
+}

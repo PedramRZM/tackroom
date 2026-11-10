@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://lucumr.pocoo.org/2025/12/13/skills-vs-mcp/",
+  "title": "Skills vs Dynamic MCP Loadouts",
+  "author": "Armin Ronacher",
+  "date": "2025-12-13",
+  "site": "Armin Ronacher's Thoughts and Writings",
+  "description": "Some findings of using Skills and the loadout pattern with MCP.",
+  "via": "direct",
+  "chars": 6912,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:41Z"
+}

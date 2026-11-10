@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://github.com/openai/codex/releases/latest",
+  "title": "Release 0.167.0 · openai/codex",
+  "date": "2026-11-06",
+  "site": "GitHub",
+  "description": "New Features Open the agent command center with codex agents --no-daemon. The command center and session picker now mark unread results (#58238, #58239, #58263, #58264). Switch between connected b...",
+  "via": "direct",
+  "chars": 22505,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:11:02Z"
+}

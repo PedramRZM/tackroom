@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude",
+  "title": "The complete guide to building Skills for Claude",
+  "date": "2026-01-26",
+  "site": "Anthropic",
+  "description": "Learn how to build effective skills for Claude: technical requirements, design patterns, testing, and distribution. Build your first skill in one sitting.",
+  "via": "direct",
+  "chars": 612,
+  "collection": "anthropic-guides",
+  "fetched_at": "2026-11-10T20:04:22Z"
+}

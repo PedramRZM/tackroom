@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://api-docs.deepseek.com/quick_start/agent_integrations/reasonix",
+  "title": "Integrate with Reasonix | DeepSeek API Docs",
+  "date": "2026-01-01",
+  "site": "api-docs.deepseek.com",
+  "description": "Reasonix is a coding agent that runs in the terminal.",
+  "via": "direct",
+  "chars": 1136,
+  "collection": "model-routes",
+  "fetched_at": "2026-11-10T20:10:17Z"
+}

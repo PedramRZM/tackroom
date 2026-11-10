@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+  "title": "OpenAI’s accidental cyberattack against Hugging Face is science fiction that happened",
+  "author": "Simon Willison",
+  "date": "2026-07-22",
+  "site": "Simon Willison’s Weblog",
+  "description": "This story is wild. The short version: OpenAI were running a cybersecurity test against an unreleased model, with the model’s guardrail features turned off. Rather than solve the test, the …",
+  "via": "direct",
+  "chars": 14079,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:27Z"
+}

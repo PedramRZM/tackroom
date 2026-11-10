@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/introducing-dynamic-workflows-in-claude-code",
+  "title": "Introducing dynamic workflows",
+  "author": "Alessio Vallero; Senior Engineering Manager",
+  "date": "2026-05-28",
+  "site": "Anthropic",
+  "description": "Dynamic workflows in Claude Code let Claude tackle the most challenging tasks by executing across 10s to 100s of parallel subagents, and checking its work before anything reaches you.",
+  "via": "direct",
+  "chars": 5560,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:16Z"
+}

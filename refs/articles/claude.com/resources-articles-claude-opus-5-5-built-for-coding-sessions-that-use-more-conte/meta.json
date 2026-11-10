@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-opus-5-5-built-for-coding-sessions-that-use-more-context",
+  "title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
+  "author": "Michael Segner",
+  "date": "2026-09-24",
+  "site": "Anthropic",
+  "description": "Our latest Opus model is priced and trained to optimize costs for how developers code now.",
+  "via": "direct",
+  "chars": 5984,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:35Z"
+}

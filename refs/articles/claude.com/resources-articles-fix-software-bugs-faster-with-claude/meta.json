@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/fix-software-bugs-faster-with-claude",
+  "title": "Fix software bugs faster with Claude",
+  "date": "2025-10-28",
+  "site": "Anthropic",
+  "description": "Turn debugging from detective work into systematic problem-solving. Analyze errors, trace root causes, and implement fixes faster. Debugging code is time-consuming and tedious. And the hardest part isn't usually fixing the bug itself; it’s understanding why your code broke in the first place.",
+  "via": "direct",
+  "chars": 9576,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:27Z"
+}

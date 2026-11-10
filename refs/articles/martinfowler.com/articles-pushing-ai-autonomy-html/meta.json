@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/articles/pushing-ai-autonomy.html",
+  "title": "How far can we push AI autonomy in code generation?",
+  "author": "Birgitta Böckeler",
+  "date": "2025-08-05",
+  "site": "martinfowler.com",
+  "description": "An experiment to test the limits of autonomous code generation by LLMs",
+  "via": "direct",
+  "chars": 30152,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:33Z"
+}

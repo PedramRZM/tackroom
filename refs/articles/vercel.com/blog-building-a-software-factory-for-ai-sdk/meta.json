@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/building-a-software-factory-for-ai-sdk",
+  "title": "Building a software factory for AI SDK",
+  "author": "Lars Grammel",
+  "date": "2026-08-12",
+  "site": "Vercel",
+  "description": "We built a software factory that autonomously processes issues and PRs for the AI SDK, with humans in control of every merge. Four weeks in, it authors 25-40% of merged PRs.",
+  "via": "direct",
+  "chars": 14205,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:39Z"
+}

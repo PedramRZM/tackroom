@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/",
+  "title": "What a task costs on Opus 5.5 / claude.dev Blog",
+  "author": "Addy Osmani",
+  "date": "2026-09-25",
+  "site": "claude.dev Blog",
+  "description": "The same token price can cost very different amounts per task. Learn what Claude Code tasks cost on Opus 5.5 and which settings change the bill.",
+  "via": "jina",
+  "chars": 30300,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:50:50Z"
+}

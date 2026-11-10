@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/how-we-contain-claude",
+  "title": "How we contain Claude across products",
+  "date": "2026-05-25",
+  "site": "AnthropicAI",
+  "description": "As agents grow more capable, so does their potential blast radius. Here's what we learned building containment for claude.ai, Claude Code, and Cowork.",
+  "via": "direct",
+  "chars": 26365,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:12Z"
+}

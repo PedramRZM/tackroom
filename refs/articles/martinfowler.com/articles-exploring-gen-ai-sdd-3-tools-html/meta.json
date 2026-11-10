@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html",
+  "title": "Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl",
+  "author": "Birgitta Böckeler",
+  "date": "2025-10-15",
+  "site": "martinfowler.com",
+  "description": "Notes from my colleagues on AI-assisted software delivery",
+  "via": "direct",
+  "chars": 20068,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:29Z"
+}

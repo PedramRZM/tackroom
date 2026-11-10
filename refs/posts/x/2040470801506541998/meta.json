@@ -1,0 +1,13 @@
+{
+  "type": "post",
+  "url": "https://x.com/karpathy/status/2040470801506541998",
+  "title": "Wow, this tweet went very viral!",
+  "author": "Andrej Karpathy (@karpathy)",
+  "date": "2026-04-04",
+  "site": "x.com",
+  "via": "fxtwitter",
+  "chars": 4276,
+  "likes": 26779,
+  "collection": "x-posts",
+  "fetched_at": "2026-11-10T20:25:43Z"
+}

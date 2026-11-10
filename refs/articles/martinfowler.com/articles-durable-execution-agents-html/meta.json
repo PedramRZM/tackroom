@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/articles/durable-execution-agents.html",
+  "title": "Long-horizon agents and durable execution",
+  "author": "Kiran Prakash",
+  "date": "2026-11-10",
+  "site": "martinfowler.com",
+  "description": "How to build long-horizon agents that survive failures: what durable execution handles, and what it leaves to the design of the harness.",
+  "via": "direct",
+  "chars": 42854,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:14:32Z"
+}

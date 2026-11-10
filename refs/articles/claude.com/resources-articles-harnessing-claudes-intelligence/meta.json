@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/harnessing-claudes-intelligence",
+  "title": "Agent harness design: 3 patterns for harnessing Claude's intelligence",
+  "date": "2026-04-02",
+  "site": "Anthropic",
+  "description": "Agent harness design is deciding what scaffolding your agent needs—and what it doesn't. Three patterns from Anthropic for building harnesses that improve as Claude does.",
+  "via": "direct",
+  "chars": 14347,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:02:10Z"
+}

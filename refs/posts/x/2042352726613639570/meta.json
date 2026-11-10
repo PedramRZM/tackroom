@@ -1,0 +1,14 @@
+{
+  "type": "post",
+  "url": "https://x.com/bcherny/status/2042352726613639570",
+  "title": "After a few hours, I had a PR. The results were solid -- P99 got 3x faster after porting to TypeScript!",
+  "author": "Boris Cherny (@bcherny)",
+  "date": "2026-04-09",
+  "site": "x.com",
+  "via": "fxtwitter",
+  "chars": 169,
+  "likes": 144,
+  "replying_to": "2042352725481177315",
+  "collection": "x-posts",
+  "fetched_at": "2026-11-10T20:12:15Z"
+}

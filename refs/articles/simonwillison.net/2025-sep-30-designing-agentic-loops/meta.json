@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2025/Sep/30/designing-agentic-loops/",
+  "title": "Designing agentic loops",
+  "author": "Simon Willison",
+  "date": "2025-09-30",
+  "site": "Simon Willison’s Weblog",
+  "description": "Coding agents like Anthropic’s Claude Code and OpenAI’s Codex CLI represent a genuine step change in how useful LLMs can be for producing working code. These agents can now directly …",
+  "via": "direct",
+  "chars": 10971,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:42Z"
+}

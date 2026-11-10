@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/",
+  "title": "Lessons from building Claude Code: Prompt caching is everything / claude.dev Blog",
+  "author": "Thariq Shihipar",
+  "date": "2026-04-30",
+  "site": "claude.dev Blog",
+  "description": "Best practices for optimizing prompt caching in Claude Code, including how to most effectively structure your prompt, use tools, and layer on compaction.",
+  "via": "jina",
+  "chars": 10292,
+  "collection": "anthropic-claude-dev",
+  "fetched_at": "2026-11-10T20:51:21Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/claude-api-skill",
+  "title": "Claude API skill now in CodeRabbit, JetBrains, Resolve AI, and Warp",
+  "author": "Denis Shiryaev; Head",
+  "date": "2026-04-29",
+  "site": "Anthropic",
+  "description": "Today, CodeRabbit, JetBrains, Resolve AI, and Warp are bundling the claude-api skill, giving developers production-ready Claude API code wherever they build. First introduced in Claude Code in March, the skill is now in more of the tools developers already use.",
+  "via": "direct",
+  "chars": 3820,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:16Z"
+}

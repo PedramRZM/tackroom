@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://rulesync.dyoshikawa.com/reference/supported-tools",
+  "title": "Rulesync",
+  "date": "2026-11-03",
+  "site": "rulesync.dyoshikawa.com",
+  "description": "A Node.js CLI tool that automatically generates configuration files for various AI development tools from unified AI rule files.",
+  "via": "direct",
+  "chars": 20980,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:14:13Z"
+}

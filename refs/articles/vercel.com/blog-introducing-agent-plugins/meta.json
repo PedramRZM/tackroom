@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://vercel.com/blog/introducing-agent-plugins",
+  "title": "Introducing Agent Plugins",
+  "author": "Jonathan Hefner",
+  "date": "2026-08-06",
+  "site": "Vercel",
+  "description": "Agent Plugins 1.0.0 is an open, vendor-neutral specification for packaging Agent Skills and MCP servers into distributable plugins that compatible AI agent clients can discover and load.",
+  "via": "direct",
+  "chars": 5769,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:50Z"
+}

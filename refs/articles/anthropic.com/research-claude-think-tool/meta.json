@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/claude-think-tool",
+  "title": "The \"think\" tool for complex tool use",
+  "date": "2025-03-20",
+  "site": "AnthropicAI",
+  "description": "A blog post for developers, describing a new method for complex tool-use situations",
+  "via": "direct",
+  "chars": 11458,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:05:00Z"
+}

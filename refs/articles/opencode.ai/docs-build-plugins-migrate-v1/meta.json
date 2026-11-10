@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://opencode.ai/docs/build/plugins/migrate-v1/",
+  "title": "Migrate plugins from V1",
+  "date": "2026-01-01",
+  "site": "opencode.ai",
+  "description": "Port a V1 plugin's tools and hooks to the V2 plugin API.",
+  "via": "direct",
+  "chars": 13074,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:10:53Z"
+}

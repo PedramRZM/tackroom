@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
+  "title": "Connect Qwen Code to tools via MCP",
+  "date": "2026-10-19",
+  "site": "Qwen Code Docs",
+  "description": "Qwen Code can connect to external tools and data sources through the Model Context Protocol (MCP).",
+  "via": "direct",
+  "chars": 22347,
+  "collection": "model-routes",
+  "fetched_at": "2026-11-10T20:13:05Z"
+}

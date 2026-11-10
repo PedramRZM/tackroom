@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family",
+  "title": "Maintaining software with the GPT-6 family | OpenAI Developers",
+  "date": "2026-10-14",
+  "site": "OpenAI Developers",
+  "description": "How OpenAI’s Core Experimentation team uses Codex to remove unused code, clean up stale experiments, and improve CI.",
+  "via": "direct",
+  "chars": 8966,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:32Z"
+}

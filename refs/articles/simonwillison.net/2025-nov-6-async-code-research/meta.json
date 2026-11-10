@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2025/Nov/6/async-code-research/",
+  "title": "Code research projects with async coding agents like Claude Code and Codex",
+  "author": "Simon Willison",
+  "date": "2025-11-06",
+  "site": "Simon Willison’s Weblog",
+  "description": "I’ve been experimenting with a pattern for LLM usage recently that’s working out really well: asynchronous code research tasks. Pick a research question, spin up an asynchronous coding agent and …",
+  "via": "direct",
+  "chars": 13597,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:37Z"
+}

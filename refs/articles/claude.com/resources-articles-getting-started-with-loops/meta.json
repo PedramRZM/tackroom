@@ -1,0 +1,16 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/getting-started-with-loops",
+  "title": "Loop engineering: Getting started with loops",
+  "author": "Delba de Oliveira; Michael Segner",
+  "date": "2026-06-30",
+  "site": "Anthropic",
+  "description": "Loop engineering with Anthropic's Claude Code: design turn-based, goal, time, and proactive agent loops that run to a stop condition.",
+  "via": "direct",
+  "chars": 10502,
+  "tags": [
+    "loops"
+  ],
+  "collection": "anthropic",
+  "fetched_at": "2026-11-10T19:59:49Z"
+}

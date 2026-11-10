@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/model-providers/",
+  "title": "Model Providers",
+  "date": "2026-11-09",
+  "site": "Qwen Code Docs",
+  "description": "Qwen Code allows you to configure multiple model providers through the modelProviders setting in your settings.json.",
+  "via": "direct",
+  "chars": 55990,
+  "collection": "model-routes",
+  "fetched_at": "2026-11-10T20:12:55Z"
+}

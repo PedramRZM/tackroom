@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://github.com/vercel-labs/skills/releases/latest",
+  "title": "Release v1.8.0 · vercel-labs/skills",
+  "date": "2026-11-10",
+  "site": "GitHub",
+  "description": "Changelog fix(update): keep locked skill paths inside the clone (#2726) feat(add): skip agents whose install path is a category dir (#2725) fix(installer): check all install targets before writing...",
+  "via": "direct",
+  "chars": 5347,
+  "collection": "harness-docs",
+  "fetched_at": "2026-11-10T20:14:07Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://cursor.com/blog/cloud-agent-lessons",
+  "title": "What we’ve learned building cloud agents · Cursor",
+  "author": "Josh Ma",
+  "date": "2026-06-02",
+  "site": "Cursor",
+  "description": "After a year of shipping cloud agents, we’ve learned that environment quality, durable execution, and the right harness boundaries drive autonomous performance.",
+  "via": "direct",
+  "chars": 8362,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:12:51Z"
+}

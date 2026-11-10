@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/building-agents-with-skills-equipping-agents-for-specialized-work",
+  "title": "Building agents with Skills: Equipping agents for specialized work",
+  "date": "2026-01-22",
+  "site": "Anthropic",
+  "description": "Learn how Agent Skills package domain expertise for AI agents—turning capable generalists into knowledgeable specialists through organized files and workflows.",
+  "via": "direct",
+  "chars": 12762,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:01:00Z"
+}

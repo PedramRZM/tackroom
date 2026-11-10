@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/building-c-compiler",
+  "title": "Building a C compiler with parallel Claudes",
+  "date": "2026-02-05",
+  "site": "AnthropicAI",
+  "description": "How a team of 16 parallel Claude agents wrote a Rust-based C compiler from scratch, capable of compiling the Linux kernel, and what it taught us.",
+  "via": "direct",
+  "chars": 14831,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:54Z"
+}

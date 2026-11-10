@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.anthropic.com/research/advanced-tool-use",
+  "title": "Introducing advanced tool use for Claude",
+  "date": "2025-11-24",
+  "site": "AnthropicAI",
+  "description": "Claude can now discover, learn, and execute tools dynamically to enable agents that take action in the real world. Here’s how.",
+  "via": "direct",
+  "chars": 18255,
+  "collection": "anthropic-engineering",
+  "fetched_at": "2026-11-10T20:04:49Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://www.humanlayer.dev/blog/context-efficient-backpressure",
+  "title": "Context-Efficient Backpressure for Coding Agents",
+  "date": "2025-09-12",
+  "site": "humanlayer.dev",
+  "description": "Verbose test and build output wastes tokens and confuses agents. A simple wrapper script can dramatically improve agent performance.",
+  "via": "direct",
+  "chars": 5946,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:10:48Z"
+}

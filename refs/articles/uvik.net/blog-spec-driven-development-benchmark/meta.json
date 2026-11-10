@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://uvik.net/blog/spec-driven-development-benchmark/",
+  "title": "Spec-Driven Development Benchmark 2026: Does SDD Work? | Uvik Software",
+  "author": "Paul Francis",
+  "date": "2026-09-24",
+  "site": "Uvik Software",
+  "description": "Does spec-driven development work? Uvik Software tested Spec Kit, Kiro, BMAD, OpenSpec and no spec on 50 production Python tickets. Merge rate, cost, time.",
+  "via": "direct",
+  "chars": 38586,
+  "collection": "task-management",
+  "fetched_at": "2026-11-10T20:17:45Z"
+}

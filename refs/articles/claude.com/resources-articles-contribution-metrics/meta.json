@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/contribution-metrics",
+  "title": "Measure Claude Code's impact with contribution metrics",
+  "date": "2026-01-29",
+  "site": "Anthropic",
+  "description": "Measure how Claude Code impacts your team's velocity. Track PRs shipped and code committed with GitHub integration—no extra tools required.",
+  "via": "direct",
+  "chars": 2723,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:17Z"
+}

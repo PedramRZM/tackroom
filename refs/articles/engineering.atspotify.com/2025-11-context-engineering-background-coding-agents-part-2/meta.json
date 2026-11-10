@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://engineering.atspotify.com/2025/11/context-engineering-background-coding-agents-part-2",
+  "title": "Background Coding Agents: Context Engineering (Honk, Part 2) | Spotify Engineering",
+  "author": "Max Charas; Marc Bruggmann",
+  "date": "2025-11-24",
+  "site": "Spotify Engineering",
+  "description": "This is part 2 in our series about Spotify's journey with background coding agents (internal codename: “Honk”) and the future of large-scale software maintenance. See also , , and .",
+  "via": "direct",
+  "chars": 10489,
+  "collection": "industry",
+  "fetched_at": "2026-11-10T20:13:21Z"
+}

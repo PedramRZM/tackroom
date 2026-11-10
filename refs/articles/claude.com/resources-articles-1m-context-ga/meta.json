@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/articles/1m-context-ga",
+  "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+  "author": "Mayank Agarwal; Founder; CTO",
+  "date": "2026-03-13",
+  "site": "Anthropic",
+  "description": "Standard pricing now applies across the full 1M window for both models, with no long-context premium. Media limits expand to 600 images or PDF pages.",
+  "via": "direct",
+  "chars": 4971,
+  "collection": "anthropic-claude-com",
+  "fetched_at": "2026-11-10T20:03:12Z"
+}

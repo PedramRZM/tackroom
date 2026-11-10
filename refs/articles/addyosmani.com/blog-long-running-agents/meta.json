@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://addyosmani.com/blog/long-running-agents/",
+  "title": "Long-running Agents | AddyOsmani.com",
+  "author": "Addy Osmani",
+  "date": "2026-04-28",
+  "site": "AddyOsmani.com",
+  "description": "A long-running agent can keep making progress over hours, days, or weeks. It can do this across many context windows and sandboxes, recover from failure, lea...",
+  "via": "direct",
+  "chars": 28192,
+  "collection": "people-osmani",
+  "fetched_at": "2026-11-10T20:14:09Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2026/Feb/10/showboat-and-rodney/",
+  "title": "Introducing Showboat and Rodney, so agents can demo what they’ve built",
+  "author": "Simon Willison",
+  "date": "2026-02-10",
+  "site": "Simon Willison’s Weblog",
+  "description": "A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their supervisor. This goes beyond automated tests—we need artifacts …",
+  "via": "direct",
+  "chars": 12646,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:35Z"
+}

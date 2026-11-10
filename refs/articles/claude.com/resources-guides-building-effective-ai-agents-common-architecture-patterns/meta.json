@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://claude.com/resources/guides/building-effective-ai-agents/common-architecture-patterns",
+  "title": "Common architecture patterns - Building effective AI agents: Architecture patterns",
+  "date": "2026-01-01",
+  "site": "Anthropic",
+  "description": "Learn how to build AI agents that deliver business value: single-agent and multi-agent architecture patterns, agentic workflows, and a decision framework.",
+  "via": "direct",
+  "chars": 50160,
+  "collection": "anthropic-guides",
+  "fetched_at": "2026-11-10T20:03:51Z"
+}

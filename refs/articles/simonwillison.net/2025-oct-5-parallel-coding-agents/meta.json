@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents/",
+  "title": "Embracing the parallel coding agent lifestyle",
+  "author": "Simon Willison",
+  "date": "2025-10-05",
+  "site": "Simon Willison’s Weblog",
+  "description": "For a while now I’ve been hearing from engineers who run multiple coding agents at once—firing up several Claude Code or Codex CLI instances at the same time, sometimes in …",
+  "via": "direct",
+  "chars": 8855,
+  "collection": "people-willison",
+  "fetched_at": "2026-11-10T20:13:41Z"
+}
