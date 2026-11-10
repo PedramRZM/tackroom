@@ -4,6 +4,7 @@
 set -u
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 guard="$here/../guard.py"
+py="$(command -v /usr/bin/python3 || command -v python3)"  # skip version-manager shims: they add ~0.2s per call
 repo="$(mktemp -d)"
 trap 'rm -rf "$repo"' EXIT
 git -C "$repo" init -q
@@ -16,7 +17,7 @@ expect() {
   local want="$1" name="$2" json="$3"
   shift 3
   local code
-  printf '%s' "$json" | python3 "$guard" "$@" >/dev/null 2>&1
+  printf '%s' "$json" | "$py" "$guard" "$@" >/dev/null 2>&1
   code=$?
   if { [ "$want" = allow ] && [ "$code" -eq 0 ]; } || { [ "$want" = block ] && [ "$code" -eq 2 ]; }; then
     pass=$((pass + 1))

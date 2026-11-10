@@ -78,7 +78,8 @@ Boris Cherny's advice is to delete instruction files, skills and hooks every six
 re-add only what the model still gets wrong (`notes/talks-anthropic-and-others.md`, finding 2).
 
 Status: judgement call on the exact size. One dissent is recorded: Steinberger's 800-line file
-(`notes/industry-practices.md`, finding 1).
+(`notes/industry-practices.md`, finding 1). At the other end, Cherny said in October 2026 that
+he no longer uses a custom `CLAUDE.md` at all (`notes/x-posts.md`, his setup over time).
 
 ## 5. One instruction file for every harness
 
@@ -109,7 +110,10 @@ loaded, so a skill that restates default behaviour is wasted context
 
 Status: Claude Code's validator passes all eight; a live session listed the five
 model-invocable ones and hid the three user-only ones. None has an eval yet, which the same
-sources say is the real test (principle 12).
+sources say is the real test (principle 12). There is a serious case for fewer still: Lopopolo
+reports "Zero skills in my repos", and that his team saw lower token use and higher eval scores
+after deleting hundreds of skills in favour of a few plus docs (`notes/x-posts.md`, "Skills").
+Delete any of these that does not change what the model does.
 
 ## 7. Tests are the judge, and the judge is protected
 
@@ -137,11 +141,16 @@ skipped some (`notes/devcon-2-harness-specs-verification.md`, finding 4). Anthro
 rounds at three after one pull request looped more than fifty times
 (`notes/anthropic-claude-dev-blog.md` (h)).
 
-Status: judgement call on when to use it. It is expensive: in Anthropic's one direct comparison
-a full planner, generator and evaluator harness cost about twenty times a solo run
-(`notes/anthropic-engineering.md`, finding 3). The workflow asks for it only on tasks that
-needed a plan. The reviewer has shell access because it must run checks, so "does not edit" is
-an instruction to it, not a restriction.
+Status: judgement call on when to use it, and the practice itself is disputed. It is expensive:
+in Anthropic's one direct comparison a full planner, generator and evaluator harness cost about
+twenty times a solo run (`notes/anthropic-engineering.md`, finding 3). The Claude Code team
+promoted adversarial review through August 2026; by November Thariq Shihipar, after leaving
+Anthropic, endorsed the view that it is mostly a waste of tokens next to empirical and formal
+verification, and OpenAI's Ryan Lopopolo argues for collaborative review instead
+(`notes/x-posts.md`, "Adversarial review"; `posts/x/2117670540148347273`). So the workflow asks
+for a second opinion only on tasks that needed a plan, and principle 1 (a check the agent can
+run) comes first. The reviewer has shell access because it must run checks, so "does not edit"
+is an instruction to it, not a restriction.
 
 ## 9. State lives in files and the tracker, not in the conversation
 
