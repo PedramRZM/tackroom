@@ -1,0 +1,12 @@
+# agent tooling (from claude--template)
+# Personal Claude Code overrides and local state
+.claude/settings.local.json
+.claude/worktrees/
+CLAUDE.local.md
+# Vendor API keys for scripts/agent/claude-with and opencode.json
+.env.agents.local
+# Per-project homes for harnesses that keep sessions and credentials in their home folder
+.codex-home/
+.kimi-home/
+# Browser tool scratch output
+.playwright-mcp/

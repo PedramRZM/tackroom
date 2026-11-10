@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# The one command that says whether this repository is healthy.
+#
+#   scripts/agent/check           everything: types, lint, tests
+#   scripts/agent/check --quick   the fast subset (no full test run); used by the Stop hook
+#
+# Agents run this before saying work is done, and paste its output as evidence. It prints one
+# line per check and shows a failing check's last lines, so a pass costs almost no context.
+#
+# EDIT THE CHECKS SECTION for this repository. Until you do, the detection below guesses from
+# the files it finds. Exit codes: 0 all passed, 1 a check failed, 3 nothing is configured.
+set -uo pipefail
+cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+
+quick=0
+[ "${1:-}" = "--quick" ] && quick=1
+failed=0
+ran=0
+
+run() { # run <name> <command...>
+  local name="$1" out start
+  shift
+  ran=$((ran + 1))
+  start=$SECONDS
+  if out="$("$@" 2>&1)"; then
+    echo "ok    $name ($((SECONDS - start))s)"
+  else
+    failed=$((failed + 1))
+    echo "FAIL  $name ($((SECONDS - start))s): $*"
+    printf '%s\n' "$out" | tail -n 60 | sed 's/^/      /'
+  fi
+}
+full() { [ "$quick" -eq 0 ] && run "$@"; return 0; }
+
+# ---------------------------------------------------------------- CHECKS (edit me)
+# Replace the detection below with this repository's exact commands, for example:
+#   run  typecheck  pnpm -s typecheck
+#   run  lint       pnpm -s lint
+#   full tests      pnpm -s test
+# `run` always runs; `full` is skipped with --quick.
+
+has_script() { [ -f package.json ] && grep -q "\"$1\"[[:space:]]*:" package.json; }
+if [ -f package.json ]; then
+  pm=npm
+  [ -f pnpm-lock.yaml ] && pm=pnpm
+  [ -f yarn.lock ] && pm=yarn
+  { [ -f bun.lock ] || [ -f bun.lockb ]; } && pm=bun
+  has_script typecheck && run typecheck "$pm" run --silent typecheck
+  has_script lint && run lint "$pm" run --silent lint
+  has_script test && full tests "$pm" run --silent test
+fi
+if [ -f Cargo.toml ]; then
+  run cargo-check cargo check --quiet --all-targets
+  full cargo-clippy cargo clippy --quiet --all-targets -- -D warnings
+  full cargo-test cargo test --quiet
+fi
+if [ -f pyproject.toml ]; then
+  py=()
+  [ -f uv.lock ] && py=(uv run --quiet)
+  grep -q 'ruff' pyproject.toml && run ruff "${py[@]}" ruff check --quiet .
+  grep -q 'mypy' pyproject.toml && run mypy "${py[@]}" mypy --no-error-summary .
+  grep -q 'pytest' pyproject.toml && full pytest "${py[@]}" pytest -q
+fi
+if [ -f go.mod ]; then
+  run go-vet go vet ./...
+  full go-test go test ./...
+fi
+# ---------------------------------------------------------------- end of checks
+
+if [ "$ran" -eq 0 ]; then
+  echo "no checks configured: edit scripts/agent/check"
+  exit 3
+fi
+[ "$failed" -eq 0 ] && echo "all $ran checks passed" || echo "$failed of $ran checks failed"
+[ "$failed" -eq 0 ]

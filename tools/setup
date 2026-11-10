@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+"""Copy the template into one project. A convenience for doing by hand what `cp` would do.
+
+    tools/setup <project-dir> [--codex] [--opencode] [--tracker issues|files] [--dry-run]
+
+Always copied: AGENTS.md, CLAUDE.md, WORKFLOW.md, .claude/ (settings, hooks, skills, agents),
+.agents/memory/, scripts/agent/, docs/ skeleton, the pull request template.
+--codex      adds .codex/ and links .agents/skills/<name> to the skills in .claude/skills/
+--opencode   adds opencode.json and .opencode/
+--tracker    issues: GitHub issue forms and the label script; files: tasks/
+             (default: issues when the project has a github.com remote, otherwise files)
+
+Existing files are never overwritten: they are listed as "kept" so you can compare by hand.
+Nothing is committed. This script keeps no record of what it copied and manages nothing
+afterwards; the project owns the files from here on.
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+TEMPLATE = Path(__file__).resolve().parent.parent / "template"
+CODEX = (".codex/",)
+OPENCODE = ("opencode.json", ".opencode/")
+ISSUES = (".github/ISSUE_TEMPLATE/", "scripts/agent/github-labels")
+FILES = ("tasks/",)
+NEVER = ("gitignore.additions", "README.md")
+
+
+def selected(rel: str, args: argparse.Namespace) -> bool:
+    def under(groups: tuple[str, ...]) -> bool:
+        return any(rel == g or rel.startswith(g) for g in groups)
+
+    if rel in NEVER or "/tests/" in rel or "__pycache__" in rel:
+        return False
+    if under(CODEX):
+        return args.codex
+    if under(OPENCODE):
+        return args.opencode
+    if under(ISSUES):
+        return args.tracker == "issues"
+    if under(FILES):
+        return args.tracker == "files"
+    return True
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("project")
+    parser.add_argument("--codex", action="store_true")
+    parser.add_argument("--opencode", action="store_true")
+    parser.add_argument("--tracker", choices=("issues", "files"))
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    project = Path(args.project).expanduser().resolve()
+    if not project.is_dir():
+        sys.exit(f"not a directory: {project}")
+    if project == TEMPLATE.parent or TEMPLATE in project.parents or project == TEMPLATE:
+        sys.exit("that is the template repository itself")
+    if not args.tracker:
+        remote = subprocess.run(["git", "-C", str(project), "remote", "get-url", "origin"],
+                                capture_output=True, text=True, check=False).stdout
+        args.tracker = "issues" if "github.com" in remote else "files"
+
+    copied, kept = [], []
+    for source in sorted(TEMPLATE.rglob("*")):
+        if source.is_dir():
+            continue
+        rel = source.relative_to(TEMPLATE).as_posix()
+        if not selected(rel, args):
+            continue
+        target = project / rel
+        if target.exists() or target.is_symlink():
+            kept.append(rel)
+            continue
+        copied.append(rel)
+        if not args.dry_run:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)  # keeps the executable bit
+
+    links = []
+    if args.codex:
+        for skill in sorted((TEMPLATE / ".claude/skills").iterdir()):
+            link = project / ".agents/skills" / skill.name
+            if link.exists() or link.is_symlink():
+                kept.append(f".agents/skills/{skill.name}")
+                continue
+            links.append(f".agents/skills/{skill.name}")
+            if not args.dry_run:
+                link.parent.mkdir(parents=True, exist_ok=True)
+                os.symlink(f"../../.claude/skills/{skill.name}", link)
+
+    ignore = project / ".gitignore"
+    wanted = [line for line in (TEMPLATE / "gitignore.additions").read_text(encoding="utf-8").splitlines()]
+    present = set(ignore.read_text(encoding="utf-8").splitlines()) if ignore.exists() else set()
+    missing = [line for line in wanted if line and (line.startswith("#") or line not in present)]
+    add_ignore = any(not line.startswith("#") and line not in present for line in wanted if line)
+    if add_ignore and not args.dry_run:
+        with ignore.open("a", encoding="utf-8") as handle:
+            handle.write(("\n" if present else "") + "\n".join(missing) + "\n")
+
+    verb = "would copy" if args.dry_run else "copied"
+    print(f"{project}\n  tracker: {args.tracker}   codex: {args.codex}   opencode: {args.opencode}")
+    print(f"  {verb} {len(copied)} files" + (f", linked {len(links)} skills into .agents/skills" if links else ""))
+    for rel in copied:
+        print(f"    + {rel}")
+    if kept:
+        print(f"  kept {len(kept)} existing (compare with template/ by hand):")
+        for rel in kept:
+            print(f"    = {rel}")
+    if add_ignore:
+        print("  .gitignore: " + ("would add" if args.dry_run else "added") + " the agent tooling entries")
+    print("\nNext, in the project:")
+    print("  1. Fill in AGENTS.md (name, the three commands, the first gotcha). Keep it short.")
+    print("  2. Put the real commands in scripts/agent/check and run it.")
+    print("  3. In WORKFLOW.md, keep the tracker line that applies and delete the other.")
+    if args.tracker == "issues":
+        print("  4. Run scripts/agent/github-labels once to create the labels.")
+    print("  5. Start Claude Code there and accept the trust prompt, so the hooks and allow rules load.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
