@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/common-mistakes-with-react-testing-library",
+  "title": "Common mistakes with React Testing Library",
+  "date": "2020-05-04",
+  "site": "Kentcdodds",
+  "description": "Some mistakes I frequently see people making with React Testing Library.",
+  "via": "direct",
+  "chars": 19495,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:01:57Z"
+}

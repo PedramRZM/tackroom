@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/aha-testing",
+  "title": "AHA Testing 💡",
+  "date": "2019-04-07",
+  "site": "Kentcdodds",
+  "description": "How to apply the \"Avoid Hasty Abstraction\" principle to your test code.",
+  "via": "direct",
+  "chars": 13061,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:01:56Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/static-vs-unit-vs-integration-vs-e2e-tests",
+  "title": "Static vs Unit vs Integration vs E2E Testing for Frontend Apps",
+  "date": "2021-06-03",
+  "site": "Kentcdodds",
+  "description": "What these mean, why they matter, and why they don't",
+  "via": "direct",
+  "chars": 15249,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:01:52Z"
+}

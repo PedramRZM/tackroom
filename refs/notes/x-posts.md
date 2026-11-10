@@ -1,7 +1,8 @@
 # X posts: how the people who build and shape coding agents say they work with them
 
-Sources read: 787 (784 X posts and X articles saved under `refs/posts/x/`, collection `x-posts`, plus 3 press
-pages saved under `refs/articles/` as secondhand evidence for Dario Amodei). All were read in full, including
+Sources read: 787 (784 X posts and X articles under `refs/posts/x/`: 783 saved for this assignment in
+collection `x-posts` and one that was already there; plus 3 press pages saved under `refs/articles/`,
+collection `x-posts-secondhand`, as secondhand evidence for Dario Amodei). All were read in full, including
 the long X articles. Could not fetch: post `2038552880018538749` (@bcherny, linked from a GitHub README; the
 public post API returned 404, probably deleted). No instructions aimed at the reader were found in any source.
 
@@ -24,7 +25,7 @@ Counts per person (posts saved): Boris Cherny 183; Thariq Shihipar 93; @ClaudeDe
 Andrej Karpathy 40; Cat Wu 39; Alex Albert 32; Geoffrey Huntley 25; Peter Steinberger 22; @claudeai 21;
 Addy Osmani 21; Noah Zweben 20; Simon Willison 18; Lydia Hallie 17; Mitchell Hashimoto 17; Ryan Lopopolo 13;
 swyx 12; Steve Yegge 11; Guillermo Rauch 11; Sid Bidasaria 10; Adam Wolff 10; Delba de Oliveira 8;
-Dario Amodei 7; Dickson Tsai 6; Alexander Embiricos 5; @AnthropicAI 5; Tibo Sottiaux 3; 31 context posts by
+Dario Amodei 7; Dickson Tsai 6; Alexander Embiricos 5; @AnthropicAI 5; Tibo Sottiaux 3; 35 context posts by
 others (people being replied to or quoted). Claude Code team and official Anthropic accounts: 544.
 
 ## Cross-cutting findings
@@ -358,8 +359,8 @@ These are statements about where things are or are going. They are not practices
   agents ignore style rules in his instruction files anyway [2035173492447224237, 2026-03-21].
 - Context window size. Anthropic: context rot shows around 300 to 400k tokens on a 1M model and a 400k
   auto-compact setting is a good compromise [2044548257058328723], [2044653085415604473]. OpenAI's Codex
-  lead: 300k was chosen as the default because the numbers were better [2108778939057664357]. A user reports
-  29% lower weekly usage at 400k [2108277836285161798, 2026-10-08]. These agree with each other more than
+  lead: 300k was chosen as the default because the numbers were better [2108778939057664357]. A user estimates
+  a 400k auto-compact setting would have saved 29% of weekly usage [2108277836285161798, 2026-10-08]. These agree with each other more than
   with the marketing of 1M windows.
 - Plan mode's future is unsettled inside the team itself (see (c)).
 - Effort: Boris stays on xhigh while colleagues default to medium; Thariq's tests suggest low or medium for
@@ -904,7 +905,7 @@ Relevance: low to medium.
 
 No coding practice on X; see (d). Relevance: low for a setup, context only.
 
-### Context posts by others (31 posts)
+### Context posts by others (35 posts)
 
 Saved because team members replied to or quoted them: questions that drew Boris's CLAUDE.md answers
 [2007200436781232329], [2007568991364014486]; Lucas Beyer's request for agent-managed memory

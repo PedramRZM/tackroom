@@ -1,0 +1,4272 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.230
+ 
+I<00:00:00.320><c> shipped</c><00:00:00.800><c> 122</c><00:00:02.120><c> PRs</c><00:00:02.600><c> in</c><00:00:02.760><c> 24</c><00:00:03.280><c> hours</c><00:00:03.840><c> straight</c>
+
+00:00:04.230 --> 00:00:04.240
+I shipped 122 PRs in 24 hours straight
+ 
+
+00:00:04.240 --> 00:00:06.270
+I shipped 122 PRs in 24 hours straight
+out<00:00:04.360><c> of</c><00:00:04.440><c> my</c><00:00:04.600><c> software</c><00:00:05.000><c> factory.</c><00:00:05.600><c> And</c><00:00:05.760><c> this</c><00:00:05.960><c> is</c>
+
+00:00:06.270 --> 00:00:06.280
+out of my software factory. And this is
+ 
+
+00:00:06.280 --> 00:00:08.950
+out of my software factory. And this is
+actual<00:00:06.880><c> valuable</c><00:00:07.440><c> work</c><00:00:07.680><c> that</c><00:00:07.920><c> agents</c><00:00:08.320><c> start</c>
+
+00:00:08.950 --> 00:00:08.960
+actual valuable work that agents start
+ 
+
+00:00:08.960 --> 00:00:10.990
+actual valuable work that agents start
+and<00:00:09.200><c> ship</c><00:00:09.600><c> even</c><00:00:09.920><c> when</c><00:00:10.240><c> I'm</c><00:00:10.480><c> busy</c><00:00:10.760><c> doing</c>
+
+00:00:10.990 --> 00:00:11.000
+and ship even when I'm busy doing
+ 
+
+00:00:11.000 --> 00:00:12.950
+and ship even when I'm busy doing
+something<00:00:11.320><c> else,</c><00:00:11.640><c> like</c><00:00:11.920><c> sleeping.</c><00:00:12.720><c> And</c><00:00:12.880><c> in</c>
+
+00:00:12.950 --> 00:00:12.960
+something else, like sleeping. And in
+ 
+
+00:00:12.960 --> 00:00:14.510
+something else, like sleeping. And in
+this<00:00:13.120><c> episode</c><00:00:13.520><c> of</c><00:00:13.600><c> Better</c><00:00:13.800><c> With</c><00:00:13.920><c> Kent,</c><00:00:14.360><c> I'm</c>
+
+00:00:14.510 --> 00:00:14.520
+this episode of Better With Kent, I'm
+ 
+
+00:00:14.520 --> 00:00:17.150
+this episode of Better With Kent, I'm
+going<00:00:14.680><c> to</c><00:00:14.760><c> show</c><00:00:14.960><c> you</c><00:00:15.160><c> exactly</c><00:00:16.080><c> how</c><00:00:16.360><c> I</c><00:00:16.480><c> do</c><00:00:16.680><c> that</c>
+
+00:00:17.150 --> 00:00:17.160
+going to show you exactly how I do that
+ 
+
+00:00:17.160 --> 00:00:19.230
+going to show you exactly how I do that
+on<00:00:17.320><c> a</c><00:00:17.360><c> regular</c><00:00:17.760><c> basis.</c><00:00:18.480><c> So</c><00:00:18.640><c> let's</c><00:00:18.880><c> take</c><00:00:19.040><c> a</c><00:00:19.080><c> look</c>
+
+00:00:19.230 --> 00:00:19.240
+on a regular basis. So let's take a look
+ 
+
+00:00:19.240 --> 00:00:20.910
+on a regular basis. So let's take a look
+at<00:00:19.360><c> an</c><00:00:19.440><c> example</c><00:00:19.840><c> of</c><00:00:19.920><c> what</c><00:00:20.080><c> I</c><00:00:20.120><c> mean.</c><00:00:20.480><c> So</c><00:00:20.680><c> here's</c>
+
+00:00:20.910 --> 00:00:20.920
+at an example of what I mean. So here's
+ 
+
+00:00:20.920 --> 00:00:22.510
+at an example of what I mean. So here's
+a<00:00:21.000><c> friction</c><00:00:21.360><c> issue.</c><00:00:21.760><c> The</c><00:00:21.880><c> record</c><00:00:22.200><c> table</c>
+
+00:00:22.510 --> 00:00:22.520
+a friction issue. The record table
+ 
+
+00:00:22.520 --> 00:00:25.310
+a friction issue. The record table
+expand<00:00:23.040><c> mode</c><00:00:23.440><c> call</c><00:00:23.720><c> span</c><00:00:24.520><c> at</c><00:00:24.840><c> a</c><00:00:24.920><c> phantom</c>
+
+00:00:25.310 --> 00:00:25.320
+expand mode call span at a phantom
+ 
+
+00:00:25.320 --> 00:00:27.550
+expand mode call span at a phantom
+column<00:00:26.040><c> when</c><00:00:26.200><c> a</c><00:00:26.240><c> responsive</c><00:00:26.720><c> column</c><00:00:27.080><c> is</c>
+
+00:00:27.550 --> 00:00:27.560
+column when a responsive column is
+ 
+
+00:00:27.560 --> 00:00:29.350
+column when a responsive column is
+hidden.<00:00:28.240><c> So</c><00:00:28.440><c> this</c><00:00:28.640><c> is</c><00:00:28.760><c> the</c><00:00:28.920><c> table</c><00:00:29.200><c> it's</c>
+
+00:00:29.350 --> 00:00:29.360
+hidden. So this is the table it's
+ 
+
+00:00:29.360 --> 00:00:30.870
+hidden. So this is the table it's
+talking<00:00:29.680><c> about.</c><00:00:30.120><c> We've</c><00:00:30.120><c> got</c><00:00:30.280><c> this</c><00:00:30.400><c> table</c>
+
+00:00:30.870 --> 00:00:30.880
+talking about. We've got this table
+ 
+
+00:00:30.880 --> 00:00:32.790
+talking about. We've got this table
+component<00:00:31.320><c> all</c><00:00:31.520><c> over</c><00:00:31.680><c> the</c><00:00:31.760><c> place</c><00:00:32.439><c> and</c>
+
+00:00:32.790 --> 00:00:32.800
+component all over the place and
+ 
+
+00:00:32.800 --> 00:00:34.550
+component all over the place and
+apparently<00:00:33.440><c> there</c><00:00:33.560><c> was</c><00:00:33.720><c> a</c><00:00:33.800><c> user</c><00:00:34.080><c> experience</c>
+
+00:00:34.550 --> 00:00:34.560
+apparently there was a user experience
+ 
+
+00:00:34.560 --> 00:00:36.990
+apparently there was a user experience
+issue<00:00:34.920><c> that</c><00:00:35.120><c> this</c><00:00:35.320><c> agent</c><00:00:35.640><c> ran</c><00:00:35.920><c> into</c>
+
+00:00:36.990 --> 00:00:37.000
+issue that this agent ran into
+ 
+
+00:00:37.000 --> 00:00:38.910
+issue that this agent ran into
+and<00:00:37.200><c> it</c><00:00:37.320><c> cost</c><00:00:37.560><c> about</c><00:00:37.760><c> 20</c><00:00:38.040><c> minutes</c><00:00:38.360><c> of</c><00:00:38.520><c> visual</c>
+
+00:00:38.910 --> 00:00:38.920
+and it cost about 20 minutes of visual
+ 
+
+00:00:38.920 --> 00:00:41.030
+and it cost about 20 minutes of visual
+debugging.<00:00:39.760><c> Well,</c><00:00:40.000><c> it</c><00:00:40.160><c> opened</c><00:00:40.440><c> up</c><00:00:40.560><c> this</c><00:00:40.720><c> issue</c>
+
+00:00:41.030 --> 00:00:41.040
+debugging. Well, it opened up this issue
+ 
+
+00:00:41.040 --> 00:00:42.910
+debugging. Well, it opened up this issue
+and<00:00:41.120><c> then</c><00:00:41.280><c> another</c><00:00:41.640><c> agent</c><00:00:41.920><c> came</c><00:00:42.120><c> through</c><00:00:42.720><c> and</c>
+
+00:00:42.910 --> 00:00:42.920
+and then another agent came through and
+ 
+
+00:00:42.920 --> 00:00:45.230
+and then another agent came through and
+fixed<00:00:43.240><c> it</c><00:00:43.640><c> in</c><00:00:43.800><c> this</c><00:00:43.960><c> pull</c><00:00:44.160><c> request.</c><00:00:44.840><c> So</c><00:00:45.080><c> it</c>
+
+00:00:45.230 --> 00:00:45.240
+fixed it in this pull request. So it
+ 
+
+00:00:45.240 --> 00:00:47.350
+fixed it in this pull request. So it
+opened<00:00:45.520><c> it</c><00:00:45.640><c> under</c><00:00:45.840><c> my</c><00:00:46.040><c> account,</c><00:00:46.560><c> but</c><00:00:46.960><c> I</c><00:00:47.120><c> was</c>
+
+00:00:47.350 --> 00:00:47.360
+opened it under my account, but I was
+ 
+
+00:00:47.360 --> 00:00:49.830
+opened it under my account, but I was
+not<00:00:47.600><c> involved</c><00:00:48.200><c> in</c><00:00:48.320><c> this</c><00:00:48.560><c> at</c><00:00:48.800><c> all.</c><00:00:49.240><c> So</c><00:00:49.560><c> let's</c>
+
+00:00:49.830 --> 00:00:49.840
+not involved in this at all. So let's
+ 
+
+00:00:49.840 --> 00:00:51.630
+not involved in this at all. So let's
+dive<00:00:50.040><c> a</c><00:00:50.080><c> little</c><00:00:50.320><c> deeper</c><00:00:51.000><c> in</c><00:00:51.240><c> how</c><00:00:51.440><c> this</c>
+
+00:00:51.630 --> 00:00:51.640
+dive a little deeper in how this
+ 
+
+00:00:51.640 --> 00:00:53.590
+dive a little deeper in how this
+friction<00:00:52.000><c> process</c><00:00:52.440><c> works.</c><00:00:52.880><c> The</c><00:00:52.960><c> problem</c><00:00:53.320><c> is</c>
+
+00:00:53.590 --> 00:00:53.600
+friction process works. The problem is
+ 
+
+00:00:53.600 --> 00:00:54.990
+friction process works. The problem is
+that<00:00:53.880><c> we've</c><00:00:54.120><c> changed</c><00:00:54.560><c> the</c><00:00:54.640><c> way</c><00:00:54.800><c> that</c><00:00:54.920><c> we</c>
+
+00:00:54.990 --> 00:00:55.000
+that we've changed the way that we
+ 
+
+00:00:55.000 --> 00:00:57.710
+that we've changed the way that we
+develop<00:00:55.360><c> software</c><00:00:56.000><c> a</c><00:00:56.080><c> lot</c><00:00:56.440><c> recently.</c><00:00:57.360><c> And</c><00:00:57.640><c> the</c>
+
+00:00:57.710 --> 00:00:57.720
+develop software a lot recently. And the
+ 
+
+00:00:57.720 --> 00:00:59.430
+develop software a lot recently. And the
+way<00:00:57.880><c> that</c><00:00:58.040><c> things</c><00:00:58.320><c> used</c><00:00:58.600><c> to</c><00:00:58.680><c> go</c><00:00:59.000><c> is</c><00:00:59.200><c> you</c><00:00:59.320><c> would</c>
+
+00:00:59.430 --> 00:00:59.440
+way that things used to go is you would
+ 
+
+00:00:59.440 --> 00:01:01.910
+way that things used to go is you would
+be<00:00:59.560><c> working</c><00:01:00.080><c> in</c><00:01:00.120><c> the</c><00:01:00.200><c> code</c><00:01:00.480><c> base</c><00:01:00.760><c> yourself</c><00:01:01.560><c> and</c>
+
+00:01:01.910 --> 00:01:01.920
+be working in the code base yourself and
+ 
+
+00:01:01.920 --> 00:01:03.510
+be working in the code base yourself and
+you<00:01:02.040><c> would</c><00:01:02.240><c> run</c><00:01:02.440><c> into</c><00:01:02.680><c> some</c><00:01:02.840><c> sort</c><00:01:03.040><c> of</c><00:01:03.160><c> issue</c>
+
+00:01:03.510 --> 00:01:03.520
+you would run into some sort of issue
+ 
+
+00:01:03.520 --> 00:01:05.430
+you would run into some sort of issue
+like,<00:01:03.800><c> oh</c><00:01:03.920><c> the</c><00:01:04.040><c> server</c><00:01:04.400><c> is</c><00:01:04.519><c> taking</c><00:01:04.839><c> so</c><00:01:05.080><c> long</c><00:01:05.360><c> to</c>
+
+00:01:05.430 --> 00:01:05.440
+like, oh the server is taking so long to
+ 
+
+00:01:05.440 --> 00:01:07.190
+like, oh the server is taking so long to
+start<00:01:05.720><c> up</c><00:01:05.920><c> or</c><00:01:06.000><c> the</c><00:01:06.120><c> test</c><00:01:06.440><c> take</c><00:01:06.600><c> forever</c><00:01:06.840><c> to</c><00:01:06.960><c> run</c>
+
+00:01:07.190 --> 00:01:07.200
+start up or the test take forever to run
+ 
+
+00:01:07.200 --> 00:01:09.430
+start up or the test take forever to run
+or<00:01:07.280><c> these</c><00:01:07.480><c> are</c><00:01:07.600><c> really</c><00:01:07.880><c> flaky</c><00:01:08.280><c> tests</c><00:01:09.000><c> or</c>
+
+00:01:09.430 --> 00:01:09.440
+or these are really flaky tests or
+ 
+
+00:01:09.440 --> 00:01:11.070
+or these are really flaky tests or
+whatever.<00:01:09.880><c> It's</c><00:01:10.040><c> really</c><00:01:10.240><c> hard</c><00:01:10.480><c> to</c><00:01:10.520><c> verify</c><00:01:10.920><c> my</c>
+
+00:01:11.070 --> 00:01:11.080
+whatever. It's really hard to verify my
+ 
+
+00:01:11.080 --> 00:01:13.910
+whatever. It's really hard to verify my
+fixes.<00:01:12.000><c> And</c><00:01:12.320><c> so</c><00:01:12.560><c> you</c><00:01:12.800><c> would</c><00:01:13.000><c> go</c><00:01:13.160><c> ahead</c><00:01:13.480><c> and</c><00:01:13.600><c> fix</c>
+
+00:01:13.910 --> 00:01:13.920
+fixes. And so you would go ahead and fix
+ 
+
+00:01:13.920 --> 00:01:16.910
+fixes. And so you would go ahead and fix
+those<00:01:14.240><c> problems.</c><00:01:15.160><c> But</c><00:01:15.600><c> agents,</c><00:01:16.360><c> they</c><00:01:16.640><c> they</c>
+
+00:01:16.910 --> 00:01:16.920
+those problems. But agents, they they
+ 
+
+00:01:16.920 --> 00:01:18.870
+those problems. But agents, they they
+can<00:01:17.200><c> be</c><00:01:17.320><c> proactive</c><00:01:17.960><c> sometimes,</c><00:01:18.400><c> but</c><00:01:18.560><c> a</c><00:01:18.600><c> lot</c><00:01:18.840><c> of</c>
+
+00:01:18.870 --> 00:01:18.880
+can be proactive sometimes, but a lot of
+ 
+
+00:01:18.880 --> 00:01:20.670
+can be proactive sometimes, but a lot of
+the<00:01:19.000><c> time</c><00:01:19.560><c> they're</c><00:01:19.720><c> going</c><00:01:19.920><c> to</c><00:01:20.000><c> be</c><00:01:20.120><c> like,</c><00:01:20.440><c> oh</c><00:01:20.600><c> I</c>
+
+00:01:20.670 --> 00:01:20.680
+the time they're going to be like, oh I
+ 
+
+00:01:20.680 --> 00:01:22.310
+the time they're going to be like, oh I
+found<00:01:20.920><c> a</c><00:01:21.040><c> reasonable</c><00:01:21.600><c> work</c><00:01:21.800><c> around</c><00:01:22.040><c> for</c><00:01:22.160><c> this</c>
+
+00:01:22.310 --> 00:01:22.320
+found a reasonable work around for this
+ 
+
+00:01:22.320 --> 00:01:23.870
+found a reasonable work around for this
+so<00:01:22.440><c> I'm</c><00:01:22.600><c> just</c><00:01:22.800><c> going</c><00:01:22.920><c> to</c><00:01:23.000><c> ignore</c><00:01:23.320><c> it.</c><00:01:23.440><c> But</c><00:01:23.560><c> it</c>
+
+00:01:23.870 --> 00:01:23.880
+so I'm just going to ignore it. But it
+ 
+
+00:01:23.880 --> 00:01:27.150
+so I'm just going to ignore it. But it
+compounds<00:01:24.520><c> and</c><00:01:24.640><c> it</c><00:01:24.800><c> explodes</c><00:01:25.840><c> in</c><00:01:26.200><c> how</c><00:01:26.840><c> much</c>
+
+00:01:27.150 --> 00:01:27.160
+compounds and it explodes in how much
+ 
+
+00:01:27.160 --> 00:01:29.630
+compounds and it explodes in how much
+friction<00:01:27.800><c> you</c><00:01:28.040><c> actually</c><00:01:28.440><c> end</c><00:01:28.600><c> up</c><00:01:28.840><c> feeling</c>
+
+00:01:29.630 --> 00:01:29.640
+friction you actually end up feeling
+ 
+
+00:01:29.640 --> 00:01:31.430
+friction you actually end up feeling
+when<00:01:29.840><c> you've</c><00:01:30.000><c> got</c><00:01:30.200><c> so</c><00:01:30.320><c> many</c><00:01:30.600><c> agents</c><00:01:31.160><c> who</c><00:01:31.320><c> are</c>
+
+00:01:31.430 --> 00:01:31.440
+when you've got so many agents who are
+ 
+
+00:01:31.440 --> 00:01:34.550
+when you've got so many agents who are
+discovering<00:01:32.400><c> this</c><00:01:32.640><c> work</c><00:01:32.880><c> around</c><00:01:33.840><c> when</c><00:01:34.200><c> in</c>
+
+00:01:34.550 --> 00:01:34.560
+discovering this work around when in
+ 
+
+00:01:34.560 --> 00:01:36.350
+discovering this work around when in
+reality<00:01:35.080><c> you</c><00:01:35.240><c> really</c><00:01:35.480><c> just</c><00:01:35.760><c> want</c><00:01:36.080><c> to</c><00:01:36.200><c> have</c>
+
+00:01:36.350 --> 00:01:36.360
+reality you really just want to have
+ 
+
+00:01:36.360 --> 00:01:38.630
+reality you really just want to have
+those<00:01:36.560><c> things</c><00:01:36.840><c> fixed.</c><00:01:37.520><c> And</c><00:01:37.640><c> so</c><00:01:37.760><c> what</c><00:01:37.960><c> you</c><00:01:38.080><c> need</c>
+
+00:01:38.630 --> 00:01:38.640
+those things fixed. And so what you need
+ 
+
+00:01:38.640 --> 00:01:40.830
+those things fixed. And so what you need
+is<00:01:38.800><c> to</c><00:01:38.880><c> turn</c><00:01:39.160><c> your</c><00:01:39.360><c> agents</c><00:01:39.800><c> into</c><00:01:40.120><c> complainers.</c>
+
+00:01:40.830 --> 00:01:40.840
+is to turn your agents into complainers.
+ 
+
+00:01:40.840 --> 00:01:42.030
+is to turn your agents into complainers.
+And<00:01:40.960><c> that's</c><00:01:41.160><c> one</c><00:01:41.280><c> of</c><00:01:41.360><c> the</c><00:01:41.480><c> things</c><00:01:41.760><c> that</c><00:01:41.880><c> my</c>
+
+00:01:42.030 --> 00:01:42.040
+And that's one of the things that my
+ 
+
+00:01:42.040 --> 00:01:44.430
+And that's one of the things that my
+ship<00:01:42.320><c> PR</c><00:01:42.680><c> skill</c><00:01:43.120><c> tells</c><00:01:43.440><c> the</c><00:01:43.520><c> agents</c><00:01:43.880><c> to</c><00:01:44.000><c> do.</c><00:01:44.240><c> So</c>
+
+00:01:44.430 --> 00:01:44.440
+ship PR skill tells the agents to do. So
+ 
+
+00:01:44.440 --> 00:01:46.310
+ship PR skill tells the agents to do. So
+this<00:01:44.680><c> is</c><00:01:44.840><c> just</c><00:01:45.080><c> the</c><00:01:45.280><c> standard</c><00:01:45.720><c> process</c><00:01:46.200><c> that</c>
+
+00:01:46.310 --> 00:01:46.320
+this is just the standard process that
+ 
+
+00:01:46.320 --> 00:01:49.070
+this is just the standard process that
+we<00:01:46.400><c> go</c><00:01:46.600><c> by</c><00:01:47.200><c> for</c><00:01:47.560><c> agents</c><00:01:47.960><c> to</c><00:01:48.440><c> take</c><00:01:48.720><c> the</c><00:01:48.840><c> work</c>
+
+00:01:49.070 --> 00:01:49.080
+we go by for agents to take the work
+ 
+
+00:01:49.080 --> 00:01:50.550
+we go by for agents to take the work
+that<00:01:49.200><c> they've</c><00:01:49.360><c> done,</c><00:01:49.960><c> verify</c><00:01:50.400><c> that</c>
+
+00:01:50.550 --> 00:01:50.560
+that they've done, verify that
+ 
+
+00:01:50.560 --> 00:01:52.190
+that they've done, verify that
+everything<00:01:50.920><c> is</c><00:01:51.040><c> working</c><00:01:51.400><c> well,</c><00:01:51.720><c> and</c><00:01:51.880><c> get</c><00:01:52.080><c> it</c>
+
+00:01:52.190 --> 00:01:52.200
+everything is working well, and get it
+ 
+
+00:01:52.200 --> 00:01:54.230
+everything is working well, and get it
+shipped<00:01:52.600><c> into</c><00:01:52.960><c> production.</c><00:01:53.720><c> And</c><00:01:53.840><c> we'll</c><00:01:53.960><c> dive</c>
+
+00:01:54.230 --> 00:01:54.240
+shipped into production. And we'll dive
+ 
+
+00:01:54.240 --> 00:01:56.110
+shipped into production. And we'll dive
+deeper<00:01:54.600><c> into</c><00:01:55.080><c> all</c><00:01:55.280><c> the</c><00:01:55.400><c> mechanics</c><00:01:55.880><c> of</c><00:01:56.000><c> how</c>
+
+00:01:56.110 --> 00:01:56.120
+deeper into all the mechanics of how
+ 
+
+00:01:56.120 --> 00:01:59.070
+deeper into all the mechanics of how
+that<00:01:56.400><c> works</c><00:01:56.960><c> later.</c><00:01:57.760><c> but</c><00:01:58.360><c> one</c><00:01:58.560><c> of</c><00:01:58.680><c> the</c><00:01:58.800><c> things</c>
+
+00:01:59.070 --> 00:01:59.080
+that works later. but one of the things
+ 
+
+00:01:59.080 --> 00:02:01.830
+that works later. but one of the things
+that<00:01:59.240><c> it</c><00:01:59.400><c> does</c><00:02:00.040><c> is</c><00:02:00.240><c> it</c><00:02:00.440><c> handles</c><00:02:01.160><c> filing</c>
+
+00:02:01.830 --> 00:02:01.840
+that it does is it handles filing
+ 
+
+00:02:01.840 --> 00:02:04.630
+that it does is it handles filing
+friction<00:02:02.240><c> reports.</c><00:02:03.000><c> And</c><00:02:03.240><c> so</c><00:02:03.520><c> it</c><00:02:03.880><c> uses</c><00:02:04.440><c> this</c>
+
+00:02:04.630 --> 00:02:04.640
+friction reports. And so it uses this
+ 
+
+00:02:04.640 --> 00:02:07.670
+friction reports. And so it uses this
+package<00:02:05.160><c> on</c><00:02:05.400><c> Cody</c><00:02:06.120><c> that</c><00:02:06.880><c> has</c><00:02:07.120><c> these</c><00:02:07.320><c> different</c>
+
+00:02:07.670 --> 00:02:07.680
+package on Cody that has these different
+ 
+
+00:02:07.680 --> 00:02:10.190
+package on Cody that has these different
+steps<00:02:08.119><c> as</c><00:02:08.320><c> it's</c><00:02:08.479><c> going</c><00:02:08.800><c> through</c><00:02:09.440><c> the</c><00:02:09.720><c> process</c>
+
+00:02:10.190 --> 00:02:10.200
+steps as it's going through the process
+ 
+
+00:02:10.200 --> 00:02:12.870
+steps as it's going through the process
+of<00:02:10.360><c> getting</c><00:02:11.040><c> something</c><00:02:11.480><c> from</c><00:02:12.000><c> development</c>
+
+00:02:12.870 --> 00:02:12.880
+of getting something from development
+ 
+
+00:02:12.880 --> 00:02:15.670
+of getting something from development
+into<00:02:13.080><c> production.</c><00:02:14.040><c> And</c><00:02:14.280><c> one</c><00:02:14.480><c> of</c><00:02:14.560><c> those</c><00:02:15.120><c> is</c><00:02:15.360><c> to</c>
+
+00:02:15.670 --> 00:02:15.680
+into production. And one of those is to
+ 
+
+00:02:15.680 --> 00:02:17.550
+into production. And one of those is to
+file<00:02:16.040><c> friction.</c><00:02:16.480><c> So</c><00:02:16.600><c> after</c><00:02:16.920><c> you've</c><00:02:17.120><c> merged</c>
+
+00:02:17.550 --> 00:02:17.560
+file friction. So after you've merged
+ 
+
+00:02:17.560 --> 00:02:19.750
+file friction. So after you've merged
+and<00:02:17.800><c> and</c><00:02:17.920><c> gotten</c><00:02:18.200><c> it</c><00:02:18.280><c> deployed,</c><00:02:18.959><c> then</c><00:02:19.360><c> look</c><00:02:19.640><c> at</c>
+
+00:02:19.750 --> 00:02:19.760
+and and gotten it deployed, then look at
+ 
+
+00:02:19.760 --> 00:02:21.750
+and and gotten it deployed, then look at
+your<00:02:20.080><c> experience</c><00:02:20.800><c> in</c><00:02:20.920><c> developing</c><00:02:21.480><c> in</c><00:02:21.600><c> this</c>
+
+00:02:21.750 --> 00:02:21.760
+your experience in developing in this
+ 
+
+00:02:21.760 --> 00:02:23.750
+your experience in developing in this
+codebase<00:02:22.280><c> and</c><00:02:22.400><c> if</c><00:02:22.520><c> you</c><00:02:22.640><c> had</c><00:02:23.000><c> any</c><00:02:23.200><c> paper</c><00:02:23.520><c> cuts</c>
+
+00:02:23.750 --> 00:02:23.760
+codebase and if you had any paper cuts
+ 
+
+00:02:23.760 --> 00:02:26.190
+codebase and if you had any paper cuts
+or<00:02:23.840><c> any</c><00:02:24.000><c> problems,</c><00:02:24.800><c> then</c><00:02:25.280><c> use</c><00:02:25.600><c> this</c><00:02:25.840><c> other</c>
+
+00:02:26.190 --> 00:02:26.200
+or any problems, then use this other
+ 
+
+00:02:26.200 --> 00:02:29.070
+or any problems, then use this other
+package<00:02:26.840><c> on</c><00:02:27.040><c> Cody</c><00:02:27.680><c> to</c><00:02:27.959><c> file</c><00:02:28.280><c> some</c><00:02:28.480><c> friction</c>
+
+00:02:29.070 --> 00:02:29.080
+package on Cody to file some friction
+ 
+
+00:02:29.080 --> 00:02:30.710
+package on Cody to file some friction
+for<00:02:29.440><c> that</c><00:02:29.680><c> problem</c><00:02:30.000><c> so</c><00:02:30.160><c> that</c><00:02:30.440><c> it</c><00:02:30.560><c> can</c>
+
+00:02:30.710 --> 00:02:30.720
+for that problem so that it can
+ 
+
+00:02:30.720 --> 00:02:32.670
+for that problem so that it can
+ultimately<00:02:31.240><c> get</c><00:02:31.440><c> fixed.</c><00:02:32.120><c> And</c><00:02:32.240><c> I'm</c><00:02:32.360><c> telling</c>
+
+00:02:32.670 --> 00:02:32.680
+ultimately get fixed. And I'm telling
+ 
+
+00:02:32.680 --> 00:02:34.750
+ultimately get fixed. And I'm telling
+you<00:02:32.800><c> that</c><00:02:33.000><c> this</c><00:02:33.360><c> really</c><00:02:33.760><c> greases</c><00:02:34.200><c> the</c><00:02:34.320><c> wheel</c>
+
+00:02:34.750 --> 00:02:34.760
+you that this really greases the wheel
+ 
+
+00:02:34.760 --> 00:02:36.710
+you that this really greases the wheel
+of<00:02:35.040><c> your</c><00:02:35.280><c> software</c><00:02:35.760><c> factory</c><00:02:36.320><c> or</c><00:02:36.560><c> your</c>
+
+00:02:36.710 --> 00:02:36.720
+of your software factory or your
+ 
+
+00:02:36.720 --> 00:02:39.510
+of your software factory or your
+repository<00:02:37.720><c> to</c><00:02:37.840><c> make</c><00:02:38.160><c> agents</c><00:02:38.600><c> more</c><00:02:38.959><c> effective</c>
+
+00:02:39.510 --> 00:02:39.520
+repository to make agents more effective
+ 
+
+00:02:39.520 --> 00:02:41.470
+repository to make agents more effective
+and<00:02:39.640><c> efficient</c><00:02:40.200><c> in</c><00:02:40.360><c> the</c><00:02:40.440><c> codebase</c><00:02:41.200><c> because</c>
+
+00:02:41.470 --> 00:02:41.480
+and efficient in the codebase because
+ 
+
+00:02:41.480 --> 00:02:43.550
+and efficient in the codebase because
+they<00:02:41.600><c> discover</c><00:02:42.120><c> all</c><00:02:42.360><c> kinds</c><00:02:42.720><c> of</c><00:02:42.800><c> things.</c><00:02:43.400><c> And</c>
+
+00:02:43.550 --> 00:02:43.560
+they discover all kinds of things. And
+ 
+
+00:02:43.560 --> 00:02:46.270
+they discover all kinds of things. And
+this<00:02:43.720><c> is</c><00:02:43.920><c> also</c><00:02:44.320><c> how</c><00:02:44.560><c> Lauren</c><00:02:45.200><c> is</c><00:02:45.440><c> able</c><00:02:45.720><c> to</c><00:02:45.880><c> ship</c>
+
+00:02:46.270 --> 00:02:46.280
+this is also how Lauren is able to ship
+ 
+
+00:02:46.280 --> 00:02:48.830
+this is also how Lauren is able to ship
+so<00:02:46.600><c> much</c><00:02:47.360><c> in</c><00:02:47.720><c> her</c><00:02:47.959><c> repository.</c><00:02:48.680><c> She's</c>
+
+00:02:48.830 --> 00:02:48.840
+so much in her repository. She's
+ 
+
+00:02:48.840 --> 00:02:52.510
+so much in her repository. She's
+shipping<00:02:49.400><c> 2,500</c><00:02:50.360><c> PRs</c><00:02:51.160><c> in</c><00:02:51.320><c> a</c><00:02:51.400><c> month</c><00:02:52.080><c> and</c><00:02:52.400><c> I</c>
+
+00:02:52.510 --> 00:02:52.520
+shipping 2,500 PRs in a month and I
+ 
+
+00:02:52.520 --> 00:02:54.430
+shipping 2,500 PRs in a month and I
+asked<00:02:52.760><c> her</c><00:02:52.880><c> about</c><00:02:53.120><c> that.</c><00:02:53.320><c> I</c><00:02:53.360><c> said,</c><00:02:53.600><c> "Hey,</c><00:02:54.240><c> how</c>
+
+00:02:54.430 --> 00:02:54.440
+asked her about that. I said, "Hey, how
+ 
+
+00:02:54.440 --> 00:02:56.750
+asked her about that. I said, "Hey, how
+can<00:02:54.640><c> you</c><00:02:54.800><c> possibly</c><00:02:55.440><c> do</c><00:02:55.680><c> this?</c>
+
+00:02:56.750 --> 00:02:56.760
+can you possibly do this?
+ 
+
+00:02:56.760 --> 00:02:58.870
+can you possibly do this?
+I<00:02:56.959><c> I</c><00:02:57.080><c> feel</c><00:02:57.320><c> like</c><00:02:57.840><c> I'm</c><00:02:58.000><c> the</c><00:02:58.080><c> bottleneck</c><00:02:58.720><c> in</c>
+
+00:02:58.870 --> 00:02:58.880
+I I feel like I'm the bottleneck in
+ 
+
+00:02:58.880 --> 00:03:00.630
+I I feel like I'm the bottleneck in
+making<00:02:59.320><c> product</c><00:02:59.680><c> decisions</c><00:03:00.360><c> in</c><00:03:00.480><c> my</c>
+
+00:03:00.630 --> 00:03:00.640
+making product decisions in my
+ 
+
+00:03:00.640 --> 00:03:03.270
+making product decisions in my
+application<00:03:01.239><c> and</c><00:03:01.400><c> I</c><00:03:01.480><c> cannot</c><00:03:01.920><c> make</c><00:03:02.440><c> 2,500</c>
+
+00:03:03.270 --> 00:03:03.280
+application and I cannot make 2,500
+ 
+
+00:03:03.280 --> 00:03:05.310
+application and I cannot make 2,500
+product<00:03:03.640><c> decisions."</c><00:03:04.519><c> And</c><00:03:04.640><c> so</c><00:03:04.800><c> talking</c><00:03:05.200><c> with</c>
+
+00:03:05.310 --> 00:03:05.320
+product decisions." And so talking with
+ 
+
+00:03:05.320 --> 00:03:07.270
+product decisions." And so talking with
+her<00:03:05.480><c> about</c><00:03:05.760><c> that,</c><00:03:06.320><c> she</c><00:03:06.519><c> said,</c><00:03:06.760><c> "Well,</c><00:03:06.920><c> most</c><00:03:07.200><c> of</c>
+
+00:03:07.270 --> 00:03:07.280
+her about that, she said, "Well, most of
+ 
+
+00:03:07.280 --> 00:03:09.790
+her about that, she said, "Well, most of
+my<00:03:07.400><c> agents</c><00:03:07.959><c> are</c><00:03:08.160><c> working</c><00:03:08.560><c> on</c><00:03:08.720><c> polish</c><00:03:09.400><c> and</c><00:03:09.560><c> code</c>
+
+00:03:09.790 --> 00:03:09.800
+my agents are working on polish and code
+ 
+
+00:03:09.800 --> 00:03:11.710
+my agents are working on polish and code
+quality<00:03:10.400><c> to</c><00:03:10.480><c> help</c><00:03:10.640><c> my</c><00:03:10.760><c> team</c><00:03:11.000><c> move</c><00:03:11.120><c> faster,</c><00:03:11.480><c> bug</c>
+
+00:03:11.710 --> 00:03:11.720
+quality to help my team move faster, bug
+ 
+
+00:03:11.720 --> 00:03:13.270
+quality to help my team move faster, bug
+fixes,<00:03:12.080><c> performance,</c><00:03:12.560><c> improving</c><00:03:12.920><c> CI,</c>
+
+00:03:13.270 --> 00:03:13.280
+fixes, performance, improving CI,
+ 
+
+00:03:13.280 --> 00:03:14.910
+fixes, performance, improving CI,
+refactoring,<00:03:13.880><c> that</c><00:03:14.040><c> sort</c><00:03:14.200><c> of</c><00:03:14.280><c> thing.</c><00:03:14.800><c> So</c>
+
+00:03:14.910 --> 00:03:14.920
+refactoring, that sort of thing. So
+ 
+
+00:03:14.920 --> 00:03:16.509
+refactoring, that sort of thing. So
+we're<00:03:15.040><c> thoughtful</c><00:03:15.480><c> about</c><00:03:15.720><c> the</c><00:03:15.800><c> features</c><00:03:16.320><c> we</c>
+
+00:03:16.509 --> 00:03:16.519
+we're thoughtful about the features we
+ 
+
+00:03:16.519 --> 00:03:18.630
+we're thoughtful about the features we
+add,<00:03:17.040><c> so</c><00:03:17.280><c> in</c><00:03:17.440><c> practice,</c><00:03:18.120><c> there's</c><00:03:18.320><c> not</c><00:03:18.480><c> that</c>
+
+00:03:18.630 --> 00:03:18.640
+add, so in practice, there's not that
+ 
+
+00:03:18.640 --> 00:03:19.910
+add, so in practice, there's not that
+many,<00:03:18.880><c> but</c><00:03:19.040><c> we</c><00:03:19.120><c> try</c><00:03:19.360><c> to</c><00:03:19.480><c> keep</c><00:03:19.640><c> them</c><00:03:19.800><c> high</c>
+
+00:03:19.910 --> 00:03:19.920
+many, but we try to keep them high
+ 
+
+00:03:19.920 --> 00:03:22.509
+many, but we try to keep them high
+quality."<00:03:20.760><c> That's</c><00:03:21.000><c> exactly</c><00:03:21.600><c> the</c><00:03:21.720><c> way</c><00:03:22.000><c> that</c><00:03:22.360><c> I</c>
+
+00:03:22.509 --> 00:03:22.519
+quality." That's exactly the way that I
+ 
+
+00:03:22.519 --> 00:03:25.229
+quality." That's exactly the way that I
+work<00:03:23.160><c> and</c><00:03:23.360><c> have</c><00:03:23.560><c> been</c><00:03:23.720><c> working</c><00:03:24.440><c> as</c><00:03:24.640><c> well</c><00:03:24.959><c> in</c><00:03:25.080><c> my</c>
+
+00:03:25.229 --> 00:03:25.239
+work and have been working as well in my
+ 
+
+00:03:25.239 --> 00:03:27.550
+work and have been working as well in my
+own<00:03:25.480><c> codebase</c><00:03:25.959><c> to</c><00:03:26.080><c> turn</c><00:03:26.320><c> my</c><00:03:26.519><c> codebase</c><00:03:27.280><c> on</c>
+
+00:03:27.550 --> 00:03:27.560
+own codebase to turn my codebase on
+ 
+
+00:03:27.560 --> 00:03:29.830
+own codebase to turn my codebase on
+autopilot<00:03:28.480><c> so</c><00:03:28.680><c> that</c><00:03:28.959><c> my</c><00:03:29.200><c> agents</c><00:03:29.680><c> are</c>
+
+00:03:29.830 --> 00:03:29.840
+autopilot so that my agents are
+ 
+
+00:03:29.840 --> 00:03:31.870
+autopilot so that my agents are
+proactively<00:03:30.640><c> making</c><00:03:31.040><c> polish</c><00:03:31.519><c> and</c><00:03:31.640><c> code</c>
+
+00:03:31.870 --> 00:03:31.880
+proactively making polish and code
+ 
+
+00:03:31.880 --> 00:03:34.470
+proactively making polish and code
+quality<00:03:32.280><c> improvements</c><00:03:33.080><c> to</c><00:03:33.239><c> make</c><00:03:33.640><c> me</c><00:03:33.920><c> faster</c>
+
+00:03:34.470 --> 00:03:34.480
+quality improvements to make me faster
+ 
+
+00:03:34.480 --> 00:03:36.229
+quality improvements to make me faster
+and<00:03:34.600><c> the</c><00:03:34.720><c> other</c><00:03:35.000><c> agents</c><00:03:35.440><c> that</c><00:03:35.680><c> work</c><00:03:35.880><c> inside</c>
+
+00:03:36.229 --> 00:03:36.239
+and the other agents that work inside
+ 
+
+00:03:36.239 --> 00:03:38.270
+and the other agents that work inside
+the<00:03:36.320><c> codebase</c><00:03:36.840><c> faster.</c><00:03:37.640><c> So</c><00:03:37.800><c> of</c><00:03:37.920><c> course</c><00:03:38.160><c> I'm</c>
+
+00:03:38.270 --> 00:03:38.280
+the codebase faster. So of course I'm
+ 
+
+00:03:38.280 --> 00:03:39.550
+the codebase faster. So of course I'm
+going<00:03:38.400><c> to</c><00:03:38.480><c> be</c><00:03:38.600><c> involved</c><00:03:39.040><c> in</c><00:03:39.120><c> the</c><00:03:39.200><c> product</c>
+
+00:03:39.550 --> 00:03:39.560
+going to be involved in the product
+ 
+
+00:03:39.560 --> 00:03:41.590
+going to be involved in the product
+decisions<00:03:40.200><c> and</c><00:03:40.400><c> and</c><00:03:40.600><c> the</c><00:03:40.680><c> product</c><00:03:41.040><c> direction</c>
+
+00:03:41.590 --> 00:03:41.600
+decisions and and the product direction
+ 
+
+00:03:41.600 --> 00:03:42.870
+decisions and and the product direction
+and<00:03:41.720><c> all</c><00:03:41.880><c> of</c><00:03:41.959><c> that.</c><00:03:42.400><c> I'm</c><00:03:42.600><c> still</c><00:03:42.800><c> the</c>
+
+00:03:42.870 --> 00:03:42.880
+and all of that. I'm still the
+ 
+
+00:03:42.880 --> 00:03:44.229
+and all of that. I'm still the
+bottleneck<00:03:43.320><c> there</c><00:03:43.480><c> and</c><00:03:43.600><c> I</c><00:03:43.680><c> actually</c><00:03:44.040><c> feel</c>
+
+00:03:44.229 --> 00:03:44.239
+bottleneck there and I actually feel
+ 
+
+00:03:44.239 --> 00:03:46.630
+bottleneck there and I actually feel
+like<00:03:44.680><c> it</c><00:03:44.800><c> should</c><00:03:45.040><c> continue</c><00:03:45.560><c> to</c><00:03:45.720><c> be</c><00:03:45.920><c> that</c><00:03:46.200><c> way.</c>
+
+00:03:46.630 --> 00:03:46.640
+like it should continue to be that way.
+ 
+
+00:03:46.640 --> 00:03:48.790
+like it should continue to be that way.
+So<00:03:46.800><c> that</c><00:03:46.959><c> begs</c><00:03:47.160><c> the</c><00:03:47.239><c> question,</c><00:03:47.880><c> if</c><00:03:48.120><c> your</c><00:03:48.360><c> agent</c>
+
+00:03:48.790 --> 00:03:48.800
+So that begs the question, if your agent
+ 
+
+00:03:48.800 --> 00:03:50.949
+So that begs the question, if your agent
+is<00:03:49.000><c> making</c><00:03:49.480><c> and</c><00:03:49.640><c> shipping</c><00:03:50.080><c> choices</c><00:03:50.600><c> on</c><00:03:50.760><c> its</c>
+
+00:03:50.949 --> 00:03:50.959
+is making and shipping choices on its
+ 
+
+00:03:50.959 --> 00:03:53.590
+is making and shipping choices on its
+own,<00:03:51.680><c> how</c><00:03:51.880><c> do</c><00:03:52.000><c> you</c><00:03:52.240><c> feel</c><00:03:52.480><c> confident</c><00:03:53.320><c> that</c><00:03:53.480><c> the</c>
+
+00:03:53.590 --> 00:03:53.600
+own, how do you feel confident that the
+ 
+
+00:03:53.600 --> 00:03:56.750
+own, how do you feel confident that the
+agent<00:03:54.000><c> is</c><00:03:54.200><c> making</c><00:03:54.680><c> the</c><00:03:54.880><c> right</c><00:03:55.240><c> choices?</c><00:03:56.360><c> And</c>
+
+00:03:56.750 --> 00:03:56.760
+agent is making the right choices? And
+ 
+
+00:03:56.760 --> 00:03:59.350
+agent is making the right choices? And
+that<00:03:56.920><c> comes</c><00:03:57.160><c> down</c><00:03:57.600><c> to</c><00:03:58.240><c> three</c><00:03:58.560><c> things.</c><00:03:59.240><c> You</c>
+
+00:03:59.350 --> 00:03:59.360
+that comes down to three things. You
+ 
+
+00:03:59.360 --> 00:04:01.350
+that comes down to three things. You
+need<00:03:59.560><c> the</c><00:03:59.680><c> agent</c><00:04:00.120><c> to</c><00:04:00.200><c> make</c><00:04:00.520><c> good</c><00:04:00.800><c> PRs</c><00:04:01.200><c> in</c><00:04:01.280><c> the</c>
+
+00:04:01.350 --> 00:04:01.360
+need the agent to make good PRs in the
+ 
+
+00:04:01.360 --> 00:04:04.190
+need the agent to make good PRs in the
+first<00:04:01.640><c> place,</c><00:04:02.480><c> and</c><00:04:02.640><c> then</c><00:04:02.960><c> if</c><00:04:03.400><c> something</c><00:04:03.840><c> bad</c>
+
+00:04:04.190 --> 00:04:04.200
+first place, and then if something bad
+ 
+
+00:04:04.200 --> 00:04:05.870
+first place, and then if something bad
+sneaks<00:04:04.520><c> into</c><00:04:04.720><c> the</c><00:04:04.800><c> PR,</c><00:04:05.120><c> you</c><00:04:05.240><c> need</c><00:04:05.440><c> to</c><00:04:05.560><c> catch</c>
+
+00:04:05.870 --> 00:04:05.880
+sneaks into the PR, you need to catch
+ 
+
+00:04:05.880 --> 00:04:08.630
+sneaks into the PR, you need to catch
+those<00:04:06.120><c> mistakes</c><00:04:07.080><c> before</c><00:04:07.440><c> they</c><00:04:07.560><c> go</c><00:04:07.680><c> into</c><00:04:07.840><c> prod.</c>
+
+00:04:08.630 --> 00:04:08.640
+those mistakes before they go into prod.
+ 
+
+00:04:08.640 --> 00:04:10.870
+those mistakes before they go into prod.
+And<00:04:08.800><c> then</c><00:04:09.040><c> last,</c><00:04:09.600><c> if</c><00:04:09.800><c> it</c><00:04:09.959><c> somehow</c><00:04:10.400><c> slips</c><00:04:10.720><c> into</c>
+
+00:04:10.870 --> 00:04:10.880
+And then last, if it somehow slips into
+ 
+
+00:04:10.880 --> 00:04:13.230
+And then last, if it somehow slips into
+prod,<00:04:11.440><c> you</c><00:04:11.560><c> need</c><00:04:11.720><c> to</c><00:04:11.840><c> have</c><00:04:12.200><c> really</c><00:04:12.640><c> good</c>
+
+00:04:13.230 --> 00:04:13.240
+prod, you need to have really good
+ 
+
+00:04:13.240 --> 00:04:15.830
+prod, you need to have really good
+safeguards<00:04:13.920><c> in</c><00:04:14.080><c> production</c><00:04:14.959><c> to</c><00:04:15.320><c> reduce</c><00:04:15.720><c> the</c>
+
+00:04:15.830 --> 00:04:15.840
+safeguards in production to reduce the
+ 
+
+00:04:15.840 --> 00:04:18.509
+safeguards in production to reduce the
+blast<00:04:16.200><c> radius</c><00:04:16.880><c> of</c><00:04:17.200><c> some</c><00:04:17.400><c> sort</c><00:04:17.600><c> of</c><00:04:17.680><c> problem.</c>
+
+00:04:18.509 --> 00:04:18.519
+blast radius of some sort of problem.
+ 
+
+00:04:18.519 --> 00:04:20.190
+blast radius of some sort of problem.
+But<00:04:18.680><c> before</c><00:04:18.920><c> we</c><00:04:19.040><c> get</c><00:04:19.200><c> into</c><00:04:19.359><c> that,</c><00:04:19.880><c> let's</c><00:04:20.000><c> check</c>
+
+00:04:20.190 --> 00:04:20.200
+But before we get into that, let's check
+ 
+
+00:04:20.200 --> 00:04:22.550
+But before we get into that, let's check
+in<00:04:20.320><c> with</c><00:04:20.480><c> our</c><00:04:20.560><c> sponsor.</c><00:04:21.600><c> I</c><00:04:21.680><c> just</c><00:04:21.959><c> added</c><00:04:22.360><c> an</c>
+
+00:04:22.550 --> 00:04:22.560
+in with our sponsor. I just added an
+ 
+
+00:04:22.560 --> 00:04:25.830
+in with our sponsor. I just added an
+open<00:04:22.840><c> API</c><00:04:23.440><c> and</c><00:04:23.640><c> a</c><00:04:23.680><c> token</c><00:04:24.400><c> bootstrap</c><00:04:24.880><c> CLI</c><00:04:25.280><c> flow</c>
+
+00:04:25.830 --> 00:04:25.840
+open API and a token bootstrap CLI flow
+ 
+
+00:04:25.840 --> 00:04:28.510
+open API and a token bootstrap CLI flow
+across<00:04:26.280><c> two</c><00:04:26.520><c> repos,</c><00:04:27.040><c> both</c><00:04:27.400><c> my</c><00:04:27.640><c> Cody</c><00:04:28.040><c> and</c><00:04:28.240><c> Cody</c>
+
+00:04:28.510 --> 00:04:28.520
+across two repos, both my Cody and Cody
+ 
+
+00:04:28.520 --> 00:04:31.230
+across two repos, both my Cody and Cody
+CLI<00:04:28.919><c> repos.</c><00:04:29.680><c> And</c><00:04:30.000><c> I</c><00:04:30.080><c> want</c><00:04:30.360><c> a</c><00:04:30.400><c> security</c><00:04:30.880><c> audit</c>
+
+00:04:31.230 --> 00:04:31.240
+CLI repos. And I want a security audit
+ 
+
+00:04:31.240 --> 00:04:33.830
+CLI repos. And I want a security audit
+of<00:04:31.360><c> that</c><00:04:31.640><c> whole</c><00:04:31.840><c> process.</c><00:04:32.680><c> So,</c><00:04:33.040><c> I'm</c><00:04:33.240><c> using</c><00:04:33.720><c> a</c>
+
+00:04:33.830 --> 00:04:33.840
+of that whole process. So, I'm using a
+ 
+
+00:04:33.840 --> 00:04:35.830
+of that whole process. So, I'm using a
+Devin<00:04:34.200><c> Cloud</c><00:04:34.520><c> agent</c><00:04:34.800><c> for</c><00:04:34.919><c> this</c><00:04:35.200><c> so</c><00:04:35.360><c> I</c><00:04:35.440><c> can</c><00:04:35.600><c> keep</c>
+
+00:04:35.830 --> 00:04:35.840
+Devin Cloud agent for this so I can keep
+ 
+
+00:04:35.840 --> 00:04:37.350
+Devin Cloud agent for this so I can keep
+working<00:04:36.160><c> on</c><00:04:36.280><c> other</c><00:04:36.480><c> stuff</c><00:04:36.760><c> without</c><00:04:37.080><c> worrying</c>
+
+00:04:37.350 --> 00:04:37.360
+working on other stuff without worrying
+ 
+
+00:04:37.360 --> 00:04:40.070
+working on other stuff without worrying
+about<00:04:37.600><c> stepping</c><00:04:38.120><c> on</c><00:04:38.360><c> its</c><00:04:38.520><c> toes,</c><00:04:39.200><c> and</c><00:04:39.840><c> because</c>
+
+00:04:40.070 --> 00:04:40.080
+about stepping on its toes, and because
+ 
+
+00:04:40.080 --> 00:04:42.430
+about stepping on its toes, and because
+Devin's<00:04:40.480><c> great</c><00:04:40.919><c> at</c><00:04:41.040><c> security</c><00:04:41.520><c> audits</c><00:04:41.960><c> and</c><00:04:42.280><c> can</c>
+
+00:04:42.430 --> 00:04:42.440
+Devin's great at security audits and can
+ 
+
+00:04:42.440 --> 00:04:44.790
+Devin's great at security audits and can
+handle<00:04:42.800><c> multi-repo</c><00:04:43.520><c> work</c><00:04:43.840><c> easily.</c><00:04:44.360><c> Before</c><00:04:44.720><c> I</c>
+
+00:04:44.790 --> 00:04:44.800
+handle multi-repo work easily. Before I
+ 
+
+00:04:44.800 --> 00:04:46.670
+handle multi-repo work easily. Before I
+hit<00:04:45.040><c> send</c><00:04:45.400><c> on</c><00:04:45.560><c> this,</c><00:04:45.880><c> I</c><00:04:46.000><c> want</c><00:04:46.160><c> to</c><00:04:46.240><c> talk</c><00:04:46.440><c> about</c>
+
+00:04:46.670 --> 00:04:46.680
+hit send on this, I want to talk about
+ 
+
+00:04:46.680 --> 00:04:48.150
+hit send on this, I want to talk about
+the<00:04:46.760><c> part</c><00:04:47.000><c> that</c><00:04:47.120><c> I</c><00:04:47.200><c> used</c><00:04:47.440><c> to</c><00:04:47.520><c> really</c><00:04:47.760><c> hate,</c><00:04:48.040><c> and</c>
+
+00:04:48.150 --> 00:04:48.160
+the part that I used to really hate, and
+ 
+
+00:04:48.160 --> 00:04:50.710
+the part that I used to really hate, and
+that<00:04:48.320><c> is</c><00:04:48.480><c> the</c><00:04:48.600><c> model</c><00:04:48.960><c> chooser.</c><00:04:49.840><c> A</c><00:04:50.160><c> task</c><00:04:50.520><c> like</c>
+
+00:04:50.710 --> 00:04:50.720
+that is the model chooser. A task like
+ 
+
+00:04:50.720 --> 00:04:52.510
+that is the model chooser. A task like
+this<00:04:50.919><c> is</c><00:04:51.040><c> actually</c><00:04:51.360><c> a</c><00:04:51.440><c> bunch</c><00:04:51.760><c> of</c><00:04:51.880><c> tasks</c><00:04:52.320><c> in</c>
+
+00:04:52.510 --> 00:04:52.520
+this is actually a bunch of tasks in
+ 
+
+00:04:52.520 --> 00:04:54.790
+this is actually a bunch of tasks in
+one,<00:04:52.760><c> and</c><00:04:52.919><c> some</c><00:04:53.080><c> of</c><00:04:53.160><c> those</c><00:04:53.360><c> tasks</c><00:04:53.960><c> require</c><00:04:54.520><c> a</c>
+
+00:04:54.790 --> 00:04:54.800
+one, and some of those tasks require a
+ 
+
+00:04:54.800 --> 00:04:57.750
+one, and some of those tasks require a
+expensive<00:04:55.720><c> and</c><00:04:56.080><c> deep</c><00:04:56.440><c> model,</c><00:04:56.960><c> and</c><00:04:57.160><c> others</c>
+
+00:04:57.750 --> 00:04:57.760
+expensive and deep model, and others
+ 
+
+00:04:57.760 --> 00:04:59.470
+expensive and deep model, and others
+require<00:04:58.200><c> just</c><00:04:58.400><c> like</c><00:04:58.640><c> some</c><00:04:58.880><c> grunt</c><00:04:59.160><c> work.</c><00:04:59.360><c> And</c>
+
+00:04:59.470 --> 00:04:59.480
+require just like some grunt work. And
+ 
+
+00:04:59.480 --> 00:05:01.310
+require just like some grunt work. And
+so,<00:04:59.640><c> they</c><00:04:59.800><c> can</c><00:04:59.919><c> use</c><00:05:00.080><c> a</c><00:05:00.120><c> much</c><00:05:00.360><c> cheaper</c><00:05:00.680><c> model.</c>
+
+00:05:01.310 --> 00:05:01.320
+so, they can use a much cheaper model.
+ 
+
+00:05:01.320 --> 00:05:02.909
+so, they can use a much cheaper model.
+And<00:05:01.480><c> so,</c><00:05:01.600><c> I</c><00:05:01.640><c> don't</c><00:05:01.800><c> want</c><00:05:01.919><c> to</c><00:05:01.960><c> have</c><00:05:02.080><c> to</c><00:05:02.200><c> choose</c>
+
+00:05:02.909 --> 00:05:02.919
+And so, I don't want to have to choose
+ 
+
+00:05:02.919 --> 00:05:04.670
+And so, I don't want to have to choose
+just<00:05:03.120><c> the</c><00:05:03.200><c> really</c><00:05:03.480><c> expensive</c><00:05:03.960><c> model</c><00:05:04.320><c> because</c>
+
+00:05:04.670 --> 00:05:04.680
+just the really expensive model because
+ 
+
+00:05:04.680 --> 00:05:05.950
+just the really expensive model because
+I've<00:05:04.800><c> got</c><00:05:04.960><c> all</c><00:05:05.040><c> this</c><00:05:05.200><c> grunt</c><00:05:05.440><c> work</c><00:05:05.640><c> I</c><00:05:05.680><c> need</c><00:05:05.880><c> to</c>
+
+00:05:05.950 --> 00:05:05.960
+I've got all this grunt work I need to
+ 
+
+00:05:05.960 --> 00:05:08.150
+I've got all this grunt work I need to
+do,<00:05:06.120><c> too.</c><00:05:06.400><c> And</c><00:05:06.560><c> vice</c><00:05:06.800><c> versa,</c><00:05:07.200><c> I</c><00:05:07.240><c> don't</c><00:05:07.480><c> want</c><00:05:07.680><c> to</c>
+
+00:05:08.150 --> 00:05:08.160
+do, too. And vice versa, I don't want to
+ 
+
+00:05:08.160 --> 00:05:10.230
+do, too. And vice versa, I don't want to
+choose<00:05:08.440><c> a</c><00:05:08.520><c> less</c><00:05:08.800><c> expensive</c><00:05:09.280><c> model</c><00:05:09.640><c> and</c><00:05:09.840><c> end</c><00:05:10.040><c> up</c>
+
+00:05:10.230 --> 00:05:10.240
+choose a less expensive model and end up
+ 
+
+00:05:10.240 --> 00:05:13.590
+choose a less expensive model and end up
+with<00:05:10.840><c> less</c><00:05:11.400><c> thorough</c><00:05:12.000><c> work.</c><00:05:12.760><c> And</c><00:05:13.000><c> so,</c><00:05:13.360><c> I'm</c>
+
+00:05:13.590 --> 00:05:13.600
+with less thorough work. And so, I'm
+ 
+
+00:05:13.600 --> 00:05:15.870
+with less thorough work. And so, I'm
+going<00:05:13.840><c> to</c><00:05:13.960><c> choose</c><00:05:14.400><c> the</c><00:05:14.520><c> fusion</c><00:05:15.000><c> model.</c><00:05:15.720><c> And</c>
+
+00:05:15.870 --> 00:05:15.880
+going to choose the fusion model. And
+ 
+
+00:05:15.880 --> 00:05:18.670
+going to choose the fusion model. And
+what<00:05:16.000><c> the</c><00:05:16.080><c> fusion</c><00:05:16.440><c> model</c><00:05:16.760><c> does</c><00:05:17.160><c> is</c><00:05:17.640><c> it's</c><00:05:18.200><c> Devin</c>
+
+00:05:18.670 --> 00:05:18.680
+what the fusion model does is it's Devin
+ 
+
+00:05:18.680 --> 00:05:21.710
+what the fusion model does is it's Devin
+Cognition's<00:05:19.840><c> a</c><00:05:20.080><c> fusion</c><00:05:20.680><c> router.</c><00:05:21.160><c> So,</c><00:05:21.440><c> it</c>
+
+00:05:21.710 --> 00:05:21.720
+Cognition's a fusion router. So, it
+ 
+
+00:05:21.720 --> 00:05:23.430
+Cognition's a fusion router. So, it
+routes<00:05:22.040><c> across</c><00:05:22.400><c> different</c><00:05:22.720><c> models</c><00:05:23.120><c> while</c><00:05:23.320><c> it</c>
+
+00:05:23.430 --> 00:05:23.440
+routes across different models while it
+ 
+
+00:05:23.440 --> 00:05:25.510
+routes across different models while it
+works.<00:05:24.040><c> So,</c><00:05:24.160><c> you</c><00:05:24.280><c> get</c><00:05:24.440><c> a</c><00:05:24.520><c> strong</c><00:05:24.960><c> lead</c><00:05:25.200><c> for</c><00:05:25.360><c> the</c>
+
+00:05:25.510 --> 00:05:25.520
+works. So, you get a strong lead for the
+ 
+
+00:05:25.520 --> 00:05:27.310
+works. So, you get a strong lead for the
+ambiguity<00:05:26.080><c> and</c><00:05:26.200><c> review</c><00:05:26.520><c> part,</c><00:05:26.840><c> and</c><00:05:27.040><c> cheaper</c>
+
+00:05:27.310 --> 00:05:27.320
+ambiguity and review part, and cheaper
+ 
+
+00:05:27.320 --> 00:05:29.310
+ambiguity and review part, and cheaper
+sidekicks<00:05:28.160><c> for</c><00:05:28.320><c> the</c><00:05:28.400><c> grunt</c><00:05:28.640><c> work,</c><00:05:29.080><c> and</c><00:05:29.240><c> I</c>
+
+00:05:29.310 --> 00:05:29.320
+sidekicks for the grunt work, and I
+ 
+
+00:05:29.320 --> 00:05:30.510
+sidekicks for the grunt work, and I
+don't<00:05:29.520><c> have</c><00:05:29.680><c> to</c><00:05:29.760><c> worry</c><00:05:29.919><c> about</c><00:05:30.200><c> model</c>
+
+00:05:30.510 --> 00:05:30.520
+don't have to worry about model
+ 
+
+00:05:30.520 --> 00:05:32.470
+don't have to worry about model
+roulette.<00:05:31.120><c> If</c><00:05:31.240><c> you</c><00:05:31.360><c> want</c><00:05:31.560><c> a</c><00:05:31.600><c> strong</c><00:05:32.120><c> agent</c>
+
+00:05:32.470 --> 00:05:32.480
+roulette. If you want a strong agent
+ 
+
+00:05:32.480 --> 00:05:33.909
+roulette. If you want a strong agent
+that<00:05:32.640><c> stays</c><00:05:32.919><c> in</c><00:05:33.000><c> the</c><00:05:33.080><c> software</c><00:05:33.440><c> engineering</c>
+
+00:05:33.909 --> 00:05:33.919
+that stays in the software engineering
+ 
+
+00:05:33.919 --> 00:05:36.070
+that stays in the software engineering
+lane<00:05:34.160><c> for</c><00:05:34.320><c> work</c><00:05:34.560><c> like</c><00:05:34.760><c> this,</c><00:05:35.240><c> check</c><00:05:35.520><c> out</c><00:05:35.680><c> Devin</c>
+
+00:05:36.070 --> 00:05:36.080
+lane for work like this, check out Devin
+ 
+
+00:05:36.080 --> 00:05:38.909
+lane for work like this, check out Devin
+at<00:05:36.240><c> devin.ai.</c><00:05:37.600><c> So,</c><00:05:37.760><c> I've</c><00:05:37.840><c> got</c><00:05:38.000><c> this</c><00:05:38.160><c> decisions</c>
+
+00:05:38.909 --> 00:05:38.919
+at devin.ai. So, I've got this decisions
+ 
+
+00:05:38.919 --> 00:05:41.350
+at devin.ai. So, I've got this decisions
+directory<00:05:39.480><c> that</c><00:05:39.640><c> is</c><00:05:39.760><c> just</c><00:05:40.120><c> full</c><00:05:40.640><c> of</c><00:05:40.919><c> different</c>
+
+00:05:41.350 --> 00:05:41.360
+directory that is just full of different
+ 
+
+00:05:41.360 --> 00:05:44.430
+directory that is just full of different
+architectural<00:05:42.240><c> and</c><00:05:43.120><c> product</c><00:05:43.680><c> decisions</c><00:05:44.200><c> that</c>
+
+00:05:44.430 --> 00:05:44.440
+architectural and product decisions that
+ 
+
+00:05:44.440 --> 00:05:46.670
+architectural and product decisions that
+I've<00:05:44.680><c> made</c><00:05:44.919><c> over</c><00:05:45.280><c> time.</c><00:05:46.000><c> For</c><00:05:46.200><c> example,</c>
+
+00:05:46.670 --> 00:05:46.680
+I've made over time. For example,
+ 
+
+00:05:46.680 --> 00:05:49.030
+I've made over time. For example,
+there's<00:05:47.000><c> this</c><00:05:47.240><c> no</c><00:05:47.520><c> vendor-specific</c><00:05:48.400><c> platform</c>
+
+00:05:49.030 --> 00:05:49.040
+there's this no vendor-specific platform
+ 
+
+00:05:49.040 --> 00:05:51.270
+there's this no vendor-specific platform
+logic.<00:05:49.520><c> So,</c><00:05:50.040><c> we</c><00:05:50.200><c> want</c><00:05:50.400><c> to</c><00:05:50.480><c> be</c><00:05:50.720><c> a</c><00:05:50.840><c> generic</c>
+
+00:05:51.270 --> 00:05:51.280
+logic. So, we want to be a generic
+ 
+
+00:05:51.280 --> 00:05:52.990
+logic. So, we want to be a generic
+platform<00:05:51.720><c> that</c><00:05:51.840><c> supports</c><00:05:52.280><c> everything,</c><00:05:52.800><c> not</c>
+
+00:05:52.990 --> 00:05:53.000
+platform that supports everything, not
+ 
+
+00:05:53.000 --> 00:05:55.350
+platform that supports everything, not
+just<00:05:53.160><c> something</c><00:05:53.480><c> specific</c><00:05:54.280><c> for</c><00:05:54.760><c> a</c><00:05:54.840><c> hub</c><00:05:55.200><c> for</c>
+
+00:05:55.350 --> 00:05:55.360
+just something specific for a hub for
+ 
+
+00:05:55.360 --> 00:05:57.230
+just something specific for a hub for
+Meta<00:05:55.680><c> and</c><00:05:55.800><c> Strava</c><00:05:56.240><c> and</c><00:05:56.400><c> Slack</c><00:05:56.680><c> or</c><00:05:56.720><c> whatever,</c>
+
+00:05:57.230 --> 00:05:57.240
+Meta and Strava and Slack or whatever,
+ 
+
+00:05:57.240 --> 00:05:59.870
+Meta and Strava and Slack or whatever,
+but<00:05:57.440><c> we</c><00:05:57.520><c> don't</c><00:05:57.720><c> want</c><00:05:58.440><c> the</c><00:05:58.600><c> Foo</c><00:05:58.880><c> hub.</c><00:05:59.480><c> We</c><00:05:59.640><c> just</c>
+
+00:05:59.870 --> 00:05:59.880
+but we don't want the Foo hub. We just
+ 
+
+00:05:59.880 --> 00:06:03.430
+but we don't want the Foo hub. We just
+want<00:06:00.200><c> a</c><00:06:00.640><c> generic</c><00:06:01.360><c> solution</c><00:06:02.000><c> to</c><00:06:02.280><c> problems.</c><00:06:03.080><c> And</c>
+
+00:06:03.430 --> 00:06:03.440
+want a generic solution to problems. And
+ 
+
+00:06:03.440 --> 00:06:05.110
+want a generic solution to problems. And
+now,<00:06:03.720><c> in</c><00:06:03.840><c> the</c><00:06:03.920><c> future,</c><00:06:04.440><c> agents</c><00:06:04.760><c> are</c><00:06:04.840><c> going</c><00:06:05.040><c> to</c>
+
+00:06:05.110 --> 00:06:05.120
+now, in the future, agents are going to
+ 
+
+00:06:05.120 --> 00:06:07.030
+now, in the future, agents are going to
+make<00:06:05.440><c> the</c><00:06:05.560><c> right</c><00:06:05.800><c> decision</c><00:06:06.480><c> because</c><00:06:06.920><c> I've</c>
+
+00:06:07.030 --> 00:06:07.040
+make the right decision because I've
+ 
+
+00:06:07.040 --> 00:06:09.510
+make the right decision because I've
+already<00:06:07.280><c> made</c><00:06:07.640><c> this</c><00:06:07.800><c> decision.</c><00:06:08.760><c> And</c><00:06:09.080><c> then,</c><00:06:09.320><c> we</c>
+
+00:06:09.510 --> 00:06:09.520
+already made this decision. And then, we
+ 
+
+00:06:09.520 --> 00:06:12.030
+already made this decision. And then, we
+also<00:06:09.880><c> have</c><00:06:10.400><c> these</c><00:06:10.720><c> primitives.</c><00:06:11.640><c> So,</c><00:06:11.840><c> this</c>
+
+00:06:12.030 --> 00:06:12.040
+also have these primitives. So, this
+ 
+
+00:06:12.040 --> 00:06:13.990
+also have these primitives. So, this
+primitives<00:06:12.600><c> YAML</c><00:06:13.440><c> inside</c><00:06:13.760><c> of</c><00:06:13.840><c> my</c>
+
+00:06:13.990 --> 00:06:14.000
+primitives YAML inside of my
+ 
+
+00:06:14.000 --> 00:06:16.070
+primitives YAML inside of my
+architectural<00:06:14.520><c> documentation</c><00:06:15.640><c> uh</c><00:06:15.840><c> just</c>
+
+00:06:16.070 --> 00:06:16.080
+architectural documentation uh just
+ 
+
+00:06:16.080 --> 00:06:17.750
+architectural documentation uh just
+shows<00:06:16.440><c> all</c><00:06:16.640><c> of</c><00:06:16.720><c> the</c><00:06:16.840><c> different</c><00:06:17.200><c> primitives</c>
+
+00:06:17.750 --> 00:06:17.760
+shows all of the different primitives
+ 
+
+00:06:17.760 --> 00:06:19.590
+shows all of the different primitives
+inside<00:06:18.160><c> of</c><00:06:18.240><c> the</c><00:06:18.360><c> code</c><00:06:18.560><c> base.</c><00:06:18.800><c> And</c><00:06:18.880><c> if</c><00:06:19.000><c> you</c><00:06:19.520><c> uh</c>
+
+00:06:19.590 --> 00:06:19.600
+inside of the code base. And if you uh
+ 
+
+00:06:19.600 --> 00:06:21.390
+inside of the code base. And if you uh
+don't<00:06:19.880><c> know</c><00:06:20.200><c> really</c><00:06:20.480><c> what</c><00:06:20.600><c> a</c><00:06:20.640><c> primitive</c><00:06:21.040><c> is,</c><00:06:21.280><c> I</c>
+
+00:06:21.390 --> 00:06:21.400
+don't know really what a primitive is, I
+ 
+
+00:06:21.400 --> 00:06:23.909
+don't know really what a primitive is, I
+made<00:06:21.600><c> an</c><00:06:21.720><c> entire</c><00:06:22.120><c> video</c><00:06:22.800><c> about</c><00:06:23.120><c> that</c><00:06:23.800><c> uh</c>
+
+00:06:23.909 --> 00:06:23.919
+made an entire video about that uh
+ 
+
+00:06:23.919 --> 00:06:26.030
+made an entire video about that uh
+somewhere.<00:06:24.600><c> Uh</c><00:06:24.680><c> go</c><00:06:24.840><c> ahead</c><00:06:25.000><c> and</c><00:06:25.120><c> click</c><00:06:25.320><c> that.</c>
+
+00:06:26.030 --> 00:06:26.040
+somewhere. Uh go ahead and click that.
+ 
+
+00:06:26.040 --> 00:06:28.550
+somewhere. Uh go ahead and click that.
+Uh<00:06:26.280><c> so,</c><00:06:26.480><c> we've</c><00:06:26.640><c> got</c><00:06:27.280><c> uh</c><00:06:27.360><c> a</c><00:06:27.440><c> bunch</c><00:06:27.800><c> of</c><00:06:27.919><c> different</c>
+
+00:06:28.550 --> 00:06:28.560
+Uh so, we've got uh a bunch of different
+ 
+
+00:06:28.560 --> 00:06:30.550
+Uh so, we've got uh a bunch of different
+uh<00:06:28.640><c> types</c><00:06:28.880><c> of</c><00:06:28.960><c> primitives.</c><00:06:29.400><c> You've</c><00:06:29.520><c> got</c><00:06:29.840><c> your</c>
+
+00:06:30.550 --> 00:06:30.560
+uh types of primitives. You've got your
+ 
+
+00:06:30.560 --> 00:06:34.030
+uh types of primitives. You've got your
+uh<00:06:30.680><c> API</c><00:06:31.200><c> UI</c><00:06:32.000><c> or</c><00:06:32.200><c> the</c><00:06:32.520><c> app</c><00:06:32.760><c> UI,</c><00:06:33.400><c> and</c><00:06:33.720><c> you've</c><00:06:33.840><c> got</c>
+
+00:06:34.030 --> 00:06:34.040
+uh API UI or the app UI, and you've got
+ 
+
+00:06:34.040 --> 00:06:37.230
+uh API UI or the app UI, and you've got
+your<00:06:34.160><c> platform,</c><00:06:35.200><c> and</c><00:06:35.640><c> the</c><00:06:35.880><c> MCPOAuth</c><00:06:37.000><c> as</c><00:06:37.200><c> a</c>
+
+00:06:37.230 --> 00:06:37.240
+your platform, and the MCPOAuth as a
+ 
+
+00:06:37.240 --> 00:06:39.390
+your platform, and the MCPOAuth as a
+primitive.<00:06:37.760><c> You've</c><00:06:37.919><c> got</c><00:06:38.200><c> the</c><00:06:38.440><c> package</c><00:06:38.919><c> apps</c>
+
+00:06:39.390 --> 00:06:39.400
+primitive. You've got the package apps
+ 
+
+00:06:39.400 --> 00:06:42.190
+primitive. You've got the package apps
+and<00:06:39.560><c> jobs</c><00:06:39.960><c> and</c><00:06:40.120><c> workflows</c><00:06:41.120><c> and</c><00:06:41.600><c> a</c><00:06:41.720><c> backup</c>
+
+00:06:42.190 --> 00:06:42.200
+and jobs and workflows and a backup
+ 
+
+00:06:42.200 --> 00:06:44.030
+and jobs and workflows and a backup
+control<00:06:42.640><c> plane,</c><00:06:43.040><c> also</c><00:06:43.360><c> a</c><00:06:43.400><c> primitive.</c><00:06:43.800><c> Run</c>
+
+00:06:44.030 --> 00:06:44.040
+control plane, also a primitive. Run
+ 
+
+00:06:44.040 --> 00:06:46.390
+control plane, also a primitive. Run
+records,<00:06:44.440><c> user</c><00:06:44.720><c> meter,</c><00:06:45.080><c> all</c><00:06:45.320><c> of</c><00:06:45.400><c> this</c><00:06:45.600><c> stuff.</c>
+
+00:06:46.390 --> 00:06:46.400
+records, user meter, all of this stuff.
+ 
+
+00:06:46.400 --> 00:06:48.590
+records, user meter, all of this stuff.
+Uh<00:06:46.600><c> all</c><00:06:46.800><c> of</c><00:06:46.880><c> these</c><00:06:47.040><c> things</c><00:06:47.600><c> are</c><00:06:47.760><c> primitives.</c>
+
+00:06:48.590 --> 00:06:48.600
+Uh all of these things are primitives.
+ 
+
+00:06:48.600 --> 00:06:51.630
+Uh all of these things are primitives.
+And<00:06:49.240><c> um</c><00:06:49.720><c> each</c><00:06:49.960><c> one</c><00:06:50.120><c> of</c><00:06:50.240><c> these</c><00:06:50.560><c> will</c><00:06:50.760><c> link</c><00:06:51.080><c> to</c>
+
+00:06:51.630 --> 00:06:51.640
+And um each one of these will link to
+ 
+
+00:06:51.640 --> 00:06:54.790
+And um each one of these will link to
+the<00:06:51.919><c> code</c><00:06:52.640><c> where</c><00:06:52.960><c> that</c><00:06:53.200><c> primitive</c><00:06:53.919><c> um</c><00:06:54.200><c> mostly</c>
+
+00:06:54.790 --> 00:06:54.800
+the code where that primitive um mostly
+ 
+
+00:06:54.800 --> 00:06:57.150
+the code where that primitive um mostly
+lives,<00:06:55.560><c> as</c><00:06:55.760><c> well</c><00:06:55.880><c> as</c><00:06:56.000><c> the</c><00:06:56.120><c> documentation</c><00:06:56.960><c> for</c>
+
+00:06:57.150 --> 00:06:57.160
+lives, as well as the documentation for
+ 
+
+00:06:57.160 --> 00:06:59.190
+lives, as well as the documentation for
+that<00:06:57.360><c> primitive.</c><00:06:58.000><c> And</c><00:06:58.120><c> so,</c><00:06:58.360><c> as</c><00:06:58.560><c> the</c><00:06:58.680><c> agent</c><00:06:59.040><c> is</c>
+
+00:06:59.190 --> 00:06:59.200
+that primitive. And so, as the agent is
+ 
+
+00:06:59.200 --> 00:07:00.390
+that primitive. And so, as the agent is
+working<00:06:59.560><c> around</c><00:06:59.919><c> these</c><00:07:00.120><c> different</c>
+
+00:07:00.390 --> 00:07:00.400
+working around these different
+ 
+
+00:07:00.400 --> 00:07:02.190
+working around these different
+primitives,<00:07:00.840><c> it</c><00:07:00.919><c> can</c><00:07:01.080><c> find</c><00:07:01.400><c> exactly</c><00:07:02.040><c> the</c>
+
+00:07:02.190 --> 00:07:02.200
+primitives, it can find exactly the
+ 
+
+00:07:02.200 --> 00:07:04.190
+primitives, it can find exactly the
+pieces<00:07:02.640><c> that</c><00:07:02.800><c> it</c><00:07:02.880><c> needs</c><00:07:03.120><c> to</c><00:07:03.240><c> put</c><00:07:03.400><c> together</c>
+
+00:07:04.190 --> 00:07:04.200
+pieces that it needs to put together
+ 
+
+00:07:04.200 --> 00:07:06.790
+pieces that it needs to put together
+with<00:07:04.840><c> um</c><00:07:05.280><c> the</c><00:07:05.960><c> thing</c><00:07:06.200><c> that</c><00:07:06.320><c> it's</c><00:07:06.480><c> trying</c><00:07:06.720><c> to</c>
+
+00:07:06.790 --> 00:07:06.800
+with um the thing that it's trying to
+ 
+
+00:07:06.800 --> 00:07:08.470
+with um the thing that it's trying to
+build.<00:07:07.320><c> And</c><00:07:07.440><c> so,</c><00:07:07.600><c> it</c><00:07:07.720><c> builds</c><00:07:07.960><c> the</c><00:07:08.040><c> right</c><00:07:08.280><c> thing</c>
+
+00:07:08.470 --> 00:07:08.480
+build. And so, it builds the right thing
+ 
+
+00:07:08.480 --> 00:07:10.670
+build. And so, it builds the right thing
+the<00:07:08.560><c> first</c><00:07:08.840><c> time,</c><00:07:09.400><c> uh</c><00:07:09.560><c> rather</c><00:07:09.840><c> than</c><00:07:10.080><c> making</c><00:07:10.440><c> up</c>
+
+00:07:10.670 --> 00:07:10.680
+the first time, uh rather than making up
+ 
+
+00:07:10.680 --> 00:07:12.790
+the first time, uh rather than making up
+an<00:07:11.120><c> uh</c><00:07:11.200><c> primitive</c><00:07:11.760><c> for</c><00:07:12.040><c> whatever</c><00:07:12.360><c> it's</c><00:07:12.520><c> trying</c>
+
+00:07:12.790 --> 00:07:12.800
+an uh primitive for whatever it's trying
+ 
+
+00:07:12.800 --> 00:07:14.190
+an uh primitive for whatever it's trying
+to<00:07:13.000><c> accomplish.</c>
+
+00:07:14.190 --> 00:07:14.200
+to accomplish.
+ 
+
+00:07:14.200 --> 00:07:16.909
+to accomplish.
+And<00:07:14.560><c> then,</c><00:07:15.000><c> I</c><00:07:15.160><c> also</c><00:07:15.640><c> have</c><00:07:16.160><c> uh</c><00:07:16.240><c> for</c><00:07:16.520><c> its</c><00:07:16.760><c> own</c>
+
+00:07:16.909 --> 00:07:16.919
+And then, I also have uh for its own
+ 
+
+00:07:16.919 --> 00:07:20.270
+And then, I also have uh for its own
+verification<00:07:17.960><c> this</c><00:07:18.160><c> control</c><00:07:18.640><c> Cody</c><00:07:19.200><c> CLI,</c><00:07:20.160><c> uh</c>
+
+00:07:20.270 --> 00:07:20.280
+verification this control Cody CLI, uh
+ 
+
+00:07:20.280 --> 00:07:22.870
+verification this control Cody CLI, uh
+which<00:07:20.560><c> I</c><00:07:20.680><c> got</c><00:07:21.000><c> from</c><00:07:21.440><c> Lauren</c><00:07:21.760><c> Tan.</c><00:07:22.280><c> Uh</c>
+
+00:07:22.870 --> 00:07:22.880
+which I got from Lauren Tan. Uh
+ 
+
+00:07:22.880 --> 00:07:25.790
+which I got from Lauren Tan. Uh
+fantastic<00:07:23.600><c> idea,</c><00:07:24.000><c> but</c><00:07:24.160><c> it's</c><00:07:24.360><c> a</c><00:07:24.480><c> simply</c><00:07:25.240><c> a</c><00:07:25.320><c> CLI</c>
+
+00:07:25.790 --> 00:07:25.800
+fantastic idea, but it's a simply a CLI
+ 
+
+00:07:25.800 --> 00:07:28.510
+fantastic idea, but it's a simply a CLI
+that<00:07:26.000><c> it</c><00:07:26.120><c> can</c><00:07:26.280><c> run</c><00:07:26.919><c> to</c><00:07:27.440><c> do</c><00:07:27.800><c> a</c><00:07:27.880><c> variety</c><00:07:28.400><c> of</c>
+
+00:07:28.510 --> 00:07:28.520
+that it can run to do a variety of
+ 
+
+00:07:28.520 --> 00:07:31.030
+that it can run to do a variety of
+things<00:07:28.960><c> to</c><00:07:29.120><c> verify</c><00:07:29.720><c> its</c><00:07:29.960><c> own</c><00:07:30.160><c> work.</c><00:07:30.680><c> The</c><00:07:30.760><c> same</c>
+
+00:07:31.030 --> 00:07:31.040
+things to verify its own work. The same
+ 
+
+00:07:31.040 --> 00:07:32.909
+things to verify its own work. The same
+sort<00:07:31.240><c> of</c><00:07:31.320><c> thing</c><00:07:31.520><c> that</c><00:07:31.800><c> we</c><00:07:32.040><c> have</c><00:07:32.240><c> done</c><00:07:32.640><c> as</c>
+
+00:07:32.909 --> 00:07:32.919
+sort of thing that we have done as
+ 
+
+00:07:32.919 --> 00:07:34.830
+sort of thing that we have done as
+engineers<00:07:33.360><c> over</c><00:07:33.560><c> the</c><00:07:33.680><c> years</c><00:07:34.080><c> as</c><00:07:34.240><c> we</c><00:07:34.560><c> make</c><00:07:34.800><c> a</c>
+
+00:07:34.830 --> 00:07:34.840
+engineers over the years as we make a
+ 
+
+00:07:34.840 --> 00:07:36.190
+engineers over the years as we make a
+change,<00:07:35.160><c> and</c><00:07:35.240><c> we</c><00:07:35.360><c> go</c><00:07:35.480><c> to</c><00:07:35.560><c> the</c><00:07:35.640><c> browser</c><00:07:36.040><c> and</c>
+
+00:07:36.190 --> 00:07:36.200
+change, and we go to the browser and
+ 
+
+00:07:36.200 --> 00:07:38.270
+change, and we go to the browser and
+click<00:07:36.360><c> around</c><00:07:36.640><c> and</c><00:07:36.720><c> whatever.</c><00:07:37.520><c> And</c><00:07:37.919><c> agents</c>
+
+00:07:38.270 --> 00:07:38.280
+click around and whatever. And agents
+ 
+
+00:07:38.280 --> 00:07:39.710
+click around and whatever. And agents
+are<00:07:38.400><c> good</c><00:07:38.560><c> enough</c><00:07:38.880><c> that</c><00:07:39.000><c> they</c><00:07:39.160><c> can</c><00:07:39.320><c> do</c><00:07:39.480><c> that</c>
+
+00:07:39.710 --> 00:07:39.720
+are good enough that they can do that
+ 
+
+00:07:39.720 --> 00:07:41.710
+are good enough that they can do that
+now.<00:07:40.080><c> That's</c><00:07:40.360><c> not</c><00:07:40.760><c> really</c><00:07:41.040><c> a</c><00:07:41.120><c> thing</c><00:07:41.400><c> you</c><00:07:41.480><c> need</c>
+
+00:07:41.710 --> 00:07:41.720
+now. That's not really a thing you need
+ 
+
+00:07:41.720 --> 00:07:43.750
+now. That's not really a thing you need
+to<00:07:42.080><c> manually</c><00:07:42.720><c> create</c><00:07:43.080><c> for</c><00:07:43.200><c> your</c><00:07:43.320><c> agent.</c><00:07:43.560><c> Most</c>
+
+00:07:43.750 --> 00:07:43.760
+to manually create for your agent. Most
+ 
+
+00:07:43.760 --> 00:07:45.950
+to manually create for your agent. Most
+agents<00:07:44.040><c> can</c><00:07:44.160><c> do</c><00:07:44.320><c> it,</c><00:07:44.960><c> but</c><00:07:45.280><c> there</c><00:07:45.480><c> are</c><00:07:45.680><c> some</c>
+
+00:07:45.950 --> 00:07:45.960
+agents can do it, but there are some
+ 
+
+00:07:45.960 --> 00:07:47.830
+agents can do it, but there are some
+things<00:07:46.280><c> that</c><00:07:46.400><c> you</c><00:07:46.480><c> can</c><00:07:46.600><c> do</c><00:07:47.080><c> to</c><00:07:47.280><c> really</c><00:07:47.560><c> speed</c>
+
+00:07:47.830 --> 00:07:47.840
+things that you can do to really speed
+ 
+
+00:07:47.840 --> 00:07:50.350
+things that you can do to really speed
+things<00:07:48.080><c> up.</c><00:07:48.480><c> And</c><00:07:48.640><c> the</c><00:07:48.720><c> vast</c><00:07:49.000><c> majority</c><00:07:49.600><c> of</c><00:07:50.000><c> this</c>
+
+00:07:50.350 --> 00:07:50.360
+things up. And the vast majority of this
+ 
+
+00:07:50.360 --> 00:07:53.070
+things up. And the vast majority of this
+CLI<00:07:51.160><c> has</c><00:07:51.320><c> actually</c><00:07:51.640><c> been</c><00:07:51.800><c> created</c><00:07:52.720><c> by</c>
+
+00:07:53.070 --> 00:07:53.080
+CLI has actually been created by
+ 
+
+00:07:53.080 --> 00:07:55.950
+CLI has actually been created by
+friction<00:07:53.560><c> logs.</c><00:07:54.040><c> So,</c><00:07:54.440><c> an</c><00:07:54.880><c> agent</c><00:07:55.280><c> will</c><00:07:55.720><c> work</c>
+
+00:07:55.950 --> 00:07:55.960
+friction logs. So, an agent will work
+ 
+
+00:07:55.960 --> 00:07:56.910
+friction logs. So, an agent will work
+through<00:07:56.120><c> things,</c><00:07:56.360><c> it'll</c><00:07:56.520><c> find</c><00:07:56.720><c> a</c><00:07:56.760><c> work</c>
+
+00:07:56.910 --> 00:07:56.920
+through things, it'll find a work
+ 
+
+00:07:56.920 --> 00:07:59.270
+through things, it'll find a work
+around,<00:07:57.160><c> whatever,</c><00:07:57.920><c> to</c><00:07:58.200><c> manually</c><00:07:58.680><c> verify</c><00:07:59.120><c> its</c>
+
+00:07:59.270 --> 00:07:59.280
+around, whatever, to manually verify its
+ 
+
+00:07:59.280 --> 00:08:00.910
+around, whatever, to manually verify its
+work,<00:07:59.840><c> and</c><00:08:00.000><c> then</c><00:08:00.160><c> when</c><00:08:00.280><c> it's</c><00:08:00.440><c> all</c><00:08:00.560><c> done</c><00:08:00.800><c> and</c>
+
+00:08:00.910 --> 00:08:00.920
+work, and then when it's all done and
+ 
+
+00:08:00.920 --> 00:08:02.230
+work, and then when it's all done and
+it's<00:08:01.080><c> deployed,</c><00:08:01.520><c> it's</c><00:08:01.800><c> like,</c><00:08:02.040><c> "You</c><00:08:02.120><c> know</c>
+
+00:08:02.230 --> 00:08:02.240
+it's deployed, it's like, "You know
+ 
+
+00:08:02.240 --> 00:08:03.230
+it's deployed, it's like, "You know
+what?
+
+00:08:03.230 --> 00:08:03.240
+what?
+ 
+
+00:08:03.240 --> 00:08:05.150
+what?
+That<00:08:03.520><c> was</c><00:08:03.720><c> kind</c><00:08:03.880><c> of</c><00:08:03.960><c> hard,</c><00:08:04.360><c> and</c><00:08:04.720><c> I</c><00:08:04.800><c> think</c><00:08:05.040><c> that</c>
+
+00:08:05.150 --> 00:08:05.160
+That was kind of hard, and I think that
+ 
+
+00:08:05.160 --> 00:08:07.630
+That was kind of hard, and I think that
+it<00:08:05.200><c> would</c><00:08:05.320><c> make</c><00:08:05.520><c> sense</c><00:08:06.200><c> if</c><00:08:06.360><c> we</c><00:08:06.520><c> had</c><00:08:07.240><c> another</c>
+
+00:08:07.630 --> 00:08:07.640
+it would make sense if we had another
+ 
+
+00:08:07.640 --> 00:08:09.230
+it would make sense if we had another
+command<00:08:08.000><c> and</c><00:08:08.080><c> control</c><00:08:08.400><c> Cody</c><00:08:08.720><c> to</c><00:08:08.880><c> make</c><00:08:09.120><c> it</c>
+
+00:08:09.230 --> 00:08:09.240
+command and control Cody to make it
+ 
+
+00:08:09.240 --> 00:08:11.590
+command and control Cody to make it
+easier<00:08:09.560><c> for</c><00:08:09.680><c> me</c><00:08:09.800><c> to</c><00:08:10.040><c> verify</c><00:08:10.480><c> my</c><00:08:10.640><c> work."</c><00:08:11.280><c> And</c><00:08:11.440><c> so</c>
+
+00:08:11.590 --> 00:08:11.600
+easier for me to verify my work." And so
+ 
+
+00:08:11.600 --> 00:08:13.990
+easier for me to verify my work." And so
+that<00:08:11.960><c> is</c><00:08:12.600><c> where</c><00:08:12.919><c> control</c><00:08:13.280><c> Cody</c><00:08:13.560><c> came</c><00:08:13.760><c> from.</c>
+
+00:08:13.990 --> 00:08:14.000
+that is where control Cody came from.
+ 
+
+00:08:14.000 --> 00:08:15.750
+that is where control Cody came from.
+So,<00:08:14.120><c> feel</c><00:08:14.360><c> free</c><00:08:14.600><c> to</c><00:08:14.880><c> take</c><00:08:15.120><c> a</c><00:08:15.160><c> look</c><00:08:15.400><c> at</c><00:08:15.560><c> what</c>
+
+00:08:15.750 --> 00:08:15.760
+So, feel free to take a look at what
+ 
+
+00:08:15.760 --> 00:08:18.990
+So, feel free to take a look at what
+control<00:08:16.160><c> Cody</c><00:08:16.440><c> does,</c><00:08:17.160><c> and</c><00:08:17.840><c> you</c><00:08:18.000><c> can</c><00:08:18.480><c> build</c><00:08:18.800><c> out</c>
+
+00:08:18.990 --> 00:08:19.000
+control Cody does, and you can build out
+ 
+
+00:08:19.000 --> 00:08:20.830
+control Cody does, and you can build out
+your<00:08:19.200><c> own</c><00:08:19.400><c> version</c><00:08:19.880><c> of</c><00:08:20.040><c> this</c><00:08:20.240><c> exact</c><00:08:20.640><c> same</c>
+
+00:08:20.830 --> 00:08:20.840
+your own version of this exact same
+ 
+
+00:08:20.840 --> 00:08:22.990
+your own version of this exact same
+thing<00:08:21.480><c> so</c><00:08:21.600><c> that</c><00:08:21.800><c> your</c><00:08:22.000><c> agents</c><00:08:22.400><c> can</c><00:08:22.560><c> verify</c>
+
+00:08:22.990 --> 00:08:23.000
+thing so that your agents can verify
+ 
+
+00:08:23.000 --> 00:08:25.270
+thing so that your agents can verify
+their<00:08:23.200><c> own</c><00:08:23.360><c> work</c><00:08:23.600><c> better.</c><00:08:24.440><c> And</c><00:08:24.560><c> then</c><00:08:24.760><c> on</c><00:08:24.960><c> top</c>
+
+00:08:25.270 --> 00:08:25.280
+their own work better. And then on top
+ 
+
+00:08:25.280 --> 00:08:28.110
+their own work better. And then on top
+of<00:08:25.400><c> that,</c><00:08:26.080><c> when</c><00:08:26.480><c> an</c><00:08:26.680><c> agent</c><00:08:27.160><c> finally</c><00:08:27.640><c> opens</c><00:08:28.040><c> the</c>
+
+00:08:28.110 --> 00:08:28.120
+of that, when an agent finally opens the
+ 
+
+00:08:28.120 --> 00:08:29.990
+of that, when an agent finally opens the
+pull<00:08:28.280><c> request,</c><00:08:28.760><c> it</c><00:08:28.919><c> needs</c><00:08:29.160><c> to</c><00:08:29.240><c> create</c><00:08:29.640><c> this</c>
+
+00:08:29.990 --> 00:08:30.000
+pull request, it needs to create this
+ 
+
+00:08:30.000 --> 00:08:31.830
+pull request, it needs to create this
+system<00:08:30.600><c> recap.</c><00:08:31.120><c> And</c><00:08:31.240><c> so</c><00:08:31.360><c> I've</c><00:08:31.480><c> got</c><00:08:31.680><c> this</c>
+
+00:08:31.830 --> 00:08:31.840
+system recap. And so I've got this
+ 
+
+00:08:31.840 --> 00:08:34.550
+system recap. And so I've got this
+system<00:08:32.159><c> recap</c><00:08:32.560><c> skill</c><00:08:33.200><c> that</c><00:08:33.479><c> tells</c><00:08:33.719><c> the</c><00:08:33.840><c> agent</c>
+
+00:08:34.550 --> 00:08:34.560
+system recap skill that tells the agent
+ 
+
+00:08:34.560 --> 00:08:36.630
+system recap skill that tells the agent
+what<00:08:34.800><c> it's</c><00:08:34.919><c> supposed</c><00:08:35.360><c> to</c><00:08:35.440><c> do</c><00:08:35.840><c> when</c><00:08:36.039><c> it</c><00:08:36.200><c> opens</c><00:08:36.560><c> a</c>
+
+00:08:36.630 --> 00:08:36.640
+what it's supposed to do when it opens a
+ 
+
+00:08:36.640 --> 00:08:38.750
+what it's supposed to do when it opens a
+pull<00:08:36.840><c> request.</c><00:08:37.280><c> And</c><00:08:37.440><c> one</c><00:08:37.599><c> of</c><00:08:37.680><c> those</c><00:08:37.840><c> things</c><00:08:38.520><c> is</c>
+
+00:08:38.750 --> 00:08:38.760
+pull request. And one of those things is
+ 
+
+00:08:38.760 --> 00:08:41.589
+pull request. And one of those things is
+to<00:08:39.000><c> have</c><00:08:39.200><c> this</c><00:08:39.400><c> section</c><00:08:39.880><c> for</c><00:08:40.080><c> system</c><00:08:40.560><c> changes.</c>
+
+00:08:41.589 --> 00:08:41.599
+to have this section for system changes.
+ 
+
+00:08:41.599 --> 00:08:44.110
+to have this section for system changes.
+And<00:08:42.039><c> what</c><00:08:42.200><c> this</c><00:08:42.440><c> ends</c><00:08:42.680><c> up</c><00:08:43.080><c> looking</c><00:08:43.440><c> like</c><00:08:43.800><c> is</c>
+
+00:08:44.110 --> 00:08:44.120
+And what this ends up looking like is
+ 
+
+00:08:44.120 --> 00:08:46.350
+And what this ends up looking like is
+useful<00:08:44.560><c> for</c><00:08:44.720><c> me</c><00:08:45.000><c> because</c><00:08:45.480><c> I</c><00:08:45.600><c> can</c><00:08:45.800><c> see</c><00:08:46.080><c> what</c>
+
+00:08:46.350 --> 00:08:46.360
+useful for me because I can see what
+ 
+
+00:08:46.360 --> 00:08:48.270
+useful for me because I can see what
+primitives<00:08:46.839><c> were</c><00:08:47.000><c> touched</c><00:08:47.440><c> and</c><00:08:47.720><c> and</c><00:08:48.000><c> all</c><00:08:48.200><c> of</c>
+
+00:08:48.270 --> 00:08:48.280
+primitives were touched and and all of
+ 
+
+00:08:48.280 --> 00:08:51.070
+primitives were touched and and all of
+that<00:08:48.520><c> and</c><00:08:49.000><c> and</c><00:08:49.200><c> what</c><00:08:49.320><c> does</c><00:08:49.480><c> it</c><00:08:49.600><c> think</c><00:08:49.880><c> it's</c>
+
+00:08:51.070 --> 00:08:51.080
+that and and what does it think it's
+ 
+
+00:08:51.080 --> 00:08:52.510
+that and and what does it think it's
+as<00:08:51.200><c> far</c><00:08:51.360><c> as</c><00:08:51.480><c> the</c><00:08:51.600><c> risk</c><00:08:51.880><c> is</c><00:08:52.000><c> concerned?</c><00:08:52.440><c> It</c>
+
+00:08:52.510 --> 00:08:52.520
+as far as the risk is concerned? It
+ 
+
+00:08:52.520 --> 00:08:54.630
+as far as the risk is concerned? It
+looks<00:08:52.680><c> like</c><00:08:52.839><c> this</c><00:08:53.000><c> is</c><00:08:53.120><c> medium</c><00:08:53.520><c> risk.</c><00:08:54.320><c> Um</c><00:08:54.480><c> but</c>
+
+00:08:54.630 --> 00:08:54.640
+looks like this is medium risk. Um but
+ 
+
+00:08:54.640 --> 00:08:57.270
+looks like this is medium risk. Um but
+then<00:08:54.760><c> it</c><00:08:54.880><c> also</c><00:08:55.160><c> shows</c><00:08:55.560><c> a</c><00:08:55.680><c> control</c><00:08:56.200><c> flow,</c><00:08:56.520><c> so</c><00:08:56.760><c> or</c>
+
+00:08:57.270 --> 00:08:57.280
+then it also shows a control flow, so or
+ 
+
+00:08:57.280 --> 00:08:59.750
+then it also shows a control flow, so or
+change<00:08:57.640><c> flow,</c><00:08:57.880><c> so</c><00:08:58.040><c> I</c><00:08:58.120><c> can</c><00:08:58.280><c> see</c><00:08:59.120><c> here's</c><00:08:59.520><c> what</c>
+
+00:08:59.750 --> 00:08:59.760
+change flow, so I can see here's what
+ 
+
+00:08:59.760 --> 00:09:01.310
+change flow, so I can see here's what
+the<00:08:59.920><c> new</c><00:09:00.200><c> flow</c><00:09:00.480><c> looks</c><00:09:00.720><c> like,</c><00:09:00.880><c> what</c><00:09:01.000><c> the</c><00:09:01.080><c> user</c>
+
+00:09:01.310 --> 00:09:01.320
+the new flow looks like, what the user
+ 
+
+00:09:01.320 --> 00:09:03.030
+the new flow looks like, what the user
+experience<00:09:01.760><c> is</c><00:09:01.880><c> like,</c><00:09:02.080><c> or</c><00:09:02.320><c> or</c><00:09:02.480><c> how</c><00:09:02.720><c> things</c>
+
+00:09:03.030 --> 00:09:03.040
+experience is like, or or how things
+ 
+
+00:09:03.040 --> 00:09:04.829
+experience is like, or or how things
+move<00:09:03.400><c> between</c><00:09:03.760><c> different</c><00:09:04.040><c> modules.</c><00:09:04.520><c> All</c><00:09:04.720><c> of</c>
+
+00:09:04.829 --> 00:09:04.839
+move between different modules. All of
+ 
+
+00:09:04.839 --> 00:09:07.470
+move between different modules. All of
+that<00:09:05.440><c> is</c><00:09:05.640><c> really</c><00:09:05.880><c> useful</c><00:09:06.160><c> for</c><00:09:06.320><c> me,</c><00:09:06.880><c> but</c><00:09:07.040><c> beyond</c>
+
+00:09:07.470 --> 00:09:07.480
+that is really useful for me, but beyond
+ 
+
+00:09:07.480 --> 00:09:09.829
+that is really useful for me, but beyond
+that,<00:09:07.800><c> I</c><00:09:07.960><c> often</c><00:09:08.360><c> don't</c><00:09:08.520><c> even</c><00:09:08.760><c> look</c><00:09:08.920><c> at</c><00:09:09.040><c> this.</c>
+
+00:09:09.829 --> 00:09:09.839
+that, I often don't even look at this.
+ 
+
+00:09:09.839 --> 00:09:12.110
+that, I often don't even look at this.
+Where<00:09:10.160><c> this</c><00:09:10.480><c> becomes</c><00:09:10.880><c> valuable</c><00:09:11.440><c> is</c><00:09:11.600><c> it</c><00:09:11.720><c> forces</c>
+
+00:09:12.110 --> 00:09:12.120
+Where this becomes valuable is it forces
+ 
+
+00:09:12.120 --> 00:09:14.070
+Where this becomes valuable is it forces
+the<00:09:12.280><c> agent</c><00:09:12.960><c> to</c><00:09:13.120><c> really</c><00:09:13.400><c> think</c><00:09:13.640><c> about</c><00:09:13.920><c> what</c>
+
+00:09:14.070 --> 00:09:14.080
+the agent to really think about what
+ 
+
+00:09:14.080 --> 00:09:16.950
+the agent to really think about what
+primitives<00:09:14.560><c> it</c><00:09:14.680><c> put</c><00:09:14.880><c> together</c><00:09:15.720><c> and</c><00:09:16.520><c> make</c><00:09:16.720><c> sure</c>
+
+00:09:16.950 --> 00:09:16.960
+primitives it put together and make sure
+ 
+
+00:09:16.960 --> 00:09:19.670
+primitives it put together and make sure
+that<00:09:17.360><c> those</c><00:09:17.800><c> primitives</c><00:09:18.480><c> all</c><00:09:18.800><c> piece</c><00:09:19.080><c> together</c>
+
+00:09:19.670 --> 00:09:19.680
+that those primitives all piece together
+ 
+
+00:09:19.680 --> 00:09:22.190
+that those primitives all piece together
+in<00:09:19.839><c> a</c><00:09:19.920><c> sensible</c><00:09:20.400><c> way.</c><00:09:21.040><c> And</c><00:09:21.400><c> this</c><00:09:21.640><c> also</c><00:09:22.040><c> is</c>
+
+00:09:22.190 --> 00:09:22.200
+in a sensible way. And this also is
+ 
+
+00:09:22.200 --> 00:09:24.829
+in a sensible way. And this also is
+useful<00:09:22.839><c> for</c><00:09:23.440><c> the</c><00:09:23.560><c> review</c><00:09:23.960><c> agents,</c><00:09:24.560><c> which</c>
+
+00:09:24.829 --> 00:09:24.839
+useful for the review agents, which
+ 
+
+00:09:24.839 --> 00:09:26.950
+useful for the review agents, which
+leads<00:09:25.120><c> us</c><00:09:25.280><c> into</c><00:09:25.640><c> how</c><00:09:25.880><c> do</c><00:09:26.000><c> you</c><00:09:26.120><c> catch</c><00:09:26.400><c> mistakes</c>
+
+00:09:26.950 --> 00:09:26.960
+leads us into how do you catch mistakes
+ 
+
+00:09:26.960 --> 00:09:29.310
+leads us into how do you catch mistakes
+if<00:09:27.240><c> the</c><00:09:27.440><c> agent</c><00:09:27.800><c> does</c><00:09:28.200><c> end</c><00:09:28.360><c> up</c><00:09:28.480><c> making</c><00:09:28.839><c> a</c><00:09:28.920><c> PR</c>
+
+00:09:29.310 --> 00:09:29.320
+if the agent does end up making a PR
+ 
+
+00:09:29.320 --> 00:09:32.550
+if the agent does end up making a PR
+with<00:09:29.720><c> some</c><00:09:29.920><c> mistakes.</c><00:09:30.800><c> And</c><00:09:31.240><c> the</c><00:09:31.480><c> real</c><00:09:32.280><c> key</c>
+
+00:09:32.550 --> 00:09:32.560
+with some mistakes. And the real key
+ 
+
+00:09:32.560 --> 00:09:35.150
+with some mistakes. And the real key
+here<00:09:32.960><c> is</c><00:09:33.200><c> this</c><00:09:33.560><c> ship</c><00:09:33.920><c> PR</c><00:09:34.240><c> skill,</c><00:09:34.880><c> which</c><00:09:35.040><c> is</c>
+
+00:09:35.150 --> 00:09:35.160
+here is this ship PR skill, which is
+ 
+
+00:09:35.160 --> 00:09:38.270
+here is this ship PR skill, which is
+just<00:09:35.440><c> a</c><00:09:35.680><c> a</c><00:09:35.960><c> proxy</c><00:09:36.839><c> for</c><00:09:37.120><c> the</c><00:09:37.240><c> ship</c><00:09:37.560><c> PR</c><00:09:37.880><c> package</c>
+
+00:09:38.270 --> 00:09:38.280
+just a a proxy for the ship PR package
+ 
+
+00:09:38.280 --> 00:09:39.990
+just a a proxy for the ship PR package
+that<00:09:38.440><c> I've</c><00:09:38.560><c> got</c><00:09:38.760><c> in</c><00:09:38.880><c> Cody.</c><00:09:39.160><c> So,</c><00:09:39.320><c> I've</c><00:09:39.400><c> turned</c>
+
+00:09:39.990 --> 00:09:40.000
+that I've got in Cody. So, I've turned
+ 
+
+00:09:40.000 --> 00:09:41.350
+that I've got in Cody. So, I've turned
+all<00:09:40.200><c> of</c><00:09:40.280><c> the</c><00:09:40.400><c> things</c><00:09:40.640><c> that</c><00:09:40.760><c> I</c><00:09:40.840><c> want</c><00:09:41.000><c> the</c><00:09:41.080><c> agent</c>
+
+00:09:41.350 --> 00:09:41.360
+all of the things that I want the agent
+ 
+
+00:09:41.360 --> 00:09:44.030
+all of the things that I want the agent
+to<00:09:41.480><c> do</c><00:09:41.800><c> into</c><00:09:42.040><c> deterministic</c><00:09:42.720><c> code,</c><00:09:43.400><c> and</c><00:09:43.760><c> agent</c>
+
+00:09:44.030 --> 00:09:44.040
+to do into deterministic code, and agent
+ 
+
+00:09:44.040 --> 00:09:45.870
+to do into deterministic code, and agent
+can<00:09:44.160><c> simply</c><00:09:44.480><c> just</c><00:09:44.880><c> run</c><00:09:45.120><c> this,</c><00:09:45.480><c> and</c><00:09:45.640><c> it</c><00:09:45.720><c> will</c>
+
+00:09:45.870 --> 00:09:45.880
+can simply just run this, and it will
+ 
+
+00:09:45.880 --> 00:09:47.950
+can simply just run this, and it will
+get<00:09:46.080><c> exactly</c><00:09:46.960><c> like</c><00:09:47.160><c> a</c><00:09:47.280><c> progressively</c>
+
+00:09:47.950 --> 00:09:47.960
+get exactly like a progressively
+ 
+
+00:09:47.960 --> 00:09:50.030
+get exactly like a progressively
+disclosed<00:09:48.880><c> the</c><00:09:49.000><c> information</c><00:09:49.480><c> that</c><00:09:49.640><c> it</c><00:09:49.720><c> needs</c>
+
+00:09:50.030 --> 00:09:50.040
+disclosed the information that it needs
+ 
+
+00:09:50.040 --> 00:09:53.470
+disclosed the information that it needs
+to<00:09:50.160><c> follow</c><00:09:50.480><c> through</c><00:09:51.160><c> the</c><00:09:51.280><c> steps.</c><00:09:52.160><c> And</c><00:09:52.520><c> so,</c>
+
+00:09:53.470 --> 00:09:53.480
+to follow through the steps. And so,
+ 
+
+00:09:53.480 --> 00:09:55.870
+to follow through the steps. And so,
+uh<00:09:53.800><c> with</c><00:09:53.960><c> the</c><00:09:54.080><c> ship</c><00:09:54.400><c> PR</c><00:09:54.720><c> skill,</c><00:09:55.000><c> you</c><00:09:55.160><c> end</c><00:09:55.400><c> up</c>
+
+00:09:55.870 --> 00:09:55.880
+uh with the ship PR skill, you end up
+ 
+
+00:09:55.880 --> 00:09:57.470
+uh with the ship PR skill, you end up
+with<00:09:56.280><c> uh</c><00:09:56.440><c> a</c><00:09:56.480><c> number</c><00:09:56.800><c> of</c><00:09:56.840><c> things</c><00:09:57.040><c> it's</c><00:09:57.160><c> supposed</c>
+
+00:09:57.470 --> 00:09:57.480
+with uh a number of things it's supposed
+ 
+
+00:09:57.480 --> 00:09:59.230
+with uh a number of things it's supposed
+to<00:09:57.520><c> do.</c><00:09:57.800><c> It's</c><00:09:57.920><c> supposed</c><00:09:58.160><c> to</c><00:09:58.240><c> check</c><00:09:58.480><c> CI</c><00:09:58.960><c> and</c><00:09:59.080><c> all</c>
+
+00:09:59.230 --> 00:09:59.240
+to do. It's supposed to check CI and all
+ 
+
+00:09:59.240 --> 00:10:01.110
+to do. It's supposed to check CI and all
+of<00:09:59.320><c> that</c><00:09:59.520><c> stuff.</c><00:10:00.080><c> Uh</c><00:10:00.280><c> but,</c><00:10:00.400><c> it</c><00:10:00.560><c> also</c><00:10:01.000><c> is</c>
+
+00:10:01.110 --> 00:10:01.120
+of that stuff. Uh but, it also is
+ 
+
+00:10:01.120 --> 00:10:04.110
+of that stuff. Uh but, it also is
+supposed<00:10:01.480><c> to</c><00:10:01.600><c> iterate</c><00:10:02.280><c> on</c><00:10:02.800><c> the</c><00:10:03.200><c> AI</c><00:10:03.520><c> reviewers.</c>
+
+00:10:04.110 --> 00:10:04.120
+supposed to iterate on the AI reviewers.
+ 
+
+00:10:04.120 --> 00:10:06.470
+supposed to iterate on the AI reviewers.
+And<00:10:04.280><c> so,</c><00:10:04.400><c> I've</c><00:10:04.520><c> got</c><00:10:04.800><c> Code</c><00:10:05.040><c> Rabbit</c><00:10:05.360><c> in</c><00:10:05.520><c> here.</c><00:10:06.240><c> Uh</c>
+
+00:10:06.470 --> 00:10:06.480
+And so, I've got Code Rabbit in here. Uh
+ 
+
+00:10:06.480 --> 00:10:09.910
+And so, I've got Code Rabbit in here. Uh
+I<00:10:06.600><c> also</c><00:10:06.840><c> have</c><00:10:07.040><c> BugBot</c><00:10:07.560><c> in</c><00:10:07.720><c> here.</c><00:10:08.640><c> Um</c><00:10:08.880><c> I</c><00:10:09.040><c> have</c><00:10:09.680><c> a</c>
+
+00:10:09.910 --> 00:10:09.920
+I also have BugBot in here. Um I have a
+ 
+
+00:10:09.920 --> 00:10:12.670
+I also have BugBot in here. Um I have a
+a<00:10:10.000><c> preview</c><00:10:10.640><c> that</c><00:10:10.880><c> gets</c><00:10:11.120><c> deployed,</c><00:10:11.640><c> and</c><00:10:11.920><c> it</c><00:10:12.160><c> the</c>
+
+00:10:12.670 --> 00:10:12.680
+a preview that gets deployed, and it the
+ 
+
+00:10:12.680 --> 00:10:15.790
+a preview that gets deployed, and it the
+uh<00:10:12.800><c> control</c><00:10:13.200><c> Cody</c><00:10:13.840><c> CLI</c><00:10:14.320><c> can</c><00:10:14.560><c> also</c><00:10:14.960><c> interact</c>
+
+00:10:15.790 --> 00:10:15.800
+uh control Cody CLI can also interact
+ 
+
+00:10:15.800 --> 00:10:17.750
+uh control Cody CLI can also interact
+with<00:10:16.160><c> the</c><00:10:16.440><c> deployed</c><00:10:16.960><c> preview.</c><00:10:17.400><c> So,</c><00:10:17.560><c> if</c><00:10:17.680><c> it</c>
+
+00:10:17.750 --> 00:10:17.760
+with the deployed preview. So, if it
+ 
+
+00:10:17.760 --> 00:10:19.670
+with the deployed preview. So, if it
+needs<00:10:18.000><c> to</c><00:10:18.160><c> run</c><00:10:18.440><c> in</c><00:10:18.600><c> production</c><00:10:19.120><c> and</c><00:10:19.240><c> verify</c>
+
+00:10:19.670 --> 00:10:19.680
+needs to run in production and verify
+ 
+
+00:10:19.680 --> 00:10:22.030
+needs to run in production and verify
+its<00:10:19.840><c> changes</c><00:10:20.200><c> there,</c><00:10:20.720><c> it</c><00:10:20.840><c> can</c><00:10:20.960><c> do</c><00:10:21.120><c> that.</c><00:10:21.880><c> Uh</c>
+
+00:10:22.030 --> 00:10:22.040
+its changes there, it can do that. Uh
+ 
+
+00:10:22.040 --> 00:10:24.070
+its changes there, it can do that. Uh
+we've<00:10:22.200><c> got</c><00:10:22.640><c> uh</c><00:10:22.800><c> of</c><00:10:22.920><c> course</c><00:10:23.120><c> BugBot</c><00:10:23.440><c> in</c><00:10:23.520><c> here.</c>
+
+00:10:24.070 --> 00:10:24.080
+we've got uh of course BugBot in here.
+ 
+
+00:10:24.080 --> 00:10:26.830
+we've got uh of course BugBot in here.
+Uh<00:10:24.280><c> Devin</c><00:10:24.840><c> AI</c><00:10:25.360><c> review</c><00:10:25.720><c> is</c><00:10:25.840><c> in</c><00:10:25.960><c> here</c><00:10:26.160><c> as</c><00:10:26.320><c> well.</c>
+
+00:10:26.830 --> 00:10:26.840
+Uh Devin AI review is in here as well.
+ 
+
+00:10:26.840 --> 00:10:29.110
+Uh Devin AI review is in here as well.
+Uh<00:10:26.960><c> so,</c><00:10:27.120><c> yes,</c><00:10:27.440><c> I</c><00:10:27.520><c> use</c><00:10:27.760><c> all</c><00:10:27.880><c> three</c><00:10:28.120><c> of</c><00:10:28.200><c> them.</c><00:10:28.880><c> Uh</c>
+
+00:10:29.110 --> 00:10:29.120
+Uh so, yes, I use all three of them. Uh
+ 
+
+00:10:29.120 --> 00:10:31.430
+Uh so, yes, I use all three of them. Uh
+after<00:10:29.560><c> review,</c><00:10:30.040><c> I</c><00:10:30.120><c> think</c><00:10:30.400><c> if</c><00:10:30.600><c> I</c><00:10:30.640><c> could</c><00:10:30.800><c> only</c>
+
+00:10:31.430 --> 00:10:31.440
+after review, I think if I could only
+ 
+
+00:10:31.440 --> 00:10:33.310
+after review, I think if I could only
+have<00:10:31.720><c> one,</c><00:10:32.000><c> then</c><00:10:32.120><c> I</c><00:10:32.200><c> would</c><00:10:32.360><c> keep</c><00:10:32.880><c> the</c><00:10:33.200><c> the</c>
+
+00:10:33.310 --> 00:10:33.320
+have one, then I would keep the the
+ 
+
+00:10:33.320 --> 00:10:35.190
+have one, then I would keep the the
+Cursor<00:10:33.680><c> BugBot</c><00:10:34.160><c> one</c><00:10:34.400><c> because</c><00:10:34.680><c> it</c><00:10:34.840><c> seems</c><00:10:35.120><c> to</c>
+
+00:10:35.190 --> 00:10:35.200
+Cursor BugBot one because it seems to
+ 
+
+00:10:35.200 --> 00:10:37.750
+Cursor BugBot one because it seems to
+have<00:10:35.360><c> caught</c><00:10:35.920><c> more</c><00:10:36.360><c> problems.</c><00:10:37.080><c> But,</c><00:10:37.280><c> Devin</c><00:10:37.600><c> is</c>
+
+00:10:37.750 --> 00:10:37.760
+have caught more problems. But, Devin is
+ 
+
+00:10:37.760 --> 00:10:39.270
+have caught more problems. But, Devin is
+really<00:10:38.000><c> good</c><00:10:38.280><c> at</c><00:10:38.440><c> catching</c><00:10:38.760><c> security</c>
+
+00:10:39.270 --> 00:10:39.280
+really good at catching security
+ 
+
+00:10:39.280 --> 00:10:42.190
+really good at catching security
+problems,<00:10:40.080><c> and</c><00:10:40.600><c> uh</c><00:10:40.760><c> Code</c><00:10:40.960><c> Rabbit</c><00:10:41.320><c> is</c><00:10:41.560><c> actually</c>
+
+00:10:42.190 --> 00:10:42.200
+problems, and uh Code Rabbit is actually
+ 
+
+00:10:42.200 --> 00:10:42.910
+problems, and uh Code Rabbit is actually
+um
+
+00:10:42.910 --> 00:10:42.920
+um
+ 
+
+00:10:42.920 --> 00:10:44.630
+um
+like<00:10:43.200><c> the</c><00:10:43.560><c> the</c><00:10:43.680><c> things</c><00:10:43.960><c> that</c><00:10:44.080><c> it</c><00:10:44.200><c> does</c><00:10:44.400><c> catch</c>
+
+00:10:44.630 --> 00:10:44.640
+like the the things that it does catch
+ 
+
+00:10:44.640 --> 00:10:46.630
+like the the things that it does catch
+are<00:10:45.040><c> also</c><00:10:45.400><c> really</c><00:10:45.640><c> valuable.</c><00:10:46.040><c> So,</c><00:10:46.280><c> I'm</c><00:10:46.400><c> glad</c>
+
+00:10:46.630 --> 00:10:46.640
+are also really valuable. So, I'm glad
+ 
+
+00:10:46.640 --> 00:10:47.630
+are also really valuable. So, I'm glad
+that<00:10:46.760><c> I've</c><00:10:46.839><c> got</c><00:10:47.000><c> all</c><00:10:47.120><c> three,</c><00:10:47.320><c> but</c><00:10:47.440><c> if</c><00:10:47.560><c> you</c>
+
+00:10:47.630 --> 00:10:47.640
+that I've got all three, but if you
+ 
+
+00:10:47.640 --> 00:10:49.590
+that I've got all three, but if you
+could<00:10:47.760><c> only</c><00:10:47.960><c> choose</c><00:10:48.160><c> one,</c><00:10:48.400><c> I'd</c><00:10:48.520><c> probably</c><00:10:49.040><c> just</c>
+
+00:10:49.590 --> 00:10:49.600
+could only choose one, I'd probably just
+ 
+
+00:10:49.600 --> 00:10:51.790
+could only choose one, I'd probably just
+stick<00:10:49.839><c> with</c><00:10:50.000><c> Cursor</c><00:10:50.240><c> BugBot.</c><00:10:51.120><c> Um</c><00:10:51.440><c> but,</c><00:10:51.600><c> yeah,</c>
+
+00:10:51.790 --> 00:10:51.800
+stick with Cursor BugBot. Um but, yeah,
+ 
+
+00:10:51.800 --> 00:10:53.590
+stick with Cursor BugBot. Um but, yeah,
+all<00:10:52.120><c> of</c><00:10:52.200><c> these</c><00:10:52.480><c> are</c><00:10:52.839><c> they're</c><00:10:53.080><c> iterating</c>
+
+00:10:53.590 --> 00:10:53.600
+all of these are they're iterating
+ 
+
+00:10:53.600 --> 00:10:56.110
+all of these are they're iterating
+together<00:10:54.120><c> and</c><00:10:54.680><c> um</c><00:10:55.080><c> fixing</c><00:10:55.600><c> all</c><00:10:55.800><c> of</c><00:10:55.880><c> these</c>
+
+00:10:56.110 --> 00:10:56.120
+together and um fixing all of these
+ 
+
+00:10:56.120 --> 00:10:58.310
+together and um fixing all of these
+issues.<00:10:56.520><c> That's</c><00:10:56.760><c> the</c><00:10:56.880><c> entire</c><00:10:57.360><c> experience</c>
+
+00:10:58.310 --> 00:10:58.320
+issues. That's the entire experience
+ 
+
+00:10:58.320 --> 00:11:00.270
+issues. That's the entire experience
+until<00:10:58.880><c> all</c><00:10:59.120><c> of</c><00:10:59.240><c> the</c><00:10:59.720><c> uh</c>
+
+00:11:00.270 --> 00:11:00.280
+until all of the uh
+ 
+
+00:11:00.280 --> 00:11:02.870
+until all of the uh
+the<00:11:00.680><c> AI</c><00:11:01.000><c> reviewers</c><00:11:01.839><c> and</c><00:11:02.000><c> CI</c><00:11:02.320><c> and</c><00:11:02.480><c> everything</c>
+
+00:11:02.870 --> 00:11:02.880
+the AI reviewers and CI and everything
+ 
+
+00:11:02.880 --> 00:11:05.190
+the AI reviewers and CI and everything
+is<00:11:03.000><c> green,</c><00:11:03.760><c> and</c><00:11:04.000><c> the</c><00:11:04.200><c> agent</c><00:11:04.520><c> itself</c><00:11:05.000><c> has</c>
+
+00:11:05.190 --> 00:11:05.200
+is green, and the agent itself has
+ 
+
+00:11:05.200 --> 00:11:07.430
+is green, and the agent itself has
+tested<00:11:05.560><c> things</c><00:11:05.800><c> in</c><00:11:06.160><c> the</c><00:11:06.600><c> uh</c><00:11:06.680><c> preview</c><00:11:07.040><c> deploy,</c>
+
+00:11:07.430 --> 00:11:07.440
+tested things in the uh preview deploy,
+ 
+
+00:11:07.440 --> 00:11:09.350
+tested things in the uh preview deploy,
+and<00:11:07.600><c> all</c><00:11:07.800><c> of</c><00:11:07.880><c> that</c><00:11:08.080><c> looks</c><00:11:08.320><c> good.</c><00:11:08.960><c> And</c><00:11:09.200><c> if</c>
+
+00:11:09.350 --> 00:11:09.360
+and all of that looks good. And if
+ 
+
+00:11:09.360 --> 00:11:11.070
+and all of that looks good. And if
+that's<00:11:09.600><c> the</c><00:11:09.720><c> case,</c><00:11:10.200><c> then</c><00:11:10.360><c> it</c><00:11:10.480><c> will</c><00:11:10.600><c> trigger</c><00:11:10.960><c> a</c>
+
+00:11:11.070 --> 00:11:11.080
+that's the case, then it will trigger a
+ 
+
+00:11:11.080 --> 00:11:14.030
+that's the case, then it will trigger a
+merge.<00:11:11.760><c> And</c><00:11:12.080><c> that</c><00:11:12.280><c> goes</c><00:11:12.560><c> through</c><00:11:12.839><c> the</c><00:11:12.960><c> ship</c><00:11:13.280><c> PR</c>
+
+00:11:14.030 --> 00:11:14.040
+merge. And that goes through the ship PR
+ 
+
+00:11:14.040 --> 00:11:15.590
+merge. And that goes through the ship PR
+um<00:11:14.240><c> thing.</c><00:11:14.480><c> So,</c><00:11:14.640><c> sometimes</c><00:11:15.080><c> that</c><00:11:15.280><c> ends</c><00:11:15.440><c> up</c>
+
+00:11:15.590 --> 00:11:15.600
+um thing. So, sometimes that ends up
+ 
+
+00:11:15.600 --> 00:11:17.790
+um thing. So, sometimes that ends up
+coming<00:11:15.839><c> through</c><00:11:16.560><c> uh</c><00:11:16.800><c> under</c><00:11:17.160><c> my</c><00:11:17.360><c> own</c><00:11:17.480><c> account,</c>
+
+00:11:17.790 --> 00:11:17.800
+coming through uh under my own account,
+ 
+
+00:11:17.800 --> 00:11:19.710
+coming through uh under my own account,
+which<00:11:18.320><c> I</c><00:11:18.440><c> don't</c><00:11:18.640><c> care.</c><00:11:18.800><c> That's</c><00:11:19.000><c> fine.</c><00:11:19.520><c> Uh</c><00:11:19.600><c> it</c>
+
+00:11:19.710 --> 00:11:19.720
+which I don't care. That's fine. Uh it
+ 
+
+00:11:19.720 --> 00:11:21.870
+which I don't care. That's fine. Uh it
+can<00:11:19.880><c> use</c><00:11:20.080><c> my</c><00:11:20.280><c> own</c><00:11:20.400><c> account.</c><00:11:21.160><c> And</c><00:11:21.720><c> uh</c>
+
+00:11:21.870 --> 00:11:21.880
+can use my own account. And uh
+ 
+
+00:11:21.880 --> 00:11:23.390
+can use my own account. And uh
+ultimately,<00:11:22.360><c> that</c><00:11:22.560><c> gets</c><00:11:22.920><c> shipped</c><00:11:23.280><c> to</c>
+
+00:11:23.390 --> 00:11:23.400
+ultimately, that gets shipped to
+ 
+
+00:11:23.400 --> 00:11:25.510
+ultimately, that gets shipped to
+production.<00:11:24.240><c> But,</c><00:11:24.400><c> that's</c><00:11:24.600><c> not</c><00:11:24.839><c> the</c><00:11:25.040><c> end</c><00:11:25.360><c> for</c>
+
+00:11:25.510 --> 00:11:25.520
+production. But, that's not the end for
+ 
+
+00:11:25.520 --> 00:11:27.310
+production. But, that's not the end for
+the<00:11:25.640><c> agents</c><00:11:25.960><c> because</c><00:11:26.280><c> they're</c><00:11:26.520><c> in</c><00:11:27.080><c> uh</c>
+
+00:11:27.310 --> 00:11:27.320
+the agents because they're in uh
+ 
+
+00:11:27.320 --> 00:11:30.110
+the agents because they're in uh
+intended<00:11:28.280><c> to</c><00:11:28.600><c> not</c><00:11:28.800><c> only</c><00:11:29.000><c> merge,</c><00:11:29.440><c> but</c><00:11:29.640><c> also</c>
+
+00:11:30.110 --> 00:11:30.120
+intended to not only merge, but also
+ 
+
+00:11:30.120 --> 00:11:32.710
+intended to not only merge, but also
+keep<00:11:30.400><c> an</c><00:11:30.600><c> eye</c><00:11:30.839><c> on</c><00:11:31.000><c> the</c><00:11:31.080><c> deploy,</c><00:11:32.160><c> and</c><00:11:32.360><c> then</c>
+
+00:11:32.710 --> 00:11:32.720
+keep an eye on the deploy, and then
+ 
+
+00:11:32.720 --> 00:11:35.030
+keep an eye on the deploy, and then
+they're<00:11:32.880><c> supposed</c><00:11:33.280><c> to</c><00:11:33.560><c> log</c><00:11:33.960><c> friction</c><00:11:34.480><c> issues.</c>
+
+00:11:35.030 --> 00:11:35.040
+they're supposed to log friction issues.
+ 
+
+00:11:35.040 --> 00:11:36.790
+they're supposed to log friction issues.
+And<00:11:35.240><c> so,</c><00:11:35.360><c> they</c><00:11:35.560><c> look</c><00:11:35.760><c> at</c><00:11:35.840><c> their</c><00:11:36.120><c> history</c><00:11:36.680><c> of</c>
+
+00:11:36.790 --> 00:11:36.800
+And so, they look at their history of
+ 
+
+00:11:36.800 --> 00:11:38.750
+And so, they look at their history of
+their<00:11:37.000><c> conversation</c><00:11:37.560><c> and</c><00:11:37.640><c> their</c><00:11:37.800><c> experience</c>
+
+00:11:38.750 --> 00:11:38.760
+their conversation and their experience
+ 
+
+00:11:38.760 --> 00:11:41.030
+their conversation and their experience
+working<00:11:39.120><c> in</c><00:11:39.200><c> the</c><00:11:39.280><c> code</c><00:11:39.480><c> base,</c><00:11:39.800><c> and</c><00:11:40.240><c> they</c><00:11:40.440><c> just</c>
+
+00:11:41.030 --> 00:11:41.040
+working in the code base, and they just
+ 
+
+00:11:41.040 --> 00:11:43.510
+working in the code base, and they just
+let<00:11:41.280><c> us</c><00:11:41.400><c> know</c><00:11:41.720><c> what</c><00:11:41.960><c> problems</c><00:11:42.360><c> they</c><00:11:42.520><c> ran</c><00:11:42.760><c> into.</c>
+
+00:11:43.510 --> 00:11:43.520
+let us know what problems they ran into.
+ 
+
+00:11:43.520 --> 00:11:45.070
+let us know what problems they ran into.
+And<00:11:43.640><c> then</c><00:11:43.840><c> when</c><00:11:43.960><c> it's</c><00:11:44.080><c> all</c><00:11:44.240><c> done,</c><00:11:44.520><c> it</c><00:11:44.680><c> sends</c><00:11:45.000><c> a</c>
+
+00:11:45.070 --> 00:11:45.080
+And then when it's all done, it sends a
+ 
+
+00:11:45.080 --> 00:11:47.070
+And then when it's all done, it sends a
+report<00:11:45.520><c> to</c><00:11:45.600><c> Discord,</c><00:11:46.160><c> so</c><00:11:46.320><c> I</c><00:11:46.400><c> can</c><00:11:46.560><c> pull</c><00:11:46.760><c> that</c><00:11:46.920><c> up</c>
+
+00:11:47.070 --> 00:11:47.080
+report to Discord, so I can pull that up
+ 
+
+00:11:47.080 --> 00:11:48.590
+report to Discord, so I can pull that up
+at<00:11:47.200><c> any</c><00:11:47.360><c> time</c><00:11:47.680><c> on</c><00:11:47.800><c> my</c><00:11:47.920><c> phone</c><00:11:48.280><c> or</c><00:11:48.400><c> on</c><00:11:48.480><c> my</c>
+
+00:11:48.590 --> 00:11:48.600
+at any time on my phone or on my
+ 
+
+00:11:48.600 --> 00:11:50.710
+at any time on my phone or on my
+computer<00:11:49.320><c> and</c><00:11:49.720><c> take</c><00:11:49.920><c> a</c><00:11:50.000><c> look</c><00:11:50.280><c> at</c><00:11:50.440><c> what</c><00:11:50.600><c> the</c>
+
+00:11:50.710 --> 00:11:50.720
+computer and take a look at what the
+ 
+
+00:11:50.720 --> 00:11:52.470
+computer and take a look at what the
+agents<00:11:51.000><c> have</c><00:11:51.080><c> been</c><00:11:51.200><c> working</c><00:11:51.520><c> on.</c><00:11:51.920><c> It</c><00:11:52.040><c> tells</c><00:11:52.280><c> me</c>
+
+00:11:52.470 --> 00:11:52.480
+agents have been working on. It tells me
+ 
+
+00:11:52.480 --> 00:11:54.670
+agents have been working on. It tells me
+the<00:11:52.600><c> cost,</c><00:11:53.080><c> the</c><00:11:53.200><c> diff,</c><00:11:53.920><c> the</c><00:11:54.080><c> model</c><00:11:54.360><c> that</c><00:11:54.520><c> was</c>
+
+00:11:54.670 --> 00:11:54.680
+the cost, the diff, the model that was
+ 
+
+00:11:54.680 --> 00:11:57.550
+the cost, the diff, the model that was
+used,<00:11:55.000><c> the</c><00:11:55.120><c> difficulty,</c><00:11:56.360><c> how</c><00:11:56.600><c> hard</c><00:11:56.840><c> it</c><00:11:56.960><c> was</c><00:11:57.240><c> to</c>
+
+00:11:57.550 --> 00:11:57.560
+used, the difficulty, how hard it was to
+ 
+
+00:11:57.560 --> 00:12:00.350
+used, the difficulty, how hard it was to
+to<00:11:57.680><c> do</c><00:11:57.800><c> what</c><00:11:57.920><c> it</c><00:11:58.040><c> did,</c><00:11:58.640><c> and</c><00:11:59.480><c> also</c><00:12:00.040><c> gives</c><00:12:00.200><c> me</c><00:12:00.320><c> a</c>
+
+00:12:00.350 --> 00:12:00.360
+to do what it did, and also gives me a
+ 
+
+00:12:00.360 --> 00:12:01.870
+to do what it did, and also gives me a
+link<00:12:00.560><c> to</c><00:12:00.680><c> the</c><00:12:00.760><c> PR</c><00:12:01.040><c> and</c><00:12:01.120><c> the</c><00:12:01.200><c> agent,</c><00:12:01.520><c> so</c><00:12:01.640><c> I</c><00:12:01.720><c> can</c>
+
+00:12:01.870 --> 00:12:01.880
+link to the PR and the agent, so I can
+ 
+
+00:12:01.880 --> 00:12:03.630
+link to the PR and the agent, so I can
+go<00:12:02.040><c> send</c><00:12:02.320><c> follow-up</c><00:12:02.720><c> questions</c><00:12:03.120><c> if</c><00:12:03.240><c> I</c><00:12:03.280><c> need</c><00:12:03.480><c> to</c>
+
+00:12:03.630 --> 00:12:03.640
+go send follow-up questions if I need to
+ 
+
+00:12:03.640 --> 00:12:05.830
+go send follow-up questions if I need to
+or<00:12:03.760><c> anything.</c><00:12:04.400><c> And</c><00:12:04.520><c> it's</c><00:12:04.640><c> just</c><00:12:04.800><c> cool</c><00:12:05.080><c> to</c><00:12:05.640><c> take</c>
+
+00:12:05.830 --> 00:12:05.840
+or anything. And it's just cool to take
+ 
+
+00:12:05.840 --> 00:12:07.550
+or anything. And it's just cool to take
+a<00:12:05.880><c> look</c><00:12:06.120><c> at</c><00:12:06.280><c> all</c><00:12:06.480><c> of</c><00:12:06.560><c> the</c><00:12:06.680><c> things</c><00:12:07.160><c> that</c><00:12:07.440><c> the</c>
+
+00:12:07.550 --> 00:12:07.560
+a look at all of the things that the
+ 
+
+00:12:07.560 --> 00:12:09.950
+a look at all of the things that the
+agents<00:12:07.840><c> have</c><00:12:07.920><c> been</c><00:12:08.040><c> doing.</c><00:12:08.600><c> Some</c><00:12:08.880><c> of</c><00:12:09.000><c> these</c>
+
+00:12:09.950 --> 00:12:09.960
+agents have been doing. Some of these
+ 
+
+00:12:09.960 --> 00:12:12.390
+agents have been doing. Some of these
+were<00:12:10.240><c> not</c><00:12:10.640><c> ideas</c><00:12:11.080><c> that</c><00:12:11.240><c> I</c><00:12:11.360><c> came</c><00:12:11.600><c> up</c><00:12:11.760><c> with,</c><00:12:12.040><c> and</c>
+
+00:12:12.390 --> 00:12:12.400
+were not ideas that I came up with, and
+ 
+
+00:12:12.400 --> 00:12:14.510
+were not ideas that I came up with, and
+some<00:12:12.640><c> of</c><00:12:12.720><c> them</c><00:12:13.120><c> were</c><00:12:13.680><c> just</c><00:12:13.880><c> friction</c><00:12:14.200><c> points</c>
+
+00:12:14.510 --> 00:12:14.520
+some of them were just friction points
+ 
+
+00:12:14.520 --> 00:12:18.070
+some of them were just friction points
+that<00:12:14.960><c> only</c><00:12:15.280><c> affect</c><00:12:16.000><c> the</c><00:12:16.720><c> development</c><00:12:17.560><c> of</c><00:12:17.960><c> the</c>
+
+00:12:18.070 --> 00:12:18.080
+that only affect the development of the
+ 
+
+00:12:18.080 --> 00:12:20.350
+that only affect the development of the
+software,<00:12:18.800><c> but</c><00:12:19.000><c> some</c><00:12:19.240><c> of</c><00:12:19.360><c> them</c><00:12:19.840><c> have</c><00:12:20.200><c> an</c>
+
+00:12:20.350 --> 00:12:20.360
+software, but some of them have an
+ 
+
+00:12:20.360 --> 00:12:22.670
+software, but some of them have an
+impact<00:12:20.840><c> on</c><00:12:20.960><c> production,</c><00:12:21.600><c> and</c><00:12:21.840><c> that</c><00:12:22.120><c> is</c><00:12:22.480><c> our</c>
+
+00:12:22.670 --> 00:12:22.680
+impact on production, and that is our
+ 
+
+00:12:22.680 --> 00:12:24.950
+impact on production, and that is our
+third<00:12:23.120><c> and</c><00:12:23.280><c> final</c><00:12:23.600><c> thing</c><00:12:23.840><c> here.</c><00:12:24.440><c> How</c><00:12:24.680><c> do</c><00:12:24.800><c> you</c>
+
+00:12:24.950 --> 00:12:24.960
+third and final thing here. How do you
+ 
+
+00:12:24.960 --> 00:12:27.470
+third and final thing here. How do you
+make<00:12:25.200><c> sure</c><00:12:25.560><c> that</c><00:12:25.920><c> what</c><00:12:26.200><c> they</c><00:12:26.360><c> ship,</c><00:12:26.880><c> if</c><00:12:27.280><c> they</c>
+
+00:12:27.470 --> 00:12:27.480
+make sure that what they ship, if they
+ 
+
+00:12:27.480 --> 00:12:29.270
+make sure that what they ship, if they
+manage<00:12:28.000><c> to</c><00:12:28.120><c> make</c><00:12:28.360><c> a</c><00:12:28.400><c> mistake</c><00:12:28.840><c> and</c><00:12:29.000><c> get</c><00:12:29.160><c> it</c>
+
+00:12:29.270 --> 00:12:29.280
+manage to make a mistake and get it
+ 
+
+00:12:29.280 --> 00:12:31.270
+manage to make a mistake and get it
+through<00:12:29.600><c> AI</c><00:12:30.080><c> review</c><00:12:30.400><c> and</c><00:12:30.600><c> and</c><00:12:30.840><c> all</c><00:12:31.000><c> of</c><00:12:31.080><c> that</c>
+
+00:12:31.270 --> 00:12:31.280
+through AI review and and all of that
+ 
+
+00:12:31.280 --> 00:12:33.630
+through AI review and and all of that
+process<00:12:32.040><c> and</c><00:12:32.160><c> the</c><00:12:32.280><c> testing</c><00:12:32.720><c> and</c><00:12:32.800><c> everything,</c>
+
+00:12:33.630 --> 00:12:33.640
+process and the testing and everything,
+ 
+
+00:12:33.640 --> 00:12:35.790
+process and the testing and everything,
+and<00:12:33.840><c> they</c><00:12:33.960><c> somehow</c><00:12:34.320><c> land</c><00:12:34.640><c> in</c><00:12:34.720><c> production,</c><00:12:35.560><c> how</c>
+
+00:12:35.790 --> 00:12:35.800
+and they somehow land in production, how
+ 
+
+00:12:35.800 --> 00:12:38.790
+and they somehow land in production, how
+do<00:12:35.960><c> we</c><00:12:36.200><c> reduce</c><00:12:37.080><c> the</c><00:12:37.360><c> impact</c><00:12:38.160><c> or</c><00:12:38.280><c> the</c><00:12:38.400><c> blast</c>
+
+00:12:38.790 --> 00:12:38.800
+do we reduce the impact or the blast
+ 
+
+00:12:38.800 --> 00:12:41.270
+do we reduce the impact or the blast
+radius<00:12:39.240><c> of</c><00:12:39.400><c> that?</c><00:12:39.960><c> And</c><00:12:40.280><c> that</c><00:12:40.520><c> comes</c><00:12:40.839><c> to</c>
+
+00:12:41.270 --> 00:12:41.280
+radius of that? And that comes to
+ 
+
+00:12:41.280 --> 00:12:43.829
+radius of that? And that comes to
+feature<00:12:41.600><c> flags</c><00:12:42.080><c> and</c><00:12:42.200><c> disaster</c><00:12:42.640><c> recovery.</c><00:12:43.560><c> So,</c>
+
+00:12:43.829 --> 00:12:43.839
+feature flags and disaster recovery. So,
+ 
+
+00:12:43.839 --> 00:12:46.829
+feature flags and disaster recovery. So,
+for<00:12:44.520><c> big</c><00:12:44.880><c> experiments</c><00:12:45.680><c> or</c><00:12:46.000><c> things</c><00:12:46.280><c> that</c><00:12:46.520><c> I'm</c>
+
+00:12:46.829 --> 00:12:46.839
+for big experiments or things that I'm
+ 
+
+00:12:46.839 --> 00:12:48.430
+for big experiments or things that I'm
+not<00:12:47.200><c> sure</c><00:12:47.480><c> I</c><00:12:47.520><c> want</c><00:12:47.720><c> to</c><00:12:47.760><c> commit</c><00:12:48.120><c> to</c><00:12:48.320><c> or</c>
+
+00:12:48.430 --> 00:12:48.440
+not sure I want to commit to or
+ 
+
+00:12:48.440 --> 00:12:50.390
+not sure I want to commit to or
+whatever,<00:12:49.120><c> we're</c><00:12:49.280><c> going</c><00:12:49.480><c> to</c><00:12:49.560><c> stick</c><00:12:49.880><c> that</c>
+
+00:12:50.390 --> 00:12:50.400
+whatever, we're going to stick that
+ 
+
+00:12:50.400 --> 00:12:52.750
+whatever, we're going to stick that
+behind<00:12:50.880><c> a</c><00:12:50.960><c> feature</c><00:12:51.280><c> flag.</c><00:12:51.880><c> And</c><00:12:52.000><c> an</c><00:12:52.200><c> agent</c><00:12:52.560><c> can</c>
+
+00:12:52.750 --> 00:12:52.760
+behind a feature flag. And an agent can
+ 
+
+00:12:52.760 --> 00:12:55.270
+behind a feature flag. And an agent can
+decide<00:12:53.360><c> to</c><00:12:53.480><c> create</c><00:12:53.800><c> a</c><00:12:53.880><c> feature</c><00:12:54.200><c> flag</c><00:12:54.680><c> itself.</c>
+
+00:12:55.270 --> 00:12:55.280
+decide to create a feature flag itself.
+ 
+
+00:12:55.280 --> 00:12:56.950
+decide to create a feature flag itself.
+Like<00:12:55.440><c> you</c><00:12:55.480><c> can</c><00:12:55.640><c> say,</c><00:12:55.880><c> "You</c><00:12:56.000><c> know</c><00:12:56.120><c> what?</c><00:12:56.320><c> This</c><00:12:56.880><c> I</c>
+
+00:12:56.950 --> 00:12:56.960
+Like you can say, "You know what? This I
+ 
+
+00:12:56.960 --> 00:12:58.510
+Like you can say, "You know what? This I
+feel<00:12:57.160><c> pretty</c><00:12:57.400><c> good</c><00:12:57.560><c> about</c><00:12:57.839><c> this,</c><00:12:58.040><c> but</c><00:12:58.200><c> I</c><00:12:58.240><c> think</c>
+
+00:12:58.510 --> 00:12:58.520
+feel pretty good about this, but I think
+ 
+
+00:12:58.520 --> 00:12:59.870
+feel pretty good about this, but I think
+that<00:12:58.760><c> maybe</c><00:12:59.040><c> we</c><00:12:59.160><c> should</c><00:12:59.280><c> put</c><00:12:59.440><c> this</c><00:12:59.560><c> behind</c><00:12:59.839><c> a</c>
+
+00:12:59.870 --> 00:12:59.880
+that maybe we should put this behind a
+ 
+
+00:12:59.880 --> 00:13:02.790
+that maybe we should put this behind a
+feature<00:13:00.120><c> flag."</c><00:13:00.800><c> And</c><00:13:01.120><c> we</c><00:13:01.280><c> can</c><00:13:01.560><c> attach</c><00:13:02.200><c> success</c>
+
+00:13:02.790 --> 00:13:02.800
+feature flag." And we can attach success
+ 
+
+00:13:02.800 --> 00:13:05.430
+feature flag." And we can attach success
+metrics<00:13:03.280><c> to</c><00:13:03.440><c> this</c><00:13:03.680><c> as</c><00:13:03.880><c> well,</c><00:13:04.480><c> so</c><00:13:04.640><c> that</c><00:13:04.839><c> we</c><00:13:05.240><c> can</c>
+
+00:13:05.430 --> 00:13:05.440
+metrics to this as well, so that we can
+ 
+
+00:13:05.440 --> 00:13:07.230
+metrics to this as well, so that we can
+know<00:13:05.640><c> whether</c><00:13:05.960><c> this</c><00:13:06.160><c> is</c><00:13:06.320><c> actually</c><00:13:06.760><c> moving</c><00:13:07.160><c> the</c>
+
+00:13:07.230 --> 00:13:07.240
+know whether this is actually moving the
+ 
+
+00:13:07.240 --> 00:13:09.030
+know whether this is actually moving the
+needle<00:13:07.560><c> for</c><00:13:07.720><c> the</c><00:13:07.800><c> people</c><00:13:08.080><c> who</c><00:13:08.160><c> are</c><00:13:08.320><c> opted</c><00:13:08.720><c> into</c>
+
+00:13:09.030 --> 00:13:09.040
+needle for the people who are opted into
+ 
+
+00:13:09.040 --> 00:13:12.230
+needle for the people who are opted into
+this<00:13:09.280><c> experiment.</c><00:13:10.440><c> And</c><00:13:10.920><c> that</c><00:13:11.200><c> has</c><00:13:11.400><c> been</c><00:13:11.760><c> super</c>
+
+00:13:12.230 --> 00:13:12.240
+this experiment. And that has been super
+ 
+
+00:13:12.240 --> 00:13:14.550
+this experiment. And that has been super
+valuable<00:13:12.680><c> for</c><00:13:12.800><c> me,</c><00:13:13.000><c> so</c><00:13:13.200><c> I</c><00:13:13.280><c> can</c><00:13:13.839><c> go</c><00:13:13.960><c> ahead</c><00:13:14.200><c> and</c>
+
+00:13:14.550 --> 00:13:14.560
+valuable for me, so I can go ahead and
+ 
+
+00:13:14.560 --> 00:13:15.750
+valuable for me, so I can go ahead and
+say,<00:13:14.720><c> "Yeah,</c><00:13:14.920><c> this</c><00:13:15.120><c> is</c><00:13:15.240><c> a</c><00:13:15.280><c> new</c><00:13:15.440><c> thing</c><00:13:15.640><c> we're</c>
+
+00:13:15.750 --> 00:13:15.760
+say, "Yeah, this is a new thing we're
+ 
+
+00:13:15.760 --> 00:13:17.750
+say, "Yeah, this is a new thing we're
+trying<00:13:16.040><c> to</c><00:13:16.160><c> do,</c><00:13:16.680><c> and</c><00:13:17.000><c> if</c><00:13:17.160><c> you</c><00:13:17.280><c> want</c><00:13:17.400><c> to</c><00:13:17.520><c> opt</c>
+
+00:13:17.750 --> 00:13:17.760
+trying to do, and if you want to opt
+ 
+
+00:13:17.760 --> 00:13:19.590
+trying to do, and if you want to opt
+into<00:13:18.000><c> experiments,</c><00:13:18.560><c> just</c><00:13:18.880><c> know</c><00:13:19.160><c> that</c><00:13:19.400><c> some</c>
+
+00:13:19.590 --> 00:13:19.600
+into experiments, just know that some
+ 
+
+00:13:19.600 --> 00:13:20.790
+into experiments, just know that some
+things<00:13:19.920><c> might</c><00:13:20.120><c> change</c><00:13:20.400><c> or</c><00:13:20.480><c> break</c><00:13:20.760><c> or</c>
+
+00:13:20.790 --> 00:13:20.800
+things might change or break or
+ 
+
+00:13:20.800 --> 00:13:22.829
+things might change or break or
+whatever."<00:13:21.480><c> And</c><00:13:21.600><c> so,</c><00:13:21.680><c> it</c><00:13:21.760><c> just</c><00:13:22.080><c> drastically</c>
+
+00:13:22.829 --> 00:13:22.839
+whatever." And so, it just drastically
+ 
+
+00:13:22.839 --> 00:13:25.270
+whatever." And so, it just drastically
+reduces<00:13:23.320><c> the</c><00:13:23.440><c> blast</c><00:13:23.760><c> radius.</c><00:13:24.600><c> And</c><00:13:24.920><c> then</c><00:13:25.120><c> when</c>
+
+00:13:25.270 --> 00:13:25.280
+reduces the blast radius. And then when
+ 
+
+00:13:25.280 --> 00:13:26.670
+reduces the blast radius. And then when
+I<00:13:25.320><c> feel</c><00:13:25.520><c> good</c><00:13:25.640><c> about</c><00:13:25.880><c> it,</c><00:13:25.960><c> when</c><00:13:26.080><c> the</c><00:13:26.120><c> metrics</c>
+
+00:13:26.670 --> 00:13:26.680
+I feel good about it, when the metrics
+ 
+
+00:13:26.680 --> 00:13:28.350
+I feel good about it, when the metrics
+say<00:13:26.880><c> that</c><00:13:27.160><c> things</c><00:13:27.400><c> are</c><00:13:27.520><c> better</c><00:13:27.840><c> for</c><00:13:27.960><c> the</c><00:13:28.080><c> users</c>
+
+00:13:28.350 --> 00:13:28.360
+say that things are better for the users
+ 
+
+00:13:28.360 --> 00:13:31.270
+say that things are better for the users
+who<00:13:28.520><c> have</c><00:13:28.640><c> it</c><00:13:28.760><c> on,</c><00:13:29.280><c> then</c><00:13:29.560><c> we</c><00:13:29.680><c> can</c><00:13:30.520><c> um</c><00:13:30.960><c> go</c><00:13:31.080><c> ahead</c>
+
+00:13:31.270 --> 00:13:31.280
+who have it on, then we can um go ahead
+ 
+
+00:13:31.280 --> 00:13:33.670
+who have it on, then we can um go ahead
+and<00:13:31.440><c> push</c><00:13:31.680><c> it</c><00:13:31.800><c> forward</c><00:13:32.160><c> and</c><00:13:32.400><c> and</c><00:13:33.160><c> um</c><00:13:33.320><c> merge</c><00:13:33.600><c> it</c>
+
+00:13:33.670 --> 00:13:33.680
+and push it forward and and um merge it
+ 
+
+00:13:33.680 --> 00:13:34.870
+and push it forward and and um merge it
+and<00:13:33.760><c> get</c><00:13:33.920><c> rid</c><00:13:34.000><c> of</c><00:13:34.080><c> the</c><00:13:34.120><c> feature</c><00:13:34.400><c> flag</c>
+
+00:13:34.870 --> 00:13:34.880
+and get rid of the feature flag
+ 
+
+00:13:34.880 --> 00:13:36.870
+and get rid of the feature flag
+ultimately,<00:13:35.640><c> which</c><00:13:35.800><c> actually</c><00:13:36.080><c> leads</c><00:13:36.320><c> us</c><00:13:36.440><c> to</c><00:13:36.760><c> a</c>
+
+00:13:36.870 --> 00:13:36.880
+ultimately, which actually leads us to a
+ 
+
+00:13:36.880 --> 00:13:37.990
+ultimately, which actually leads us to a
+cleanup<00:13:37.240><c> thing</c><00:13:37.440><c> that</c><00:13:37.560><c> we're</c><00:13:37.640><c> going</c><00:13:37.760><c> to</c><00:13:37.800><c> talk</c>
+
+00:13:37.990 --> 00:13:38.000
+cleanup thing that we're going to talk
+ 
+
+00:13:38.000 --> 00:13:39.350
+cleanup thing that we're going to talk
+about<00:13:38.240><c> here</c><00:13:38.400><c> in</c><00:13:38.480><c> a</c><00:13:38.520><c> little</c><00:13:38.680><c> bit.</c><00:13:38.880><c> Like,</c><00:13:39.160><c> how</c><00:13:39.240><c> do</c>
+
+00:13:39.350 --> 00:13:39.360
+about here in a little bit. Like, how do
+ 
+
+00:13:39.360 --> 00:13:41.230
+about here in a little bit. Like, how do
+you<00:13:39.760><c> make</c><00:13:39.960><c> sure</c><00:13:40.160><c> that</c><00:13:40.280><c> the</c><00:13:40.360><c> code</c><00:13:40.560><c> base</c><00:13:40.760><c> does</c>
+
+00:13:41.230 --> 00:13:41.240
+you make sure that the code base does
+ 
+
+00:13:41.240 --> 00:13:43.750
+you make sure that the code base does
+doesn't<00:13:41.520><c> explode</c><00:13:42.120><c> in</c><00:13:42.320><c> in</c><00:13:42.560><c> complexity</c><00:13:43.080><c> inside?</c>
+
+00:13:43.750 --> 00:13:43.760
+doesn't explode in in complexity inside?
+ 
+
+00:13:43.760 --> 00:13:45.350
+doesn't explode in in complexity inside?
+So,<00:13:44.040><c> we'll</c><00:13:44.240><c> we'll</c><00:13:44.360><c> get</c><00:13:44.520><c> to</c><00:13:44.600><c> that.</c><00:13:45.120><c> But,</c><00:13:45.240><c> the</c>
+
+00:13:45.350 --> 00:13:45.360
+So, we'll we'll get to that. But, the
+ 
+
+00:13:45.360 --> 00:13:47.310
+So, we'll we'll get to that. But, the
+other<00:13:45.560><c> thing</c><00:13:45.800><c> is,</c><00:13:46.320><c> what</c><00:13:46.480><c> if</c><00:13:46.600><c> it's</c><00:13:46.800><c> not</c><00:13:47.080><c> behind</c>
+
+00:13:47.310 --> 00:13:47.320
+other thing is, what if it's not behind
+ 
+
+00:13:47.320 --> 00:13:49.630
+other thing is, what if it's not behind
+a<00:13:47.360><c> feature</c><00:13:47.880><c> flag,</c><00:13:48.120><c> or</c><00:13:48.200><c> maybe</c><00:13:48.520><c> even</c><00:13:48.760><c> if</c><00:13:48.880><c> it</c><00:13:49.000><c> is,</c>
+
+00:13:49.630 --> 00:13:49.640
+a feature flag, or maybe even if it is,
+ 
+
+00:13:49.640 --> 00:13:51.310
+a feature flag, or maybe even if it is,
+and<00:13:50.080><c> you</c><00:13:50.200><c> have</c><00:13:50.360><c> some</c><00:13:50.520><c> sort</c><00:13:50.680><c> of</c><00:13:50.760><c> disaster</c><00:13:51.200><c> or</c>
+
+00:13:51.310 --> 00:13:51.320
+and you have some sort of disaster or
+ 
+
+00:13:51.320 --> 00:13:53.790
+and you have some sort of disaster or
+data<00:13:51.600><c> loss?</c><00:13:52.120><c> And</c><00:13:52.240><c> so,</c><00:13:52.360><c> you</c><00:13:52.560><c> absolutely</c><00:13:53.520><c> have</c>
+
+00:13:53.790 --> 00:13:53.800
+data loss? And so, you absolutely have
+ 
+
+00:13:53.800 --> 00:13:56.670
+data loss? And so, you absolutely have
+to<00:13:53.920><c> have</c><00:13:54.400><c> a</c><00:13:54.440><c> disaster</c><00:13:55.040><c> recovery</c><00:13:55.560><c> story</c><00:13:56.280><c> for</c>
+
+00:13:56.670 --> 00:13:56.680
+to have a disaster recovery story for
+ 
+
+00:13:56.680 --> 00:13:59.230
+to have a disaster recovery story for
+your<00:13:56.880><c> application.</c><00:13:57.840><c> It</c><00:13:58.480><c> just</c><00:13:58.680><c> becomes</c><00:13:59.080><c> so</c>
+
+00:13:59.230 --> 00:13:59.240
+your application. It just becomes so
+ 
+
+00:13:59.240 --> 00:14:00.990
+your application. It just becomes so
+much<00:13:59.480><c> more</c><00:13:59.800><c> important</c><00:14:00.600><c> the</c><00:14:00.680><c> bigger</c><00:14:00.920><c> your</c>
+
+00:14:00.990 --> 00:14:01.000
+much more important the bigger your
+ 
+
+00:14:01.000 --> 00:14:03.190
+much more important the bigger your
+application<00:14:01.480><c> gets,</c><00:14:02.120><c> and</c><00:14:02.560><c> the</c><00:14:02.640><c> more</c><00:14:02.880><c> people</c>
+
+00:14:03.190 --> 00:14:03.200
+application gets, and the more people
+ 
+
+00:14:03.200 --> 00:14:04.630
+application gets, and the more people
+are<00:14:03.360><c> who</c><00:14:03.560><c> are</c><00:14:03.680><c> working</c><00:14:04.000><c> on</c><00:14:04.160><c> it.</c><00:14:04.320><c> And</c><00:14:04.440><c> now,</c>
+
+00:14:04.630 --> 00:14:04.640
+are who are working on it. And now,
+ 
+
+00:14:04.640 --> 00:14:06.150
+are who are working on it. And now,
+we've<00:14:04.800><c> got</c><00:14:05.040><c> agents</c><00:14:05.360><c> working</c><00:14:05.640><c> on</c><00:14:05.800><c> all</c><00:14:05.920><c> of</c><00:14:06.000><c> this</c>
+
+00:14:06.150 --> 00:14:06.160
+we've got agents working on all of this
+ 
+
+00:14:06.160 --> 00:14:08.190
+we've got agents working on all of this
+stuff.<00:14:06.760><c> And</c><00:14:06.880><c> so,</c><00:14:07.120><c> I've</c><00:14:07.280><c> got</c><00:14:07.600><c> a</c><00:14:07.720><c> disaster</c>
+
+00:14:08.190 --> 00:14:08.200
+stuff. And so, I've got a disaster
+ 
+
+00:14:08.200 --> 00:14:10.190
+stuff. And so, I've got a disaster
+recovery<00:14:08.680><c> backup</c><00:14:09.040><c> control</c><00:14:09.320><c> plane.</c><00:14:09.840><c> You</c><00:14:09.960><c> need</c>
+
+00:14:10.190 --> 00:14:10.200
+recovery backup control plane. You need
+ 
+
+00:14:10.200 --> 00:14:12.790
+recovery backup control plane. You need
+to<00:14:10.560><c> have</c><00:14:10.920><c> regular</c><00:14:11.360><c> test</c><00:14:11.680><c> to</c><00:14:11.800><c> make</c><00:14:11.960><c> sure</c><00:14:12.520><c> that</c>
+
+00:14:12.790 --> 00:14:12.800
+to have regular test to make sure that
+ 
+
+00:14:12.800 --> 00:14:14.470
+to have regular test to make sure that
+you<00:14:12.960><c> can</c><00:14:13.280><c> restore</c>
+
+00:14:14.470 --> 00:14:14.480
+you can restore
+ 
+
+00:14:14.480 --> 00:14:17.990
+you can restore
+lost<00:14:14.960><c> data,</c><00:14:15.560><c> so</c><00:14:15.800><c> that</c><00:14:16.080><c> if</c><00:14:16.480><c> somehow</c><00:14:17.480><c> an</c><00:14:17.720><c> agent</c>
+
+00:14:17.990 --> 00:14:18.000
+lost data, so that if somehow an agent
+ 
+
+00:14:18.000 --> 00:14:19.470
+lost data, so that if somehow an agent
+gets<00:14:18.200><c> through</c><00:14:18.520><c> all</c><00:14:18.720><c> of</c><00:14:18.800><c> the</c><00:14:18.920><c> safeguards</c><00:14:19.400><c> you</c>
+
+00:14:19.470 --> 00:14:19.480
+gets through all of the safeguards you
+ 
+
+00:14:19.480 --> 00:14:22.110
+gets through all of the safeguards you
+put<00:14:19.680><c> in</c><00:14:19.800><c> place,</c><00:14:20.360><c> you</c><00:14:20.560><c> have</c><00:14:20.760><c> a</c><00:14:20.840><c> place</c><00:14:21.640><c> where</c><00:14:21.960><c> you</c>
+
+00:14:22.110 --> 00:14:22.120
+put in place, you have a place where you
+ 
+
+00:14:22.120 --> 00:14:24.230
+put in place, you have a place where you
+can<00:14:22.280><c> come</c><00:14:22.600><c> and</c><00:14:22.960><c> get</c><00:14:23.320><c> some</c><00:14:23.520><c> data</c><00:14:23.800><c> back,</c><00:14:24.080><c> and</c>
+
+00:14:24.230 --> 00:14:24.240
+can come and get some data back, and
+ 
+
+00:14:24.240 --> 00:14:26.110
+can come and get some data back, and
+maybe<00:14:24.480><c> you</c><00:14:24.600><c> lose</c><00:14:24.880><c> a</c><00:14:24.920><c> little</c><00:14:25.200><c> bit</c><00:14:25.360><c> of</c><00:14:25.480><c> data</c>
+
+00:14:26.110 --> 00:14:26.120
+maybe you lose a little bit of data
+ 
+
+00:14:26.120 --> 00:14:27.590
+maybe you lose a little bit of data
+between<00:14:26.440><c> the</c><00:14:26.640><c> the</c><00:14:26.800><c> time</c><00:14:27.040><c> that</c><00:14:27.120><c> the</c><00:14:27.200><c> bad</c><00:14:27.400><c> thing</c>
+
+00:14:27.590 --> 00:14:27.600
+between the the time that the bad thing
+ 
+
+00:14:27.600 --> 00:14:28.670
+between the the time that the bad thing
+happened<00:14:27.920><c> and</c><00:14:28.040><c> when</c><00:14:28.160><c> you</c><00:14:28.240><c> restored</c><00:14:28.640><c> the</c>
+
+00:14:28.670 --> 00:14:28.680
+happened and when you restored the
+ 
+
+00:14:28.680 --> 00:14:30.270
+happened and when you restored the
+backup,<00:14:29.280><c> but</c><00:14:29.400><c> at</c><00:14:29.480><c> least</c><00:14:29.720><c> you</c><00:14:29.760><c> don't</c><00:14:29.960><c> lose</c><00:14:30.160><c> it</c>
+
+00:14:30.270 --> 00:14:30.280
+backup, but at least you don't lose it
+ 
+
+00:14:30.280 --> 00:14:32.790
+backup, but at least you don't lose it
+all.<00:14:30.839><c> And</c><00:14:31.360><c> uh</c><00:14:31.520><c> I</c><00:14:31.640><c> have</c><00:14:31.800><c> not</c><00:14:32.120><c> yet</c><00:14:32.400><c> had</c><00:14:32.680><c> to</c>
+
+00:14:32.790 --> 00:14:32.800
+all. And uh I have not yet had to
+ 
+
+00:14:32.800 --> 00:14:34.790
+all. And uh I have not yet had to
+actually<00:14:33.160><c> use</c><00:14:33.360><c> this,</c><00:14:33.800><c> so</c><00:14:33.960><c> things</c><00:14:34.400><c> seem</c><00:14:34.600><c> to</c><00:14:34.680><c> be</c>
+
+00:14:34.790 --> 00:14:34.800
+actually use this, so things seem to be
+ 
+
+00:14:34.800 --> 00:14:36.710
+actually use this, so things seem to be
+working<00:14:35.120><c> pretty</c><00:14:35.320><c> well</c><00:14:35.480><c> so</c><00:14:35.640><c> far.</c><00:14:36.160><c> But,</c><00:14:36.360><c> agents</c>
+
+00:14:36.710 --> 00:14:36.720
+working pretty well so far. But, agents
+ 
+
+00:14:36.720 --> 00:14:38.910
+working pretty well so far. But, agents
+love<00:14:37.120><c> to</c><00:14:37.360><c> create</c><00:14:37.800><c> code,</c><00:14:38.120><c> and</c><00:14:38.240><c> they</c><00:14:38.360><c> don't</c><00:14:38.640><c> love</c>
+
+00:14:38.910 --> 00:14:38.920
+love to create code, and they don't love
+ 
+
+00:14:38.920 --> 00:14:40.829
+love to create code, and they don't love
+to<00:14:39.160><c> delete</c><00:14:39.560><c> code.</c><00:14:40.040><c> And</c><00:14:40.160><c> so,</c><00:14:40.320><c> you</c><00:14:40.440><c> have</c><00:14:40.600><c> to</c><00:14:40.680><c> be</c><00:14:40.800><c> a</c>
+
+00:14:40.829 --> 00:14:40.839
+to delete code. And so, you have to be a
+ 
+
+00:14:40.839 --> 00:14:42.829
+to delete code. And so, you have to be a
+little<00:14:41.040><c> bit</c><00:14:41.200><c> intentional</c><00:14:41.880><c> about</c><00:14:42.240><c> making</c><00:14:42.600><c> sure</c>
+
+00:14:42.829 --> 00:14:42.839
+little bit intentional about making sure
+ 
+
+00:14:42.839 --> 00:14:44.590
+little bit intentional about making sure
+that<00:14:43.000><c> they</c><00:14:43.120><c> go</c><00:14:43.320><c> through</c><00:14:43.920><c> and</c><00:14:44.080><c> clean</c><00:14:44.320><c> things</c>
+
+00:14:44.590 --> 00:14:44.600
+that they go through and clean things
+ 
+
+00:14:44.600 --> 00:14:46.550
+that they go through and clean things
+up.<00:14:45.000><c> And</c><00:14:45.120><c> so,</c><00:14:45.240><c> with</c><00:14:45.480><c> every</c><00:14:45.760><c> product</c><00:14:46.160><c> decision</c>
+
+00:14:46.550 --> 00:14:46.560
+up. And so, with every product decision
+ 
+
+00:14:46.560 --> 00:14:48.390
+up. And so, with every product decision
+that<00:14:46.680><c> I'm</c><00:14:46.800><c> making</c><00:14:47.040><c> with</c><00:14:47.160><c> the</c><00:14:47.280><c> agents,</c><00:14:47.839><c> or</c><00:14:48.120><c> with</c>
+
+00:14:48.390 --> 00:14:48.400
+that I'm making with the agents, or with
+ 
+
+00:14:48.400 --> 00:14:50.030
+that I'm making with the agents, or with
+any<00:14:48.680><c> friction</c><00:14:49.200><c> logs</c><00:14:49.600><c> that</c><00:14:49.720><c> they</c><00:14:49.839><c> put</c>
+
+00:14:50.030 --> 00:14:50.040
+any friction logs that they put
+ 
+
+00:14:50.040 --> 00:14:52.630
+any friction logs that they put
+together,<00:14:50.560><c> they're</c><00:14:50.760><c> also</c><00:14:51.480><c> instructed</c><00:14:52.280><c> to</c>
+
+00:14:52.630 --> 00:14:52.640
+together, they're also instructed to
+ 
+
+00:14:52.640 --> 00:14:55.430
+together, they're also instructed to
+think<00:14:52.920><c> about</c><00:14:53.280><c> cleanup.</c><00:14:53.839><c> What</c><00:14:54.320><c> could</c><00:14:54.520><c> we</c><00:14:54.680><c> do</c>
+
+00:14:55.430 --> 00:14:55.440
+think about cleanup. What could we do
+ 
+
+00:14:55.440 --> 00:14:57.670
+think about cleanup. What could we do
+that<00:14:55.720><c> we</c><00:14:56.240><c> can't</c><00:14:56.600><c> do</c><00:14:56.800><c> right</c><00:14:57.000><c> now,</c><00:14:57.160><c> but</c><00:14:57.320><c> we</c><00:14:57.440><c> need</c>
+
+00:14:57.670 --> 00:14:57.680
+that we can't do right now, but we need
+ 
+
+00:14:57.680 --> 00:14:59.350
+that we can't do right now, but we need
+to<00:14:57.760><c> do</c><00:14:57.920><c> in</c><00:14:58.000><c> the</c><00:14:58.080><c> future</c><00:14:58.360><c> to</c><00:14:58.480><c> clean</c><00:14:58.720><c> this</c><00:14:59.000><c> stuff</c>
+
+00:14:59.350 --> 00:14:59.360
+to do in the future to clean this stuff
+ 
+
+00:14:59.360 --> 00:15:01.510
+to do in the future to clean this stuff
+up?<00:14:59.839><c> And</c><00:14:59.960><c> so,</c><00:15:00.200><c> I</c><00:15:00.280><c> removed</c><00:15:00.640><c> a</c><00:15:00.680><c> feature</c><00:15:01.080><c> a</c><00:15:01.200><c> while</c>
+
+00:15:01.510 --> 00:15:01.520
+up? And so, I removed a feature a while
+ 
+
+00:15:01.520 --> 00:15:04.190
+up? And so, I removed a feature a while
+ago<00:15:02.080><c> for</c><00:15:02.520><c> ad</c><00:15:02.760><c> hoc</c><00:15:03.000><c> jobs.</c><00:15:03.400><c> You</c><00:15:03.480><c> should</c><00:15:03.640><c> be</c><00:15:03.880><c> using</c>
+
+00:15:04.190 --> 00:15:04.200
+ago for ad hoc jobs. You should be using
+ 
+
+00:15:04.200 --> 00:15:06.790
+ago for ad hoc jobs. You should be using
+workflows<00:15:04.640><c> now.</c><00:15:05.200><c> And</c><00:15:05.560><c> so,</c><00:15:05.839><c> we</c><00:15:06.040><c> do</c><00:15:06.400><c> have</c><00:15:06.640><c> some</c>
+
+00:15:06.790 --> 00:15:06.800
+workflows now. And so, we do have some
+ 
+
+00:15:06.800 --> 00:15:08.670
+workflows now. And so, we do have some
+jobs<00:15:07.120><c> that</c><00:15:07.240><c> people</c><00:15:07.520><c> have</c><00:15:07.760><c> running.</c><00:15:08.320><c> I</c><00:15:08.400><c> want</c><00:15:08.600><c> to</c>
+
+00:15:08.670 --> 00:15:08.680
+jobs that people have running. I want to
+ 
+
+00:15:08.680 --> 00:15:09.870
+jobs that people have running. I want to
+make<00:15:08.800><c> sure</c><00:15:08.960><c> that</c><00:15:09.080><c> we</c><00:15:09.200><c> don't</c><00:15:09.400><c> lose</c><00:15:09.600><c> track</c><00:15:09.800><c> of</c>
+
+00:15:09.870 --> 00:15:09.880
+make sure that we don't lose track of
+ 
+
+00:15:09.880 --> 00:15:11.230
+make sure that we don't lose track of
+that,<00:15:10.080><c> and</c><00:15:10.160><c> we're</c><00:15:10.240><c> actually</c><00:15:10.520><c> really</c><00:15:10.839><c> close</c><00:15:11.120><c> to</c>
+
+00:15:11.230 --> 00:15:11.240
+that, and we're actually really close to
+ 
+
+00:15:11.240 --> 00:15:13.630
+that, and we're actually really close to
+deleting<00:15:11.640><c> this.</c><00:15:12.160><c> And</c><00:15:12.480><c> I</c><00:15:12.560><c> have</c><00:15:12.960><c> an</c><00:15:13.160><c> agent</c><00:15:13.480><c> that</c>
+
+00:15:13.630 --> 00:15:13.640
+deleting this. And I have an agent that
+ 
+
+00:15:13.640 --> 00:15:15.670
+deleting this. And I have an agent that
+goes<00:15:13.839><c> through</c><00:15:14.160><c> all</c><00:15:14.360><c> of</c><00:15:14.440><c> the</c><00:15:14.520><c> cleanup</c><00:15:15.000><c> issues</c>
+
+00:15:15.670 --> 00:15:15.680
+goes through all of the cleanup issues
+ 
+
+00:15:15.680 --> 00:15:17.190
+goes through all of the cleanup issues
+and<00:15:15.800><c> make</c><00:15:16.000><c> sure</c><00:15:16.240><c> that</c><00:15:16.440><c> we're</c><00:15:16.600><c> not</c><00:15:16.839><c> at</c><00:15:16.960><c> the</c>
+
+00:15:17.190 --> 00:15:17.200
+and make sure that we're not at the
+ 
+
+00:15:17.200 --> 00:15:18.829
+and make sure that we're not at the
+stage<00:15:17.600><c> where</c><00:15:17.839><c> we</c><00:15:18.040><c> could</c><00:15:18.240><c> actually</c><00:15:18.520><c> clean</c><00:15:18.720><c> it</c>
+
+00:15:18.829 --> 00:15:18.839
+stage where we could actually clean it
+ 
+
+00:15:18.839 --> 00:15:21.070
+stage where we could actually clean it
+up.<00:15:18.960><c> They</c><00:15:19.080><c> do</c><00:15:19.520><c> run</c><00:15:19.720><c> an</c><00:15:19.839><c> evaluation</c><00:15:20.520><c> and</c><00:15:20.880><c> look</c>
+
+00:15:21.070 --> 00:15:21.080
+up. They do run an evaluation and look
+ 
+
+00:15:21.080 --> 00:15:22.590
+up. They do run an evaluation and look
+at<00:15:21.160><c> the</c><00:15:21.280><c> current</c><00:15:21.520><c> numbers</c><00:15:21.839><c> in</c><00:15:22.000><c> production,</c>
+
+00:15:22.590 --> 00:15:22.600
+at the current numbers in production,
+ 
+
+00:15:22.600 --> 00:15:24.550
+at the current numbers in production,
+all<00:15:22.720><c> of</c><00:15:22.840><c> that</c><00:15:23.040><c> stuff</c><00:15:23.560><c> to</c><00:15:23.720><c> see</c><00:15:23.920><c> whether</c><00:15:24.400><c> we're</c>
+
+00:15:24.550 --> 00:15:24.560
+all of that stuff to see whether we're
+ 
+
+00:15:24.560 --> 00:15:25.790
+all of that stuff to see whether we're
+at<00:15:24.680><c> a</c><00:15:24.720><c> place</c><00:15:25.000><c> where</c><00:15:25.120><c> we</c><00:15:25.240><c> could</c><00:15:25.360><c> actually</c><00:15:25.640><c> do</c>
+
+00:15:25.790 --> 00:15:25.800
+at a place where we could actually do
+ 
+
+00:15:25.800 --> 00:15:28.430
+at a place where we could actually do
+this<00:15:25.960><c> clean</c><00:15:26.200><c> up.</c><00:15:27.000><c> And</c><00:15:27.120><c> so</c><00:15:27.280><c> yeah,</c><00:15:27.680><c> absolutely,</c>
+
+00:15:28.430 --> 00:15:28.440
+this clean up. And so yeah, absolutely,
+ 
+
+00:15:28.440 --> 00:15:30.310
+this clean up. And so yeah, absolutely,
+you<00:15:28.560><c> want</c><00:15:28.720><c> to</c><00:15:28.800><c> have</c><00:15:29.160><c> some</c><00:15:29.320><c> clean</c><00:15:29.560><c> up.</c><00:15:30.000><c> Dog</c>
+
+00:15:30.310 --> 00:15:30.320
+you want to have some clean up. Dog
+ 
+
+00:15:30.320 --> 00:15:32.150
+you want to have some clean up. Dog
+fooding<00:15:30.680><c> is</c><00:15:30.840><c> another</c><00:15:31.240><c> really</c><00:15:31.480><c> valuable</c><00:15:31.960><c> thing</c>
+
+00:15:32.150 --> 00:15:32.160
+fooding is another really valuable thing
+ 
+
+00:15:32.160 --> 00:15:33.830
+fooding is another really valuable thing
+that<00:15:32.320><c> you</c><00:15:32.440><c> have</c><00:15:32.600><c> your</c><00:15:32.800><c> agents</c><00:15:33.080><c> do.</c><00:15:33.440><c> Get</c><00:15:33.640><c> your</c>
+
+00:15:33.830 --> 00:15:33.840
+that you have your agents do. Get your
+ 
+
+00:15:33.840 --> 00:15:36.310
+that you have your agents do. Get your
+agents<00:15:34.200><c> to</c><00:15:34.400><c> use</c><00:15:34.680><c> your</c><00:15:34.880><c> software</c><00:15:35.440><c> somehow</c>
+
+00:15:36.310 --> 00:15:36.320
+agents to use your software somehow
+ 
+
+00:15:36.320 --> 00:15:38.630
+agents to use your software somehow
+because<00:15:37.160><c> in</c><00:15:37.320><c> the</c><00:15:37.440><c> process</c><00:15:37.920><c> of</c><00:15:38.080><c> using</c><00:15:38.520><c> the</c>
+
+00:15:38.630 --> 00:15:38.640
+because in the process of using the
+ 
+
+00:15:38.640 --> 00:15:40.710
+because in the process of using the
+software,<00:15:39.400><c> they're</c><00:15:39.560><c> going</c><00:15:39.800><c> to</c><00:15:39.920><c> find</c><00:15:40.280><c> friction</c>
+
+00:15:40.710 --> 00:15:40.720
+software, they're going to find friction
+ 
+
+00:15:40.720 --> 00:15:42.270
+software, they're going to find friction
+and<00:15:40.840><c> they'll</c><00:15:40.960><c> log</c><00:15:41.240><c> that</c><00:15:41.520><c> as</c><00:15:41.680><c> friction</c><00:15:42.040><c> as</c>
+
+00:15:42.270 --> 00:15:42.280
+and they'll log that as friction as
+ 
+
+00:15:42.280 --> 00:15:45.590
+and they'll log that as friction as
+well.<00:15:42.920><c> And</c><00:15:43.080><c> so</c><00:15:43.240><c> here</c><00:15:43.600><c> is</c><00:15:44.240><c> a</c><00:15:44.360><c> friction</c><00:15:45.320><c> thing</c>
+
+00:15:45.590 --> 00:15:45.600
+well. And so here is a friction thing
+ 
+
+00:15:45.600 --> 00:15:47.430
+well. And so here is a friction thing
+that<00:15:46.120><c> an</c><00:15:46.280><c> agent</c><00:15:46.600><c> experienced</c><00:15:47.080><c> when</c><00:15:47.200><c> it</c><00:15:47.280><c> was</c>
+
+00:15:47.430 --> 00:15:47.440
+that an agent experienced when it was
+ 
+
+00:15:47.440 --> 00:15:50.230
+that an agent experienced when it was
+using<00:15:47.960><c> Cody.</c><00:15:48.840><c> And</c><00:15:49.080><c> so</c><00:15:49.200><c> it</c><00:15:49.360><c> opens</c><00:15:49.680><c> it</c><00:15:49.800><c> up</c><00:15:50.040><c> as</c><00:15:50.160><c> a</c>
+
+00:15:50.230 --> 00:15:50.240
+using Cody. And so it opens it up as a
+ 
+
+00:15:50.240 --> 00:15:51.470
+using Cody. And so it opens it up as a
+friction<00:15:50.560><c> log.</c><00:15:51.000><c> And</c><00:15:51.120><c> what's</c><00:15:51.280><c> really</c>
+
+00:15:51.470 --> 00:15:51.480
+friction log. And what's really
+ 
+
+00:15:51.480 --> 00:15:53.030
+friction log. And what's really
+interesting<00:15:51.880><c> about</c><00:15:52.120><c> this</c><00:15:52.360><c> is</c><00:15:52.480><c> that</c><00:15:52.720><c> when</c><00:15:52.920><c> the</c>
+
+00:15:53.030 --> 00:15:53.040
+interesting about this is that when the
+ 
+
+00:15:53.040 --> 00:15:55.430
+interesting about this is that when the
+agent<00:15:53.400><c> came</c><00:15:53.640><c> through</c><00:15:53.960><c> to</c><00:15:54.200><c> come</c><00:15:54.600><c> and</c><00:15:54.960><c> like</c><00:15:55.200><c> fix</c>
+
+00:15:55.430 --> 00:15:55.440
+agent came through to come and like fix
+ 
+
+00:15:55.440 --> 00:15:57.430
+agent came through to come and like fix
+all<00:15:55.560><c> the</c><00:15:55.680><c> friction</c><00:15:56.000><c> problems,</c><00:15:56.960><c> this</c><00:15:57.160><c> one</c><00:15:57.360><c> it</c>
+
+00:15:57.430 --> 00:15:57.440
+all the friction problems, this one it
+ 
+
+00:15:57.440 --> 00:16:00.190
+all the friction problems, this one it
+decided<00:15:57.880><c> to</c><00:15:58.000><c> skip</c><00:15:58.640><c> because</c><00:15:58.960><c> it</c><00:15:59.440><c> couldn't</c><00:15:59.920><c> know</c>
+
+00:16:00.190 --> 00:16:00.200
+decided to skip because it couldn't know
+ 
+
+00:16:00.200 --> 00:16:02.870
+decided to skip because it couldn't know
+for<00:16:00.400><c> sure</c><00:16:00.760><c> whether</c><00:16:01.520><c> I</c><00:16:01.840><c> wanted</c><00:16:02.200><c> it</c><00:16:02.360><c> to</c><00:16:02.440><c> go</c><00:16:02.600><c> one</c>
+
+00:16:02.870 --> 00:16:02.880
+for sure whether I wanted it to go one
+ 
+
+00:16:02.880 --> 00:16:04.550
+for sure whether I wanted it to go one
+direction<00:16:03.280><c> or</c><00:16:03.360><c> another</c><00:16:03.640><c> because</c><00:16:04.000><c> this</c><00:16:04.200><c> is</c><00:16:04.480><c> a</c>
+
+00:16:04.550 --> 00:16:04.560
+direction or another because this is a
+ 
+
+00:16:04.560 --> 00:16:07.230
+direction or another because this is a
+product<00:16:04.920><c> decision.</c><00:16:05.680><c> So</c><00:16:05.920><c> again,</c><00:16:06.440><c> I'm</c><00:16:06.600><c> not</c><00:16:06.840><c> just</c>
+
+00:16:07.230 --> 00:16:07.240
+product decision. So again, I'm not just
+ 
+
+00:16:07.240 --> 00:16:08.990
+product decision. So again, I'm not just
+letting<00:16:07.520><c> the</c><00:16:07.680><c> agent</c><00:16:08.000><c> make</c><00:16:08.240><c> all</c><00:16:08.360><c> the</c><00:16:08.480><c> decisions</c>
+
+00:16:08.990 --> 00:16:09.000
+letting the agent make all the decisions
+ 
+
+00:16:09.000 --> 00:16:10.950
+letting the agent make all the decisions
+for<00:16:09.120><c> my</c><00:16:09.280><c> product.</c><00:16:10.000><c> I'm</c><00:16:10.240><c> letting</c><00:16:10.480><c> it</c><00:16:10.640><c> make</c><00:16:10.840><c> the</c>
+
+00:16:10.950 --> 00:16:10.960
+for my product. I'm letting it make the
+ 
+
+00:16:10.960 --> 00:16:12.990
+for my product. I'm letting it make the
+decisions<00:16:11.600><c> for</c><00:16:12.080><c> like</c><00:16:12.360><c> how</c><00:16:12.600><c> things</c><00:16:12.920><c> are</c>
+
+00:16:12.990 --> 00:16:13.000
+decisions for like how things are
+ 
+
+00:16:13.000 --> 00:16:14.110
+decisions for like how things are
+constructed<00:16:13.560><c> and</c><00:16:13.640><c> put</c><00:16:13.800><c> together,</c>
+
+00:16:14.110 --> 00:16:14.120
+constructed and put together,
+ 
+
+00:16:14.120 --> 00:16:16.070
+constructed and put together,
+implementation<00:16:14.720><c> details,</c><00:16:15.560><c> but</c><00:16:15.680><c> the</c><00:16:15.760><c> product</c>
+
+00:16:16.070 --> 00:16:16.080
+implementation details, but the product
+ 
+
+00:16:16.080 --> 00:16:17.790
+implementation details, but the product
+vision<00:16:16.400><c> still</c><00:16:16.600><c> belongs</c><00:16:17.040><c> to</c><00:16:17.120><c> me.</c><00:16:17.400><c> And</c><00:16:17.520><c> so</c><00:16:17.680><c> it</c>
+
+00:16:17.790 --> 00:16:17.800
+vision still belongs to me. And so it
+ 
+
+00:16:17.800 --> 00:16:19.390
+vision still belongs to me. And so it
+saw<00:16:17.926><c> [clears throat]</c><00:16:18.000><c> this</c><00:16:18.560><c> as</c><00:16:18.880><c> a</c><00:16:19.000><c> product</c>
+
+00:16:19.390 --> 00:16:19.400
+saw [clears throat] this as a product
+ 
+
+00:16:19.400 --> 00:16:21.430
+saw [clears throat] this as a product
+decision<00:16:19.840><c> we</c><00:16:20.000><c> needed</c><00:16:20.400><c> to</c><00:16:20.680><c> make</c><00:16:20.960><c> one</c><00:16:21.120><c> decision</c>
+
+00:16:21.430 --> 00:16:21.440
+decision we needed to make one decision
+ 
+
+00:16:21.440 --> 00:16:23.310
+decision we needed to make one decision
+or<00:16:21.520><c> another</c><00:16:21.840><c> here.</c><00:16:22.360><c> It</c><00:16:22.480><c> gave</c><00:16:22.640><c> a</c><00:16:22.720><c> recommended</c>
+
+00:16:23.310 --> 00:16:23.320
+or another here. It gave a recommended
+ 
+
+00:16:23.320 --> 00:16:25.350
+or another here. It gave a recommended
+fix<00:16:23.880><c> and</c><00:16:24.000><c> then</c><00:16:24.200><c> I</c><00:16:24.280><c> had</c><00:16:24.440><c> a</c><00:16:24.480><c> conversation.</c><00:16:25.120><c> I</c><00:16:25.200><c> did</c>
+
+00:16:25.350 --> 00:16:25.360
+fix and then I had a conversation. I did
+ 
+
+00:16:25.360 --> 00:16:26.950
+fix and then I had a conversation. I did
+not<00:16:25.560><c> actually</c><00:16:25.880><c> go</c><00:16:26.040><c> with</c><00:16:26.160><c> the</c><00:16:26.240><c> recommended</c><00:16:26.760><c> fix</c>
+
+00:16:26.950 --> 00:16:26.960
+not actually go with the recommended fix
+ 
+
+00:16:26.960 --> 00:16:28.190
+not actually go with the recommended fix
+here<00:16:27.080><c> and</c><00:16:27.200><c> I</c><00:16:27.240><c> came</c><00:16:27.480><c> up</c><00:16:27.560><c> with</c><00:16:27.680><c> something</c><00:16:27.920><c> novel</c>
+
+00:16:28.190 --> 00:16:28.200
+here and I came up with something novel
+ 
+
+00:16:28.200 --> 00:16:30.550
+here and I came up with something novel
+myself.<00:16:29.000><c> Uh</c><00:16:29.200><c> and</c><00:16:29.360><c> I</c><00:16:29.400><c> just</c><00:16:29.640><c> sent</c><00:16:29.839><c> that</c><00:16:30.120><c> to</c><00:16:30.520><c> a</c>
+
+00:16:30.550 --> 00:16:30.560
+myself. Uh and I just sent that to a
+ 
+
+00:16:30.560 --> 00:16:32.670
+myself. Uh and I just sent that to a
+GrokBot<00:16:31.120><c> on</c><00:16:31.240><c> my</c><00:16:31.400><c> phone</c><00:16:31.800><c> and</c><00:16:32.000><c> it</c><00:16:32.160><c> went</c><00:16:32.360><c> through</c>
+
+00:16:32.670 --> 00:16:32.680
+GrokBot on my phone and it went through
+ 
+
+00:16:32.680 --> 00:16:35.030
+GrokBot on my phone and it went through
+and<00:16:32.960><c> shipped</c><00:16:33.240><c> it</c><00:16:33.440><c> this</c><00:16:33.640><c> morning.</c><00:16:34.400><c> And</c><00:16:34.800><c> that</c>
+
+00:16:35.030 --> 00:16:35.040
+and shipped it this morning. And that
+ 
+
+00:16:35.040 --> 00:16:36.950
+and shipped it this morning. And that
+was<00:16:35.480><c> uh</c><00:16:35.560><c> pretty</c><00:16:35.760><c> cool.</c>
+
+00:16:36.950 --> 00:16:36.960
+was uh pretty cool.
+ 
+
+00:16:36.960 --> 00:16:38.950
+was uh pretty cool.
+You<00:16:37.120><c> do</c><00:16:37.320><c> just</c><00:16:37.560><c> need</c><00:16:37.760><c> to</c><00:16:37.839><c> find</c><00:16:38.360><c> a</c><00:16:38.480><c> whole</c><00:16:38.720><c> bunch</c>
+
+00:16:38.950 --> 00:16:38.960
+You do just need to find a whole bunch
+ 
+
+00:16:38.960 --> 00:16:42.190
+You do just need to find a whole bunch
+of<00:16:39.120><c> ways</c><00:16:39.520><c> that</c><00:16:40.080><c> input</c><00:16:40.839><c> like</c><00:16:41.160><c> useful</c><00:16:41.680><c> signal</c>
+
+00:16:42.190 --> 00:16:42.200
+of ways that input like useful signal
+ 
+
+00:16:42.200 --> 00:16:44.870
+of ways that input like useful signal
+can<00:16:42.400><c> come</c><00:16:42.760><c> into</c><00:16:43.320><c> your</c><00:16:43.520><c> system</c><00:16:44.360><c> and</c><00:16:44.520><c> then</c><00:16:44.640><c> your</c>
+
+00:16:44.870 --> 00:16:44.880
+can come into your system and then your
+ 
+
+00:16:44.880 --> 00:16:46.750
+can come into your system and then your
+agents<00:16:45.200><c> can</c><00:16:45.400><c> work</c><00:16:45.640><c> on</c><00:16:45.760><c> that</c><00:16:46.040><c> and</c><00:16:46.120><c> then</c><00:16:46.400><c> flag</c>
+
+00:16:46.750 --> 00:16:46.760
+agents can work on that and then flag
+ 
+
+00:16:46.760 --> 00:16:48.950
+agents can work on that and then flag
+things<00:16:47.080><c> that</c><00:16:47.320><c> you</c><00:16:47.480><c> need</c><00:16:47.680><c> to</c><00:16:47.800><c> look</c><00:16:48.000><c> at,</c><00:16:48.240><c> but</c><00:16:48.760><c> try</c>
+
+00:16:48.950 --> 00:16:48.960
+things that you need to look at, but try
+ 
+
+00:16:48.960 --> 00:16:51.510
+things that you need to look at, but try
+to<00:16:49.080><c> get</c><00:16:49.280><c> yourself</c><00:16:49.839><c> out</c><00:16:50.160><c> of</c><00:16:50.320><c> the</c><00:16:50.440><c> picture.</c><00:16:51.280><c> So</c>
+
+00:16:51.510 --> 00:16:51.520
+to get yourself out of the picture. So
+ 
+
+00:16:51.520 --> 00:16:53.430
+to get yourself out of the picture. So
+here's<00:16:51.839><c> another</c><00:16:52.120><c> one.</c><00:16:52.480><c> Sentry.</c><00:16:53.000><c> Anytime</c>
+
+00:16:53.430 --> 00:16:53.440
+here's another one. Sentry. Anytime
+ 
+
+00:16:53.440 --> 00:16:55.590
+here's another one. Sentry. Anytime
+there's<00:16:53.640><c> an</c><00:16:53.800><c> issue</c><00:16:54.520><c> that</c><00:16:54.720><c> happens</c><00:16:55.000><c> on</c><00:16:55.120><c> Sentry,</c>
+
+00:16:55.590 --> 00:16:55.600
+there's an issue that happens on Sentry,
+ 
+
+00:16:55.600 --> 00:16:57.790
+there's an issue that happens on Sentry,
+I've<00:16:55.760><c> got</c><00:16:55.920><c> a</c><00:16:55.960><c> webhook</c><00:16:56.720><c> that</c><00:16:57.000><c> sends</c><00:16:57.280><c> that</c><00:16:57.480><c> over</c>
+
+00:16:57.790 --> 00:16:57.800
+I've got a webhook that sends that over
+ 
+
+00:16:57.800 --> 00:17:00.950
+I've got a webhook that sends that over
+to<00:16:58.680><c> uh</c><00:16:58.960><c> one</c><00:16:59.120><c> of</c><00:16:59.200><c> my</c><00:16:59.320><c> GrokBots</c><00:17:00.120><c> and</c><00:17:00.240><c> the</c><00:17:00.320><c> GrokBot</c>
+
+00:17:00.950 --> 00:17:00.960
+to uh one of my GrokBots and the GrokBot
+ 
+
+00:17:00.960 --> 00:17:03.470
+to uh one of my GrokBots and the GrokBot
+uses<00:17:01.520><c> Sentry</c><00:17:01.960><c> from</c><00:17:02.120><c> Sentry</c><00:17:02.520><c> to</c><00:17:02.680><c> get</c><00:17:02.880><c> the</c><00:17:03.240><c> root</c>
+
+00:17:03.470 --> 00:17:03.480
+uses Sentry from Sentry to get the root
+ 
+
+00:17:03.480 --> 00:17:05.590
+uses Sentry from Sentry to get the root
+cause<00:17:03.640><c> analysis</c><00:17:04.199><c> and</c><00:17:04.319><c> then</c><00:17:04.439><c> evaluates</c><00:17:04.959><c> it</c><00:17:05.439><c> and</c>
+
+00:17:05.590 --> 00:17:05.600
+cause analysis and then evaluates it and
+ 
+
+00:17:05.600 --> 00:17:08.350
+cause analysis and then evaluates it and
+ships<00:17:05.920><c> it.</c><00:17:06.360><c> Uh</c><00:17:06.560><c> it</c><00:17:06.640><c> ships</c><00:17:06.880><c> a</c><00:17:06.920><c> fix.</c><00:17:07.600><c> And</c><00:17:08.040><c> Cody</c>
+
+00:17:08.350 --> 00:17:08.360
+ships it. Uh it ships a fix. And Cody
+ 
+
+00:17:08.360 --> 00:17:10.189
+ships it. Uh it ships a fix. And Cody
+triage<00:17:08.720><c> issues.</c><00:17:09.040><c> So</c><00:17:09.319><c> inside</c><00:17:09.680><c> of</c><00:17:09.760><c> Cody,</c><00:17:10.000><c> you're</c>
+
+00:17:10.189 --> 00:17:10.199
+triage issues. So inside of Cody, you're
+ 
+
+00:17:10.199 --> 00:17:11.790
+triage issues. So inside of Cody, you're
+actually<00:17:10.520><c> running</c><00:17:10.880><c> code.</c><00:17:11.319><c> There</c><00:17:11.480><c> could</c><00:17:11.600><c> be</c>
+
+00:17:11.790 --> 00:17:11.800
+actually running code. There could be
+ 
+
+00:17:11.800 --> 00:17:13.150
+actually running code. There could be
+errors<00:17:12.160><c> in</c><00:17:12.240><c> that</c><00:17:12.400><c> code.</c><00:17:12.640><c> And</c><00:17:12.720><c> so</c><00:17:12.839><c> when</c><00:17:13.000><c> there's</c>
+
+00:17:13.150 --> 00:17:13.160
+errors in that code. And so when there's
+ 
+
+00:17:13.160 --> 00:17:15.429
+errors in that code. And so when there's
+an<00:17:13.280><c> error,</c><00:17:13.560><c> Cody</c><00:17:13.839><c> will</c><00:17:14.480><c> emit</c><00:17:14.800><c> an</c><00:17:14.920><c> event</c><00:17:15.319><c> and</c>
+
+00:17:15.429 --> 00:17:15.439
+an error, Cody will emit an event and
+ 
+
+00:17:15.439 --> 00:17:17.069
+an error, Cody will emit an event and
+then<00:17:15.640><c> I</c><00:17:15.720><c> take</c><00:17:15.959><c> that</c><00:17:16.120><c> event</c><00:17:16.400><c> and</c><00:17:16.520><c> send</c><00:17:16.720><c> it</c><00:17:16.800><c> over</c>
+
+00:17:17.069 --> 00:17:17.079
+then I take that event and send it over
+ 
+
+00:17:17.079 --> 00:17:19.309
+then I take that event and send it over
+to<00:17:17.240><c> a</c><00:17:17.560><c> Bot</c><00:17:17.800><c> and</c><00:17:18.000><c> it</c><00:17:18.199><c> looks</c><00:17:18.439><c> at</c><00:17:18.560><c> it</c><00:17:18.680><c> and</c><00:17:18.800><c> fixes</c><00:17:19.160><c> it</c>
+
+00:17:19.309 --> 00:17:19.319
+to a Bot and it looks at it and fixes it
+ 
+
+00:17:19.319 --> 00:17:22.189
+to a Bot and it looks at it and fixes it
+if<00:17:19.520><c> necessary.</c><00:17:20.640><c> And</c><00:17:20.959><c> then</c><00:17:21.680><c> platform</c>
+
+00:17:22.189 --> 00:17:22.199
+if necessary. And then platform
+ 
+
+00:17:22.199 --> 00:17:24.189
+if necessary. And then platform
+feedback.<00:17:22.640><c> So</c><00:17:22.760><c> you</c><00:17:22.920><c> can</c><00:17:23.079><c> actually</c><00:17:23.400><c> tell</c><00:17:24.040><c> when</c>
+
+00:17:24.189 --> 00:17:24.199
+feedback. So you can actually tell when
+ 
+
+00:17:24.199 --> 00:17:25.829
+feedback. So you can actually tell when
+you're<00:17:24.319><c> using</c><00:17:24.800><c> your</c><00:17:25.000><c> agent</c><00:17:25.360><c> if</c><00:17:25.520><c> you've</c><00:17:25.640><c> got</c>
+
+00:17:25.829 --> 00:17:25.839
+you're using your agent if you've got
+ 
+
+00:17:25.839 --> 00:17:27.069
+you're using your agent if you've got
+Cody<00:17:26.040><c> connected,</c><00:17:26.400><c> you</c><00:17:26.480><c> can</c><00:17:26.600><c> say,</c><00:17:26.800><c> "Could</c><00:17:26.959><c> you</c>
+
+00:17:27.069 --> 00:17:27.079
+Cody connected, you can say, "Could you
+ 
+
+00:17:27.079 --> 00:17:29.070
+Cody connected, you can say, "Could you
+leave<00:17:27.280><c> feedback</c><00:17:27.959><c> to</c><00:17:28.160><c> Cody</c><00:17:28.480><c> to</c><00:17:28.720><c> fix</c><00:17:28.920><c> this</c>
+
+00:17:29.070 --> 00:17:29.080
+leave feedback to Cody to fix this
+ 
+
+00:17:29.080 --> 00:17:31.030
+leave feedback to Cody to fix this
+whatever<00:17:29.360><c> thing</c><00:17:29.960><c> or</c><00:17:30.240><c> whatever</c><00:17:30.680><c> for</c><00:17:30.840><c> your</c>
+
+00:17:31.030 --> 00:17:31.040
+whatever thing or whatever for your
+ 
+
+00:17:31.040 --> 00:17:32.870
+whatever thing or whatever for your
+product<00:17:31.560><c> however</c><00:17:32.000><c> you</c><00:17:32.160><c> get</c><00:17:32.360><c> feedback</c><00:17:32.720><c> from</c>
+
+00:17:32.870 --> 00:17:32.880
+product however you get feedback from
+ 
+
+00:17:32.880 --> 00:17:34.550
+product however you get feedback from
+users,<00:17:33.560><c> you</c><00:17:33.680><c> can</c><00:17:33.840><c> feed</c><00:17:34.040><c> that</c><00:17:34.240><c> into</c><00:17:34.480><c> the</c>
+
+00:17:34.550 --> 00:17:34.560
+users, you can feed that into the
+ 
+
+00:17:34.560 --> 00:17:36.710
+users, you can feed that into the
+system.<00:17:35.120><c> And</c><00:17:35.240><c> if</c><00:17:35.360><c> it's</c><00:17:35.560><c> like</c><00:17:35.720><c> an</c><00:17:35.920><c> obvious</c><00:17:36.320><c> fix</c>
+
+00:17:36.710 --> 00:17:36.720
+system. And if it's like an obvious fix
+ 
+
+00:17:36.720 --> 00:17:38.670
+system. And if it's like an obvious fix
+that<00:17:36.920><c> doesn't</c><00:17:37.240><c> require</c><00:17:37.600><c> product</c><00:17:37.920><c> decision,</c>
+
+00:17:38.670 --> 00:17:38.680
+that doesn't require product decision,
+ 
+
+00:17:38.680 --> 00:17:40.110
+that doesn't require product decision,
+then<00:17:38.880><c> like,</c><00:17:39.200><c> "Oh</c><00:17:39.320><c> yeah,</c><00:17:39.560><c> that</c><00:17:39.760><c> link</c><00:17:39.960><c> is</c>
+
+00:17:40.110 --> 00:17:40.120
+then like, "Oh yeah, that link is
+ 
+
+00:17:40.120 --> 00:17:42.310
+then like, "Oh yeah, that link is
+broken.<00:17:40.520><c> Great.</c><00:17:40.840><c> Thank</c><00:17:41.040><c> you</c><00:17:41.320><c> user."</c><00:17:41.760><c> And</c><00:17:42.040><c> and</c>
+
+00:17:42.310 --> 00:17:42.320
+broken. Great. Thank you user." And and
+ 
+
+00:17:42.320 --> 00:17:43.470
+broken. Great. Thank you user." And and
+you<00:17:42.400><c> close</c><00:17:42.640><c> the</c><00:17:42.720><c> loop</c><00:17:42.920><c> with</c><00:17:43.040><c> the</c><00:17:43.160><c> user.</c>
+
+00:17:43.470 --> 00:17:43.480
+you close the loop with the user.
+ 
+
+00:17:43.480 --> 00:17:44.990
+you close the loop with the user.
+There's<00:17:43.960><c> There's</c><00:17:44.120><c> actually</c><00:17:44.360><c> a</c><00:17:44.400><c> great</c><00:17:44.600><c> product</c>
+
+00:17:44.990 --> 00:17:45.000
+There's There's actually a great product
+ 
+
+00:17:45.000 --> 00:17:46.790
+There's There's actually a great product
+for<00:17:45.080><c> this</c><00:17:45.240><c> called</c><00:17:45.480><c> Modum.</c><00:17:46.120><c> I'm</c><00:17:46.240><c> not</c><00:17:46.400><c> sponsored</c>
+
+00:17:46.790 --> 00:17:46.800
+for this called Modum. I'm not sponsored
+ 
+
+00:17:46.800 --> 00:17:49.750
+for this called Modum. I'm not sponsored
+by<00:17:46.920><c> them.</c><00:17:47.640><c> They</c><00:17:47.880><c> are</c><00:17:48.200><c> fabulous</c><00:17:48.680><c> though</c><00:17:49.240><c> and</c>
+
+00:17:49.750 --> 00:17:49.760
+by them. They are fabulous though and
+ 
+
+00:17:49.760 --> 00:17:51.630
+by them. They are fabulous though and
+they<00:17:50.040><c> will</c><00:17:50.280><c> help</c><00:17:50.520><c> you</c><00:17:50.680><c> with</c><00:17:51.000><c> this</c><00:17:51.160><c> exact</c>
+
+00:17:51.630 --> 00:17:51.640
+they will help you with this exact
+ 
+
+00:17:51.640 --> 00:17:54.230
+they will help you with this exact
+problem.<00:17:52.280><c> Finding</c><00:17:52.720><c> ways</c><00:17:53.040><c> to</c><00:17:53.160><c> get</c><00:17:53.400><c> actual</c><00:17:53.880><c> live</c>
+
+00:17:54.230 --> 00:17:54.240
+problem. Finding ways to get actual live
+ 
+
+00:17:54.240 --> 00:17:56.510
+problem. Finding ways to get actual live
+issues<00:17:54.840><c> into</c><00:17:55.200><c> your</c><00:17:55.360><c> software</c><00:17:55.720><c> factory</c><00:17:56.160><c> to</c><00:17:56.320><c> go</c>
+
+00:17:56.510 --> 00:17:56.520
+issues into your software factory to go
+ 
+
+00:17:56.520 --> 00:17:58.630
+issues into your software factory to go
+through<00:17:56.960><c> and</c><00:17:57.320><c> end</c><00:17:57.520><c> up</c><00:17:57.920><c> with</c><00:17:58.120><c> a</c><00:17:58.160><c> positive</c>
+
+00:17:58.630 --> 00:17:58.640
+through and end up with a positive
+ 
+
+00:17:58.640 --> 00:18:01.030
+through and end up with a positive
+implementation<00:17:59.520><c> is</c><00:17:59.760><c> really</c><00:18:00.040><c> your</c><00:18:00.200><c> goal</c><00:18:00.440><c> here.</c>
+
+00:18:01.030 --> 00:18:01.040
+implementation is really your goal here.
+ 
+
+00:18:01.040 --> 00:18:03.470
+implementation is really your goal here.
+And<00:18:01.200><c> it</c><00:18:01.280><c> can</c><00:18:01.520><c> even</c><00:18:01.840><c> be</c><00:18:02.080><c> like</c><00:18:02.480><c> cron</c><00:18:02.800><c> jobs</c><00:18:03.280><c> and</c>
+
+00:18:03.470 --> 00:18:03.480
+And it can even be like cron jobs and
+ 
+
+00:18:03.480 --> 00:18:04.950
+And it can even be like cron jobs and
+that<00:18:03.600><c> sort</c><00:18:03.800><c> of</c><00:18:03.840><c> thing.</c><00:18:04.040><c> So</c><00:18:04.280><c> I've</c><00:18:04.440><c> got</c><00:18:04.640><c> a</c><00:18:04.680><c> cron</c>
+
+00:18:04.950 --> 00:18:04.960
+that sort of thing. So I've got a cron
+ 
+
+00:18:04.960 --> 00:18:07.110
+that sort of thing. So I've got a cron
+job<00:18:05.240><c> every</c><00:18:05.560><c> night.</c><00:18:06.280><c> I</c><00:18:06.440><c> have</c><00:18:06.600><c> an</c><00:18:06.720><c> agent</c><00:18:07.000><c> that</c>
+
+00:18:07.110 --> 00:18:07.120
+job every night. I have an agent that
+ 
+
+00:18:07.120 --> 00:18:08.670
+job every night. I have an agent that
+goes<00:18:07.320><c> through</c><00:18:07.520><c> my</c><00:18:07.680><c> docs</c><00:18:08.040><c> and</c><00:18:08.160><c> make</c><00:18:08.320><c> sure</c><00:18:08.520><c> that</c>
+
+00:18:08.670 --> 00:18:08.680
+goes through my docs and make sure that
+ 
+
+00:18:08.680 --> 00:18:10.830
+goes through my docs and make sure that
+they're<00:18:09.320><c> all</c><00:18:09.560><c> up-to-date</c><00:18:10.080><c> and</c><00:18:10.200><c> not</c><00:18:10.480><c> missing</c>
+
+00:18:10.830 --> 00:18:10.840
+they're all up-to-date and not missing
+ 
+
+00:18:10.840 --> 00:18:12.710
+they're all up-to-date and not missing
+links<00:18:11.160><c> or</c><00:18:11.240><c> whatever.</c><00:18:11.880><c> I've</c><00:18:12.000><c> got</c><00:18:12.160><c> another</c><00:18:12.480><c> one</c>
+
+00:18:12.710 --> 00:18:12.720
+links or whatever. I've got another one
+ 
+
+00:18:12.720 --> 00:18:14.750
+links or whatever. I've got another one
+that<00:18:12.960><c> takes</c><00:18:13.200><c> care</c><00:18:13.480><c> of</c><00:18:13.640><c> tests</c><00:18:14.000><c> that</c><00:18:14.320><c> are</c><00:18:14.520><c> no</c>
+
+00:18:14.750 --> 00:18:14.760
+that takes care of tests that are no
+ 
+
+00:18:14.760 --> 00:18:17.070
+that takes care of tests that are no
+longer<00:18:15.120><c> valuable</c><00:18:15.600><c> or</c><00:18:15.720><c> deletes</c><00:18:16.360><c> things</c><00:18:16.680><c> and</c>
+
+00:18:17.070 --> 00:18:17.080
+longer valuable or deletes things and
+ 
+
+00:18:17.080 --> 00:18:18.870
+longer valuable or deletes things and
+tightens<00:18:17.440><c> them</c><00:18:17.680><c> to</c><00:18:17.800><c> follow</c><00:18:18.080><c> the</c><00:18:18.200><c> principles</c>
+
+00:18:18.870 --> 00:18:18.880
+tightens them to follow the principles
+ 
+
+00:18:18.880 --> 00:18:21.710
+tightens them to follow the principles
+of<00:18:19.080><c> the</c><00:18:19.200><c> code</c><00:18:19.400><c> base.</c><00:18:20.000><c> And</c><00:18:20.160><c> then</c><00:18:20.640><c> a</c><00:18:20.760><c> weekly</c>
+
+00:18:21.710 --> 00:18:21.720
+of the code base. And then a weekly
+ 
+
+00:18:21.720 --> 00:18:23.790
+of the code base. And then a weekly
+agent<00:18:22.080><c> goes</c><00:18:22.280><c> through</c><00:18:22.520><c> and</c><00:18:22.600><c> just</c><00:18:22.800><c> does</c><00:18:23.440><c> like</c>
+
+00:18:23.790 --> 00:18:23.800
+agent goes through and just does like
+ 
+
+00:18:23.800 --> 00:18:27.070
+agent goes through and just does like
+reaping<00:18:24.760><c> of</c><00:18:25.280><c> all</c><00:18:25.480><c> of</c><00:18:25.600><c> the</c><00:18:25.920><c> legacy</c><00:18:26.560><c> stuff</c>
+
+00:18:27.070 --> 00:18:27.080
+reaping of all of the legacy stuff
+ 
+
+00:18:27.080 --> 00:18:28.550
+reaping of all of the legacy stuff
+that's<00:18:27.360><c> sitting</c><00:18:27.640><c> in</c><00:18:27.760><c> the</c><00:18:27.840><c> code</c><00:18:28.080><c> base.</c><00:18:28.320><c> And</c><00:18:28.440><c> if</c>
+
+00:18:28.550 --> 00:18:28.560
+that's sitting in the code base. And if
+ 
+
+00:18:28.560 --> 00:18:31.110
+that's sitting in the code base. And if
+it<00:18:28.760><c> can't</c><00:18:29.360><c> determine</c><00:18:29.840><c> whether</c><00:18:30.160><c> or</c><00:18:30.240><c> not</c><00:18:30.520><c> this</c>
+
+00:18:31.110 --> 00:18:31.120
+it can't determine whether or not this
+ 
+
+00:18:31.120 --> 00:18:32.870
+it can't determine whether or not this
+code<00:18:31.440><c> is</c><00:18:31.560><c> actually</c><00:18:31.880><c> used,</c><00:18:32.440><c> then</c><00:18:32.560><c> it</c><00:18:32.680><c> will</c>
+
+00:18:32.870 --> 00:18:32.880
+code is actually used, then it will
+ 
+
+00:18:32.880 --> 00:18:34.590
+code is actually used, then it will
+instrument<00:18:33.440><c> it</c><00:18:33.600><c> and</c><00:18:33.720><c> then</c><00:18:33.840><c> the</c><00:18:33.920><c> next</c><00:18:34.240><c> week</c>
+
+00:18:34.590 --> 00:18:34.600
+instrument it and then the next week
+ 
+
+00:18:34.600 --> 00:18:36.430
+instrument it and then the next week
+we'll<00:18:34.840><c> see</c><00:18:35.200><c> if</c><00:18:35.440><c> anybody's</c><00:18:35.880><c> actually</c><00:18:36.200><c> using</c>
+
+00:18:36.430 --> 00:18:36.440
+we'll see if anybody's actually using
+ 
+
+00:18:36.440 --> 00:18:37.990
+we'll see if anybody's actually using
+that<00:18:36.600><c> code</c><00:18:36.840><c> and</c><00:18:36.920><c> then</c><00:18:37.040><c> we</c><00:18:37.160><c> can</c><00:18:37.360><c> know</c><00:18:37.720><c> we</c><00:18:37.840><c> can</c>
+
+00:18:37.990 --> 00:18:38.000
+that code and then we can know we can
+ 
+
+00:18:38.000 --> 00:18:39.950
+that code and then we can know we can
+rip<00:18:38.160><c> it</c><00:18:38.280><c> out.</c><00:18:38.960><c> So</c><00:18:39.160><c> really</c><00:18:39.440><c> what</c><00:18:39.600><c> you</c><00:18:39.680><c> need</c><00:18:39.880><c> to</c>
+
+00:18:39.950 --> 00:18:39.960
+rip it out. So really what you need to
+ 
+
+00:18:39.960 --> 00:18:42.190
+rip it out. So really what you need to
+do<00:18:40.240><c> is</c><00:18:40.440><c> create</c><00:18:40.760><c> a</c><00:18:40.800><c> system</c><00:18:41.280><c> in</c><00:18:41.400><c> which</c><00:18:41.720><c> agents</c>
+
+00:18:42.190 --> 00:18:42.200
+do is create a system in which agents
+ 
+
+00:18:42.200 --> 00:18:44.190
+do is create a system in which agents
+make<00:18:42.600><c> good</c><00:18:42.840><c> PRs</c><00:18:43.280><c> in</c><00:18:43.360><c> the</c><00:18:43.440><c> first</c><00:18:43.680><c> place.</c><00:18:44.040><c> You</c>
+
+00:18:44.190 --> 00:18:44.200
+make good PRs in the first place. You
+ 
+
+00:18:44.200 --> 00:18:46.110
+make good PRs in the first place. You
+catch<00:18:44.520><c> mistakes</c><00:18:45.080><c> if</c><00:18:45.280><c> those</c><00:18:45.480><c> mistakes</c><00:18:45.800><c> make</c><00:18:46.040><c> it</c>
+
+00:18:46.110 --> 00:18:46.120
+catch mistakes if those mistakes make it
+ 
+
+00:18:46.120 --> 00:18:48.230
+catch mistakes if those mistakes make it
+into<00:18:46.280><c> PRs</c><00:18:47.040><c> and</c><00:18:47.160><c> then</c><00:18:47.320><c> you</c><00:18:47.400><c> reduce</c><00:18:47.760><c> the</c><00:18:47.840><c> blast</c>
+
+00:18:48.230 --> 00:18:48.240
+into PRs and then you reduce the blast
+ 
+
+00:18:48.240 --> 00:18:51.150
+into PRs and then you reduce the blast
+radius<00:18:48.880><c> if</c><00:18:49.280><c> mistakes</c><00:18:49.840><c> end</c><00:18:50.040><c> up</c><00:18:50.240><c> in</c><00:18:50.400><c> production.</c>
+
+00:18:51.150 --> 00:18:51.160
+radius if mistakes end up in production.
+ 
+
+00:18:51.160 --> 00:18:53.030
+radius if mistakes end up in production.
+And<00:18:51.280><c> once</c><00:18:51.480><c> you</c><00:18:51.600><c> have</c><00:18:51.760><c> that</c><00:18:52.000><c> set</c><00:18:52.240><c> up,</c><00:18:52.720><c> then</c><00:18:52.920><c> you</c>
+
+00:18:53.030 --> 00:18:53.040
+And once you have that set up, then you
+ 
+
+00:18:53.040 --> 00:18:54.990
+And once you have that set up, then you
+can<00:18:53.200><c> set</c><00:18:53.400><c> up</c><00:18:53.600><c> a</c><00:18:53.640><c> bunch</c><00:18:53.880><c> of</c><00:18:54.000><c> pipelines</c><00:18:54.560><c> from</c><00:18:54.720><c> a</c>
+
+00:18:54.990 --> 00:18:55.000
+can set up a bunch of pipelines from a
+ 
+
+00:18:55.000 --> 00:18:56.950
+can set up a bunch of pipelines from a
+bunch<00:18:55.240><c> of</c><00:18:55.320><c> different</c><00:18:55.640><c> sources</c><00:18:56.360><c> to</c><00:18:56.520><c> turn</c><00:18:56.800><c> your</c>
+
+00:18:56.950 --> 00:18:56.960
+bunch of different sources to turn your
+ 
+
+00:18:56.960 --> 00:18:58.990
+bunch of different sources to turn your
+code<00:18:57.200><c> base</c><00:18:57.480><c> on</c><00:18:57.720><c> autopilot.</c><00:18:58.560><c> This</c><00:18:58.720><c> has</c><00:18:58.840><c> been</c>
+
+00:18:58.990 --> 00:18:59.000
+code base on autopilot. This has been
+ 
+
+00:18:59.000 --> 00:19:00.630
+code base on autopilot. This has been
+Better<00:18:59.200><c> With</c><00:18:59.360><c> Kent</c><00:18:59.600><c> where</c><00:18:59.800><c> you</c><00:19:00.040><c> and</c><00:19:00.280><c> I</c><00:19:00.440><c> get</c>
+
+00:19:00.630 --> 00:19:00.640
+Better With Kent where you and I get
+ 
+
+00:19:00.640 --> 00:19:02.270
+Better With Kent where you and I get
+better<00:19:00.880><c> together.</c><00:19:01.320><c> Please</c><00:19:01.600><c> like,</c><00:19:01.880><c> comment,</c>
+
+00:19:02.270 --> 00:19:02.280
+better together. Please like, comment,
+ 
+
+00:19:02.280 --> 00:19:04.510
+better together. Please like, comment,
+and<00:19:02.440><c> subscribe</c><00:19:03.360><c> and</c><00:19:03.720><c> thank</c><00:19:03.920><c> you</c><00:19:04.080><c> so</c><00:19:04.200><c> much</c><00:19:04.400><c> for</c>
+
+00:19:04.510 --> 00:19:04.520
+and subscribe and thank you so much for
+ 
+
+00:19:04.520 --> 00:19:07.360
+and subscribe and thank you so much for
+getting<00:19:04.760><c> better</c><00:19:04.960><c> with</c><00:19:05.080><c> me.</c>
+

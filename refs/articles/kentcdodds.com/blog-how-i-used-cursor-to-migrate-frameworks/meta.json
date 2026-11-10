@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/how-i-used-cursor-to-migrate-frameworks",
+  "title": "How I used Cursor to Migrate Frameworks",
+  "author": "Kent C Dodds",
+  "date": "2026-02-20",
+  "site": "Kentcdodds",
+  "description": "I upgraded kentcdodds.com from Remix v2 to React Router v7 in a day with over 17k lines of code changed. Here's how I did it.",
+  "via": "direct",
+  "chars": 12805,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:02:31Z"
+}

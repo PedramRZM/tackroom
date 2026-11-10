@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/write-tests",
+  "title": "Write tests. Not too many. Mostly integration.",
+  "author": "Guillermo Rauch",
+  "date": "2019-07-13",
+  "site": "Kentcdodds",
+  "description": "[Guillermo Rauch](https://x.com/rauchg) [tweeted](https://x.com/rauchg/status/807626710350839808) this a while back. Let's take a dive into what it means.",
+  "via": "direct",
+  "chars": 7058,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:01:45Z"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://kentcdodds.com/blog/avoid-nesting-when-youre-testing",
+  "title": "Avoid Nesting when you're Testing",
+  "author": "Kent C Dodds",
+  "date": "2019-07-29",
+  "site": "Kentcdodds",
+  "description": "Why using hooks like beforeEach as a mechanism for code reuse leads to unmaintainable tests and how to avoid it.",
+  "via": "direct",
+  "chars": 19095,
+  "collection": "people-kentcdodds",
+  "fetched_at": "2026-11-10T21:01:55Z"
+}
