@@ -853,7 +853,7 @@ Thesis: Industry and labour-market commentary: software development now costs le
 Relevance: low. No setup practices. One line worth keeping: "Removing waste from your organization and processes is a bigger accelerator than AI itself."
 
 ### ghuntley.com/stdlib and ghuntley.com/specs (Geoffrey Huntley, 2025-02 and 2025-03) `[GH-stdlib]`
-Files: refs/articles/ghuntley.com/stdlib/article.md, refs/articles/ghuntley.com/specs/article.md
+Files: [refs/articles/ghuntley.com/stdlib/article.md](https://ghuntley.com/stdlib/), [refs/articles/ghuntley.com/specs/article.md](https://ghuntley.com/specs/)
 Only the opening paragraphs were captured (1,225 and 689 characters); the bodies appear to be behind a membership wall. The visible text says the "stdlib" (a library of rules) plus "specs" methods work best with a language that gives compiler soundness and good compiler errors. Not usable as evidence beyond that.
 
 ### Steve Yegge
@@ -1339,15 +1339,15 @@ Relevance: high. Closest analogue to the user's own command set (plan, work, rev
 ### Saved but not read
 
 These were saved to the `industry` collection during enumeration and not read, so nothing above relies on them:
-- refs/articles/openai.com/index-unrolling-the-codex-agent-loop/article.md (Codex agent loop internals)
-- refs/articles/openai.com/index-unlocking-the-codex-harness/article.md (Codex App Server)
-- refs/articles/developers.openai.com/codex-guides-build-ai-native-engineering-team/article.md
-- refs/articles/developers.openai.com/blog-mastering-codex-remote-for-engineering/article.md
-- refs/articles/lucumr.pocoo.org/2026-2-9-a-language-for-agents/article.md
-- refs/articles/martinfowler.com/articles-durable-execution-agents-html/article.md
-- refs/articles/steve-yegge.medium.com/vibe-maintainer-a2273a841040/article.md
-- refs/articles/ampcode.com/how-to-build-an-agent/article.md
-- refs/articles/humanlayer.dev/blog-show-me-skill/article.md
-- refs/articles/shopify.engineering/remote-dev/article.md
+- [refs/articles/openai.com/index-unrolling-the-codex-agent-loop/article.md](https://openai.com/index/unrolling-the-codex-agent-loop/) (Codex agent loop internals)
+- [refs/articles/openai.com/index-unlocking-the-codex-harness/article.md](https://openai.com/index/unlocking-the-codex-harness/) (Codex App Server)
+- [refs/articles/developers.openai.com/codex-guides-build-ai-native-engineering-team/article.md](https://developers.openai.com/codex/guides/build-ai-native-engineering-team)
+- [refs/articles/developers.openai.com/blog-mastering-codex-remote-for-engineering/article.md](https://developers.openai.com/blog/mastering-codex-remote-for-engineering)
+- [refs/articles/lucumr.pocoo.org/2026-2-9-a-language-for-agents/article.md](https://lucumr.pocoo.org/2026/2/9/a-language-for-agents/)
+- [refs/articles/martinfowler.com/articles-durable-execution-agents-html/article.md](https://martinfowler.com/articles/durable-execution-agents.html)
+- [refs/articles/steve-yegge.medium.com/vibe-maintainer-a2273a841040/article.md](https://steve-yegge.medium.com/vibe-maintainer-a2273a841040)
+- [refs/articles/ampcode.com/how-to-build-an-agent/article.md](https://ampcode.com/how-to-build-an-agent)
+- [refs/articles/humanlayer.dev/blog-show-me-skill/article.md](https://www.humanlayer.dev/blog/show-me-skill)
+- [refs/articles/shopify.engineering/remote-dev/article.md](https://shopify.engineering/remote-dev)
 - The embedded `SPEC.md` inside the Symphony article (one 52,000-character line).
 

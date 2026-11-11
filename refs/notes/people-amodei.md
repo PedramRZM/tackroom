@@ -24,7 +24,7 @@ first-hand impressions without measurements; the practice notes carry the number
 ## Per source
 
 ### The Adolescence of Technology (Dario Amodei, 2026-01-26)
-File: articles/darioamodei.com/essay-the-adolescence-of-technology/article.md
+File: [articles/darioamodei.com/essay-the-adolescence-of-technology/article.md](https://darioamodei.com/essay/the-adolescence-of-technology)
 URL: https://darioamodei.com/essay/the-adolescence-of-technology
 Thesis: an essay on the risks of powerful AI and how to handle them. Coding appears as his
 main example of how fast capability has moved.
@@ -47,7 +47,7 @@ Relevance: low for setup decisions; useful as the stated view of Anthropic's CEO
 bottleneck moves from writing code to everything around it.
 
 ### Machines of Loving Grace (Dario Amodei, October 2024)
-File: articles/darioamodei.com/essay-machines-of-loving-grace/article.md
+File: [articles/darioamodei.com/essay-machines-of-loving-grace/article.md](https://darioamodei.com/essay/machines-of-loving-grace)
 URL: https://darioamodei.com/essay/machines-of-loving-grace
 Thesis: what powerful AI could achieve if it goes well. A search of the saved text finds no
 passage about coding practice.

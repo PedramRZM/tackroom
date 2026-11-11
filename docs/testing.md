@@ -18,7 +18,7 @@ end-to-end tests on the flows that must not break, and unit tests where there is
   integration, end to end. His rule is "Write tests. Not too many. Mostly integration.": the
   higher the level, the more confidence each test buys, and the more it costs in speed and
   reliability, so integration is where most of the value sits
-  (`refs/articles/kentcdodds.com/blog-write-tests/article.md`;
+  ([`refs/articles/kentcdodds.com/blog-write-tests/article.md`](https://kentcdodds.com/blog/write-tests);
   `blog-the-testing-trophy-and-testing-classifications`).
 - He is against coverage targets: mandated 100% gives "diminishing returns" and produces tests
   that say little about whether the application works (same post, "Not too many."). An agent
@@ -27,10 +27,10 @@ end-to-end tests on the flows that must not break, and unit tests where there is
 - For agents specifically, Dodds orders what helps them ship quality: "unit and integration
   test suites, typecheck, agents running their own change, a control CLI to drive the app,
   end-to-end tests, and decision records"
-  (`refs/articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-references-verification-md/article.md`).
+  ([`refs/articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-references-verification-md/article.md`](https://raw.githubusercontent.com/kentcdodds/kcd-skills/main/skills/autopilot/references/verification.md)).
 - Addy Osmani, from inside the Claude Code team: if you could have only one kind, end-to-end
   tests on a small set of important flows, with failure output that says which step failed
-  (`refs/articles/addyo.substack.com/p-agentic-verification/article.md`, via
+  ([`refs/articles/addyo.substack.com/p-agentic-verification/article.md`](https://addyo.substack.com/p/agentic-verification), via
   `refs/notes/people-osmani-karpathy-willison.md`).
 
 These are compatible: Dodds's "integration" for a web app is a page or handler tested with only
@@ -47,18 +47,18 @@ tests that cannot fail, and adjust tests until they pass.
 
 | Do | Why | Where in the template |
 |---|---|---|
-| Write the test from the behaviour (the acceptance criterion, the bug report), not from the code | A test derived from the code only confirms that the code does what it does (Farley, `refs/videos/libNzUdL9eM/transcript.md`, 05:09) | `write-tests`; task format in `WORKFLOW.md` |
+| Write the test from the behaviour (the acceptance criterion, the bug report), not from the code | A test derived from the code only confirms that the code does what it does (Farley, [`refs/videos/libNzUdL9eM/transcript.md`](https://www.youtube.com/watch?v=libNzUdL9eM), 05:09) | `write-tests`; task format in `WORKFLOW.md` |
 | For a bug, failing test first; for new code, break the change and watch the test go red | A test that has never failed proves nothing. Osmani's verifier reverts the fix to check (`refs/notes/people-osmani-karpathy-willison.md`, finding 2) | `write-tests`; `WORKFLOW.md` step 6; the reviewer checks it |
 | Protect existing tests while the code is being fixed | Anthropic's playbook: commit the failing test, then block test edits with a hook (`refs/notes/anthropic-claude-com-org-and-cases.md`, finding 6) | `/lock-tests` |
 | When an expectation changes with the code, say why | Dodds has reviewers check every changed test expectation against the pull request's intent (verification reference, "Proof in the ship loop") | pull request template; `reviewer` |
 | Keep tests fast, deterministic and quiet | Slow or flaky tests teach the agent to retry instead of fix (Osmani, same post) | `write-tests`; `scripts/agent/check` prints one line per check |
-| Treat a flaky test as a bug | Agents treat flakiness as normal and will flip code back and forth chasing it (Cormack, `refs/videos/xHxfeWtkXrM/transcript.md`, 13:28) | `write-tests` |
+| Treat a flaky test as a bug | Agents treat flakiness as normal and will flip code back and forth chasing it (Cormack, [`refs/videos/xHxfeWtkXrM/transcript.md`](https://www.youtube.com/watch?v=xHxfeWtkXrM), 13:28) | `write-tests` |
 | Do not accept tests as the only proof | Tests pass while the wrong thing ships; they cannot judge security or design (`refs/notes/devcon-2-harness-specs-verification.md` (c)) | `verify` asks for the running app; `second-opinion` |
 
 What stays the human's: deciding which behaviours matter enough to test, and reading the
 evidence. Simon Willison's line for it: "the one thing you absolutely cannot outsource to the
 machine is testing that the code actually works"
-(`refs/articles/simonwillison.net/2025-mar-11-using-llms-for-code/article.md`).
+([`refs/articles/simonwillison.net/2025-mar-11-using-llms-for-code/article.md`](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)).
 
 ## Random-input testing: properties, fuzzing, differential tests
 
@@ -86,7 +86,7 @@ skill mentions properties for code with invariants and stops there. Random UI-cl
 
 The Claude Code team's most repeated tip is to give the agent a way to check its own work end
 to end, which for a web app means driving a browser
-(`refs/notes/x-posts.md`, finding 1; `refs/posts/x/2044847858634064115/post.md`). The pieces
+(`refs/notes/x-posts.md`, finding 1; [`refs/posts/x/2044847858634064115/post.md`](https://x.com/bcherny/status/2044847858634064115)). The pieces
 the sources describe:
 
 - A way to **start the app and reach it**, to **sign in as a seed user**, and to **seed the
@@ -106,7 +106,7 @@ and the sources that have one built it for one product.
 ## Performance
 
 The method comes from one strong first-hand account, Anthropic's two-week effort that made
-claude.ai about three times faster (`refs/articles/claude.dev/blog-how-we-made-claude-ai-faster/article.md`,
+claude.ai about three times faster ([`refs/articles/claude.dev/blog-how-we-made-claude-ai-faster/article.md`](https://claude.dev/blog/how-we-made-claude-ai-faster/),
 summarised in `refs/notes/anthropic-claude-dev-blog.md`, FAST entry), plus the Claude Code
 docs and Boris Cherny's own prompts:
 
@@ -133,7 +133,7 @@ cares about; it fails when the number is worse than the recorded best.
   5 tries.` (both in `prompts/README.md`).
 - The Claude Code team's sample verification skill ends with a performance trace and a Core
   Web Vitals audit through the Chrome DevTools tool
-  (`refs/articles/claude.com/resources-articles-getting-started-with-loops/article.md`).
+  ([`refs/articles/claude.com/resources-articles-getting-started-with-loops/article.md`](https://claude.com/resources/articles/getting-started-with-loops)).
 - Lab numbers are for before-and-after on one machine. They are not what users experience; the
   claude.ai work reported its outcome as the 75th-percentile time until the page could be typed in.
 
@@ -147,7 +147,7 @@ The corpus is thin here, and I am saying so instead of padding. What it does sup
 
 - Cherny's prompt for a speed rewrite makes the **original test suite the oracle** and the
   stop condition **proof**: "dont stop until you have conclusively proven that the new impl is
-  faster", followed by a target, "hoping for p99 < 10ms" (`refs/posts/x/2042352725481177315/post.md`).
+  faster", followed by a target, "hoping for p99 < 10ms" ([`refs/posts/x/2042352725481177315/post.md`](https://x.com/bcherny/status/2042352725481177315)).
 - Agents propose plausible but unverified optimisations
   (`refs/notes/devcon-2-harness-specs-verification.md` (c), Walter), which is the reason for
   measuring before and after.

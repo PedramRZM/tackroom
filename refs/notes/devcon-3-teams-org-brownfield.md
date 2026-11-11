@@ -16,21 +16,21 @@ Source keys:
 
 | Key | Speaker / content | File |
 | --- | --- | --- |
-| THOMAS | Ian Thomas, Meta (Horizon / Reality Labs) | refs/videos/NVzKtCSeoRA/transcript.md |
-| ROBERTS | Katie Roberts, Nearform | refs/videos/5SKh-FmjX7U/transcript.md |
-| SYME | Don Syme, GitHub Next | refs/videos/kbvqRWY-bUs/transcript.md |
-| FOXWELL | Hannah Foxwell, independent | refs/videos/pyYKOLEnsZk/transcript.md |
-| BATEY | Christopher Batey, CTO of a platform-engineering consultancy (caption: `Core Engineering Consulting Group`, spelling unsure) | refs/videos/tJUAef_dBtU/transcript.md |
-| ODEVO | Daniel Jones (re:cinq) and Tomasz Maj (Odevo) | refs/videos/mB74LGAmmV0/transcript.md |
-| DUBNOV | Tammuz Dubnov, AutonomyAI (vendor) | refs/videos/KzhjnILSP0Y/transcript.md |
-| PANEL | Stephane Jourdan, Simon Rohrer, Pini Reznik (panel) | refs/videos/1grkxo4cyKY/transcript.md |
-| LAWSON | Dana Lawson, CTO Netlify | refs/videos/ItTJpQz35CY/transcript.md |
-| WOTHERSPOON | Jack Wotherspoon, Google (Gemini CLI) | refs/videos/HgA0spItnZI/transcript.md |
-| DOUGLAS | Brian Douglas, Paper Compute (tapes.dev) | refs/videos/o-IunU6b1t8/transcript.md |
-| CLIP-SCALE | Clip: Thomas, Stanford researchers, Odevo, Foxwell | refs/videos/jfTltMo0TMg/transcript.md |
-| CLIP-BROWNFIELD | Clip: Roberts, Simon Martinelli, Batey, Thomas | refs/videos/UVOkQyeY16M/transcript.md |
-| CLIP-PRODUCT | Clip: Marc Sloan (Tessl), Dubnov, Lawson, Emma Burrows | refs/videos/G5mAl_QBr4w/transcript.md |
-| CLIP-COST | Clip: Amit Kushwaha (Nvidia), Dubnov, Luke Marsden (Helix ML), John Groetzinger (Cisco) | refs/videos/nnja7kk4EPM/transcript.md |
+| THOMAS | Ian Thomas, Meta (Horizon / Reality Labs) | [refs/videos/NVzKtCSeoRA/transcript.md](https://www.youtube.com/watch?v=NVzKtCSeoRA) |
+| ROBERTS | Katie Roberts, Nearform | [refs/videos/5SKh-FmjX7U/transcript.md](https://www.youtube.com/watch?v=5SKh-FmjX7U) |
+| SYME | Don Syme, GitHub Next | [refs/videos/kbvqRWY-bUs/transcript.md](https://www.youtube.com/watch?v=kbvqRWY-bUs) |
+| FOXWELL | Hannah Foxwell, independent | [refs/videos/pyYKOLEnsZk/transcript.md](https://www.youtube.com/watch?v=pyYKOLEnsZk) |
+| BATEY | Christopher Batey, CTO of a platform-engineering consultancy (caption: `Core Engineering Consulting Group`, spelling unsure) | [refs/videos/tJUAef_dBtU/transcript.md](https://www.youtube.com/watch?v=tJUAef_dBtU) |
+| ODEVO | Daniel Jones (re:cinq) and Tomasz Maj (Odevo) | [refs/videos/mB74LGAmmV0/transcript.md](https://www.youtube.com/watch?v=mB74LGAmmV0) |
+| DUBNOV | Tammuz Dubnov, AutonomyAI (vendor) | [refs/videos/KzhjnILSP0Y/transcript.md](https://www.youtube.com/watch?v=KzhjnILSP0Y) |
+| PANEL | Stephane Jourdan, Simon Rohrer, Pini Reznik (panel) | [refs/videos/1grkxo4cyKY/transcript.md](https://www.youtube.com/watch?v=1grkxo4cyKY) |
+| LAWSON | Dana Lawson, CTO Netlify | [refs/videos/ItTJpQz35CY/transcript.md](https://www.youtube.com/watch?v=ItTJpQz35CY) |
+| WOTHERSPOON | Jack Wotherspoon, Google (Gemini CLI) | [refs/videos/HgA0spItnZI/transcript.md](https://www.youtube.com/watch?v=HgA0spItnZI) |
+| DOUGLAS | Brian Douglas, Paper Compute (tapes.dev) | [refs/videos/o-IunU6b1t8/transcript.md](https://www.youtube.com/watch?v=o-IunU6b1t8) |
+| CLIP-SCALE | Clip: Thomas, Stanford researchers, Odevo, Foxwell | [refs/videos/jfTltMo0TMg/transcript.md](https://www.youtube.com/watch?v=jfTltMo0TMg) |
+| CLIP-BROWNFIELD | Clip: Roberts, Simon Martinelli, Batey, Thomas | [refs/videos/UVOkQyeY16M/transcript.md](https://www.youtube.com/watch?v=UVOkQyeY16M) |
+| CLIP-PRODUCT | Clip: Marc Sloan (Tessl), Dubnov, Lawson, Emma Burrows | [refs/videos/G5mAl_QBr4w/transcript.md](https://www.youtube.com/watch?v=G5mAl_QBr4w) |
+| CLIP-COST | Clip: Amit Kushwaha (Nvidia), Dubnov, Luke Marsden (Helix ML), John Groetzinger (Cisco) | [refs/videos/nnja7kk4EPM/transcript.md](https://www.youtube.com/watch?v=nnja7kk4EPM) |
 
 ## Cross-cutting findings
 

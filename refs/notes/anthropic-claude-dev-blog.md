@@ -8,7 +8,7 @@ Reading notes that affect how to use this file:
   captions and image alt texts, so a second, heading-preserving copy of each post was fetched
   through the reader proxy and read alongside. Those copies have since replaced the originals:
   each post is now one file, for example
-  `refs/articles/claude.dev/blog-seeing-like-an-agent/article.md`, with headings and alt texts.
+  [`refs/articles/claude.dev/blog-seeing-like-an-agent/article.md`](https://claude.dev/blog/seeing-like-an-agent/), with headings and alt texts.
 - Locators are the section headings of those files, in square brackets. Quotes were checked
   mechanically against the saved text. A quote marked "(fig. alt)" is the alt text of a figure.
 - Dates run from 2026-04-10 to 2026-11-09. The older posts name older models (Opus 4.5 to 4.8) and
@@ -476,7 +476,7 @@ Inference for a solo developer: the minimum viable version is a handful of real 
 
 ### SKILLS: Lessons from building Claude Code: How we use skills (Thariq Shihipar, 2026-06-03)
 
-File: `refs/articles/claude.dev/blog-lessons-from-building-claude-code-how-we-use-skills/article.md` (headings: same path with ``)   URL: https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/
+File: [`refs/articles/claude.dev/blog-lessons-from-building-claude-code-how-we-use-skills/article.md`](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/) (headings: same path with ``)   URL: https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/
 
 Thesis: Skills are folders, not markdown files, and the effective ones use scripts, data, config and hooks. Anthropic's hundreds of internal skills cluster into nine categories, and a skill should fit one. The value is in gotchas, progressive disclosure and trigger-oriented descriptions.
 
@@ -505,7 +505,7 @@ Relevance: high. It is the most direct source for which skills to build and how 
 
 ### CACHE: Lessons from building Claude Code: Prompt caching is everything (Thariq Shihipar, 2026-04-30)
 
-File: `refs/articles/claude.dev/blog-lessons-from-building-claude-code-prompt-caching-is-everything/article.md`   URL: https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/
+File: [`refs/articles/claude.dev/blog-lessons-from-building-claude-code-prompt-caching-is-everything/article.md`](https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/)   URL: https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/
 
 Thesis: Long-running agents are only affordable because of prompt caching, which is a prefix match, so the whole harness is ordered and designed around keeping the prefix stable. Features such as plan mode, tool search and compaction are shaped by that constraint.
 
@@ -530,7 +530,7 @@ Relevance: high. It explains why instruction files, tool lists and model choice 
 
 ### SEE: Seeing like an agent: how we design tools in Claude Code (Thariq Shihipar, 2026-04-10)
 
-File: `refs/articles/claude.dev/blog-seeing-like-an-agent/article.md`   URL: https://claude.dev/blog/seeing-like-an-agent/
+File: [`refs/articles/claude.dev/blog-seeing-like-an-agent/article.md`](https://claude.dev/blog/seeing-like-an-agent/)   URL: https://claude.dev/blog/seeing-like-an-agent/
 
 Thesis: Tools should be shaped to the model's actual abilities, which you learn by reading its outputs and experimenting. As models improve, tools that once helped start to constrain, and new capability is better added by progressive disclosure than by new tools.
 
@@ -553,7 +553,7 @@ Relevance: high. It gives the design reasoning for a project's own scripts, ques
 
 ### CTX: The new rules of context engineering for Claude 5 generation models (Thariq Shihipar, 2026-07-24)
 
-File: `refs/articles/claude.dev/blog-the-new-rules-of-context-engineering-for-claude-5-generation-models/article.md`   URL: https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/
+File: [`refs/articles/claude.dev/blog-the-new-rules-of-context-engineering-for-claude-5-generation-models/article.md`](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/)   URL: https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/
 
 Thesis: Context (system prompt, `CLAUDE.md`, skills, memory) was over-constraining newer models. Anthropic cut over 80% of Claude Code's system prompt with no measurable eval loss, and six earlier best practices are now described as myths with replacements.
 
@@ -576,7 +576,7 @@ Relevance: high. It sets the size and style rules for every instruction file in 
 
 ### WF: A harness for every task: dynamic workflows in Claude Code (Thariq Shihipar and Sid Bidasaria, 2026-06-02)
 
-File: `refs/articles/claude.dev/blog-a-harness-for-every-task-dynamic-workflows-in-claude-code/article.md`   URL: https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/
+File: [`refs/articles/claude.dev/blog-a-harness-for-every-task-dynamic-workflows-in-claude-code/article.md`](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/)   URL: https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/
 
 Thesis: Claude Code can write a task-specific multi-agent harness as a JavaScript workflow. This counters the laziness, self-preference and goal drift of one long context, at a higher token cost, so it suits complex, high-value, parallel or adversarial work.
 
@@ -601,7 +601,7 @@ Relevance: high for knowing when not to reach for multi-agent, and for the rule-
 
 ### AUTO: Building effective agent automations (Lance Martin and CJ Avilla, 2026-10-08)
 
-File: `refs/articles/claude.dev/blog-building-effective-agent-automations/article.md`   URL: https://claude.dev/blog/building-effective-agent-automations/
+File: [`refs/articles/claude.dev/blog-building-effective-agent-automations/article.md`](https://claude.dev/blog/building-effective-agent-automations/)   URL: https://claude.dev/blog/building-effective-agent-automations/
 
 Thesis: Scheduled background agents fail quietly: they lose a source, repeat or skip items, or ignore changed preferences. A reference daily-brief agent on Claude Managed Agents shows six rules that prevent this.
 
@@ -624,7 +624,7 @@ Relevance: medium. The six rules transfer to any scheduled agent or `/loop` job;
 
 ### REVIEW: How the Claude Code team does code review (Addy Osmani, Morgan Westlee Lunt, Qing Wang, 2026-10-15)
 
-File: `refs/articles/claude.dev/blog-solving-code-review-at-anthropic/article.md`   URL: https://claude.dev/blog/solving-code-review-at-anthropic/
+File: [`refs/articles/claude.dev/blog-solving-code-review-at-anthropic/article.md`](https://claude.dev/blog/solving-code-review-at-anthropic/)   URL: https://claude.dev/blog/solving-code-review-at-anthropic/
 
 Thesis: At agent-produced volume, line-by-line human review is not feasible, so the team moved most reading to machines in layers, kept human approval scaled to risk, and invested in fast rollback. The target is minimum human time with no rise in reverts or incidents.
 
@@ -650,7 +650,7 @@ Relevance: high. It is the template for a pre-PR review pipeline and a `REVIEW.m
 
 ### EFFORT: Using Claude Code: Spending your effort (Thariq Shihipar, 2026-09-25)
 
-File: `refs/articles/claude.dev/blog-spending-your-effort/article.md`   URL: https://claude.dev/blog/spending-your-effort/
+File: [`refs/articles/claude.dev/blog-spending-your-effort/article.md`](https://claude.dev/blog/spending-your-effort/)   URL: https://claude.dev/blog/spending-your-effort/
 
 Thesis: Effort mostly controls how much verification, edge-case testing and independent judgement Claude applies. Higher effort pays off on tasks with hidden edge cases and little human supervision; it does not rescue a wrong approach.
 
@@ -672,7 +672,7 @@ Relevance: high. It gives a behavioural model of effort that maps directly to pe
 
 ### OPUS: Getting the most out of Opus 5.5 in Claude and Claude Code (Addy Osmani, 2026-09-22)
 
-File: `refs/articles/claude.dev/blog-getting-the-most-out-of-opus-5-5/article.md`   URL: https://claude.dev/blog/getting-the-most-out-of-opus-5-5/
+File: [`refs/articles/claude.dev/blog-getting-the-most-out-of-opus-5-5/article.md`](https://claude.dev/blog/getting-the-most-out-of-opus-5-5/)   URL: https://claude.dev/blog/getting-the-most-out-of-opus-5-5/
 
 Thesis: Opus 5.5 works longer unattended, reports plainly and always thinks, so prompts should hand over a whole task with a finish line, drop thinking instructions, and steer stops and reporting through `CLAUDE.md`.
 
@@ -702,7 +702,7 @@ Relevance: high. It supplies ready wording for the stop, reporting and review pa
 
 ### MODEL: Which Claude model should you build with? Fable, Opus, Sonnet, or Haiku (Addy Osmani, 2026-11-09)
 
-File: `refs/articles/claude.dev/blog-which-claude-model-should-you-build-with/article.md`   URL: https://claude.dev/blog/which-claude-model-should-you-build-with/
+File: [`refs/articles/claude.dev/blog-which-claude-model-should-you-build-with/article.md`](https://claude.dev/blog/which-claude-model-should-you-build-with/)   URL: https://claude.dev/blog/which-claude-model-should-you-build-with/
 
 Thesis: Start most work on Opus 5.5 at medium; adjust effort before model; move down for scoped or high-volume work and up to Fable 5.2 for the hardest or longest unattended work. Token price is not task cost, so measure cost per finished task.
 
@@ -725,7 +725,7 @@ Relevance: high. It is the current, dated source for default model, effort and s
 
 ### TEAMS: Safely scaling multi-agent teams with Claude Fable 5.2 (Barry Zhang, Tianyi Peng, Elle Najt, Keller Scholl, Lance Martin, 2026-11-09)
 
-File: `refs/articles/claude.dev/blog-safely-scaling-multi-agent-teams-with-fable-5-2/article.md`   URL: https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/
+File: [`refs/articles/claude.dev/blog-safely-scaling-multi-agent-teams-with-fable-5-2/article.md`](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/)   URL: https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/
 
 Thesis: A team of 1,000 agents on an early Fable 5.2, given only general tools, a shared database and a lead-and-helpers hierarchy, organised itself and reproduced a formal proof in 28.7 hours inside layered safety controls. The authors read it as evidence that ambitious long-horizon work is possible within designed boundaries.
 
@@ -748,7 +748,7 @@ Relevance: medium. The coordination and safety principles transfer; the scale an
 
 ### EVAL: Automating eval design and hillclimbing with Claude (Lance Martin, 2026-09-28)
 
-File: `refs/articles/claude.dev/blog-automating-eval-design-and-hillclimbing/article.md`   URL: https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+File: [`refs/articles/claude.dev/blog-automating-eval-design-and-hillclimbing/article.md`](https://claude.dev/blog/automating-eval-design-and-hillclimbing/)   URL: https://claude.dev/blog/automating-eval-design-and-hillclimbing/
 
 Thesis: Good evals mirror production, respond to capability, have headroom and low variance; hill-climbing against them needs a held-out split and one attributable change per round to avoid overfitting. Both are packaged as `claude-api` skill commands.
 
@@ -771,7 +771,7 @@ Relevance: high for anyone maintaining skills and prompts; the method scales dow
 
 ### HTML: Using Claude Code: The unreasonable effectiveness of HTML (Thariq Shihipar, 2026-05-20)
 
-File: `refs/articles/claude.dev/blog-using-claude-code-the-unreasonable-effectiveness-of-html/article.md`   URL: https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/
+File: [`refs/articles/claude.dev/blog-using-claude-code-the-unreasonable-effectiveness-of-html/article.md`](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/)   URL: https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/
 
 Thesis: For specs, plans, reviews, reports and one-off editors, HTML is a better agent-to-human format than markdown because it is denser, easier to read and share, and interactive. The author's real motive is staying engaged with Claude's choices.
 
@@ -794,7 +794,7 @@ Relevance: medium. Useful as an optional output practice for plans and reviews; 
 
 ### COST: What a task costs on Opus 5.5 (Addy Osmani, 2026-09-25)
 
-File: `refs/articles/claude.dev/blog-what-a-task-costs-on-opus-5-5/article.md`   URL: https://claude.dev/blog/what-a-task-costs-on-opus-5-5/
+File: [`refs/articles/claude.dev/blog-what-a-task-costs-on-opus-5-5/article.md`](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/)   URL: https://claude.dev/blog/what-a-task-costs-on-opus-5-5/
 
 Thesis: Task cost is set by turns, cache reads, output tokens and model, not token price alone. Every saving (lower effort, smaller model, less context) can cost a finished task, and "A retry costs more than those savings."
 
@@ -818,7 +818,7 @@ Relevance: high. It turns caching and effort into concrete session habits and gi
 
 ### SONNET: Building with Claude Sonnet 5.5 (Addy Osmani, 2026-09-28)
 
-File: `refs/articles/claude.dev/blog-building-with-claude-sonnet-5-5/article.md`   URL: https://claude.dev/blog/building-with-claude-sonnet-5-5/
+File: [`refs/articles/claude.dev/blog-building-with-claude-sonnet-5-5/article.md`](https://claude.dev/blog/building-with-claude-sonnet-5-5/)   URL: https://claude.dev/blog/building-with-claude-sonnet-5-5/
 
 Thesis: Sonnet 5.5 is the model for well-scoped everyday work with a clear spec and a check, at half Opus's token price. Most of the post is an API migration guide.
 
@@ -842,7 +842,7 @@ Relevance: medium. The model-fit rule and the real-check paragraph matter for a 
 
 ### CLOUD: Claude Code in the cloud: a field guide to cloud sessions (Addy Osmani, 2026-10-06)
 
-File: `refs/articles/claude.dev/blog-claude-code-in-the-cloud/article.md`   URL: https://claude.dev/blog/claude-code-in-the-cloud/
+File: [`refs/articles/claude.dev/blog-claude-code-in-the-cloud/article.md`](https://claude.dev/blog/claude-code-in-the-cloud/)   URL: https://claude.dev/blog/claude-code-in-the-cloud/
 
 Thesis: A cloud session gives each task a fresh VM, branch and scoped credential, so tasks run in parallel and unattended and end as a reviewable branch. It only works well if the repository itself carries the configuration and the means to verify.
 
@@ -869,7 +869,7 @@ Relevance: high for template design: it is the reason project-level config must 
 
 ### MODS: Getting started with Claude Code mods (Addy Osmani, 2026-10-01)
 
-File: `refs/articles/claude.dev/blog-getting-started-with-claude-code-mods/article.md`   URL: https://claude.dev/blog/getting-started-with-claude-code-mods/
+File: [`refs/articles/claude.dev/blog-getting-started-with-claude-code-mods/article.md`](https://claude.dev/blog/getting-started-with-claude-code-mods/)   URL: https://claude.dev/blog/getting-started-with-claude-code-mods/
 
 Thesis: A mod is a JavaScript or TypeScript module inside a plugin that hooks every session event, keeps state and can draw UI. It goes beyond settings hooks, and Claude Code can write one from a description.
 
@@ -895,7 +895,7 @@ Relevance: medium. Optional for a project setup; relevant where a status readout
 
 ### FAST: How we made claude.ai 3x faster in two weeks (Raymond Wang, Sam Attard, Issac G, 2026-09-23)
 
-File: `refs/articles/claude.dev/blog-how-we-made-claude-ai-faster/article.md`   URL: https://claude.dev/blog/how-we-made-claude-ai-faster/
+File: [`refs/articles/claude.dev/blog-how-we-made-claude-ai-faster/article.md`](https://claude.dev/blog/how-we-made-claude-ai-faster/)   URL: https://claude.dev/blog/how-we-made-claude-ai-faster/
 
 Thesis: A two-week performance sprint run through Claude in one Slack channel made claude.ai about 3x faster. The central lesson is that once something is measurable, Claude can improve it, so the highest-leverage human work was finding deterministic things to measure and guarding the gains.
 

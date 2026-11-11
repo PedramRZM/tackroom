@@ -4,7 +4,7 @@
 # check it with `codex` in this folder and adjust.
 #
 # A model provider cannot be chosen here: Codex ignores `model_provider` and `model_providers`
-# in project config. See docs/model-routes.md in claude--template for the launcher approach.
+# in project config. See docs/model-routes.md in tackroom for the launcher approach.
 
 approval_policy = "on-request"
 sandbox_mode = "workspace-write"

@@ -8,7 +8,7 @@ public post API returned 404, probably deleted). No instructions aimed at the re
 
 Conventions used in this file
 
-- `[2007179833990885678, 2026-01-02]` means the file `refs/posts/x/2007179833990885678/post.md`, posted on
+- `[2007179833990885678, 2026-01-02]` means the file [`refs/posts/x/2007179833990885678/post.md`](https://x.com/bcherny/status/2007179833990885678), posted on
   that date. Author and date were checked against each file's front matter. `[id]` alone repeats a post
   already dated nearby.
 - Text in double quotes followed by a post reference is copied verbatim from that file. Anything else is
@@ -302,13 +302,13 @@ These are statements about where things are or are going. They are not practices
   spend much time on social media" [2088758816376807762, 2026-08-15]. Secondhand, from saved press pages:
   at Davos in January 2026 he said models could do "most, maybe all" of what software engineers do within
   six to twelve months, and "I have engineers within Anthropic who say I don’t write any code anymore"
-  (`refs/articles/entrepreneur.com/business-news-ai-ceo-says-software-engineers-could-be-replaced-in-months-502087/article.md`,
+  ([`refs/articles/entrepreneur.com/business-news-ai-ceo-says-software-engineers-could-be-replaced-in-months-502087/article.md`](https://www.entrepreneur.com/business-news/ai-ceo-says-software-engineers-could-be-replaced-in-months/502087),
   2026-01-21). In March 2025 he predicted AI writing 90% of code in three to six months and essentially all
   in twelve; John Gruber's one-year check calls that not exactly right but mainly "too facile"
-  (`refs/articles/daringfireball.net/linked-2026-03-13-amodei-ai-code-claim-chowder/article.md`,
+  ([`refs/articles/daringfireball.net/linked-2026-03-13-amodei-ai-code-claim-chowder/article.md`](https://daringfireball.net/linked/2026/03/13/amodei-ai-code-claim-chowder),
   2026-03-13). Fortune reports an Anthropic spokesperson putting the company-wide share at 70% to 90% while
   Boris claimed 100% for himself
-  (`refs/articles/fortune.com/2026-01-29-100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-c/article.md`,
+  ([`refs/articles/fortune.com/2026-01-29-100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-c/article.md`](https://fortune.com/2026/01/29/100-percent-of-code-at-anthropic-and-openai-is-now-ai-written-boris-cherny-roon/),
   2026-01-29).
 - Boris Cherny. "Pretty much 100% of our code is written by Claude Code + Opus 4.5." and a forecast that
   most of the industry would see similar numbers within months [2015979257038831967, 2026-01-27]; 259 PRs

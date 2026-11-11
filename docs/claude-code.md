@@ -67,7 +67,7 @@ On the machine this was built on, sandboxed commands failed with:
     caller must provide CAP_SYS_ADMIN): Permission denied
 
 Ubuntu restricts unprivileged user namespaces through AppArmor. The documented fix is a profile
-for `bwrap` (`refs/articles/code.claude.com/docs-en-sandboxing-md/article.md`, "Add an AppArmor
+for `bwrap` ([`refs/articles/code.claude.com/docs-en-sandboxing-md/article.md`](https://code.claude.com/docs/en/sandboxing.md), "Add an AppArmor
 profile for bubblewrap"). It needs root, so run it yourself:
 
     sudo tee /etc/apparmor.d/bwrap > /dev/null <<'EOF'

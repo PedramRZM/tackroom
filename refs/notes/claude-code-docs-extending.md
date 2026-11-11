@@ -7,7 +7,7 @@ treated as truth; nothing here comes from memory.
 
 Citation format: `[slug > Section heading]`, where `slug` is the folder name without the
 `docs-en-` prefix and `-md` suffix (so `[memory > Import additional files]` is
-`refs/articles/code.claude.com/docs-en-memory-md/article.md`, section "Import additional files").
+[`refs/articles/code.claude.com/docs-en-memory-md/article.md`](https://code.claude.com/docs/en/memory.md), section "Import additional files").
 Quotes are verbatim and under 25 words. "Inference:" marks anything not stated by the docs.
 
 Sources read: 34 pages in full, 1 page in part (settings-reference, plugin keys only). The list,
@@ -1813,8 +1813,7 @@ Layout [plugins-create > Plugin layout; plugins-components > Add each kind of co
   `anthropics-` or `cc-plugin-`, on `claude`, `anthropic`, `anthropics`, `claude-code`,
   `claude-mods`, and on `official` beside `claude`/`anthropic`; warns when `claude` or `anthropic`
   appears as a whole word elsewhere. [plugins-manifest-reference > name]
-  Note: this repository is named `claude--template`; a plugin named after it would draw the
-  reserved-name error or warning, so a plugin needs a different name.
+  Note: a plugin made from this repository must not take a `claude-` name; `tackroom` is clear.
 - Unknown top-level keys are stripped with a validate warning; unknown keys inside `userConfig`
   options, `channels` entries, `lspServers` configs and `monitors` entries are errors.
   [plugins-manifest-reference > Unrecognized fields]

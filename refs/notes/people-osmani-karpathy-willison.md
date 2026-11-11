@@ -277,20 +277,20 @@ Caveats: His verdict then: vibe coding full web apps is "not a good idea for any
 Relevance: high for a Next.js/Vercel developer: names the exact failure points (stale API knowledge, env vars, auth, payments identity) a setup should guard.
 
 ### Verifiability; Animals vs Ghosts; The space of minds (Andrej Karpathy, 2025-11-17, 2025-10-01, 2025-11-29) [K-verif]
-Files: articles/karpathy.bearblog.dev/verifiability/article.md ; articles/karpathy.bearblog.dev/animals-vs-ghosts/article.md ; articles/karpathy.bearblog.dev/the-space-of-minds/article.md
+Files: [articles/karpathy.bearblog.dev/verifiability/article.md](https://karpathy.bearblog.dev/verifiability/) ; [articles/karpathy.bearblog.dev/animals-vs-ghosts/article.md](https://karpathy.bearblog.dev/animals-vs-ghosts/) ; [articles/karpathy.bearblog.dev/the-space-of-minds/article.md](https://karpathy.bearblog.dev/the-space-of-minds/)
 Thesis: Tasks are automatable to the degree an AI can practise them: the environment must be resettable, efficient and rewardable ("Verifiability"). LLMs are "ghosts", shaped by imitation, RL on task rewards and user approval, so they are jagged and sycophantic.
 Practices: Inference: for a coding setup, this argues for making every task resettable (git), cheap to retry and automatically checkable (tests). "Animals vs Ghosts" appendix names "memory (think CLAUDE.md files)" as test-time learning in context rather than weights. "The space of minds" attributes sycophancy to selection for user approval.
 Relevance: low to medium. Conceptual backing for verification-first design; no procedures.
 
 ### Auto-grading decade-old Hacker News discussions; hn-time-capsule README (Andrej Karpathy, 2025-12-10) [K-hn]
-Files: articles/karpathy.bearblog.dev/auto-grade-hn/article.md ; articles/raw.githubusercontent.com/karpathy-hn-time-capsule-head-readme-md/article.md
+Files: [articles/karpathy.bearblog.dev/auto-grade-hn/article.md](https://karpathy.bearblog.dev/auto-grade-hn/) ; [articles/raw.githubusercontent.com/karpathy-hn-time-capsule-head-readme-md/article.md](https://raw.githubusercontent.com/karpathy/hn-time-capsule/HEAD/README.md)
 Thesis: A 3-hour vibe-coded pipeline (Opus 4.5 writing code, GPT 5.1 Thinking doing analysis) that grades 2015 HN comments with hindsight.
 Practices: Staged pipeline with every intermediate on disk per item (`meta.json`, `prompt.md`, `response.md`, `grades.json`) and stages runnable individually (`fetch`, `prompt`, `analyze`, `parse`, `render`) with `--limit 5` for testing. Prompt asks for a fixed output format with a worked example and says the output will be "parsing it programmatically".
 Evidence and numbers: 930 LLM queries, about $58, about 1 hour.
 Relevance: low. Useful only as a pattern for batch LLM jobs (stage files, limit flag, parseable format).
 
 ### rustbpe README; rendergit README (Andrej Karpathy, 2026-01-03; 2025-08) [K-misc]
-Files: articles/raw.githubusercontent.com/karpathy-rustbpe-head-readme-md/article.md ; articles/raw.githubusercontent.com/karpathy-rendergit-head-readme-md/article.md
+Files: [articles/raw.githubusercontent.com/karpathy-rustbpe-head-readme-md/article.md](https://raw.githubusercontent.com/karpathy/rustbpe/HEAD/README.md) ; [articles/raw.githubusercontent.com/karpathy-rendergit-head-readme-md/article.md](https://raw.githubusercontent.com/karpathy/rendergit/HEAD/README.md)
 Thesis: rustbpe shows his method for agent-written code in a language he does not know: he wrote a Python reference by hand, then had ChatGPT and "Claude Code Opus 4.5" write Rust "against this implementation with tests for equality" ("LLM Assistance note"). rendergit flattens a repo into one HTML page with a Human view and an LLM view (CXML text).
 Relevance: medium for the reference-implementation-plus-equality-tests pattern; low otherwise. rustbpe MIT; rendergit "BSD0".
 

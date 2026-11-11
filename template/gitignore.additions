@@ -1,4 +1,4 @@
-# agent tooling (from claude--template)
+# agent tooling (from tackroom)
 # Personal Claude Code overrides and local state
 .claude/settings.local.json
 .claude/worktrees/

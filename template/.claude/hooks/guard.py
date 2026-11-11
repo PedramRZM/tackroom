@@ -6,7 +6,7 @@ hooks documentation and is covered by the unit tests, but has not been run under
 
 A guardrail, not a security boundary: it catches the common accident, and a determined or
 confused agent can route around it through the shell. The boundary is the sandbox plus keeping
-real credentials out of the agent's reach. See docs/principles.md in claude--template.
+real credentials out of the agent's reach. See docs/principles.md in tackroom.
 
 Always on:
   secrets   Read/Edit/Write of env files, private keys and package-registry credentials, and

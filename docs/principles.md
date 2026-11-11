@@ -192,7 +192,7 @@ and changed sources, and `docs/keeping-current.md` sets a review rhythm.
 
 Why: harness parts go stale as models improve; Anthropic removed pieces of its own harness
 within months (`notes/anthropic-engineering.md`, finding 1). Skills rot the same way and need
-lint, evals and owners (`refs/videos/KpfnldjO3Iw/transcript.md`, from 15:23). A controlled
+lint, evals and owners ([`refs/videos/KpfnldjO3Iw/transcript.md`](https://www.youtube.com/watch?v=KpfnldjO3Iw), from 15:23). A controlled
 experiment found a behavioural harness took a cheap model from 3 of 10 to 10 of 10 and did
 nothing for a frontier model except cost about seven times as much (`notes/industry-practices.md`,
 finding 4).

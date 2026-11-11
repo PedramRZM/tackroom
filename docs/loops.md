@@ -2,7 +2,7 @@
 
 A loop is an agent repeating cycles of work until a stop condition is met. This is the Claude
 Code team's own definition and classification
-(`refs/articles/claude.com/resources-articles-getting-started-with-loops/article.md`), with the
+([`refs/articles/claude.com/resources-articles-getting-started-with-loops/article.md`](https://claude.com/resources/articles/getting-started-with-loops)), with the
 forms that fit this template. Nothing here runs on its own until you type it.
 
 | Loop | You hand off | Stops when | Reach for |

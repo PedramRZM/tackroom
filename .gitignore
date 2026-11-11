@@ -10,3 +10,9 @@ CLAUDE.local.md
 # python
 __pycache__/
 *.pyc
+
+# other people's text, saved for local reference only; meta.json (URL, author, date) stays tracked
+refs/articles/**/article.md
+refs/videos/**/transcript.md
+refs/videos/**/captions.vtt
+refs/posts/**/post.md

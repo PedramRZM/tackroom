@@ -836,7 +836,7 @@ Caveats: hosted SaaS, needs network and OAuth; "Remote MCP connections can occas
 Relevance: medium to high. The tracker OpenAI's Symphony targets, and Anthropic's own routine example names it; the cost is a second system and an MCP dependency in every harness.
 
 ### GitHub Docs: Adding sub-issues; Creating issue dependencies; `gh issue list` manual (GitHub; pages dated 2026-01-01 in saved metadata, fetched 2026-11-10)
-Files: refs/articles/docs.github.com/en-issues-tracking-your-work-with-issues-using-issues-adding-sub-issues/article.md, refs/articles/docs.github.com/en-issues-tracking-your-work-with-issues-using-issues-creating-issue-dependencie/article.md, refs/articles/cli.github.com/manual-gh-issue-list/article.md
+Files: [refs/articles/docs.github.com/en-issues-tracking-your-work-with-issues-using-issues-adding-sub-issues/article.md](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/adding-sub-issues), [refs/articles/docs.github.com/en-issues-tracking-your-work-with-issues-using-issues-creating-issue-dependencie/article.md](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-issue-dependencies), [refs/articles/cli.github.com/manual-gh-issue-list/article.md](https://cli.github.com/manual/gh_issue_list)
 Thesis: GitHub Issues now has native hierarchy and blocking relations, both scriptable from `gh`.
 Practices:
 - "You can add up to 100 sub-issues per parent issue and create up to eight levels of nested sub-issues." Sub-issues can come from other repositories.
@@ -849,7 +849,7 @@ Inference: these features remove the schema gap Yegge cited in 2025 ("parent/chi
 Relevance: very high. The developer already uses GitHub issues, and every harness can drive `gh` without an MCP server.
 
 ### Anthropic autonomous-coding quickstart: coding and initializer prompts (Anthropic; fetched 2026-11-10, undated; accompanies the 2025-11-26 post)
-Files: refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-prompts-coding-prompt-md/article.md, refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-prompts-initializer-prompt/article.md (README saved at refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-readme-md but not read)
+Files: [refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-prompts-coding-prompt-md/article.md](https://raw.githubusercontent.com/anthropics/claude-quickstarts/main/autonomous-coding/prompts/coding_prompt.md), [refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-prompts-initializer-prompt/article.md](https://raw.githubusercontent.com/anthropics/claude-quickstarts/main/autonomous-coding/prompts/initializer_prompt.md) (README saved at refs/articles/raw.githubusercontent.com/anthropics-claude-quickstarts-main-autonomous-coding-readme-md but not read)
 Thesis: The concrete prompts behind the feature-list pattern.
 Practices:
 - `feature_list.json` entry shape: `category` ("functional" or "style"), `description`, `steps` (array of strings), `passes` (boolean). "Order features by priority: fundamental features first".
@@ -862,7 +862,7 @@ Caveats: greenfield and single-agent; selection is "first failing entry in file 
 Relevance: high. The exact minimal schema for a JSON pass/fail ledger and the session ritual.
 
 ### Claude Code docs: Task tool availability, and Task list (partial reads; fetched copies undated, state "applies in Claude Code v2.1.268 and later")
-Files: refs/articles/code.claude.com/docs-en-tools-reference-md/article.md (section "Task tool availability" only), refs/articles/code.claude.com/docs-en-interactive-mode-md/article.md (section "Task list" only)
+Files: [refs/articles/code.claude.com/docs-en-tools-reference-md/article.md](https://code.claude.com/docs/en/tools-reference.md) (section "Task tool availability" only), [refs/articles/code.claude.com/docs-en-interactive-mode-md/article.md](https://code.claude.com/docs/en/interactive-mode.md) (section "Task list" only)
 Read status: only the named sections of these two long reference pages were read.
 Thesis: Claude Code's in-session task tools are now off by default on current models.
 Practices:
@@ -874,7 +874,7 @@ Caveats: the list is home-directory state, Claude-only, and now opt-in. Inferenc
 Relevance: high (as a negative result).
 
 ### OpenCode and Codex plan and todo features (partial reads from corpus)
-Files: refs/articles/opencode.ai/docs-config/article.md ("Todos"), refs/articles/opencode.ai/docs-migrate-v1/article.md, refs/articles/opencode.ai/docs-agents/article.md (Plan row), refs/articles/raw.githubusercontent.com/anomalyco-opencode-v1-3-10-packages-web-src-content-docs-github-mdx/article.md, refs/articles/developers.openai.com/codex-learn-best-practices/article.md ("Plan first for difficult tasks"), refs/articles/code.claude.com/docs-en-github-actions-md/article.md (intro lines)
+Files: [refs/articles/opencode.ai/docs-config/article.md](https://opencode.ai/docs/config/) ("Todos"), [refs/articles/opencode.ai/docs-migrate-v1/article.md](https://opencode.ai/docs/migrate-v1/), [refs/articles/opencode.ai/docs-agents/article.md](https://opencode.ai/docs/agents/) (Plan row), [refs/articles/raw.githubusercontent.com/anomalyco-opencode-v1-3-10-packages-web-src-content-docs-github-mdx/article.md](https://raw.githubusercontent.com/anomalyco/opencode/v1.3.10/packages/web/src/content/docs/github.mdx), [refs/articles/developers.openai.com/codex-learn-best-practices/article.md](https://developers.openai.com/codex/learn/best-practices) ("Plan first for difficult tasks"), [refs/articles/code.claude.com/docs-en-github-actions-md/article.md](https://code.claude.com/docs/en/github-actions.md) (intro lines)
 Read status: grep-located passages only, not full reads.
 Practices:
 - OpenCode: "Todos are off by default in V2. To turn them on, use the experimental flag. It may change or be removed in a future release". Config: "Set `todo` to `true` to give agents a `todowrite` tool for tracking multi-step work. Defaults to `false`."

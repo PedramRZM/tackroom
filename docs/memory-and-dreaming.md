@@ -7,7 +7,7 @@ AI Native DevCon in June 2026, built from her talk and three other Anthropic sou
 ## The problem
 
 Every session starts knowing nothing. A session can write notes for the next one, but it has
-two limits it cannot get around (Mukta, `refs/videos/tTcxVv8HHNw/transcript.md`, 15:27 to 16:29):
+two limits it cannot get around (Mukta, [`refs/videos/tTcxVv8HHNw/transcript.md`](https://www.youtube.com/watch?v=tTcxVv8HHNw), 15:27 to 16:29):
 
 - Its attention is split between the task and helping its future self.
 - It sees only itself. When the same mistake happens in five sessions, none of them knows.
@@ -15,7 +15,7 @@ two limits it cannot get around (Mukta, `refs/videos/tTcxVv8HHNw/transcript.md`,
 Notes written in the moment are also sometimes wrong, and a wrong note is trusted by whoever
 reads it next. In Anthropic's own test, one incorrect note sent an agent into the same trap
 three times; a pass that checked the note against the transcript fixed it
-(`refs/articles/anthropic.com/research-components-of-agent-memory/article.md`, "Dreaming can
+([`refs/articles/anthropic.com/research-components-of-agent-memory/article.md`](https://www.anthropic.com/research/components-of-agent-memory), "Dreaming can
 correct memory").
 
 ## Two loops
@@ -42,7 +42,7 @@ every session reads, and what has gone stale moves out.
 | Scratch | Claude Code's own auto memory, on your machine | Claude Code | Automatically |
 
 Mukta's production requirements map onto plain repository features
-(`refs/videos/tTcxVv8HHNw/transcript.md`, 10:23 to 13:26):
+([`refs/videos/tTcxVv8HHNw/transcript.md`](https://www.youtube.com/watch?v=tTcxVv8HHNw), 10:23 to 13:26):
 
 - **Versioning and provenance**: memory is in git. Every change is a diff with a date and an author.
 - **Permissions**: curated memory is read-only outside the dream pass. `guard.py` enforces it
@@ -55,7 +55,7 @@ Mukta's production requirements map onto plain repository features
 ### The dream pass
 
 `/dream` in Claude Code. It follows Anthropic's own recipe for building a dream
-(`refs/articles/platform.claude.com/cookbook-managed-agents-cma-dreaming-with-a-dynamic-workflow/article.md`),
+([`refs/articles/platform.claude.com/cookbook-managed-agents-cma-dreaming-with-a-dynamic-workflow/article.md`](https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow)),
 adapted from their managed service to a local repository:
 
 1. A script exports finished sessions as plain text: user and agent messages, tool calls and
@@ -105,7 +105,7 @@ characters after export):
 One run on one transcript is a smoke test. It says the pipeline works, not that the memory it
 builds makes later sessions better. Anthropic reports that effect with numbers only for their
 managed service (a customer's first-pass mistakes down 90%, a benchmark's completion rate up
-six times: `refs/videos/RtywqDFBYnQ/transcript.md`, 03:15 and 11:22), and those are vendor
+six times: [`refs/videos/RtywqDFBYnQ/transcript.md`](https://www.youtube.com/watch?v=RtywqDFBYnQ), 03:15 and 11:22), and those are vendor
 figures.
 
 ## Running it

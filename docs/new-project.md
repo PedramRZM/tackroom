@@ -18,7 +18,7 @@ decisions. That is now the `kickoff` skill, which you start yourself, once.
 
 ### Before any code: find what you do not know
 
-Shihipar's field guide (`refs/posts/x/2073100352921215386/post.md`) frames the work before
+Shihipar's field guide ([`refs/posts/x/2073100352921215386/post.md`](https://x.com/trq212/status/2073100352921215386)) frames the work before
 implementation as reducing unknowns, in four moves. Each has a prompt in `prompts/README.md`:
 
 1. **Blind spot pass**: ask the model what you do not know to ask about the area.
@@ -31,7 +31,7 @@ implementation as reducing unknowns, in four moves. Each has a prompt in `prompt
    interfaces, anything user-facing.
 
 Dodds describes the same opening from the product side
-(`refs/articles/kentcdodds.com/blog-you-own-the-outcome/article.md`): build shared
+([`refs/articles/kentcdodds.com/blog-you-own-the-outcome/article.md`](https://kentcdodds.com/blog/you-own-the-outcome)): build shared
 understanding first (who has the problem, what they are trying to do, what done looks like),
 then ask for options instead of an answer.
 
@@ -50,7 +50,7 @@ and let tasks carry the detail.
 ### What must exist on day one
 
 Dodds's setup is a ladder, and its first rungs are the day-one list
-(`refs/articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-skill-md/article.md`,
+([`refs/articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-skill-md/article.md`](https://raw.githubusercontent.com/kentcdodds/kcd-skills/main/skills/autopilot/SKILL.md),
 "Rungs"). Next to each is where the template has it.
 
 | Day one | In the template |
@@ -95,7 +95,7 @@ The criteria below are in the `kickoff` skill.
 
 | Criterion | Source | Strength |
 |---|---|---|
-| Prefer stable, popular, well-documented technology; allow for the model's training cut-off, and for newer libraries make current docs or examples reachable | Willison, "boring technology" (`refs/articles/simonwillison.net/2025-mar-11-using-llms-for-code/article.md`); the loops article's "make docs easy to reach" | First-hand, repeated |
+| Prefer stable, popular, well-documented technology; allow for the model's training cut-off, and for newer libraries make current docs or examples reachable | Willison, "boring technology" ([`refs/articles/simonwillison.net/2025-mar-11-using-llms-for-code/article.md`](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)); the loops article's "make docs easy to reach" | First-hand, repeated |
 | One way to do each thing, because the code already in the repository is what the agent imitates | Lopopolo standardises on one stack per concern: "all the code in the repository ... is also prompts" (`refs/notes/devcon-2-harness-specs-verification.md` (a)); the loops article: the model follows the patterns already there | First-hand, repeated |
 | Strong static checks: types, and lint rules that fail loudly with the fix in the message | OpenAI's custom lints, including a ban on untyped values outside input parsing (same notes); Dodds's static layer (`docs/testing.md`) | First-hand, repeated |
 | The agent must be able to run the app and check its own change locally | The Claude Code team's most repeated tip (`refs/notes/x-posts.md`, finding 1); Dodds's rung 4 | First-hand, strongest agreement in the corpus |
@@ -114,9 +114,9 @@ handle them. Anything stronger than the table above would be opinion.
 - **Make state explicit.** The prompt Dodds shared asks the agent to find implicit state
   machines and make them explicit; the post he quotes explains that tests can pass and
   reviewers approve while scattered conditions still allow an illegal state
-  (`refs/posts/x/2119812466037428392/post.md`).
+  ([`refs/posts/x/2119812466037428392/post.md`](https://x.com/kentcdodds/status/2119812466037428392)).
 - **Humans decide the architecture; agents write the code.** A talk in the DevCon set is
-  titled almost exactly that (`refs/videos/wuGJNWhUOoE/transcript.md`), and Anthropic's account of its own source-control work says engineers
+  titled almost exactly that ([`refs/videos/wuGJNWhUOoE/transcript.md`](https://www.youtube.com/watch?v=wuGJNWhUOoE)), and Anthropic's account of its own source-control work says engineers
   supply system-level constraints and frequently refuse what the agent proposes
   (`refs/notes/anthropic-engineering.md`, the source-control entry).
 - **Start enforcing while there is almost no code.** My inference from the two points above: a

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Health check for the claude--template repository itself.
+# Health check for the tackroom repository itself.
 #   scripts/agent/check           everything
 #   scripts/agent/check --quick   skip the slower validators
 # Exit codes: 0 all passed, 1 a check failed.
@@ -63,7 +63,7 @@ import re, sys
 from pathlib import Path
 norm = lambda t: re.sub(r"\s+", " ", t.translate(str.maketrans("‘’“”", "''\"\""))).strip()
 text = Path("prompts/README.md").read_text(encoding="utf-8")
-entries = re.findall(r"Source: `([^`]+)`.*?\n```\n(.*?)\n```", text, flags=re.S)
+entries = re.findall(r"Source: \[?`([^`]+)`.*?\n```\n(.*?)\n```", text, flags=re.S)
 bad = []
 for source, prompt in entries:
     path = Path(source)

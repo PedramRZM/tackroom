@@ -61,7 +61,7 @@ scattered state logic lets tests pass while illegal states remain possible.
 Relevance: high. The prompt is in `prompts/README.md`.
 
 ### You Own the Outcome: Product Engineering in the Age of AI (2026-09-24) [OUTCOME]
-File: articles/kentcdodds.com/blog-you-own-the-outcome/article.md
+File: [articles/kentcdodds.com/blog-you-own-the-outcome/article.md](https://kentcdodds.com/blog/you-own-the-outcome)
 Thesis: with agents producing the code, the valuable work is judgment about outcomes. Shows a
 feature shipped live without him writing or reading the implementation.
 Practices: findings 1, 2, 11, 12; "Isolate secrets": agents use credentials without seeing them.
@@ -69,7 +69,7 @@ Evidence and numbers: one live-shipped feature (kody#2594). First-hand, single c
 Relevance: high.
 
 ### kcd-skills: autopilot skill and references (repository, pushed 2026-11-07, MIT) [AUTOPILOT, VERIFICATION, REVIEW, FRICTION]
-Files: articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-skill-md/article.md,
+Files: [articles/raw.githubusercontent.com/kentcdodds-kcd-skills-main-skills-autopilot-skill-md/article.md](https://raw.githubusercontent.com/kentcdodds/kcd-skills/main/skills/autopilot/SKILL.md),
 ...-autopilot-references-verification-md, ...-autopilot-references-templates-md,
 ...-skills-review-and-recommend-skill-md, ...-skills-friction-log-skill-md
 Thesis: a ladder of thirteen rungs for making any repository safe for agents to ship in, with an
@@ -80,7 +80,7 @@ Caveats: built around his own product and tooling (Kody); the scripts were not r
 Relevance: high. The closest thing in the corpus to a complete, current, solo-developer setup.
 
 ### Testing articles (2019 to 2021) [WRITE-TESTS, TROPHY]
-Files: articles/kentcdodds.com/blog-write-tests/article.md,
-articles/kentcdodds.com/blog-the-testing-trophy-and-testing-classifications/article.md
+Files: [articles/kentcdodds.com/blog-write-tests/article.md](https://kentcdodds.com/blog/write-tests),
+[articles/kentcdodds.com/blog-the-testing-trophy-and-testing-classifications/article.md](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications)
 Thesis: finding 10. Written before coding agents; still the reference for which level to test at.
 Relevance: high for test strategy; read in part only.

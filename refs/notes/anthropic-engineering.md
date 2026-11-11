@@ -535,7 +535,7 @@ All files are under `refs/articles/anthropic.com/`. Oldest first.
 
 ### Building effective AI agents (Anthropic, 2024-12-19)
 
-File: `refs/articles/anthropic.com/research-building-effective-agents/article.md`   URL: https://www.anthropic.com/research/building-effective-agents
+File: [`refs/articles/anthropic.com/research-building-effective-agents/article.md`](https://www.anthropic.com/research/building-effective-agents)   URL: https://www.anthropic.com/research/building-effective-agents
 
 Thesis: The teams that succeed with LLM agents use simple, composable patterns and not heavy frameworks. Workflows (fixed code paths) and agents (model-directed loops) are different things, and complexity should be added only when it demonstrably improves outcomes.
 
@@ -557,7 +557,7 @@ Relevance: high. The vocabulary and the simplicity rule that every later post re
 
 ### Claude SWE-Bench performance (Anthropic, 2025-01-06)
 
-File: `refs/articles/anthropic.com/research-swe-bench-sonnet/article.md`   URL: https://www.anthropic.com/research/swe-bench-sonnet
+File: [`refs/articles/anthropic.com/research-swe-bench-sonnet/article.md`](https://www.anthropic.com/research/swe-bench-sonnet)   URL: https://www.anthropic.com/research/swe-bench-sonnet
 
 Thesis: A minimal scaffold (a prompt, a bash tool, an edit tool) reached 49% on SWE-bench Verified with the upgraded Claude 3.5 Sonnet; the effort went into tool descriptions and error-proofing.
 
@@ -577,7 +577,7 @@ Relevance: medium. Old model, but the path and edit-format lessons carry to proj
 
 ### The "think" tool for complex tool use (Anthropic, 2025-03-20)
 
-File: `refs/articles/anthropic.com/research-claude-think-tool/article.md`   URL: https://www.anthropic.com/research/claude-think-tool
+File: [`refs/articles/anthropic.com/research-claude-think-tool/article.md`](https://www.anthropic.com/research/claude-think-tool)   URL: https://www.anthropic.com/research/claude-think-tool
 
 Thesis: A no-op tool that gives Claude a place to reason between tool calls improved policy-heavy, sequential tool use on tau-bench with Claude 3.7. Superseded: the header note now recommends extended thinking instead in most cases.
 
@@ -587,7 +587,7 @@ Relevance: low. Historical; the surviving point is that worked examples of reaso
 
 ### Claude Code Best Practices (Anthropic, 2025-04-18)
 
-File: `refs/articles/anthropic.com/research-claude-code-best-practices/article.md`   URL: https://www.anthropic.com/research/claude-code-best-practices
+File: [`refs/articles/anthropic.com/research-claude-code-best-practices/article.md`](https://www.anthropic.com/research/claude-code-best-practices)   URL: https://www.anthropic.com/research/claude-code-best-practices
 
 Thesis: Claude Code is deliberately low-level; this post lists patterns that worked inside and outside Anthropic. Header note: "This blog post is no longer maintained." and the current version lives in the docs.
 
@@ -617,7 +617,7 @@ Relevance: high for the workflow patterns, which later posts keep; low for exact
 
 ### How we built our multi-agent research system (Anthropic, 2025-06-13)
 
-File: `refs/articles/anthropic.com/research-multi-agent-research-system/article.md`   URL: https://www.anthropic.com/research/multi-agent-research-system
+File: [`refs/articles/anthropic.com/research-multi-agent-research-system/article.md`](https://www.anthropic.com/research/multi-agent-research-system)   URL: https://www.anthropic.com/research/multi-agent-research-system
 
 Thesis: An orchestrator with parallel sub-agents beats a single agent on breadth-first research, mainly because it spends more tokens across separate context windows. The cost is high and the prototype-to-production gap is wide.
 
@@ -643,7 +643,7 @@ Relevance: high for delegation briefs and the cost model of sub-agents.
 
 ### Our framework for safe and trustworthy agents (Anthropic, 2025-08-04)
 
-File: `refs/articles/anthropic.com/news-our-framework-for-developing-safe-and-trustworthy-agents/article.md`   URL: https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents
+File: [`refs/articles/anthropic.com/news-our-framework-for-developing-safe-and-trustworthy-agents/article.md`](https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents)   URL: https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents
 
 Thesis: Five principles for agents: human control, transparency, alignment with human values and expectations, privacy across interactions, and secure interactions. Updated by TRUST (2026-04).
 
@@ -653,7 +653,7 @@ Relevance: low. Policy framing; the concrete mechanisms are in AUTO, TRUST and C
 
 ### Writing effective tools for AI agents (Anthropic, 2025-09-11)
 
-File: `refs/articles/anthropic.com/research-writing-tools-for-agents/article.md`   URL: https://www.anthropic.com/research/writing-tools-for-agents
+File: [`refs/articles/anthropic.com/research-writing-tools-for-agents/article.md`](https://www.anthropic.com/research/writing-tools-for-agents)   URL: https://www.anthropic.com/research/writing-tools-for-agents
 
 Thesis: Tools are contracts between deterministic systems and non-deterministic agents, so they should be designed for agents and improved through an eval loop, with the agent helping to analyse transcripts and refactor.
 
@@ -674,7 +674,7 @@ Relevance: high. Directly applicable to MCP servers and, by inference, to projec
 
 ### A postmortem of three recent issues (Anthropic, 2025-09-17)
 
-File: `refs/articles/anthropic.com/research-a-postmortem-of-three-recent-issues/article.md`   URL: https://www.anthropic.com/research/a-postmortem-of-three-recent-issues
+File: [`refs/articles/anthropic.com/research-a-postmortem-of-three-recent-issues/article.md`](https://www.anthropic.com/research/a-postmortem-of-three-recent-issues)   URL: https://www.anthropic.com/research/a-postmortem-of-three-recent-issues
 
 Thesis: Three overlapping infrastructure bugs degraded responses between August and early September 2025; none was deliberate throttling, and Anthropic's evals failed to catch them.
 
@@ -686,7 +686,7 @@ Relevance: low to medium. Useful mainly as a reminder that quality shifts can be
 
 ### Enabling Claude Code to work more autonomously (Anthropic, 2025-09-29)
 
-File: `refs/articles/anthropic.com/news-enabling-claude-code-to-work-more-autonomously/article.md`   URL: https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously
+File: [`refs/articles/anthropic.com/news-enabling-claude-code-to-work-more-autonomously/article.md`](https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously)   URL: https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously
 
 Thesis: Product announcement: VS Code extension, terminal 2.0, checkpoints, and the renamed Claude Agent SDK with sub-agents and hooks.
 
@@ -696,7 +696,7 @@ Relevance: low. Feature list; the checkpoint limit is the one durable fact.
 
 ### Effective context engineering for AI agents (Anthropic, 2025-09-29)
 
-File: `refs/articles/anthropic.com/research-effective-context-engineering-for-ai-agents/article.md`   URL: https://www.anthropic.com/research/effective-context-engineering-for-ai-agents
+File: [`refs/articles/anthropic.com/research-effective-context-engineering-for-ai-agents/article.md`](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents)   URL: https://www.anthropic.com/research/effective-context-engineering-for-ai-agents
 
 Thesis: The job has moved from wording prompts to curating everything in the window. Context has diminishing returns, so aim for the smallest high-signal set and use retrieval, compaction, notes and sub-agents to manage long tasks.
 
@@ -712,7 +712,7 @@ Relevance: high. The conceptual base for instruction files, skills and sub-agent
 
 ### Equipping agents with Agent Skills (Anthropic, 2025-10-16)
 
-File: `refs/articles/anthropic.com/research-equipping-agents-for-the-real-world-with-agent-skills/article.md`   URL: https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills
+File: [`refs/articles/anthropic.com/research-equipping-agents-for-the-real-world-with-agent-skills/article.md`](https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills)   URL: https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills
 
 Thesis: A skill is a folder with a `SKILL.md` plus optional files and scripts, loaded by progressive disclosure, so procedural knowledge can be packaged without filling the context window.
 
@@ -735,7 +735,7 @@ Relevance: high. Defines the skill format the setup will use.
 
 ### Making Claude Code safer with sandboxing (Anthropic, 2025-10-20)
 
-File: `refs/articles/anthropic.com/research-claude-code-sandboxing/article.md`   URL: https://www.anthropic.com/research/claude-code-sandboxing
+File: [`refs/articles/anthropic.com/research-claude-code-sandboxing/article.md`](https://www.anthropic.com/research/claude-code-sandboxing)   URL: https://www.anthropic.com/research/claude-code-sandboxing
 
 Thesis: OS-level filesystem and network isolation lets Claude run with far fewer prompts while limiting what a prompt-injected session can do. Two products: the sandboxed bash tool and Claude Code on the web.
 
@@ -754,7 +754,7 @@ Relevance: high. The base containment layer on Linux.
 
 ### Code execution with MCP for efficient agents (Anthropic, 2025-11-04)
 
-File: `refs/articles/anthropic.com/research-code-execution-with-mcp/article.md`   URL: https://www.anthropic.com/research/code-execution-with-mcp
+File: [`refs/articles/anthropic.com/research-code-execution-with-mcp/article.md`](https://www.anthropic.com/research/code-execution-with-mcp)   URL: https://www.anthropic.com/research/code-execution-with-mcp
 
 Thesis: Loading every MCP tool definition and passing every intermediate result through the model wastes tokens. Presenting servers as code APIs on a filesystem lets the agent load what it needs and process data in code.
 
@@ -773,7 +773,7 @@ Relevance: medium. Supports keeping MCP use small and preferring scripts; the bu
 
 ### Introducing advanced tool use for Claude (Anthropic, 2025-11-24)
 
-File: `refs/articles/anthropic.com/research-advanced-tool-use/article.md`   URL: https://www.anthropic.com/research/advanced-tool-use
+File: [`refs/articles/anthropic.com/research-advanced-tool-use/article.md`](https://www.anthropic.com/research/advanced-tool-use)   URL: https://www.anthropic.com/research/advanced-tool-use
 
 Thesis: Three API beta features address tool-scale problems: Tool Search Tool (deferred loading), Programmatic Tool Calling (orchestration in code) and Tool Use Examples.
 
@@ -793,7 +793,7 @@ Relevance: medium. The token figures justify trimming MCP servers; the features 
 
 ### Effective harnesses for long-running agents (Anthropic, 2025-11-26)
 
-File: `refs/articles/anthropic.com/research-effective-harnesses-for-long-running-agents/article.md`   URL: https://www.anthropic.com/research/effective-harnesses-for-long-running-agents
+File: [`refs/articles/anthropic.com/research-effective-harnesses-for-long-running-agents/article.md`](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents)   URL: https://www.anthropic.com/research/effective-harnesses-for-long-running-agents
 
 Thesis: Agents working across many context windows need more than compaction. An initializer session that creates a feature list, progress file and init script, followed by coding sessions that each finish one feature and leave a clean, committed state, lets work continue across resets.
 
@@ -809,7 +809,7 @@ Relevance: high. The artifacts carry over even where resets are no longer needed
 
 ### Demystifying evals for AI agents (Anthropic, 2026-01-09)
 
-File: `refs/articles/anthropic.com/research-demystifying-evals-for-ai-agents/article.md`   URL: https://www.anthropic.com/research/demystifying-evals-for-ai-agents
+File: [`refs/articles/anthropic.com/research-demystifying-evals-for-ai-agents/article.md`](https://www.anthropic.com/research/demystifying-evals-for-ai-agents)   URL: https://www.anthropic.com/research/demystifying-evals-for-ai-agents
 
 Thesis: Evals turn a vague sense that the agent got worse into something actionable. Start early with a small set from real failures, combine code, model and human graders, grade outcomes, and keep reading transcripts.
 
@@ -825,7 +825,7 @@ Relevance: high for method, medium for scale: written for product teams, so the 
 
 ### Building a C compiler with parallel Claudes (Anthropic, author not named in the saved copy, 2026-02-05)
 
-File: `refs/articles/anthropic.com/research-building-c-compiler/article.md`   URL: https://www.anthropic.com/research/building-c-compiler
+File: [`refs/articles/anthropic.com/research-building-c-compiler/article.md`](https://www.anthropic.com/research/building-c-compiler)   URL: https://www.anthropic.com/research/building-c-compiler
 
 Thesis: Sixteen Claude instances in a bare loop, coordinated only by git and tests, built a 100,000-line C compiler that compiles Linux. Most of the work was designing tests and feedback so that agents could orient themselves; the approach has a visible ceiling.
 
@@ -841,7 +841,7 @@ Relevance: high. The clearest evidence on test design for unattended and paralle
 
 ### Infrastructure noise in agentic coding evals (Anthropic, 2026-02-05)
 
-File: `refs/articles/anthropic.com/research-infrastructure-noise/article.md`   URL: https://www.anthropic.com/research/infrastructure-noise
+File: [`refs/articles/anthropic.com/research-infrastructure-noise/article.md`](https://www.anthropic.com/research/infrastructure-noise)   URL: https://www.anthropic.com/research/infrastructure-noise
 
 Thesis: Resource limits and their enforcement change agentic benchmark scores by more than typical leaderboard gaps, so small differences between models or harnesses are not reliable.
 
@@ -853,7 +853,7 @@ Relevance: medium. Guards against over-reading leaderboards when picking models 
 
 ### Long-running Claude for scientific computing (Siddharth Mishra-Sharma, Anthropic, 2026-03-23)
 
-File: `refs/articles/anthropic.com/research-long-running-claude/article.md`   URL: https://www.anthropic.com/research/long-running-claude
+File: [`refs/articles/anthropic.com/research-long-running-claude/article.md`](https://www.anthropic.com/research/long-running-claude)   URL: https://www.anthropic.com/research/long-running-claude
 
 Thesis: A non-expert can run a multi-day autonomous build of a numerical solver with four things: a plan in `CLAUDE.md`, a progress file, a test oracle and a simple loop.
 
@@ -874,7 +874,7 @@ Relevance: high. The smallest complete recipe for a long unattended task.
 
 ### Harness design for long-running apps (Anthropic, author not named in the saved copy, 2026-03-24)
 
-File: `refs/articles/anthropic.com/research-harness-design-long-running-apps/article.md`   URL: https://www.anthropic.com/research/harness-design-long-running-apps
+File: [`refs/articles/anthropic.com/research-harness-design-long-running-apps/article.md`](https://www.anthropic.com/research/harness-design-long-running-apps)   URL: https://www.anthropic.com/research/harness-design-long-running-apps
 
 Thesis: Separating generation from evaluation, with explicit grading criteria, lifts both subjective design quality and functional correctness. Each harness part should be re-tested against new models, and several parts became unnecessary within months.
 
@@ -890,7 +890,7 @@ Relevance: high. The best account of when a separate evaluator is worth it and o
 
 ### How we built Claude Code auto mode (Anthropic, 2026-03-25)
 
-File: `refs/articles/anthropic.com/research-claude-code-auto-mode/article.md`   URL: https://www.anthropic.com/research/claude-code-auto-mode
+File: [`refs/articles/anthropic.com/research-claude-code-auto-mode/article.md`](https://www.anthropic.com/research/claude-code-auto-mode)   URL: https://www.anthropic.com/research/claude-code-auto-mode
 
 Thesis: Auto mode replaces per-action approval with a prompt-injection probe on inputs and a two-stage transcript classifier on actions, aimed at overeager behaviour and honest mistakes. It is safer than skipping permissions and weaker than careful manual review.
 
@@ -906,7 +906,7 @@ Relevance: high. Defines how unattended Claude Code runs are gated and how to ph
 
 ### Scaling Managed Agents with stable interfaces (Anthropic, 2026-04-08)
 
-File: `refs/articles/anthropic.com/research-managed-agents/article.md`   URL: https://www.anthropic.com/research/managed-agents
+File: [`refs/articles/anthropic.com/research-managed-agents/article.md`](https://www.anthropic.com/research/managed-agents)   URL: https://www.anthropic.com/research/managed-agents
 
 Thesis: Because harness assumptions go stale, Managed Agents fixes only three interfaces (session log, harness, sandbox) and lets implementations change. Decoupling them improved reliability, security and latency.
 
@@ -926,7 +926,7 @@ Relevance: medium. The credential pattern and the log-outside-context idea trans
 
 ### Trustworthy agents in practice (Anthropic, 2026-04-09)
 
-File: `refs/articles/anthropic.com/research-trustworthy-agents/article.md`   URL: https://www.anthropic.com/research/trustworthy-agents
+File: [`refs/articles/anthropic.com/research-trustworthy-agents/article.md`](https://www.anthropic.com/research/trustworthy-agents)   URL: https://www.anthropic.com/research/trustworthy-agents
 
 Thesis: An agent is model, harness, tools and environment, and each is both a capability and a point of oversight. The post shows how the 2025 framework became product decisions and what the wider ecosystem should build.
 
@@ -942,7 +942,7 @@ Relevance: medium. States the intended ask-versus-act behaviour that instruction
 
 ### An update on Claude Code quality reports (Anthropic, 2026-04-23)
 
-File: `refs/articles/anthropic.com/research-april-23-postmortem/article.md`   URL: https://www.anthropic.com/research/april-23-postmortem
+File: [`refs/articles/anthropic.com/research-april-23-postmortem/article.md`](https://www.anthropic.com/research/april-23-postmortem)   URL: https://www.anthropic.com/research/april-23-postmortem
 
 Thesis: Three changes in the product layer, not the model or API, made Claude Code worse for some users in March and April 2026: a lower default effort, a bug that dropped prior reasoning, and a verbosity instruction.
 
@@ -958,7 +958,7 @@ Relevance: high. Direct evidence that small instruction and setting changes degr
 
 ### How we contain Claude across products (Anthropic, 2026-05-25)
 
-File: `refs/articles/anthropic.com/research-how-we-contain-claude/article.md`   URL: https://www.anthropic.com/research/how-we-contain-claude
+File: [`refs/articles/anthropic.com/research-how-we-contain-claude/article.md`](https://www.anthropic.com/research/how-we-contain-claude)   URL: https://www.anthropic.com/research/how-we-contain-claude
 
 Thesis: Supervision by approval is fallible and model-level defences are probabilistic, so the blast radius must be capped by containment at the environment layer. The post gives three isolation patterns and the incidents that broke assumptions.
 
@@ -983,7 +983,7 @@ Relevance: high. The threat model and the incident record behind any containment
 
 ### Redesigning source control at Anthropic (Anthropic, 2026-10-13)
 
-File: `refs/articles/anthropic.com/research-redesigning-source-control/article.md`   URL: https://www.anthropic.com/research/redesigning-source-control
+File: [`refs/articles/anthropic.com/research-redesigning-source-control/article.md`](https://www.anthropic.com/research/redesigning-source-control)   URL: https://www.anthropic.com/research/redesigning-source-control
 
 Thesis: At over 30,000 merges a day, git's offline-first design became the bottleneck, so Anthropic built Scion, a server-centric version control system, in five months with seven people. It is a case study, not a product.
 
@@ -999,7 +999,7 @@ Relevance: low to medium. Nothing to install; the review and constraint lessons 
 
 ### How AI agents shape experts' judgment calls (Amaç Herdağdelen, Hailey Joren, Alex Tamkin, Anthropic, 2026-10-27)
 
-File: `refs/articles/anthropic.com/research-agents-judgment-calls/article.md`   URL: https://www.anthropic.com/research/agents-judgment-calls
+File: [`refs/articles/anthropic.com/research-agents-judgment-calls/article.md`](https://www.anthropic.com/research/agents-judgment-calls)   URL: https://www.anthropic.com/research/agents-judgment-calls
 
 Thesis: In a randomised study, professional analysts followed their agent's secretly assigned preference on open analytical choices 86% of the time, explained the choices in the agent's words, and still felt the work was their own. A human in the loop is an independent check only if the judgement is really theirs.
 
@@ -1015,7 +1015,7 @@ Relevance: medium to high. Shapes how the setup should handle architecture and d
 
 ### The components of agent memory (Anthropic, 2026-11-06)
 
-File: `refs/articles/anthropic.com/research-components-of-agent-memory/article.md`   URL: https://www.anthropic.com/research/components-of-agent-memory
+File: [`refs/articles/anthropic.com/research-components-of-agent-memory/article.md`](https://www.anthropic.com/research/components-of-agent-memory)   URL: https://www.anthropic.com/research/components-of-agent-memory
 
 Thesis: Agent memory works as a division of labour: quick notes written in-session on a prediction of future need, and offline consolidation (dreaming) that checks notes against transcripts, builds navigable representations and keeps the always-loaded layer small. Newer models judge what to remember far better, and prescriptive rules can hurt them.
 
