@@ -1,0 +1,15 @@
+# Sources for testing and adaptive harness research.
+https://cucumber.io/docs/bdd/
+https://playwright.dev/docs/auth
+https://playwright.dev/docs/best-practices
+https://playwright.dev/docs/test-agents
+https://playwright.dev/docs/test-use-options
+https://raw.githubusercontent.com/anthropics/skills/main/skills/webapp-testing/SKILL.md
+https://raw.githubusercontent.com/gepa-ai/gepa/main/.claude/skills/gepa-optimize-anything/SKILL.md
+https://raw.githubusercontent.com/gepa-ai/gepa/main/docs/docs/guides/agent-skill.md
+https://raw.githubusercontent.com/warpdotdev-demos/issue-triage-loop/main/.agents/skills/improve-triage-skill/SKILL.md
+https://raw.githubusercontent.com/warpdotdev-demos/issue-triage-loop/main/.agents/skills/triage-issue/SKILL.md
+https://raw.githubusercontent.com/warpdotdev-demos/issue-triage-loop/main/README.md
+https://raw.githubusercontent.com/warpdotdev/warp-agents-demo-github-issue-triage/main/.github/workflows/auto-issue-triage.yml
+https://raw.githubusercontent.com/warpdotdev/warp-agents-demo-github-issue-triage/main/README.md
+https://www.warp.dev/blog/self-improvement-loop-for-skills

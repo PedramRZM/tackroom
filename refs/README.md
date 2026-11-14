@@ -1,5 +1,8 @@
 # refs: the research this setup is built on
 
+Latest focused audit: [Anthropic staff Claude Code setups — new sources and proposed additions
+(2026-11-13)](notes/2026-11-13-anthropic-staff-setup-audit.md).
+
 Everything under `template/` and `docs/` is meant to trace back to something in here. If a rule,
 skill, hook or workflow cannot be tied to a source in `refs/`, it is an opinion and should be
 labelled as one or removed.
