@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://coder.com/docs/admin/templates/creating-templates",
+  "title": "Creating templates",
+  "date": "2026-01-01",
+  "site": "Coder Docs",
+  "description": "Create a Coder template with Terraform to define the infrastructure for your workspaces.",
+  "via": "direct",
+  "chars": 7108,
+  "collection": "scinito-runbook-2026-11-14",
+  "fetched_at": "2026-11-14T08:30:23Z"
+}

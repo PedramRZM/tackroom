@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://coder.com/docs/install/server/docker",
+  "title": "Install Coder via Docker",
+  "date": "2026-01-01",
+  "site": "Coder Docs",
+  "description": "Install and run Coder using the official Docker images for a quick single-machine deployment.",
+  "via": "direct",
+  "chars": 5438,
+  "collection": "hetzner-subscription-harness-2026-11",
+  "fetched_at": "2026-11-13T06:48:50Z"
+}

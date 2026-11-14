@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/sandbox/concepts/persistent-sandboxes",
+  "title": "Persistence",
+  "date": "2026-09-15",
+  "site": "Vercel Documentation",
+  "description": "Sandboxes automatically save their filesystem state when stopped and restore it when resumed. No manual snapshot management.",
+  "via": "direct",
+  "chars": 15152,
+  "collection": "board-harness-2026-11",
+  "fetched_at": "2026-11-12T22:07:45Z"
+}

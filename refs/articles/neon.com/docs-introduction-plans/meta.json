@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://neon.com/docs/introduction/plans",
+  "title": "Neon plans - Neon Docs",
+  "date": "2026-11-12",
+  "site": "Neon",
+  "description": "Compare Neon's Free, Launch, and Scale plans: compute rates ($0.106/CU-hour on Launch, $0.222/CU-hour on Scale), storage ($0.35/GB-month, unlimited on paid plans), branch and project limits, autoscaling, and Free plan allowances. Paid plans have no monthly minimum. Includes billing examples for estimating costs.",
+  "via": "direct",
+  "chars": 38752,
+  "collection": "isolated-agent-environments",
+  "fetched_at": "2026-11-12T22:02:14Z"
+}

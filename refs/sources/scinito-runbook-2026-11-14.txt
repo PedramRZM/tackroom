@@ -1,0 +1,6 @@
+https://coder.com/docs/install/server/docker
+https://coder.com/docs/admin/templates/creating-templates
+https://coder.com/docs/admin/templates/managing-templates/external-workspaces
+https://vercel.com/docs/cli/deploy
+https://vercel.com/docs/cli/promote
+https://neon.com/docs/guides/neon-github-integration

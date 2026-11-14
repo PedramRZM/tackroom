@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.github.com/en/webhooks/using-webhooks/handling-failed-webhook-deliveries",
+  "title": "Handling failed webhook deliveries - GitHub Docs",
+  "date": "2026-01-01",
+  "site": "GitHub Docs",
+  "description": "GitHub does not automatically redeliver failed webhook deliveries, but you can handle failed deliveries manually or by writing code.",
+  "via": "direct",
+  "chars": 2996,
+  "collection": "board-harness-2026-11",
+  "fetched_at": "2026-11-12T22:03:22Z"
+}

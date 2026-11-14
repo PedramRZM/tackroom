@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-api-to-manage-projects",
+  "title": "Using the API to manage Projects - GitHub Docs",
+  "date": "2022-05-29",
+  "site": "GitHub Docs",
+  "description": "You can use the GraphQL API to automate your projects.",
+  "via": "direct",
+  "chars": 23561,
+  "collection": "board-harness-2026-11",
+  "fetched_at": "2026-11-12T22:03:24Z"
+}

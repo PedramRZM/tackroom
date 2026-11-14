@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/eas/simulators/limitations/",
+  "title": "Expo Simulators limitations",
+  "date": "2026-11-12",
+  "site": "Expo documentation",
+  "description": "Known limits of Expo Simulators, including Android support, browser preview, session duration, physical devices, and controller features.",
+  "via": "direct",
+  "chars": 980,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:08:03Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://code.claude.com/docs/en/agent-sdk/sessions",
+  "title": "Work with sessions - Claude Code Docs",
+  "date": "2026-11-13",
+  "site": "Claude Code Docs",
+  "description": "How sessions persist agent conversation history, and when to use continue, resume, and fork to return to a prior run.",
+  "via": "direct",
+  "chars": 10284,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:57:48Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/sandbox/concepts/snapshots",
+  "title": "Snapshots",
+  "date": "2026-08-26",
+  "site": "Vercel Documentation",
+  "description": "Save and restore sandbox state with snapshots for faster startups and environment sharing.",
+  "via": "direct",
+  "chars": 8523,
+  "collection": "board-harness-2026-11",
+  "fetched_at": "2026-11-12T22:07:48Z"
+}

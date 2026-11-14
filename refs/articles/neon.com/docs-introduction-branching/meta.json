@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://neon.com/docs/introduction/branching",
+  "title": "Branching - Neon Docs",
+  "date": "2026-10-09",
+  "site": "Neon",
+  "description": "Neon branching creates copy-on-write clones of your database instantly, with writes saved as deltas so parent branches see zero load or performance impact. Use branching to spin up isolated development or test environments pre-loaded with production data, or run parallel CI/CD pipelines. You can also recover from data loss by rolling back to any point within your history window.",
+  "via": "direct",
+  "chars": 5562,
+  "collection": "isolated-agent-environments",
+  "fetched_at": "2026-11-12T22:02:18Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://devpod.sh/docs/what-is-devpod",
+  "title": "What is DevPod? | DevPod docs | DevContainers everywhere",
+  "date": "2025-01-01",
+  "site": "devpod.sh",
+  "description": "DevPod is a tool used to create reproducible developer environments. Each developer environment runs in a separate container and is specified through a devcontainer.json. DevPod providers can create these containers on the local computer, any reachable remote machine, or in a public or private cloud. It's also possible to extend DevPod and write your own custom providers.",
+  "via": "direct",
+  "chars": 2473,
+  "collection": "isolated-agent-environments",
+  "fetched_at": "2026-11-12T22:02:09Z"
+}

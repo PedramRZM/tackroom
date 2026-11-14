@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/agent-harnesses/claude-code",
+  "title": "Running Claude Code Durably on Vercel",
+  "site": "Vercel Documentation",
+  "description": "Run Claude Code in a Vercel Sandbox, driven by a Vercel Function, with its session in a durable log, so a crashed turn resumes on a new function.",
+  "via": "direct",
+  "chars": 17614,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:39:43Z"
+}

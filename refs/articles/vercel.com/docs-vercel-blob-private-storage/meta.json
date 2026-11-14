@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/vercel-blob/private-storage",
+  "title": "Private Storage",
+  "date": "2026-09-15",
+  "site": "Vercel Documentation",
+  "description": "Learn how to use private Vercel Blob storage to serve files with authentication",
+  "via": "direct",
+  "chars": 12168,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:38:00Z"
+}

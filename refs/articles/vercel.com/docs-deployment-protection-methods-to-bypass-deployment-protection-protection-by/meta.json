@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/deployment-protection/methods-to-bypass-deployment-protection/protection-bypass-automation",
+  "title": "Protection Bypass for Automation",
+  "date": "2026-09-16",
+  "site": "Vercel Documentation",
+  "description": "Learn how to bypass Vercel Deployment Protection for automated tooling (e.g. E2E testing).",
+  "via": "direct",
+  "chars": 6065,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:38:13Z"
+}

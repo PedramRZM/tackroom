@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments",
+  "title": "Managing environments for deployment - GitHub Docs",
+  "date": "2026-01-01",
+  "site": "GitHub Docs",
+  "description": "You can create environments and secure those environments with deployment protection rules. A job that references an environment must follow any protection rules for the environment before running or accessing the environment's secrets.",
+  "via": "direct",
+  "chars": 9264,
+  "collection": "board-harness-2026-11",
+  "fetched_at": "2026-11-12T22:03:26Z"
+}

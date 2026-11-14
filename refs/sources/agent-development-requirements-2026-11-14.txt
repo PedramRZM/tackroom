@@ -1,0 +1,10 @@
+https://code.claude.com/docs/en/agent-sdk/session-storage
+https://code.claude.com/docs/en/agent-sdk/sessions
+https://code.claude.com/docs/en/agent-sdk/typescript.md
+https://code.claude.com/docs/en/agent-sdk/user-input.md
+https://coder.com/docs/user-guides/workspace-access/
+https://playwright.dev/docs/test-configuration
+https://vercel.com/docs/rest-api/deployments/get-a-deployment-by-id-or-url
+https://vercel.com/docs/vercel-blob/usage-and-pricing
+https://vercel.com/docs/vercel-blob/using-blob-sdk
+https://vercel.com/docs/webhooks/webhooks-api

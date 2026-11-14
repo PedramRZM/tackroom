@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/versions/latest/sdk/task-manager/",
+  "title": "TaskManager",
+  "site": "Expo documentation",
+  "description": "A library that provides support for tasks that can run in the background.",
+  "via": "direct",
+  "chars": 5303,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:09:03Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/eas/simulators/works-with/maestro/",
+  "title": "Use Maestro flows with Expo Simulators",
+  "date": "2026-11-12",
+  "site": "Expo documentation",
+  "description": "Run supported Maestro YAML flows with agent-device, or use the Expo Workflows Maestro job, and learn which option uses an Expo Simulators session.",
+  "via": "direct",
+  "chars": 1874,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:09:04Z"
+}

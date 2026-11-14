@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://www.browserstack.com/docs/app-automate/maestro/test-specific-scenarios/camera-image-injection",
+  "title": "Test camera image injection with Maestro on BrowserStack | BrowserStack Docs",
+  "date": "2025-01-01",
+  "site": "Browserstack",
+  "description": "Replace the device camera feed with your own image during a Maestro test on BrowserStack App Automate.",
+  "via": "direct",
+  "chars": 9999,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:10:51Z"
+}

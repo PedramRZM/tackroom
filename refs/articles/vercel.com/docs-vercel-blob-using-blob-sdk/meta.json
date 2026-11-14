@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/vercel-blob/using-blob-sdk",
+  "title": "JS SDK Reference",
+  "date": "2026-08-26",
+  "site": "Vercel Documentation",
+  "description": "Reference for the Vercel Blob JavaScript SDK, @vercel/blob, which lets you access your blob store from your apps.",
+  "via": "direct",
+  "chars": 79500,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:58:25Z"
+}

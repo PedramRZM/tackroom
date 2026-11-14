@@ -1,0 +1,3 @@
+https://www.hetzner.com/cloud/cost-optimized/
+https://www.hetzner.com/cloud/regular-performance/
+https://vercel.com/docs/builds/configure-a-build

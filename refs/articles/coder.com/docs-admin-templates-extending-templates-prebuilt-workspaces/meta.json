@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://coder.com/docs/admin/templates/extending-templates/prebuilt-workspaces/",
+  "title": "Prebuilt workspaces",
+  "date": "2026-01-01",
+  "site": "Coder Docs",
+  "description": "Pre-provision a ready-to-deploy workspace with a defined set of parameters.",
+  "via": "direct",
+  "chars": 25447,
+  "collection": "isolated-agent-environments",
+  "fetched_at": "2026-11-12T22:02:04Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/ai-gateway/observability-and-spend/budgets",
+  "title": "AI Gateway Budgets and Spend Limits",
+  "date": "2026-09-10",
+  "site": "Vercel Documentation",
+  "description": "Cap AI Gateway spend for your team, a project, an individual API key, or a team member with budgets, refresh periods, spend alerts, and defaults.",
+  "via": "direct",
+  "chars": 31757,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:40:42Z"
+}

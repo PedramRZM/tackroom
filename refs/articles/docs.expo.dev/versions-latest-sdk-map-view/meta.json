@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/versions/latest/sdk/map-view/",
+  "title": "react-native-maps",
+  "site": "Expo documentation",
+  "description": "A library that provides a Map component that uses Google Maps on Android and Apple Maps or Google Maps on iOS.",
+  "via": "direct",
+  "chars": 6887,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:08:06Z"
+}

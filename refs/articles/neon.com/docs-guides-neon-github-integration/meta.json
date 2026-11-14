@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://neon.com/docs/guides/neon-github-integration",
+  "title": "The Neon GitHub integration - Neon Docs",
+  "date": "2026-08-04",
+  "site": "Neon",
+  "description": "The Neon GitHub integration connects a Lakebase Postgres project on Neon to a GitHub repository by installing a GitHub App that stores a NEON_API_KEY secret and NEON_PROJECT_ID variable in the repo. GitHub Actions workflows use these to create a database branch when a pull request opens and delete it on close. Choose this page to install the integration, add the sample branching workflow, or build custom workflows with the create-branch, delete-branch, schema-diff, and reset-branch actions. Also covers disconnecting a project, removing the integration, and example apps for Vercel, Cloudflare Pages, and Fly.io preview deployments.",
+  "via": "direct",
+  "chars": 13249,
+  "collection": "scinito-runbook-2026-11-14",
+  "fetched_at": "2026-11-14T08:30:30Z"
+}

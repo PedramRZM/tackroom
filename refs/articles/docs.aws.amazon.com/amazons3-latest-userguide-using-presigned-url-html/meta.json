@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html",
+  "title": "Download and upload objects with presigned URLs",
+  "date": "2012-10-17",
+  "site": "docs.aws.amazon.com",
+  "description": "Use a presigned URL to share or upload objects in Amazon S3 without requiring AWS security credentials or permissions. Grant time-limited download and upload access to objects or provide access to objects in a private bucket.",
+  "via": "direct",
+  "chars": 11030,
+  "collection": "hetzner-subscription-harness-2026-11",
+  "fetched_at": "2026-11-13T07:00:08Z"
+}

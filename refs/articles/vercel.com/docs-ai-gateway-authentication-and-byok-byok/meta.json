@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/ai-gateway/authentication-and-byok/byok",
+  "title": "Bring Your Own Key (BYOK) to AI Gateway",
+  "date": "2026-09-22",
+  "site": "Vercel Documentation",
+  "description": "Learn how to configure your own provider keys with AI Gateway.",
+  "via": "direct",
+  "chars": 17525,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:40:33Z"
+}

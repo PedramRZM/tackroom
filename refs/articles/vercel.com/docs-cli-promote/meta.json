@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/cli/promote",
+  "title": "vercel promote",
+  "date": "2026-07-15",
+  "site": "Vercel Documentation",
+  "description": "Learn how to promote an existing deployment using the vercel promote CLI command.",
+  "via": "direct",
+  "chars": 1583,
+  "collection": "scinito-runbook-2026-11-14",
+  "fetched_at": "2026-11-14T08:30:28Z"
+}

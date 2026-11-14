@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/rest-api/deployments/get-a-deployment-by-id-or-url",
+  "title": "Get a deployment by ID or URL",
+  "site": "Vercel Documentation",
+  "description": "Retrieves information for a deployment either by supplying its ID (`id` property) or Hostname (`url` property). Additional details will be included when the authenticated user or team is an owner of the deployment.",
+  "via": "direct",
+  "chars": 2114,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:58:38Z"
+}

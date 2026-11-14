@@ -1,0 +1,10 @@
+https://code.claude.com/docs/en/authentication
+https://code.claude.com/docs/en/headless
+https://coder.com/docs/ai-coder/agents
+https://coder.com/docs/ai-coder/agents/licensing-usage
+https://coder.com/docs/install/server/docker
+https://coder.com/docs/tutorials/best-practices/security-best-practices/
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html
+https://docs.hetzner.com/cloud/billing/faq/
+https://docs.hetzner.com/cloud/servers/faq/
+https://support.claude.com/en/articles/12304248-manage-api-key-environment-variables-in-claude-code

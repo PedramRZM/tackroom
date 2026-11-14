@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/sandbox/concepts/security",
+  "title": "Sandbox security model",
+  "site": "Vercel Documentation",
+  "description": "Understand the Vercel Sandbox security model: microVM isolation, hardware side channels, resource limits, network access, and data privacy.",
+  "via": "direct",
+  "chars": 7020,
+  "collection": "isolated-agent-environments",
+  "fetched_at": "2026-11-12T22:01:23Z"
+}

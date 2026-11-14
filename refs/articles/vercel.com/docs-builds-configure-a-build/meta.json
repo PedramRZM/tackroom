@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/builds/configure-a-build",
+  "title": "Configuring a Build",
+  "date": "2026-08-28",
+  "site": "Vercel Documentation",
+  "description": "Vercel automatically configures the build settings for many front-end frameworks, but you can also customize the build according to your requirements.",
+  "via": "direct",
+  "chars": 9166,
+  "collection": "multiple-projects-workers-2026-11-14",
+  "fetched_at": "2026-11-14T07:35:45Z"
+}

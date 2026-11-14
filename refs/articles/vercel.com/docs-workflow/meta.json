@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/workflow",
+  "title": "Vercel Workflows",
+  "date": "2026-09-04",
+  "site": "Vercel Documentation",
+  "description": "Build agents and applications that retry failed steps, wait for external events, and resume across crashes and deployments with Vercel Workflows.",
+  "via": "direct",
+  "chars": 11138,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:37:11Z"
+}

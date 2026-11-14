@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/tutorial/cicd/e2e-tests/",
+  "title": "Run E2E tests with Maestro on Expo Workflows",
+  "date": "2026-11-02",
+  "site": "Expo documentation",
+  "description": "Learn how to automate end-to-end (E2E) tests with Maestro using Android and iOS development builds on Expo Workflows.",
+  "via": "direct",
+  "chars": 4187,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:07:36Z"
+}

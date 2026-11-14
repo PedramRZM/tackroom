@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/versions/latest/sdk/location/",
+  "title": "Location",
+  "site": "Expo documentation",
+  "description": "A library that provides access to reading geolocation information, polling current location or subscribing location update events from the device.",
+  "via": "direct",
+  "chars": 30013,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:07:40Z"
+}

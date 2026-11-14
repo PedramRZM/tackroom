@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://code.claude.com/docs/en/agent-sdk/modifying-system-prompts",
+  "title": "Modifying system prompts - Claude Code Docs",
+  "date": "2026-11-12",
+  "site": "Claude Code Docs",
+  "description": "Choose between the claude_code preset and a custom system prompt, and customize behavior with CLAUDE.md, output styles, append, or a fully custom prompt.",
+  "via": "direct",
+  "chars": 23927,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:39:10Z"
+}

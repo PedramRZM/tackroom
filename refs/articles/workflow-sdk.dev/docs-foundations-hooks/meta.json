@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://workflow-sdk.dev/docs/foundations/hooks",
+  "title": "Hooks & Webhooks",
+  "date": "2025-11-14",
+  "site": "workflow-sdk.dev",
+  "description": "Pause workflows and resume them later with external data, user interactions, or HTTP requests.",
+  "via": "direct",
+  "chars": 18712,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:38:21Z"
+}

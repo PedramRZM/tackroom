@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://code.claude.com/docs/en/agent-sdk/session-storage",
+  "title": "Persist sessions to external storage - Claude Code Docs",
+  "date": "2026-11-12",
+  "site": "Claude Code Docs",
+  "description": "Mirror Agent SDK session transcripts to your own object store, key-value store, or database so other hosts can resume your sessions.",
+  "via": "direct",
+  "chars": 15177,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:57:58Z"
+}

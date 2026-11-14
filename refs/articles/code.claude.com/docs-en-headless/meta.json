@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://code.claude.com/docs/en/headless",
+  "title": "Run Claude Code programmatically - Claude Code Docs",
+  "date": "2026-11-12",
+  "site": "Claude Code Docs",
+  "description": "Use the Agent SDK to run Claude Code programmatically from the CLI, Python, or TypeScript.",
+  "via": "direct",
+  "chars": 29602,
+  "collection": "hetzner-subscription-harness-2026-11",
+  "fetched_at": "2026-11-13T06:48:45Z"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://docs.expo.dev/eas/simulators/introduction/",
+  "title": "Introduction to Expo Simulators",
+  "date": "2026-11-13",
+  "site": "Expo documentation",
+  "description": "Run and control remote Android Emulators and iOS Simulators on Expo infrastructure from the CLI, REST API, an AI agent, or a browser.",
+  "via": "direct",
+  "chars": 5983,
+  "collection": "mobile-cloud-2026-11-14",
+  "fetched_at": "2026-11-14T08:07:27Z"
+}

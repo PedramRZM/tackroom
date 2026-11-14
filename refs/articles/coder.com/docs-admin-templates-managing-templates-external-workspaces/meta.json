@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://coder.com/docs/admin/templates/managing-templates/external-workspaces",
+  "title": "External workspaces",
+  "date": "2026-01-01",
+  "site": "Coder Docs",
+  "description": "Connect externally managed servers and machines to Coder as external workspaces.",
+  "via": "direct",
+  "chars": 5071,
+  "collection": "scinito-runbook-2026-11-14",
+  "fetched_at": "2026-11-14T08:30:24Z"
+}

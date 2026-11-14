@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/webhooks/webhooks-api",
+  "title": "Webhooks API Reference",
+  "date": "2026-09-17",
+  "site": "Vercel Documentation",
+  "description": "Vercel Integrations allow you to subscribe to certain trigger-based events through webhooks. Learn about the supported webhook events and how to use them.",
+  "via": "direct",
+  "chars": 83688,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:58:09Z"
+}

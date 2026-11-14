@@ -1,5 +1,27 @@
 # refs: the research this setup is built on
 
+Scinito setup: [Concrete service inventory, costs, existing pipeline findings and
+step-by-step agent development runbook (2026-11-14)](notes/2026-11-14-scinito-agent-development-runbook.md).
+
+Mobile extension: [Web, Android and iOS with cloud builds, previews, camera/maps/background
+location testing and service costs (2026-11-14)](notes/2026-11-14-cross-platform-mobile-cloud-development.md).
+
+Multiple-project clarification: [Shared workers, hosting choices, server sizing and
+build costs (2026-11-14)](notes/2026-11-14-multiple-projects-workers-and-build-costs.md).
+
+Latest requirements audit: [Native Claude Code handoff, GitHub questions and review,
+storage options, preview acceptance tests and product-impact scoping
+(2026-11-14)](notes/2026-11-14-agent-development-requirements.md).
+
+Latest proposal: [Hetzner workers with the owner's Claude subscription, Coder workspaces,
+Vercel/Neon delivery and existing S3 artifact storage (2026-11-13)](notes/2026-11-13-hetzner-claude-subscription-development.md).
+
+Supporting designs: [Vercel-native managed alternative](notes/2026-11-13-vercel-native-agent-development.md)
+and the [original GitHub board, testing and learning-loop proposal](notes/2026-11-13-github-agent-development-system.md).
+
+Latest focused audit: [Anthropic staff Claude Code setups — new sources and proposed additions
+(2026-11-13)](notes/2026-11-13-anthropic-staff-setup-audit.md).
+
 Everything under `template/` and `docs/` is meant to trace back to something in here. If a rule,
 skill, hook or workflow cannot be tied to a source in `refs/`, it is an opinion and should be
 labelled as one or removed.

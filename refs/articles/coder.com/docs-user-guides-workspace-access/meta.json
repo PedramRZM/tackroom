@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://coder.com/docs/user-guides/workspace-access/",
+  "title": "Access your workspace",
+  "date": "2026-01-01",
+  "site": "Coder Docs",
+  "description": "Connect to your Coder workspace using SSH, your IDE, a web terminal, remote desktop, and more.",
+  "via": "direct",
+  "chars": 8862,
+  "collection": "agent-development-requirements-2026-11-14",
+  "fetched_at": "2026-11-14T06:58:00Z"
+}

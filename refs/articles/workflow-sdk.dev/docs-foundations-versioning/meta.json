@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://workflow-sdk.dev/docs/foundations/versioning",
+  "title": "Versioning",
+  "date": "2025-11-14",
+  "site": "workflow-sdk.dev",
+  "description": "Understand how workflow runs are pinned to deployments, how to recover runs after a fix, and how to opt in to newer code explicitly.",
+  "via": "direct",
+  "chars": 5245,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:38:24Z"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "doc",
+  "url": "https://vercel.com/docs/agent-harnesses",
+  "title": "Running Agent Harnesses Durably on Vercel",
+  "site": "Vercel Documentation",
+  "description": "Run Pi, fx, OpenCode, eve, Claude Code, and Codex on Vercel so a crash, a function timeout, or a redeploy resumes the agent instead of losing its work.",
+  "via": "direct",
+  "chars": 8490,
+  "collection": "vercel-native-harness-2026-11",
+  "fetched_at": "2026-11-13T06:39:13Z"
+}
