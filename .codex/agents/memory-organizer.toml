@@ -1,3 +1,5 @@
+# Same brief as .claude/agents/memory-organizer.md.
+# Inherits the parent model and permissions; Claude tool restrictions do not carry over.
 name = "memory-organizer"
 description = "Tidies the whole project memory in .agents/memory after the analyzers have finished. Merges duplicates, resolves conflicts, completes the index. Used only by the dream skill, once per run."
 developer_instructions = """
@@ -50,4 +52,5 @@ small steps, and read a file back after every write.
 Reply with one JSON object and nothing else:
 
     {"index_entries": <number of entries now in _index.md>,
-     "changes": ["<one short line per merge, rename, conflict or fix, including any left undone>"]}"""
+     "changes": ["<one short line per merge, rename, conflict or fix, including any left undone>"]}
+"""

@@ -31,13 +31,23 @@ So the template keeps one copy of what can be shared and a thin file per harness
   Whether Codex tolerates unknown front matter keys is not documented.
 - The hook scripts (`guard.py`, `stop-check.py`) are shared with Codex, which uses the same
   contract: JSON on stdin, exit code 2 to block.
-- The reviewer brief exists three times, once per subagent format.
+- Claude and Codex both ship `reviewer`, `memory-analyzer` and `memory-organizer`.
+  Their descriptions and instruction bodies match; OpenCode has its own reviewer.
 
 ## Codex
 
 `template/.codex/`: approvals on request, a workspace-write sandbox with the network off, and a
 setting that stops Codex passing variables named like keys or tokens to the commands it runs
 (by default it passes them through). Hooks point at the shared scripts.
+
+Standalone `.codex/agents/*.toml` files are discovered automatically; no per-role entry in
+`config.toml` is needed. Each supplies `name`, `description` and `developer_instructions`.
+Codex roles inherit the parent's model and permissions. Claude's `haiku` alias and tool
+allow/deny lists are deliberately not translated into unsupported settings. The reviewer
+therefore has a no-edit instruction, not a separate read-only sandbox.
+Source: `refs/notes/harness-codex-opencode-standards.md`, section 1, and the
+[Codex subagents guide](https://learn.chatgpt.com/docs/subagents).
+The repository check compares all three briefs and exercises a fresh `tools/setup --codex`.
 
 Limits to know (`refs/notes/harness-codex-opencode-standards.md`, section 1):
 
@@ -47,7 +57,9 @@ Limits to know (`refs/notes/harness-codex-opencode-standards.md`, section 1):
 - Codex asks you to trust the project, and to review each hook, before anything in `.codex/`
   takes effect. A changed hook script must be reviewed again.
 - There are no project slash commands; skills replace them, invoked as `$name`.
-- The dream pass is not ported. It depends on Claude Code's subagents and transcript format.
+- The memory roles are available in Codex, but the end-to-end dream pass is not ported: its
+  exporter still reads Claude Code transcripts. Role presence does not prove native Codex
+  transcript export or a complete dream run.
 
 ## OpenCode
 

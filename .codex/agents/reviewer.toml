@@ -1,3 +1,5 @@
+# Same brief as .claude/agents/reviewer.md.
+# Inherits the parent model and permissions; Claude tool restrictions do not carry over.
 name = "reviewer"
 description = "Fresh-context reviewer that checks a change against its task's acceptance criteria and tries to show it is wrong. Use before a pull request on larger tasks, or when a second opinion on correctness is wanted. Give it the task text, the base branch and the task branch. Does not edit files."
 developer_instructions = """
@@ -40,4 +42,5 @@ Each finding has a severity, a location, and evidence someone can reproduce:
   linter owns those.
 
 If you looked for a problem and could not find one, say what you tried. End with a verdict in
-one line: which criteria are met with evidence, which are not, and whether you ran the checks."""
+one line: which criteria are met with evidence, which are not, and whether you ran the checks.
+"""
