@@ -95,10 +95,11 @@ that exists only in `AGENTS.md`). Codex and OpenCode behaviour is from their doc
 
 ## 6. Skills are small, single-purpose, and described by when to use them
 
-Template: eleven skills, each in one category. Descriptions name the situations and phrases
+Template: twelve skills, each in one category. Descriptions name the situations and phrases
 that should trigger them. Each has a Gotchas section meant to grow. Four can only be started by
 the user (`kickoff`, `dream`, `careful`, `lock-tests`), so they cost nothing in context until
-used; seven are listed to the model.
+used; eight are listed to the model. `ui-craft` keeps detailed UI guidance in references loaded
+by topic and feeds the existing verification plan; see [UI craft](ui-craft.md).
 
 Why: Anthropic's skills post: a skill should fit one category, the description is a trigger and
 not a summary, the Gotchas section is the highest-signal content, and verification skills had
@@ -109,7 +110,8 @@ Stanford study found the model did what a skill said 55% of the time without the
 loaded, so a skill that restates default behaviour is wasted context
 (`notes/devcon-1-skills-context-memory.md` (e)).
 
-Status: Claude Code's validator passes all eleven. A live session, run when there were eight,
+Status: validator results and the blocked UI scratch trial are recorded in [UI craft](ui-craft.md).
+A live session, run when there were eight,
 listed the five model-invocable ones and hid the three user-only ones; `kickoff`, `write-tests`
 and `performance` were added later and have not been used. None has an eval yet, which the same
 sources say is the real test (principle 12). There is a serious case for fewer still: Lopopolo

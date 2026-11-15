@@ -5,7 +5,8 @@
 
 Always copied: AGENTS.md, CLAUDE.md, WORKFLOW.md, .claude/ (settings, hooks, skills, agents),
 .agents/memory/, scripts/agent/, docs/ skeleton, the pull request template.
---codex      adds .codex/ and links .agents/skills/<name> to the skills in .claude/skills/
+Always linked: .agents/skills/<name> to the shared skills in .claude/skills/.
+--codex      adds .codex/ configuration, hooks and agents
 --opencode   adds opencode.json and .opencode/
 --tracker    issues: GitHub issue forms and the label script; files: tasks/
              (default: issues when the project has a github.com remote, otherwise files)
@@ -85,16 +86,15 @@ def main() -> int:
             shutil.copy2(source, target)  # keeps the executable bit
 
     links = []
-    if args.codex:
-        for skill in sorted((TEMPLATE / ".claude/skills").iterdir()):
-            link = project / ".agents/skills" / skill.name
-            if link.exists() or link.is_symlink():
-                kept.append(f".agents/skills/{skill.name}")
-                continue
-            links.append(f".agents/skills/{skill.name}")
-            if not args.dry_run:
-                link.parent.mkdir(parents=True, exist_ok=True)
-                os.symlink(f"../../.claude/skills/{skill.name}", link)
+    for skill in sorted((TEMPLATE / ".claude/skills").iterdir()):
+        link = project / ".agents/skills" / skill.name
+        if link.exists() or link.is_symlink():
+            kept.append(f".agents/skills/{skill.name}")
+            continue
+        links.append(f".agents/skills/{skill.name}")
+        if not args.dry_run:
+            link.parent.mkdir(parents=True, exist_ok=True)
+            os.symlink(f"../../.claude/skills/{skill.name}", link)
 
     ignore = project / ".gitignore"
     wanted = [line for line in (TEMPLATE / "gitignore.additions").read_text(encoding="utf-8").splitlines()]
@@ -122,7 +122,7 @@ def main() -> int:
     print("  3. In WORKFLOW.md, keep the tracker line that applies and delete the other.")
     if args.tracker == "issues":
         print("  4. Run scripts/agent/github-labels once to create the labels.")
-    print("  5. Start Claude Code there and accept the trust prompt, so the hooks and allow rules load.")
+    print("  5. Start your chosen harness there and review its project trust/configuration prompts.")
     return 0
 
 

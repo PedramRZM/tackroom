@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://web.dev/articles/optimize-cls",
+  "title": "Optimize Cumulative Layout Shift | Articles | web.dev",
+  "author": "Addy Osmani X GitHub Bluesky Barry Pollard X GitHub Mastodon Bluesky Homepage",
+  "date": "2020-05-05",
+  "site": "web.dev",
+  "description": "Cumulative Layout Shift (CLS) is a metric that quantifies how often users experience sudden shifts in page content. In this guide, we'll cover optimizing common causes of CLS such as images and iframes without dimensions or dynamic content.",
+  "via": "direct",
+  "chars": 23908,
+  "collection": "ui-craft",
+  "fetched_at": "2026-11-15T09:02:35Z"
+}

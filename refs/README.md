@@ -1,5 +1,8 @@
 # refs: the research this setup is built on
 
+UI craft: [Taste-matched practitioners, all 22 requested details, additional patterns and
+harness placement (2026-11-15)](notes/2026-11-15-ui-craft.md).
+
 Latest harness implementation audit: [Karpathy/Claude source checks, verification before
 implementation, tool selection and remaining tasks (2026-11-15)](notes/2026-11-15-verification-workflow-audit.md).
 

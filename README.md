@@ -118,10 +118,11 @@ This repository runs on its own template. The root `.claude/`, `CLAUDE.md` and
 - **Guardrails**: hooks that block reading secret-looking files, wide deletes, force-pushes,
   pushes to protected branches and merges. Sandbox settings are included, switched off until
   you have checked they work on your machine.
-- **Skills**: eleven of them, each doing one thing. The model can call seven of them: `spec`,
-  `task`, `verify`, `write-tests`, `performance`, `second-opinion` and `wrap-up`. Four only run
+- **Skills**: twelve of them, each doing one thing. The model can call eight of them: `spec`,
+  `task`, `verify`, `write-tests`, `performance`, `ui-craft`, `second-opinion` and `wrap-up`. Four only run
   when you start them, so they cost no context until then: `kickoff`, `dream`, `careful` and
   `lock-tests`.
+  [UI craft](docs/ui-craft.md) covers stable states, visual detail and intent-aware interactions.
 - **A reviewer**: a subagent that gets the task and the base branch, and tries to show the
   change is wrong.
 - **A workflow**: `WORKFLOW.md` describes how a task moves from idea to merged pull request.
@@ -162,7 +163,9 @@ an agent can work in.
 Run and observed on one machine (Ubuntu 24.04, Claude Code 2.1.322): the hooks, skills and
 agents loading, the memory rules, task selection, the setup script and one full dream pass.
 
-Written from documentation but not run: everything for Codex, the vendor launchers, the Bash
+Codex UI-skill discovery and a read-only fixture review have now run; OpenCode discovers the
+same shared skill. See [UI-craft evidence](docs/evidence/ui-craft/README.md).
+Written from documentation but not fully run: the broader Codex configuration, the vendor launchers, the Bash
 sandbox configuration and claiming tasks on GitHub. Each of those files says so at the top.
 
 Not done at all: evals for the skills, and a real task taken through the whole workflow. The

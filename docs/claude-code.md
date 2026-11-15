@@ -13,7 +13,7 @@ on 2026-11-10 (version 2.1.322); the digests are `refs/notes/claude-code-docs-*.
 | `hooks/stop-check.py` | Runs when a turn ends. If files changed since the last passing run, runs `scripts/agent/check --quick` and sends a failure back to the agent once. |
 | `hooks/format.py` | Formats an edited file with the formatter the project already uses (Biome, Prettier, Ruff, rustfmt, gofmt). Does nothing when it finds none. |
 | `hooks/session-context.sh` | At session start, resume and after compaction: prints the branch, the task id, and the task's plan file if there is one. |
-| `skills/` | `verify`, `spec`, `task`, `write-tests`, `performance`, `second-opinion`, `wrap-up`, and four you start yourself: `kickoff`, `dream`, `careful`, `lock-tests`. |
+| `skills/` | `verify`, `spec`, `task`, `write-tests`, `performance`, `ui-craft`, `second-opinion`, `wrap-up`, and four you start yourself: `kickoff`, `dream`, `careful`, `lock-tests`. |
 | `agents/` | `reviewer` (fresh-context review), `memory-analyzer` and `memory-organizer` (used by `dream`). |
 
 Edit the lists at the top of `guard.py` to fit a project: `PROTECTED_BRANCHES`,

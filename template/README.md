@@ -14,6 +14,7 @@ without overwriting anything). This file is not copied.
 | `scripts/agent/next-task` | Picks the next ready task by a fixed rule | Nothing |
 | `scripts/agent/ratchet` | Guards a number so it can only get better | Call it from `check` for what you measure |
 | `.agents/memory/` | Project memory: index, inbox, files written by the dream pass | Nothing |
+| `.agents/skills/` | Shared skill links shipped in the template, including UI craft; Codex discovers these | Keep their `.claude/skills/` targets with them |
 | `docs/decisions/`, `docs/specs/`, `docs/plans/` | Decision records, specs for larger work, plans in flight | Nothing |
 | `.github/pull_request_template.md` | Evidence per acceptance criterion, risk, how to revert | Nothing |
 | `gitignore.additions` | Lines appended to the project's `.gitignore` | Nothing |
@@ -29,6 +30,7 @@ without overwriting anything). This file is not copied.
 | `hooks/session-context.sh` | Prints branch, task id and plan file at session start |
 | `hooks/tests/test_guard.sh` | Tests for the guard (not copied into projects) |
 | `skills/verify` | Prove a change works: checks, behaviour, evidence per criterion |
+| `skills/ui-craft` | Stable states, typography/icons, intent-aware motion and interaction checks |
 | `skills/spec` | Turn a request into tasks with acceptance criteria |
 | `skills/task` | Work one task through to a pull request |
 | `skills/write-tests` | Which level to test at, and how to write a test that can fail |

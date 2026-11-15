@@ -25,11 +25,11 @@ scratch exercise. Kimi Code, Qwen Code, Gemini CLI and vendor endpoints remain d
 So the template keeps one copy of what can be shared and a thin file per harness:
 
 - `AGENTS.md` and `WORKFLOW.md` are the shared text.
-- Skills live in `.claude/skills/`. `tools/setup --codex` links each one into `.agents/skills/`,
+- Skills live in `.claude/skills/`. Every `tools/setup` run links each one into `.agents/skills/`,
   which is where Codex, Kimi Code and Qwen Code look. Only `name` and `description` are
-  portable front matter; the Claude-only fields (`disable-model-invocation`, `hooks`,
-  `allowed-tools`) are ignored elsewhere, so `careful`, `lock-tests` and `dream` do less there.
-  Whether Codex tolerates unknown front matter keys is not documented.
+  universally portable front matter. Other metadata and enforcement differ by host; OpenCode
+  recognizes `disable-model-invocation`, but Claude skill hooks and tool restrictions do not
+  automatically become equivalent controls elsewhere. `ui-craft` needs only the portable fields.
 - The hook scripts (`guard.py`, `stop-check.py`) are shared with Codex, which uses the same
   contract: JSON on stdin, exit code 2 to block.
 - Claude and Codex both ship `reviewer`, `memory-analyzer` and `memory-organizer`.
@@ -83,9 +83,23 @@ memory read-only, and a shell allowlist with everything else set to ask. It is w
 ## Kimi Code, Qwen Code, Gemini CLI
 
 From their documentation only (`refs/notes/model-routes-glm-deepseek-kimi.md`): Kimi Code and
-Qwen Code read `AGENTS.md` and `.agents/skills/` directly, so `tools/setup --codex` gives them
-the shared files. Gemini CLI reads `GEMINI.md` unless `context.fileName` in
+Qwen Code read `AGENTS.md` and `.agents/skills/` directly, so a default `tools/setup` gives them
+the shared files; `--codex` is only needed for Codex-specific configuration.
+Gemini CLI reads `GEMINI.md` unless `context.fileName` in
 `.gemini/settings.json` names `AGENTS.md`. None of their own config is in the template.
+
+## Shared UI craft
+
+Every setup exposes `ui-craft` under both skill paths with the same references. The shared
+`AGENTS.md` points at it for agents without automatic skill selection. Codex can invoke
+`$ui-craft`; Claude can invoke `/ui-craft`; OpenCode discovers the shared skill. No Claude-only
+tools or frontmatter are required by this skill. Other clients must be configured to read
+`AGENTS.md` or be given the skill path explicitly; the template cannot guarantee every agent's
+loader behavior. [Coverage and evidence](ui-craft.md).
+
+Discovery sources: [Codex skills](https://learn.chatgpt.com/docs/build-skills),
+[OpenCode skills](https://opencode.ai/docs/skills/), saved at
+`refs/articles/learn.chatgpt.com/docs-build-skills/` and `refs/articles/opencode.ai/docs-skills/`.
 
 ## GLM, DeepSeek and Kimi models
 

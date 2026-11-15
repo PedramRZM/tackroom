@@ -1,0 +1,12 @@
+{
+  "type": "article",
+  "url": "https://emilkowal.ski/ui/building-a-toast-component",
+  "title": "Building a toast component",
+  "date": "2024-07-15",
+  "site": "Emil Kowalski",
+  "description": "How I built Sonner, an opinionated toast library for React used by milions.",
+  "via": "jina",
+  "chars": 13417,
+  "collection": "ui-craft",
+  "fetched_at": "2026-11-15T09:02:59Z"
+}

@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><title>Saved items</title>
+<style>
+button { width:24px; height:24px; }
+#panel { transition: all 600ms; width:0; overflow:hidden; }
+#panel.open { width:300px; }
+#timer { font-family:Arial; }
+@keyframes enter { from {transform:translateY(80px)} to {transform:none} }
+article { animation:enter 800ms; }
+</style>
+<button id="toggle" aria-controls="panel">Menu</button>
+<aside id="panel"><button id="save">Save</button></aside>
+<article><img src="/late-image.jpg" alt="Landscape"><span id="timer">99</span>
+<p id="empty">No items.</p></article>
+<script>
+let moving=false;
+toggle.onclick=()=>{ if(moving)return; moving=true; panel.classList.toggle('open');
+  setTimeout(()=>moving=false,600); };
+save.onclick=()=>{ save.textContent='Saved'; fetch('/save',{method:'POST'}); };
+setTimeout(()=>timer.textContent='100',1500);
+</script></html>

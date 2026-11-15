@@ -26,6 +26,11 @@ to prove wiring. Avoid asserting the same exhaustive matrix at every level.
 
 ## Example: enforce design tokens
 
+For Tailwind v4, consider the official [`@shadcn/lint`](https://github.com/shadcn-ui/lint)
+ESLint/Oxlint plugin. Select policies for the actual design system; installation alone does not
+enforce them. The `ui-craft` [verification reference](../../ui-craft/references/verification.md)
+covers its static-analysis blind spots and complementary browser checks.
+
 First inspect the token source, allowed semantic names, style syntax and existing lint plugins.
 Use a design system's own rule when it fits. Atlassian's token rule targets its token API;
 do not install it in an unrelated design system and assume coverage.

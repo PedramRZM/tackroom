@@ -28,6 +28,10 @@ as a gap; do not substitute a cheaper check that cannot establish the same resul
 
 ## UI and product evidence
 
+For changed UI, use `ui-craft` to select applicable craft criteria and its browser stress
+recipes (interruption, delayed loads, optimistic failure, touch and reduced motion). Keep the
+results in the existing verification plan; do not create a second competing checklist.
+
 Choose evidence for the changed risks; the neighboring skill's
 [tool reference](../write-tests/references/verification-tools.md) explains selection.
 These checks answer different questions:

@@ -20,6 +20,7 @@ One or two sentences: what this is, who uses it, and anything unusual about how 
 Before saying work is done, run the checks and show their output. If something could not be
 verified, say which thing and why. A change a user can see is also checked in the running app;
 the `verify` skill describes how.
+For UI work, read `.agents/skills/ui-craft/SKILL.md` and select the relevant craft checks.
 
 ## How work is tracked
 

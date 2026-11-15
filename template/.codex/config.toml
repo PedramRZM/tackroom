@@ -1,7 +1,8 @@
 #:schema https://developers.openai.com/codex/config-schema.json
 # Project settings for Codex. Loaded only after you trust this project in Codex.
-# Written from the Codex documentation (0.167, November 2026) and NOT yet run under Codex:
-# check it with `codex` in this folder and adjust.
+# Written from the Codex documentation (0.167, November 2026). UI skill discovery/read was
+# exercised with CLI 0.169; full hook/permission behavior is not validated. Check and adjust.
+# Shared project skills are in ../.agents/skills/ (including ui-craft), not this directory.
 #
 # A model provider cannot be chosen here: Codex ignores `model_provider` and `model_providers`
 # in project config. See docs/model-routes.md in tackroom for the launcher approach.

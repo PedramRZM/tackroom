@@ -37,3 +37,26 @@ base = "https://www.anthropic.com"
 [[page]]
 name = "claude-code-changelog"
 url = "https://code.claude.com/docs/en/changelog.md"
+
+# Taste matches: review new writing for concrete mechanisms, not blanket authority.
+[[list]]
+name = "emil-ui-craft"
+list = "https://emilkowal.ski"
+include = '^https://emilkowal\.ski/ui/.+'
+base = "https://emilkowal.ski"
+
+[[list]]
+name = "jakub-ui-craft"
+list = "https://jakub.kr"
+include = '^https://jakub\.kr/(writing|work)/.+'
+base = "https://jakub.kr"
+
+[[list]]
+name = "rauno-ui-craft"
+list = "https://rauno.me/craft"
+include = '^https://rauno\.me/craft/.+'
+base = "https://rauno.me"
+
+[[page]]
+name = "shadcn-design-lint"
+url = "https://github.com/shadcn-ui/lint"

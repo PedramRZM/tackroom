@@ -18,7 +18,7 @@ py() { uv run --quiet --no-project --python '>=3.11' python "$@"; }
 compile_all() {
   python3 -m py_compile template/.claude/hooks/*.py template/scripts/agent/next-task \
     template/.claude/skills/dream/scripts/*.py template/scripts/agent/ratchet tools/setup &&
-  py -m py_compile tools/refs.py tools/check-codex-agents.py &&
+  py -m py_compile tools/refs.py tools/check-codex-agents.py tools/check-skill-setup.py &&
   bash -n template/.claude/hooks/session-context.sh template/scripts/agent/check \
     template/scripts/agent/claude-with template/scripts/agent/github-labels tools/refs
 }
@@ -81,6 +81,7 @@ PY
 run  compile            compile_all
 run  config-parses      parse_config
 run  codex-agent-parity  py tools/check-codex-agents.py
+run  shared-skill-setup  python3 tools/check-skill-setup.py
 run  guard-tests        template/.claude/hooks/tests/test_guard.sh
 run  root-matches-template same_as_template
 run  instruction-size   short_instructions

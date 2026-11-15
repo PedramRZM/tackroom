@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion",
+  "title": "prefers-reduced-motion CSS media feature",
+  "date": "2026-06-10",
+  "site": "developer.mozilla.org",
+  "description": "The prefers-reduced-motion CSS media feature is used to detect if a user has enabled a setting on their device to minimize the amount of non-essential motion. The setting is used to convey to the browser on the device that the user prefers an interface that removes, reduces, or replaces motion-based animations.",
+  "via": "direct",
+  "chars": 5978,
+  "collection": "ui-craft",
+  "fetched_at": "2026-11-15T09:03:53Z"
+}

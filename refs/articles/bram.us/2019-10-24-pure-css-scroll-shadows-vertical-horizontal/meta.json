@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://www.bram.us/2019/10/24/pure-css-scroll-shadows-vertical-horizontal/",
+  "title": "Pure CSS Scroll Shadows (Vertical + Horizontal)",
+  "author": "Bramus",
+  "date": "2019-10-24",
+  "site": "Bram.us",
+  "description": "A long time ago (2012!), Lea Verou shared a way on how to add scrolling shadows to containers that needs scrolling. Using those shadows in a scroll container is a great UX thing, as they visually tell the user that the content is scrollable. Her code however, only worked with containers that scroll vertically. Based … Continue reading \"Pure CSS Scroll Shadows (Vertical + Horizontal)",
+  "via": "direct",
+  "chars": 3071,
+  "collection": "ui-craft",
+  "fetched_at": "2026-11-15T09:07:08Z"
+}

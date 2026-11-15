@@ -1,0 +1,13 @@
+Codex CLI 0.169.0: read-only scratch trial, exit 0.
+/usr/bin/zsh -lc 'cat .agents/skills/ui-craft/SKILL.md .agents/skills/write-tests/SKILL.md .agents/skills/verify/SKILL.md'
+exit: 0
+/usr/bin/zsh -lc 'cat .agents/skills/ui-craft/references/craft.md .agents/skills/ui-craft/references/motion.md .agents/skills/ui-craft/references/verification.md .agents/skills/write-tests/references/verification-tools.md'
+exit: 0
+/usr/bin/zsh -lc 'cat .agents/skills/ui-craft/references/verification.md .agents/skills/write-tests/references/verification-tools.md'
+exit: 0
+OpenCode debug skill: exit 0.
+{
+  "name": "ui-craft",
+  "description": "Build or review UI details that make interactions stable, responsive and deliberate. Use for screens, loading and empty states, typography, icons, touch controls, menus, galleries and animation polish.",
+  "location": "/tmp/tackroom-ui-craft-portable-20261115/.agents/skills/ui-craft/SKILL.md"
+}
