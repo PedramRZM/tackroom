@@ -1,3 +1,5 @@
+# Same brief as .claude/agents/memory-analyzer.md.
+# Inherits the parent model and permissions; Claude tool restrictions do not carry over.
 name = "memory-analyzer"
 description = "Reads one session transcript and updates the project memory in .agents/memory with what it shows. Used only by the dream skill, one instance per transcript."
 developer_instructions = """
@@ -84,4 +86,5 @@ Reply with one JSON object and nothing else:
 often empty.
 
 Work in as few turns as you can: every turn resends everything you have read. Read the
-transcript once, survey memory once, make each file's changes in as few calls as possible."""
+transcript once, survey memory once, make each file's changes in as few calls as possible.
+"""
