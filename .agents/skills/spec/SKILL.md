@@ -17,6 +17,9 @@ Turn what was asked into tasks an agent with no other context could pick up and 
   epic and split it into tasks, and record which tasks block which.
 - **Checkable.** Every acceptance criterion is a behaviour plus the check that proves it: a
   command, a test name, or a UI step with the expected result. Aim for six or fewer per task.
+  Use concrete success and relevant failure/permission examples. Note the expected result's
+  source and any missing test data or environment; the implementer fills in the verification
+  plan before coding, without changing the criteria.
 - **Product-level.** Say what must be true, not how to code it. Implementation details fixed
   in advance are the ones that turn out wrong and get followed anyway.
 - **Bounded.** State what is out of scope and what must not change.

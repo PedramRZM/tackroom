@@ -56,9 +56,12 @@ present, never by an unattended run.
    failure that was already there is not mistaken for yours.
 5. **Plan, when the task needs it.** A task that will span sessions or touches several parts
    gets `docs/plans/<id>-<slug>.md`: purpose, steps, progress, dead ends, decisions. A small
-   task needs no plan file.
-6. **Build in small steps.** For a bug, first write the test that fails because of it. Commit
-   after each step that leaves the checks passing.
+   task needs no plan file. Before implementation, use `write-tests` to map the criteria to
+   concrete examples, expected results, appropriate checks/tools and required setup. Keep this
+   in the task or existing plan. Reuse working tools and identify missing quality gates.
+6. **Build in small steps.** For a bug or meaningful new behavior, confirm a focused test
+   fails for the right reason, then implement and refactor while it passes. Trivial changes
+   can use existing checks and direct evidence. Commit after each step that leaves the checks passing.
 7. **Verify.** Run the checks. Exercise each acceptance criterion the way its check says. For
    anything a user sees, look at it in the running app.
 8. **Get a second opinion on larger work.** For a task that needed a plan, have a fresh-context

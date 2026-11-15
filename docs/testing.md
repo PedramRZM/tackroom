@@ -4,15 +4,17 @@ What the sources say about what to test, how to get a model to write tests worth
 how to test performance; and where each piece lives in the template. The skills that carry this
 into a project are `write-tests`, `verify`, `performance` and `lock-tests`.
 
-How this was put together: from notes already in `refs/notes/`, plus Kent C. Dodds's testing
-articles and his own agent setup, read directly. A dedicated research pass on this topic was
-started and stopped before it produced notes, so backend performance and random-input testing
-rest on few sources, and that is marked below.
+The original synthesis used the saved practitioner notes and Kent C. Dodds's testing articles.
+The [2026-11-15 audit](../refs/notes/2026-11-15-verification-workflow-audit.md) adds primary
+testing/tool documentation and carries the earlier BDD research into the template. Backend
+performance and random-input testing still rest on few first-hand reports, as marked below.
 
 ## Which tests, at which level
 
-**The short answer from the sources: types and lint first, mostly integration tests, a few
-end-to-end tests on the flows that must not break, and unit tests where there is real logic.**
+**Start with types and lint, choose the smallest boundary that proves each behavior, and keep
+a few end-to-end journeys to check the assembled product.** Integration-heavy is a useful web
+application default, not a percentage target for every project; a parser or algorithm library
+can reasonably need far more unit/property tests.
 
 - Kent C. Dodds's Testing Trophy has four layers, cheapest first: static (types, lint), unit,
   integration, end to end. His rule is "Write tests. Not too many. Mostly integration.": the
@@ -164,5 +166,75 @@ ones, benchmark with repeated runs, and load-test only when concurrency is the q
 - Pull request template: say why any existing test's expectation changed.
 - `verify` skill: what to record so an agent can drive the real app.
 
-None of these has an eval. Per `docs/principles.md` (6 and 12), try each on real work and
-delete the ones that do not change what the model does.
+These do not yet have a comparative outcome eval. The 2026-11-15 scratch exercise checks that
+the revised guidance can be followed; it cannot establish improved defect detection or cost.
+Per `docs/principles.md` (6 and 12), try each on real work and delete guidance that adds no value.
+
+## Verification before implementation
+
+The missing connection was a pre-code verification plan, rather than another testing tool.
+The workflow now asks the implementer to record a compact mapping in the task or existing plan:
+
+**criterion/example → expected result and its source → risk → smallest sufficient check/tool
+→ data/environment → command or UI steps → evidence.**
+
+BDD supplies shared examples, TDD supplies the red/green/refactor loop, and unit/integration/E2E
+describe the boundary exercised. They are complementary. Cucumber's definition separates
+discovery, formulation and automation; it does not mean every example needs a browser test.
+Our choice to keep examples in ordinary task text unless collaborators maintain Gherkin is a
+judgment call. [Saved BDD source](../refs/articles/cucumber.io/docs-bdd/meta.json),
+[prior research](../refs/notes/2026-11-13-claude-team-bdd-e2e.md).
+
+For substantive behavior, write a focused failing example before implementation and confirm
+the reason for failure. For trivial edits, reuse existing checks and direct inspection. Move
+exhaustive edge cases to cheap tests; use a small integrated journey set to prove wiring.
+Neither the pyramid nor the trophy establishes a universal optimum. The portable synthesis
+and worked invoice example are in
+[`write-tests/references/verification-tools.md`](../template/.claude/skills/write-tests/references/verification-tools.md).
+Sources: [Vocke's practical pyramid](https://martinfowler.com/articles/practical-test-pyramid.html),
+[Dodds's classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications).
+
+## Recommend quality tools for the actual project
+
+The agent now inspects the installed stack, explains existing coverage and recommends only
+checks for uncovered risks, with setup/runtime cost and blind spots. Repeated mechanical
+review findings belong in tested compiler/lint rules where feasible. This is a selection
+procedure, not a dependency bundle.
+
+| Need | Candidate | Necessary qualification |
+|---|---|---|
+| JS/TS syntax and structural constraints | ESLint built-in or scoped AST rule | Test custom rules with valid/invalid fixtures; a style rule does not prove product behavior |
+| CSS design-token usage | Stylelint property-value and custom-property allowlists | Match the real syntax and approved names; excluding hex or checking variable names alone is insufficient |
+| CSS-in-JS or utility tokens | Existing design-system rule or tested syntax-aware check | Atlassian's rule targets its API; CSS lint does not cover arbitrary JS/class strings |
+| UI behavior | Existing component runner and critical Playwright journeys | DOM assertions cannot establish layout; browser exploration does not create a durable suite |
+| Visual regression | Playwright screenshots or an existing Storybook visual workflow | Stable environment and reviewed baselines; detects differences, not design quality |
+| Accessibility | axe-core plus manual interaction/assistive-technology checks | A clean automated scan is incomplete evidence |
+| Performance | Existing budgets, Lighthouse CI, field Web Vitals | Lab regressions and user experience are different measurements |
+| Weak assertions | Manual negative control or targeted Stryker run | Mutation adds cost and cannot establish that the requirements are right |
+
+For the token example, first prove that valid semantic usage passes and raw hex, named/function
+colors and wrong token namespaces fail in each supported style surface. Token definitions,
+generated/vendor files and approved exceptions need explicit scope. This fixture matrix is
+our judgment, grounded in how the documented rules work—not a claim that a single rule covers
+all frontends. Full primary URLs, saved paths, dates and locators are in the
+[audit source register](../refs/notes/2026-11-15-verification-workflow-audit.md).
+
+## Product evidence is more than a green suite
+
+The `verify` skill separates behavior, visuals, accessibility, usability and performance.
+Record the tested revision/environment, roles/data, output and relevant artifacts. Report
+skips and flaky retries. Test expectations, screenshot baselines and gate configuration changes
+need reasons tied to the requested behavior. Review evidence again after further edits.
+
+Playwright documents both screenshot environment sensitivity and the limits of automated
+accessibility testing. W3C recommends combined human and automated evaluation; observing real
+users is necessary for claims about their experience. An agent review can identify likely UX
+problems but is not user research. [Visual comparisons](https://playwright.dev/docs/test-snapshots),
+[accessibility tests](https://playwright.dev/docs/accessibility-testing),
+[W3C evaluation](https://www.w3.org/WAI/test-evaluate/).
+
+Trusted enforcement remains separate: hooks in a writable workspace and a second model are
+feedback mechanisms, not an unchangeable acceptance gate. The project's own CI/verifier must
+run reviewed checks when that assurance is needed. The [follow-up tasks](../tasks/README.md)
+cover the real-app setup pilot and a comparative eval; no application-specific lint or browser
+suite is claimed to have been installed by this portable template change.

@@ -1,0 +1,11 @@
+{
+  "type": "article",
+  "url": "https://stylelint.io/user-guide/rules/declaration-property-value-allowed-list/",
+  "title": "declaration-property-value-allowed-list | Stylelint",
+  "site": "stylelint.io",
+  "description": "Specify a list of allowed property and value pairs within declarations.",
+  "via": "direct",
+  "chars": 2338,
+  "collection": "verification-workflow-2026-11-15",
+  "fetched_at": "2026-11-15T08:18:40Z"
+}

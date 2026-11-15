@@ -20,6 +20,10 @@ task" and "Rules that hold throughout" and follow them. This file adds only the 
 - **Plan file:** only when the task will span sessions or touches several parts. Copy
   `plan-template.md` from this skill's folder to `docs/plans/<id>-<slug>.md`, and update its
   Progress and Dead ends sections every time you stop.
+- **Before implementation:** use `write-tests` to choose verification for the task's risks.
+  Record examples, expected results, test level/tool, setup and exact checks in the task's
+  Verification plan or existing plan. Reuse checks that suffice; recommend missing quality
+  gates with their limits. A small change needs a sentence, not another document.
 - **Pull request:** open it as a draft with `gh pr create --draft`, using the repository's
   template. The Evidence section gets one line per acceptance criterion.
 

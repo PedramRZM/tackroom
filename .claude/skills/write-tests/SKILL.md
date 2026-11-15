@@ -1,12 +1,35 @@
 ---
 name: write-tests
-description: How to decide what to test and at which level, and how to write tests that can actually fail. Use when writing or changing tests, adding a feature or fixing a bug that needs a test, when asked about test strategy or coverage, and when a test is flaky, slow or was weakened to pass.
+description: Design verification before implementation, choose checks and quality tools that fit the project, and write tests that can actually fail. Use for a feature or bug that needs tests, test strategy or coverage, and flaky, slow or weakened tests.
 ---
 
 # Writing tests
 
 A test is worth having when it would catch a real mistake and gives confidence that the thing
 works for whoever uses it. Count that, not coverage.
+
+## Before implementation
+
+Inspect the existing checks, test runner, fixtures and relevant conventions. For a substantive
+change, put a compact verification plan in the task or existing plan before editing production
+code. One sentence is enough for a small fix; a copy-only change may need only existing checks
+and a direct inspection, not a new test.
+
+For each criterion, record: **example and expected result → risk → smallest sufficient check
+and tool → data/environment → command or UI steps → evidence**. Include failure, boundary or
+permission examples where they affect the outcome. Derive expected results from the task,
+domain rule or trusted reference, not from the implementation you are about to write. Resolve
+ambiguity that would change the behavior; label any setup or command not yet verified.
+
+BDD is discovery of shared behavior through concrete examples, optionally Given/When/Then.
+TDD is the red/green/refactor development loop. Unit, integration and E2E describe test scope.
+Use them together; neither BDD nor TDD requires putting every example through a browser or
+installing a Gherkin runner.
+
+Choose checks for uncovered risks and explain the choice, even when the existing tools suffice.
+When choosing tools, enforcing a code/design constraint, or testing a UI, read
+[verification-tools.md](references/verification-tools.md). Recommend the smallest useful
+addition with its limits and maintenance cost; do not install a catalog of tools by default.
 
 ## Which level
 
@@ -19,8 +42,8 @@ expensive:
    tested through its inputs and outputs.
 3. **Integration**: several parts working together through a public surface, with only the
    outside world replaced: a request handler against a real test database, a page or component
-   with the network stubbed at the boundary. Most tests belong here. They survive refactoring
-   and catch the mistakes that happen between parts.
+   with the network stubbed at the boundary. Favor these when interaction between parts is the
+   risk; logic-heavy libraries may need more unit/property tests. No fixed ratio fits every app.
 4. **End to end**: the running app driven like a user. Keep these to the few flows that must
    never break (sign in, pay, the core action), because they are slow and can be flaky.
 
@@ -31,14 +54,17 @@ expensive:
   the code does what it does.
 - Assert on what a user or caller can see. Do not assert on internals, call counts or private
   state unless that is the behaviour.
-- For a bug: write the test that fails because of the bug, confirm it fails for that reason,
-  then fix. For new code: after it passes, break the change on purpose and confirm the test
-  goes red. A test that cannot fail is not a test.
+- For a bug or meaningful new behavior: write a focused test first and confirm it fails for
+  the missing behavior, not broken setup. Implement, then refactor while it stays green. If a
+  test was added after the code, remove the fix or introduce a targeted fault in an isolated
+  copy and confirm it goes red. Preserve the working change; never discard someone else's edits.
 - Where code has an invariant, test the property over generated inputs instead of a few
   examples: a round trip (encode then decode), something that must always hold, doing it twice
   equals doing it once, two implementations agreeing. For a rewrite or migration, run old and
   new on the same inputs and compare.
-- Keep tests fast and deterministic: seed randomness, freeze the clock, no real network.
+- Keep the inner loop deterministic: seed randomness, control time, replace uncontrolled
+  external services at their boundary. Integration/E2E checks may use real isolated services
+  when that boundary is what must be proved; name that environment and its reset procedure.
 
 ## Do not
 

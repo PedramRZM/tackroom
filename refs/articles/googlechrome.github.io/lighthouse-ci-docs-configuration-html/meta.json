@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://googlechrome.github.io/lighthouse-ci/docs/configuration.html",
+  "title": "Configuration",
+  "date": "2019-11-29",
+  "site": "Lighthouse-Ci",
+  "description": "Automate running Lighthouse for every commit, viewing the changes, and preventing regressions",
+  "via": "direct",
+  "chars": 57029,
+  "collection": "verification-workflow-2026-11-15",
+  "fetched_at": "2026-11-15T08:18:59Z"
+}

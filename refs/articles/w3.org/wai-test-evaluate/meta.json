@@ -1,0 +1,11 @@
+{
+  "type": "article",
+  "url": "https://www.w3.org/WAI/test-evaluate/",
+  "title": "Evaluating Web Accessibility Overview",
+  "site": "www.w3.org",
+  "via": "jina",
+  "chars": 8106,
+  "collection": "verification-workflow-2026-11-15",
+  "warning": "http 403 text/html; charset=UTF-8",
+  "fetched_at": "2026-11-15T08:18:54Z"
+}

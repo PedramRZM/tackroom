@@ -4,10 +4,11 @@ What carries over from the Claude Code setup to Codex, OpenCode and the vendor C
 run GLM, DeepSeek and Kimi models. Research: `refs/notes/harness-codex-opencode-standards.md`
 and `refs/notes/model-routes-glm-deepseek-kimi.md`.
 
-**Read this first:** only Claude Code and OpenCode 1.3.10 are installed on the machine this was
-built on. The Claude Code parts were run. OpenCode loaded the config file, and nothing more was
-tried. Everything about Codex, Kimi Code, Qwen Code and Gemini CLI, and every vendor endpoint,
-comes from documentation dated November 2026 and has not been run.
+**Validation scope:** the original setup was tried with Claude Code and config loading in
+OpenCode 1.3.10. On 2026-11-15, local inspection also found Codex CLI 0.169.0 with native goals
+enabled. Installation/feature detection is not validation of the full Codex harness; see
+the current [task evidence](plans/1-verification-before-implementation.md) for the limited
+scratch exercise. Kimi Code, Qwen Code, Gemini CLI and vendor endpoints remain documentation-only.
 
 ## What each harness reads from a project
 
@@ -56,7 +57,9 @@ Limits to know (`refs/notes/harness-codex-opencode-standards.md`, section 1):
   endpoint is not enough.
 - Codex asks you to trust the project, and to review each hook, before anything in `.codex/`
   takes effect. A changed hook script must be reviewed again.
-- There are no project slash commands; skills replace them, invoked as `$name`.
+- Project workflows use skills, invoked as `$name`; this is separate from native commands.
+  Codex has native `/goal` for persistent objectives. Use the shared criteria/check/evidence
+  workflow described in [Loops](loops.md#goals-across-harnesses), not a Claude-specific clone.
 - The memory roles are available in Codex, but the end-to-end dream pass is not ported: its
   exporter still reads Claude Code transcripts. Role presence does not prove native Codex
   transcript export or a complete dream run.

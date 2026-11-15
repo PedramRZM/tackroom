@@ -45,6 +45,9 @@ When weighing a technology:
   session has to keep straight, because the code already in the repository is what the agent
   imitates.
 - Strong static checks: a type system and a linter that fail loudly are the cheapest tests there are.
+  Use `write-tests` and its tool reference to propose the smallest stack-appropriate gates for
+  behavior, code constraints and UI risks. Explain gaps and upkeep; prove a new policy rejects
+  a known-bad example and accepts a valid one before relying on it.
 - It must run and be checked on the user's machine with one command, and the agent must be able
   to start the app and see it respond.
 - Few dependencies, pinned. Avoid a release that came out in the last few days.

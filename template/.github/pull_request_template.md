@@ -10,7 +10,10 @@ Door: <!-- two-way (easy to change later) | one-way (data, contracts, security, 
 
 <!-- One line per acceptance criterion: the check that was run and what it showed.
      Paste output or attach the screenshot. Do not summarise a result you did not see.
-     If an existing test's expectation changed, say why. -->
+     Identify the tested revision/environment and any skips or flaky retries.
+     If a test expectation, visual baseline or gate configuration changed, say why.
+     For UI changes distinguish behavior, visual and accessibility evidence; do not claim
+     usability with real users unless it was observed. -->
 
 - AC1:
 - Checks: `scripts/agent/check` ->

@@ -1,5 +1,31 @@
 # Loops
 
+The task, verification plan and evidence requirements are shared across harnesses. Native
+continuation controls differ; a skill file alone does not implement persistent execution.
+
+## Goals across harnesses
+
+| Harness | Entry point | What this template supplies |
+|---|---|---|
+| Codex CLI, IDE and desktop | Native `/goal <objective>`; view/edit/pause/resume/clear controls | Shared task criteria, `write-tests` planning and `verify` evidence |
+| Claude Code | Native `/goal <condition>` | The same workflow; its evaluator judges conversation evidence rather than running checks |
+| A harness without persistent goals | Invoke the shared task skill or ask it to follow `WORKFLOW.md` | The task/check/review loop within its supported execution; no promise of automatic continuation |
+
+Do not install a custom `goal` skill over either native command. Start goals only when the user
+requests them. State the outcome, constraints and executable verification, and keep the task
+file as the durable specification. A goal does not expand permissions or replace the checks.
+Codex source: [long-running work](https://learn.chatgpt.com/docs/long-running-work) and
+[command reference](https://learn.chatgpt.com/docs/developer-commands?surface=cli), saved under
+`refs/articles/learn.chatgpt.com/`. Local inspection on 2026-11-15 found Codex CLI 0.169.0 and
+`goals stable true`; this verifies availability, not the entire goal lifecycle.
+
+The sections below describe **Claude Code's** native loop mechanisms. Their slash-command
+syntax and evaluator behavior must not be assumed to apply to Codex or OpenCode. In particular,
+a prose “stop after N turns” is a requested condition, not a hard process limit; the existing
+headless recipe's limit validation is tracked in [task 6](../tasks/6-hard-limits-for-goal-examples.md).
+
+## Claude Code loop mechanisms
+
 A loop is an agent repeating cycles of work until a stop condition is met. This is the Claude
 Code team's own definition and classification
 ([`refs/articles/claude.com/resources-articles-getting-started-with-loops/article.md`](https://claude.com/resources/articles/getting-started-with-loops)), with the
@@ -8,7 +34,7 @@ forms that fit this template. Nothing here runs on its own until you type it.
 | Loop | You hand off | Stops when | Reach for |
 |---|---|---|---|
 | Turn-based | the check | the agent judges it is done | the `verify` skill, the Stop hook |
-| Goal-based | the stop condition | a model confirms the condition, or the cap is hit | `/goal` |
+| Goal-based | the stop condition | a model judges the condition met or work blocked; runtime limits are separate | `/goal` |
 | Time-based | the trigger | you cancel it, or the work completes | `/loop`, a scheduled task |
 | Proactive | the prompt | each task meets its goal; the routine runs until turned off | a schedule plus `/goal` plus a workflow |
 

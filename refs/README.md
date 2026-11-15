@@ -1,5 +1,11 @@
 # refs: the research this setup is built on
 
+Latest harness implementation audit: [Karpathy/Claude source checks, verification before
+implementation, tool selection and remaining tasks (2026-11-15)](notes/2026-11-15-verification-workflow-audit.md).
+
+Follow-up: [Human corrections and agent mistakes in Anthropic's improvement loops; added to
+task 3 (2026-11-15)](notes/2026-11-15-feedback-learning-loop.md).
+
 Scinito setup: [Concrete service inventory, costs, existing pipeline findings and
 step-by-step agent development runbook (2026-11-14)](notes/2026-11-14-scinito-agent-development-runbook.md).
 

@@ -1,0 +1,12 @@
+{
+  "type": "doc",
+  "url": "https://stryker-mutator.io/docs/",
+  "title": "What is mutation testing? | Stryker Mutator",
+  "date": "2024-11-01",
+  "site": "stryker-mutator.io",
+  "description": "TL; DR: Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.",
+  "via": "direct",
+  "chars": 3382,
+  "collection": "verification-workflow-2026-11-15",
+  "fetched_at": "2026-11-15T08:18:56Z"
+}

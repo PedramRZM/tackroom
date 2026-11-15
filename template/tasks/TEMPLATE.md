@@ -26,6 +26,13 @@ AC2. ...
 
 ## Edge cases and data changes
 
+## Verification plan
+
+Before implementation: criterion/example and expected result → risk → check level/tool →
+fixtures/environment → exact command or UI steps → evidence. Reuse existing checks; note any
+missing quality gate and why it helps. A sentence suffices for a small change. Do not rewrite
+the acceptance criteria to match the implementation.
+
 ## Constraints
 
 ## Out of scope / do not change

@@ -32,6 +32,11 @@ body:
     attributes:
       label: Constraints
   - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: Before implementation, map criteria and expected results to risks, check levels/tools, data/environment, exact commands or UI steps, and evidence. Reuse existing checks and explain missing gates. A sentence suffices for a small change.
+  - type: textarea
     id: out-of-scope
     attributes:
       label: Out of scope / do not change

@@ -1,0 +1,16 @@
+# Primary sources newly saved for the verification workflow audit.
+https://atlassian.design/components/eslint-plugin-design-system/ensure-design-token-usage/usage
+https://claude.com/office-hours
+https://eslint.org/docs/latest/extend/custom-rule-tutorial
+https://eslint.org/docs/latest/rules/no-restricted-syntax
+https://googlechrome.github.io/lighthouse-ci/docs/configuration.html
+https://learn.chatgpt.com/docs/long-running-work.md
+https://martinfowler.com/articles/practical-test-pyramid.html
+https://playwright.dev/docs/accessibility-testing
+https://playwright.dev/docs/test-snapshots
+https://stryker-mutator.io/docs/
+https://stylelint.io/user-guide/rules/declaration-property-custom-property-allowed-list/
+https://stylelint.io/user-guide/rules/declaration-property-value-allowed-list/
+https://web.dev/articles/vitals
+https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility
+https://www.w3.org/WAI/test-evaluate/

@@ -1,0 +1,13 @@
+{
+  "type": "article",
+  "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
+  "title": "The Practical Test Pyramid",
+  "author": "Ham Vocke",
+  "date": "2018-02-26",
+  "site": "martinfowler.com",
+  "description": "Find out what kinds of automated tests you should implement for your application and learn by examples what these tests could look like.",
+  "via": "direct",
+  "chars": 82026,
+  "collection": "verification-workflow-2026-11-15",
+  "fetched_at": "2026-11-15T08:16:08Z"
+}

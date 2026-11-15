@@ -23,9 +23,31 @@ look at what you show and agree it works.
 If any step fails, fix the cause and start again from step 1. Do not hand back work that is
 partly verified without saying which part.
 
+Use the pre-implementation verification plan when one exists. Report an uncovered criterion
+as a gap; do not substitute a cheaper check that cannot establish the same result.
+
+## UI and product evidence
+
+Choose evidence for the changed risks; the neighboring skill's
+[tool reference](../write-tests/references/verification-tools.md) explains selection.
+These checks answer different questions:
+
+- **Behavior:** assert the result after the interaction, including relevant failure/empty/
+  permission states. A screenshot of a button does not prove its action succeeded.
+- **Visual:** inspect the rendered result at relevant viewport sizes and themes. Where
+  screenshot regression tests exist, stabilize browser/fonts/data and review each changed
+  baseline against the task; a new baseline is not automatically correct.
+- **Accessibility:** scan the relevant rendered states and test keyboard/focus/zoom as needed.
+  Automated passes do not establish full accessibility; name untested assistive-technology paths.
+- **Usability:** assess task completion, clarity and recovery. Agent review identifies concerns;
+  claims about real users need observation of representative users, or remain unverified.
+- **Performance:** when affected, compare the agreed budget in a controlled environment.
+  Distinguish lab results from field behavior; a score is not proof of the whole experience.
+
 ## Report
 
-One line per criterion, then the checks, then what you could not verify:
+Identify the tested revision (and uncommitted changes), environment or preview, and necessary
+data/role. One line per criterion, then checks, then what you could not verify:
 
     AC1  pnpm test cart.test.ts            4 passed
     AC2  /cart at 412px and 1440px         total updates on quantity change, console clean (screenshots: ...)
@@ -33,6 +55,12 @@ One line per criterion, then the checks, then what you could not verify:
     Not verified  payment webhook          needs the provider sandbox key
 
 Paste the lines the command printed. Do not describe a result you did not see.
+Include skips, quarantines and retry-green/flaky results rather than hiding them in a pass
+count. Review changed expectations, snapshots and gate configuration against the requested
+behavior. Re-run affected evidence after further edits; final checks must cover the final tree.
+For UI changes, say whether visual evidence is inspection or a comparison with a reviewed
+baseline, what accessibility was checked, and whether usability was observed with users or
+remains unverified. This does not require a user study for every change.
 
 ## Gotchas
 
