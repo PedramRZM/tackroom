@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/tmp/readiness-negative-control-meoi_x3b/tools/check_repository.py", line 9, in <module>
+    ast.parse(path.read_text(), feature_version=(3, 10))
+  File "/home/pedrum/.pyenv/versions/3.10.13/lib/python3.10/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 3
+    except* Exception:
+          ^
+SyntaxError: invalid syntax
+
+process exit: 1

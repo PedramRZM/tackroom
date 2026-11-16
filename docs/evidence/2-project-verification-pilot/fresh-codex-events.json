@@ -1,0 +1,51 @@
+{
+  "process_exit": 0,
+  "events": [
+    {
+      "command": "/usr/bin/zsh -lc 'cat AGENTS.md docs/readiness-verification.md .agents/memory/_index.md'",
+      "exit": 0,
+      "output_sha256": "49531f97e4e767f0c951d2f72124f937bd43970f46667117520c8220ce430fe8",
+      "output": null
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'cat scripts/agent/check tests/test_coder_readiness_process.py'",
+      "exit": 0,
+      "output_sha256": "3a51cdb54ff565d27503760bbecef51746515a38e6937600a290ed34654a48e6",
+      "output": null
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'git status --short; git rev-parse HEAD; python3 --version'",
+      "exit": 0,
+      "output_sha256": "c45987677011f088f1c98ff60edcc5a97d15a508e408525d11b29dcf01d99f3b",
+      "output": null
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'cat .agents/skills/verify/SKILL.md'",
+      "exit": 0,
+      "output_sha256": "ac75d2238677fe1566bcdb685523e89be44e631103410ef729569ac552bfcef3",
+      "output": null
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_coder_readiness_process.py -v'",
+      "exit": 0,
+      "output_sha256": "b039d8814e73afbd4c27c078dcf8b391c635b1c44f7fb9db19d37bebd823bcc6",
+      "output": "test_all_scope_remains_visible_only_and_reports_version_mismatch (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_denied_provider_read_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_malformed_provider_response_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_ready_read_is_observation_not_dispatch_permission (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_unhealthy_state_and_reseed_restore_readiness (test_coder_readiness_process.ReadinessProcessTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.398s\n\nOK\n"
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'PYTHONPYCACHEPREFIX=/tmp/readiness-reproduction-pycache PYTHONDONTWRITEBYTECODE=1 scripts/agent/check'",
+      "exit": 0,
+      "output_sha256": "a1c5c37fb96f9d612b9300f7b0ef3e994fa8693837838a60038df379fc6d732c",
+      "output": "ok: Python 3.10 syntax, JSON, agent roles, skill links, current document links\nok: compile\ntest_ambiguous_timeout_blocks_purchase_on_restart (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 Requesting one CX53 at nbg1\nok\ntest_capacity_rejection_allows_future_poll (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 Requesting one CX53 at nbg1\n2026-11-16T08:46:48+00:00 Capacity disappeared at nbg1; will poll again\nok\ntest_cli_error_code_includes_request_identifier (test_acquire_cx53.AcquisitionTests) ... ok\ntest_collision_and_duplicate_matches_halt (test_acquire_cx53.AcquisitionTests) ... ok\ntest_deleted_acquired_server_is_not_replaced (test_acquire_cx53.AcquisitionTests) ... ok\ntest_fast_poll_checks_duplicate_before_purchase (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True\n2026-11-16T08:46:48+00:00 ACQUIRED one CX53: id=123 status=initializing; polling stopped\nok\ntest_fast_poll_rechecks_price_before_purchase (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True\nok\ntest_fast_poll_reconciles_unresolved_creation_before_stock_lookup (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 ACQUIRED one CX53: id=123 status=initializing; polling stopped\nok\ntest_fast_poll_uses_one_read_when_out_of_stock (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=False\nok\ntest_list_reads_all_pages (test_acquire_cx53.AcquisitionTests) ... ok\ntest_out_of_stock_and_dry_run_never_purchase (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=False monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\nok\ntest_price_ceiling_includes_ipv4_and_fails_closed_on_currency (test_acquire_cx53.AcquisitionTests) ... ok\ntest_purchase_persists_intent_before_post_and_stops_after_one (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 Requesting one CX53 at nbg1\n2026-11-16T08:46:48+00:00 ACQUIRED one CX53: id=123 status=initializing; polling stopped\n2026-11-16T08:46:48+00:00 ACQUIRED one CX53: id=123 status=initializing; polling stopped\nok\ntest_quota_rejection_halts (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 Requesting one CX53 at nbg1\nok\ntest_state_has_private_permissions (test_acquire_cx53.AcquisitionTests) ... ok\ntest_timeout_reconciles_a_successful_creation (test_acquire_cx53.AcquisitionTests) ... 2026-11-16T08:46:48+00:00 cx53 nbg1: available=True monthly_EUR=29.99\n2026-11-16T08:46:48+00:00 Requesting one CX53 at nbg1\n2026-11-16T08:46:48+00:00 ACQUIRED one CX53: id=123 status=initializing; polling stopped\nok\ntest_cli_uses_read_only_list_and_reports_version_mismatch (test_coder_readiness.CliTests) ... ok\ntest_failures_do_not_echo_private_output (test_coder_readiness.CliTests) ... ok\ntest_failed_job_text_is_not_exposed_or_assumed_capacity (test_coder_readiness.ReadinessTests) ... ok\ntest_non_running_states_never_ready (test_coder_readiness.ReadinessTests) ... ok\ntest_ready_does_not_claim_capacity_or_dispatch_permission (test_coder_readiness.ReadinessTests) ... ok\ntest_ready_requires_all_agents_and_health (test_coder_readiness.ReadinessTests) ... ok\ntest_unknown_or_empty_is_not_free_capacity (test_coder_readiness.ReadinessTests) ... ok\ntest_all_scope_remains_visible_only_and_reports_version_mismatch (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_denied_provider_read_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_malformed_provider_response_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_ready_read_is_observation_not_dispatch_permission (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_unhealthy_state_and_reseed_restore_readiness (test_coder_readiness_process.ReadinessProcessTests) ... ok\ntest_daily_recreation_rounds_each_lifetime (test_planning.PlanningTests) ... ok\ntest_invalid_inputs_rejected (test_planning.PlanningTests) ... ok\ntest_powered_off_server_keeps_monthly_cost (test_planning.PlanningTests) ... ok\ntest_recreation_does_not_share_one_monthly_cap (test_planning.PlanningTests) ... ok\ntest_reserves_prevent_ram_overcommit (test_planning.PlanningTests) ... ok\ntest_ten_sessions_do_not_publish_every_minute (test_planning.PlanningTests) ... ok\n\n----------------------------------------------------------------------\nRan 34 tests in 0.434s\n\nOK\nall repository checks passed\n"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 181745,
+        "cached_input_tokens": 174080,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 806,
+        "reasoning_output_tokens": 56
+      }
+    }
+  ]
+}

@@ -16,3 +16,8 @@ exercise and the agent's mistaken requirement for live trials in every harness. 
 [task 1](../../tasks/1-verification-before-implementation.md),
 [trial results and limits](../evidence/1-verification-before-implementation/multi-harness.md),
 and [native loop controls](../loops.md).
+
+Task 2 applied this scope to the owner-selected agent-dev-infra CLI: isolated external-provider
+fixtures and actual CLI output are appropriate evidence for command behavior. They do not
+establish live company infrastructure or browser-application behavior. The accepted
+[pilot recipe and limits](../evidence/2-project-verification-pilot/README.md) remain the record.

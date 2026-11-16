@@ -1,0 +1,13 @@
+ok: TOML .codex/config.toml
+ok: TOML .codex/agents/reviewer.toml
+ok: TOML .codex/agents/memory-analyzer.toml
+ok: TOML .codex/agents/memory-organizer.toml
+ok: JSON .claude/settings.json
+ok: JSON .codex/hooks.json
+ok: shared skill task
+ok: shared skill write-tests
+ok: shared skill verify
+ok: shared verification reference
+shared skills: 12
+OpenCode: shared skill paths available; no project-specific OpenCode configuration shipped
+No Claude/OpenCode model call or hook/permission enforcement tested

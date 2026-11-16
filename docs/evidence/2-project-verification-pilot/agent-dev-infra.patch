@@ -1,0 +1,212 @@
+diff --git a/tests/test_coder_readiness_process.py b/tests/test_coder_readiness_process.py
+new file mode 100644
+index 0000000..2dd4dc7
+--- /dev/null
++++ b/tests/test_coder_readiness_process.py
+@@ -0,0 +1,130 @@
++"""Run the public readiness command; replace only the external Coder executable."""
++import copy
++import json
++from pathlib import Path
++import subprocess
++import sys
++import tempfile
++import unittest
++from datetime import datetime
++
++
++ROOT = Path(__file__).resolve().parents[1]
++WORKSPACES = [{
++    "name": "pilot-workspace", "template_name": "workspace-container",
++    "outdated": False, "health": {"healthy": True},
++    "provider_note": "PRIVATE-FIXTURE-ONLY",
++    "latest_build": {
++        "status": "running", "template_version_name": "pilot-v1",
++        "resources": [{"agents": [{
++            "status": "connected", "lifecycle_state": "ready",
++            "health": {"healthy": True},
++        }]}],
++    },
++}]
++
++
++class ReadinessProcessTests(unittest.TestCase):
++    def setUp(self):
++        self.directory = tempfile.TemporaryDirectory(prefix="readiness-pilot-")
++        self.addCleanup(self.directory.cleanup)
++        self.root = Path(self.directory.name)
++        self.state = self.root / "state.json"
++        self.calls = self.root / "calls.jsonl"
++        executable = self.root / "coder"
++        executable.write_text("#!" + sys.executable + "\n" + '''
++import json
++from pathlib import Path
++import sys
++
++root = Path(__file__).resolve().parent
++args = sys.argv[1:]
++with (root / "calls.jsonl").open("a") as log:
++    log.write(json.dumps(args) + "\\n")
++if args not in (["list", "-o", "json"], ["list", "-o", "json", "--all"]):
++    print("Fixture refuses non-list operations", file=sys.stderr)
++    sys.exit(97)
++state = json.loads((root / "state.json").read_text())
++print(state["stdout"], end="")
++print(state["stderr"], end="", file=sys.stderr)
++sys.exit(state["exit"])
++''')
++        executable.chmod(0o700)
++        self.seed()
++
++    def seed(self, workspaces=None, *, raw=None, stderr="", code=0):
++        payload = WORKSPACES if workspaces is None else workspaces
++        self.state.write_text(json.dumps({
++            "stdout": json.dumps(payload) if raw is None else raw,
++            "stderr": stderr, "exit": code,
++        }))
++
++    def run_probe(self, *args):
++        before = self.state.read_bytes()
++        result = subprocess.run(
++            [sys.executable, str(ROOT / "tools/coder_readiness.py"), *args],
++            cwd=self.root,
++            env={"PATH": str(self.root), "LANG": "C.UTF-8",
++                 "PYTHONDONTWRITEBYTECODE": "1"},
++            capture_output=True, text=True, timeout=10, check=False,
++        )
++        self.assertEqual(self.state.read_bytes(), before, "read must preserve provider state")
++        self.assertNotIn("PRIVATE-FIXTURE-ONLY", result.stdout + result.stderr)
++        return result
++
++    def successful_report(self, result):
++        self.assertEqual(result.returncode, 0, result.stderr)
++        self.assertEqual(result.stderr, "")
++        report = json.loads(result.stdout)
++        self.assertEqual(report["fleet_capacity"], "unknown")
++        self.assertIs(report["dispatch_authorized"], False)
++        self.assertIsNotNone(datetime.fromisoformat(report["observed_at"]).tzinfo)
++        self.assertEqual(len(report["workspaces"]), 1)
++        return report
++
++    def test_ready_read_is_observation_not_dispatch_permission(self):
++        report = self.successful_report(self.run_probe())
++        self.assertEqual(report["scope"], "current-user")
++        self.assertEqual(report["workspaces"], [{
++            "workspace": "pilot-workspace", "template": "workspace-container",
++            "version": "pilot-v1", "outdated": False, "observation": "runtime-ready",
++        }])
++        self.assertEqual(json.loads(self.calls.read_text()), ["list", "-o", "json"])
++
++    def test_all_scope_remains_visible_only_and_reports_version_mismatch(self):
++        self.seed(stderr="version mismatch: PRIVATE-FIXTURE-ONLY")
++        report = self.successful_report(self.run_probe("--all"))
++        self.assertEqual(report["scope"], "all-visible-to-current-user")
++        self.assertIs(report["client_server_version_mismatch"], True)
++        self.assertEqual(json.loads(self.calls.read_text()), ["list", "-o", "json", "--all"])
++
++    def test_unhealthy_state_and_reseed_restore_readiness(self):
++        original = self.state.read_bytes()
++        unhealthy = copy.deepcopy(WORKSPACES)
++        unhealthy[0]["health"]["healthy"] = False
++        self.seed(unhealthy)
++        report = self.successful_report(self.run_probe())
++        self.assertEqual(report["workspaces"][0]["observation"], "runtime-not-ready")
++        self.seed()
++        self.assertEqual(self.state.read_bytes(), original)
++        reset_report = self.successful_report(self.run_probe())
++        self.assertEqual(reset_report["workspaces"][0]["observation"], "runtime-ready")
++
++    def test_denied_provider_read_fails_without_echoing_raw_output(self):
++        self.seed(raw="PRIVATE-FIXTURE-ONLY", stderr="PRIVATE-FIXTURE-ONLY", code=13)
++        result = self.run_probe("--all")
++        self.assertEqual(result.returncode, 1)
++        self.assertEqual(result.stdout, "")
++        self.assertIn("Coder read failed or returned an unsupported response.", result.stderr)
++        self.assertEqual(json.loads(self.calls.read_text()), ["list", "-o", "json", "--all"])
++
++    def test_malformed_provider_response_fails_without_echoing_raw_output(self):
++        self.seed(raw="PRIVATE-FIXTURE-ONLY not JSON")
++        result = self.run_probe()
++        self.assertEqual(result.returncode, 1)
++        self.assertEqual(result.stdout, "")
++        self.assertIn("Coder read failed or returned an unsupported response.", result.stderr)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/docs/readiness-verification.md b/docs/readiness-verification.md
+new file mode 100644
+index 0000000..6220d7a
+--- /dev/null
++++ b/docs/readiness-verification.md
+@@ -0,0 +1,70 @@
++# Reproduce the readiness CLI journey locally
++
++The public command is `python3 tools/coder_readiness.py [--all]`. It reports observations;
++even a healthy workspace never grants dispatch permission or proves spare fleet capacity.
++This recipe tests the actual command as a subprocess without contacting company Coder.
++
++## Setup, start, health and reset
++
++Use this repository revision with `tests/test_coder_readiness_process.py` present. Python
++3.10+ is the only dependency; no Coder login, Docker, database or package installation is
++required. From the repository root:
++
++```sh
++python3 -m unittest discover -s tests -p test_coder_readiness_process.py -v
++scripts/agent/check
++```
++
++The first command provides the entire isolated lifecycle:
++
++1. **Seed:** each test creates a temporary directory with a literal healthy workspace and a
++   local `coder` executable. Only this executable is on the application's PATH; the subprocess
++   does not inherit the caller's environment. It refuses commands other than `list -o json`
++   with optional `--all` and records requests locally.
++2. **Start:** invoke the real Python CLI in a fresh process using the current Python executable.
++   The fake executable replaces only the external Coder boundary, not readiness application code.
++3. **Health:** exit 0 and parsed JSON establish that the command ran. Healthy data reports
++   `runtime-ready`; unhealthy data reports `runtime-not-ready`. Both retain unknown capacity
++   and false dispatch authorization. A timestamp must carry a timezone.
++4. **Reset:** the reset case writes the original fixture again, checks byte-for-byte equality
++   and invokes a fresh process that reports ready again. Each test removes its own temporary
++   directory at completion, including ordinary assertion failures. The readiness command must
++   leave fixture state unchanged on success and failure.
++
++The failure cases cover provider denial (exit 13) and malformed JSON: the application returns
++1, emits no success JSON, and does not echo the fixture's private-data marker. `--all` is
++still reported as permission-scoped visibility, never global company inventory. All five
++tests run with no retries or skips; a subprocess deadline is a failure, not a retry trigger.
++
++These expectations come from the existing [readiness tests](../tests/test_coder_readiness.py)
++and [shared Coder contract](shared-coder-pilot.md), not calculated by the implementation.
++The existing tests cover detailed state mapping; this small suite adds actual process launch,
++argument forwarding, output/exit handling and fixture preservation at the external boundary.
++
++## Prove the checks can reject a defect
++
++In a disposable copy, change the report's `dispatch_authorized` value from `False` to `True`
++in `tools/coder_readiness.py`. The focused command above must fail because the report grants
++permission. Restore the original file and rerun: all five tests must pass. Never change the
++expected value or mutate a developer's working copy to manufacture a passing result.
++
++The existing static gate is `python3 tools/check_repository.py`. In a disposable copy, add
++`tools/pilot_syntax_fixture.py` containing `value = 1`; the gate must pass. Replace it with
++`try:\n    pass\nexcept* Exception:\n    pass\n` using actual newlines; the Python 3.10
++syntax policy must fail. Remove the fixture and rerun successfully. This checks tool-file
++syntax compatibility, JSON, roles, links and documentation paths. It is not a style/type
++linter and cannot enforce semantic correctness, UI design or runtime access boundaries.
++
++## Harnesses and evidence
++
++Codex, Claude Code and OpenCode can run the same shell commands after reading `AGENTS.md`.
++Shared skills remain available through `.agents/skills`; no native goal command or hook is
++needed to run this recipe. Record source revision plus any uncommitted patch, Python version,
++commands/exits, test totals, skips/retries and deliberate-defect red/green output. Use a fresh
++Codex session to reproduce on this machine; other harness model runs are not required.
++
++CLI stdout/stderr and test output are the user-facing artifacts. There is no browser UI or
++deployment in this pilot, so screenshots and preview identity do not apply. It proves local
++CLI integration using fixture provider data, not actual Coder connectivity/RBAC, company fleet
++health, Scinito startup, storage durability or deployed-controller behavior. It performs no
++workspace lifecycle operation or purchase. No live provider output belongs in the evidence.

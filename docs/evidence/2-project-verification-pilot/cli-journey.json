@@ -1,0 +1,22 @@
+{
+  "ready": {
+    "exit": 0,
+    "stdout": "{\n  \"fleet_capacity\": \"unknown\",\n  \"dispatch_authorized\": false,\n  \"workspaces\": [\n    {\n      \"workspace\": \"pilot-workspace\",\n      \"template\": \"workspace-container\",\n      \"version\": \"pilot-v1\",\n      \"outdated\": false,\n      \"observation\": \"runtime-ready\"\n    }\n  ],\n  \"limits\": \"Point-in-time Coder observations only; no cluster capacity, reservation, task fencing or Scinito readiness check.\",\n  \"observed_at\": \"2026-11-16T08:45:13.423385+00:00\",\n  \"scope\": \"all-visible-to-current-user\"\n}\n",
+    "stderr": ""
+  },
+  "unhealthy": {
+    "exit": 0,
+    "stdout": "{\n  \"fleet_capacity\": \"unknown\",\n  \"dispatch_authorized\": false,\n  \"workspaces\": [\n    {\n      \"workspace\": \"pilot-workspace\",\n      \"template\": \"workspace-container\",\n      \"version\": \"pilot-v1\",\n      \"outdated\": false,\n      \"observation\": \"runtime-not-ready\"\n    }\n  ],\n  \"limits\": \"Point-in-time Coder observations only; no cluster capacity, reservation, task fencing or Scinito readiness check.\",\n  \"observed_at\": \"2026-11-16T08:45:13.489280+00:00\",\n  \"scope\": \"all-visible-to-current-user\"\n}\n",
+    "stderr": ""
+  },
+  "reset": {
+    "exit": 0,
+    "stdout": "{\n  \"fleet_capacity\": \"unknown\",\n  \"dispatch_authorized\": false,\n  \"workspaces\": [\n    {\n      \"workspace\": \"pilot-workspace\",\n      \"template\": \"workspace-container\",\n      \"version\": \"pilot-v1\",\n      \"outdated\": false,\n      \"observation\": \"runtime-ready\"\n    }\n  ],\n  \"limits\": \"Point-in-time Coder observations only; no cluster capacity, reservation, task fencing or Scinito readiness check.\",\n  \"observed_at\": \"2026-11-16T08:45:13.567667+00:00\",\n  \"scope\": \"all-visible-to-current-user\"\n}\n",
+    "stderr": ""
+  },
+  "denied": {
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Coder read failed or returned an unsupported response. Check CLI sign-in, connectivity and client/server compatibility locally.\n"
+  }
+}

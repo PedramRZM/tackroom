@@ -1,0 +1,3 @@
+ok: Python 3.10 syntax, JSON, agent roles, skill links, current document links
+
+process exit: 0

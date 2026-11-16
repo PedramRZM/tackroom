@@ -1,0 +1,42 @@
+test_all_scope_remains_visible_only_and_reports_version_mismatch (test_coder_readiness_process.ReadinessProcessTests) ... FAIL
+test_denied_provider_read_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok
+test_malformed_provider_response_fails_without_echoing_raw_output (test_coder_readiness_process.ReadinessProcessTests) ... ok
+test_ready_read_is_observation_not_dispatch_permission (test_coder_readiness_process.ReadinessProcessTests) ... FAIL
+test_unhealthy_state_and_reseed_restore_readiness (test_coder_readiness_process.ReadinessProcessTests) ... FAIL
+
+======================================================================
+FAIL: test_all_scope_remains_visible_only_and_reports_version_mismatch (test_coder_readiness_process.ReadinessProcessTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 96, in test_all_scope_remains_visible_only_and_reports_version_mismatch
+    report = self.successful_report(self.run_probe("--all"))
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 80, in successful_report
+    self.assertIs(report["dispatch_authorized"], False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_ready_read_is_observation_not_dispatch_permission (test_coder_readiness_process.ReadinessProcessTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 86, in test_ready_read_is_observation_not_dispatch_permission
+    report = self.successful_report(self.run_probe())
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 80, in successful_report
+    self.assertIs(report["dispatch_authorized"], False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_unhealthy_state_and_reseed_restore_readiness (test_coder_readiness_process.ReadinessProcessTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 106, in test_unhealthy_state_and_reseed_restore_readiness
+    report = self.successful_report(self.run_probe())
+  File "/tmp/readiness-negative-control-meoi_x3b/tests/test_coder_readiness_process.py", line 80, in successful_report
+    self.assertIs(report["dispatch_authorized"], False)
+AssertionError: True is not False
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.338s
+
+FAILED (failures=3)
+
+process exit: 1

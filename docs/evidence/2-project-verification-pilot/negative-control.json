@@ -1,0 +1,11 @@
+{
+  "copy": "/tmp/readiness-negative-control-meoi_x3b",
+  "source_revision": "19b8f90b709f45ef886909b94d5cf0c9185f746e",
+  "mutation": {
+    "before": "\"dispatch_authorized\": False",
+    "after": "\"dispatch_authorized\": True"
+  },
+  "known_good": "value = 1\n",
+  "known_bad": "try:\n    pass\nexcept* Exception:\n    pass\n",
+  "application_restored": true
+}

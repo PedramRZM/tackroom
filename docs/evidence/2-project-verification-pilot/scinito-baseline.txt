@@ -1,0 +1,124 @@
+ok    typecheck (10s)
+FAIL  lint (83s): pnpm -s lint
+        22:1   warning  `@/src/app/api/research-spaces/[id]/notes/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/research-spaces/[id]/route.test.ts
+         5:1  warning  There should be no empty line within import group                                                                   import/order
+        16:1  warning  `@/src/app/api/research-spaces/[id]/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/research-spaces/route.test.ts
+         6:1  warning  There should be no empty line within import group                                                                import/order
+        27:1  warning  `@/src/app/api/research-spaces/route` import should occur before import of `@/test/integration/helpers/aiMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/research-spaces/users/route.test.ts
+         8:32  error    'vi' is defined but never used. Allowed unused vars must match /^_/u                                                 @typescript-eslint/no-unused-vars
+        11:1   warning  There should be no empty line within import group                                                                    import/order
+        19:1   warning  `@/src/app/api/research-spaces/users/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+        35:7   error    'userAlpha' is assigned a value but never used. Allowed unused vars must match /^_/u                                 @typescript-eslint/no-unused-vars
+        36:7   error    'userBeta' is assigned a value but never used. Allowed unused vars must match /^_/u                                  @typescript-eslint/no-unused-vars
+
+      /home/pedrum/Dev/scinito/test/integration/api/review/[reviewId]/download/route.test.ts
+         4:1  warning  There should be no empty line within import group                                                                         import/order
+        18:1  warning  `@/src/app/api/review/[reviewId]/download/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/review/route.test.ts
+        6:1  warning  `@/test/integration/helpers/mocks` import should occur before import of `@/test/integration/helpers/serviceMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/review/upload/route.test.ts
+        48:11  error  'body' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/chat/[id]/abort/route.test.ts
+        2:1  warning  `next/server` import should occur before import of `vitest`                                                        import/order
+        8:1  warning  `@/test/integration/helpers/mocks` import should occur before import of `@/test/integration/helpers/serviceMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/chat/history/route.test.ts
+        10:7  error  'makeRequest' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/chat/sources/route.test.ts
+        5:1  warning  `@/src/app/api/v2/chat/sources/route` import should occur before import of `@/test/integration/helpers/aiMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/pdf-analysis/documents/route.test.ts
+        3:1  warning  `@/test/integration/helpers/mocks` import should occur before import of `@/test/integration/helpers/serviceMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/review/[reviewId]/route.test.ts
+        5:1  warning  `@/test/integration/helpers/mocks` import should occur before import of `@/test/integration/helpers/serviceMocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/review/history/route.test.ts
+         5:1  warning  There should be no empty line within import group                                                                import/order
+        13:1  warning  `@/src/app/api/v2/review/history/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/api/v2/review/recommender/route.test.ts
+         6:1  warning  There should be no empty line within import group                                                                    import/order
+        13:1  warning  `@/src/app/api/v2/review/recommender/route` import should occur before import of `@/test/integration/helpers/mocks`  import/order
+
+      /home/pedrum/Dev/scinito/test/integration/helpers/mocks.ts
+        4:1  warning  `@/src/server/auth/getUserInfo` import should occur before import of `@/src/server/config`  import/order
+        5:1  warning  `@/src/server/auth/getSession` import should occur before import of `@/src/server/config`   import/order
+
+      /home/pedrum/Dev/scinito/test/setup.ts
+        3:1  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-require-imports')
+
+      ✖ 586 problems (59 errors, 527 warnings)
+        0 errors and 189 warnings potentially fixable with the `--fix` option.
+FAIL  tests (29s): pnpm -s exec jest --silent --testPathIgnorePatterns /node_modules/ /test/e2e/ /test/integration/
+        ● Enhanced Search Query Expander Filter Extraction › should extract multiple filter types from complex query
+
+          Missing value for input variable `availableFields`
+
+          Troubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/INVALID_PROMPT_INPUT/
+
+            at node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1087:19
+                at Array.reduce (<anonymous>)
+            at ChatPromptTemplate.formatMessages (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1078:54)
+            at ChatPromptTemplate.formatPromptValue (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:279:28)
+
+        ● Enhanced Search Query Expander Filter Extraction › should handle queries with implicit filter information
+
+          Missing value for input variable `availableFields`
+
+          Troubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/INVALID_PROMPT_INPUT/
+
+            at node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1087:19
+                at Array.reduce (<anonymous>)
+            at ChatPromptTemplate.formatMessages (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1078:54)
+            at ChatPromptTemplate.formatPromptValue (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:279:28)
+
+        ● Enhanced Search Query Expander Filter Extraction › should handle queries with mixed languages
+
+          Missing value for input variable `availableFields`
+
+          Troubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/INVALID_PROMPT_INPUT/
+
+            at node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1087:19
+                at Array.reduce (<anonymous>)
+            at ChatPromptTemplate.formatMessages (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1078:54)
+            at ChatPromptTemplate.formatPromptValue (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:279:28)
+
+        ● Enhanced Search Query Expander Filter Extraction › should expand queries while maintaining filter extraction
+
+          Missing value for input variable `availableFields`
+
+          Troubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/INVALID_PROMPT_INPUT/
+
+            at node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1087:19
+                at Array.reduce (<anonymous>)
+            at ChatPromptTemplate.formatMessages (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1078:54)
+            at ChatPromptTemplate.formatPromptValue (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:279:28)
+
+        ● Enhanced Search Query Expander Filter Extraction › should handle empty queries gracefully
+
+          Missing value for input variable `availableFields`
+
+          Troubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/INVALID_PROMPT_INPUT/
+
+            at node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1087:19
+                at Array.reduce (<anonymous>)
+            at ChatPromptTemplate.formatMessages (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:1078:54)
+            at ChatPromptTemplate.formatPromptValue (node_modules/.pnpm/@langchain+core@1.1.8_@opentelemetry+api@1.9.1_@opentelemetry+exporter-trace-otlp-proto_e533d45820fab682568e8cded6048912/node_modules/@langchain/core/src/prompts/chat.ts:279:28)
+
+
+      Test Suites: 5 failed, 158 passed, 163 total
+      Tests:       24 failed, 2579 passed, 2603 total
+      Snapshots:   7 passed, 7 total
+      Time:        25.557 s
+2 of 3 checks failed

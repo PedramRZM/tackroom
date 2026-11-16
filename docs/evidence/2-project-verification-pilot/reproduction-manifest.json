@@ -1,0 +1,16 @@
+{
+  "base_revision": "19b8f90b709f45ef886909b94d5cf0c9185f746e",
+  "worktree": "/tmp/agent-dev-infra-tackroom-task2",
+  "fresh_copy": "/tmp/readiness-fresh-codex-a8av27g9",
+  "patch_sha256": "705b14094a1dd2720e2e4c313f8e0efe13df8a4e7eb41b1daf85eb45bffd3ec6",
+  "files": {
+    "tests/test_coder_readiness_process.py": "3424db9609875c43f014a9b2b567e2a77f6b4979880a96de416ac4add7c310a1",
+    "docs/readiness-verification.md": "9426c3a4ecc3f0242c35cbf0b2019556d2c2778ba20c5b6adee0e0344114f314"
+  },
+  "python": "Python 3.10.13",
+  "codex": "codex-cli 0.169.0",
+  "verified_base_file_count": 124,
+  "base_content_digest": "114e0494802c976ae7b459a928052799260180db2b17e4fc97ca8b4374d15007",
+  "fresh_git_head": null,
+  "source_identity_note": "Fresh workspace was a git archive of base plus patch, initialized without a commit. Base files were byte-compared to git show; additions match manifest hashes."
+}
