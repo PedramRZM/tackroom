@@ -9,10 +9,17 @@ The owner requested the 2026-11-15 harness audit, task breakdown and implementat
 authorizes starting task 1; other proposals stay in the inbox for prioritization. No task is
 marked done until the owner accepts it. Work remains uncommitted until requested.
 
+All current and future tasks target setups for Codex, Claude Code and OpenCode. Keep shared
+workflow/skills harness-neutral and add only supported per-harness configuration where needed.
+Codex is the available live validation harness on this machine. Validate the other targets
+through installation, shared-file parity and configuration checks, and name untested runtime
+behavior. Do not block portable setup work on unavailable model access or claim runtime
+equivalence from static checks. This scope is the owner's 2026-11-16 clarification.
+
 | Task | Scope | State |
 |---|---|---|
-| [0](0-verifiable-harness.md) | Epic: verification before implementation | inbox |
-| [1](1-verification-before-implementation.md) | Portable verification planning and tool selection | needs-human: Claude account verification |
+| [0](0-verifiable-harness.md) | Epic: verification before implementation | in-progress |
+| [1](1-verification-before-implementation.md) | Portable verification planning and tool selection | done |
 | [2](2-project-verification-pilot.md) | Startup/seed/reset and critical journey in a real project | inbox |
 | [3](3-verification-workflow-evaluation.md) | Learn from corrections; evaluate old/new guidance on held-out tasks | inbox |
 | [4](4-task-completion-gate-trial.md) | Evaluate an opt-in deterministic completion gate | inbox |

@@ -30,7 +30,9 @@ AC3. Relevant code/design rules have known-good and known-bad fixtures. Check: t
 linter rejects the violation and accepts a valid example, with documented coverage limits.
 AC4. Evidence identifies revision, environment, roles/data, command exits, skip/retry counts
 and UI artifacts. Check: another session reproduces the result; if a preview is necessary,
-its deployment identity matches the tested revision.
+its deployment identity matches the tested revision. Keep the recipe usable from Claude Code,
+Codex and OpenCode. Reproduce it live with Codex here; check the other harness entry points
+and configuration statically, with unavailable runtime verification explicitly recorded.
 
 ## Constraints
 
@@ -42,6 +44,11 @@ cross-project management or assume this template repo is an application.
 Large E2E suites, hosted artifact services and production data.
 
 ## Notes
+
+2026-11-16: Owner requires portable setups across all tasks, with Codex as the live test
+harness here. AC4 distinguishes shared recipe/setup coverage from runtime validation; it
+does not require unavailable Claude/OpenCode model access. The selected app and trusted
+expectations stay the same. This does not authorize changes to an unselected app.
 
 2026-11-15: Needs a chosen target application. Generic instructions cannot supply its seed
 users, routes or trusted expected outputs.

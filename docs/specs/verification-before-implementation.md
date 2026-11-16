@@ -29,6 +29,13 @@ Task 1 updates existing skills and templates with a conditional tool-selection r
 source-backed documentation and scratch exercises. Later tasks trial a real project's setup
 and compare outcomes; optional gate/parallel-work experiments require their own evidence.
 
+Owner clarification, 2026-11-16: every task produces setups for Claude Code, Codex and OpenCode;
+Codex is the available live validation harness here. Task 1 checks shared packaging and live
+Codex planning; task 2 supplies a portable application recipe reproduced in Codex; task 3
+compares old/new guidance in Codex without generalizing effectiveness to other runtimes.
+Validate other harness configuration/installation statically and name untested behavior.
+Unavailable model access is not a completion gate for portable setup work.
+
 Task 3 also closes the feedback loop: human corrections and verified agent mistakes enter the
 existing memory inbox/dream process with provenance, produce one small proposed improvement,
 and are evaluated against the baseline, unseen related cases and clean cases before human

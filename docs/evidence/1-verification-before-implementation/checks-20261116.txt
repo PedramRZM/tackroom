@@ -1,0 +1,12 @@
+ok    compile (0s)
+ok    config-parses (0s)
+ok    codex-agent-parity (0s)
+ok    shared-skill-setup (1s)
+ok    guard-tests (7s)
+ok    root-matches-template (0s)
+ok    instruction-size (0s)
+ok    skill-limits (0s)
+ok    prompts-verbatim (0s)
+ok    skills-validate (1s)
+ok    agents-validate (1s)
+all 11 checks passed

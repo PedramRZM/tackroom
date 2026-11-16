@@ -1,0 +1,11 @@
+diff --git a/template/.claude/skills/write-tests/SKILL.md b/template/.claude/skills/write-tests/SKILL.md
+index 4b3ae2b..dc809f5 100644
+--- a/template/.claude/skills/write-tests/SKILL.md
++++ b/template/.claude/skills/write-tests/SKILL.md
+@@ -33,0 +34,6 @@
++Before returning the plan, check for omitted evidence: persistence claims need assertions at
++the storage boundary; enforcement rules need passing/failing fixtures for each used syntax,
++cost and coverage gaps. For UI, explicitly separate interaction, visual comparison,
++accessibility and representative-user usability evidence, naming what remains unverified.
++A grep or screenshot alone cannot stand in for these checks.
++

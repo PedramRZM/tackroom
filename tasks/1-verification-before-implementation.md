@@ -2,7 +2,7 @@
 id: 1
 title: Choose verification and quality tools before implementation
 type: task
-status: needs-human
+status: done
 priority: p1
 epic: 0
 blocked-by: []
@@ -39,8 +39,11 @@ a behavior change and a copy-only change; inspect the shipped reference.
 AC5. New prescriptions trace to saved primary sources or are explicitly local judgments.
 Check: audit source register, named-page resolution, gap table and `docs/testing.md` links.
 AC6. Packaging remains valid. Check: `scripts/agent/check` passes all checks;
-`tools/setup /tmp/<scratch>` installs the references, followed by a bounded
-`claude -p --setting-sources project` exercise; record unrun harnesses and limitations.
+`tools/setup /tmp/<scratch> --codex --opencode` installs the shared skills and references,
+followed by a bounded live Codex planning exercise with actual skill/reference reads.
+Validate Claude Code and OpenCode setup through packaging/configuration checks and record
+runtime limits separately. Unavailable model access is not a completion gate; do not present
+static validation as successful live behavior in those harnesses.
 
 ## Edge cases and data changes
 
@@ -50,7 +53,8 @@ result, generated token definitions and third-party styles must be reported expl
 ## Constraints
 
 Edit template first, preserve dogfood copies, no new runtime dependencies or mandatory model
-choice. Do not commit, push, publish or modify other projects in this task.
+choice. Original no-commit constraint was superseded by the owner's 2026-11-16 request to
+commit, merge into main and mark done. No push or publication was requested.
 
 ## Out of scope / do not change
 
@@ -58,6 +62,31 @@ Production app lint configurations, a new universal test runner, CI security bou
 new hooks and claimed optimality without measurements.
 
 ## Notes
+
+2026-11-16: Owner accepted the reviewed result and explicitly requested commit, merge to
+main and done status. AC1–6 evidence is in
+`docs/evidence/1-verification-before-implementation/multi-harness.md`; all 11 checks passed
+and independent review found no remaining issues under the clarified scope. Retired the
+completed plan; lasting scope decision is in `docs/decisions/multi-harness-validation.md`.
+
+2026-11-16: Owner clarified the scope: portable setups in every task; live validation here
+uses Codex. AC6 now reflects that explicit instruction, superseding the original mandatory
+Claude exercise and the agent's subsequently over-scoped all-harness live gate. Codex AC1–4
+were demonstrated with executed reads and reviewed plans. Shared installation/configuration
+checks cover all three targets; Claude runtime is unavailable. Exploratory OpenCode runs
+completed but missed planning requirements; preserve this limitation, not a runtime guarantee.
+An unsuccessful five-line guidance candidate was removed. Current branch:
+`task/1-verification-portability`; evidence: `docs/evidence/1-verification-before-implementation/multi-harness.md`.
+Implementation/evidence are ready for owner review; no commit, push or PR is authorized.
+
+2026-11-16 (earlier, superseded by clarification above): resumed for epic 0 on `task/1-verification-claude-evidence`, based on
+`main` at `9f88d9a`. The implementation is already committed in repository history; the
+uncommitted description below is historical. Baseline all 11 checks passed. Fresh
+`tools/setup --tracker files --codex` and the unchanged bounded scenario were retried;
+Claude exited 1 with `is_error: true`, no model response and $0 cost because account
+verification is still required. AC6 remains incomplete. Next: restore Claude account access,
+then repeat the recorded exercise and inspect its actual reads and plans. Evidence:
+`docs/evidence/1-verification-before-implementation/claude-attempt.md`. No commit or push.
 
 2026-11-15: Implementation is present, uncommitted. Local checks and bounded Codex planning
 exercise passed; independent review found no implementation defects. The initial exercise

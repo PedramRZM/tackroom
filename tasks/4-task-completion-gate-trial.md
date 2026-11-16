@@ -17,13 +17,14 @@ adding redundant work or confusing model judgment with independently executed ve
 
 ## Context
 
-`refs/notes/2026-11-13-anthropic-staff-setup-audit.md`, current Claude hooks and goal docs,
-`template/.claude/hooks/stop-check.py`, and task 2's failure evidence.
+`refs/notes/2026-11-13-anthropic-staff-setup-audit.md`, shared guard/stop-check scripts,
+Claude/Codex hook configuration, OpenCode's supported extension points, and task 2's failure evidence.
 
 ## Acceptance criteria
 
-AC1. Define which state is gated: Claude internal task, response stop or tracker transition.
-Check: document the event and its scope against current official docs.
+AC1. Define which state is gated: harness-internal task, response stop or tracker transition.
+Check: document the event and scope for Codex, Claude Code and OpenCode against current official
+docs; identify unsupported equivalents instead of assuming Claude hooks apply everywhere.
 AC2. In scratch only, a failing check blocks the intended completion and a passing check
 allows it. Check: actual event results for failure, success, absent check, timeout and crash.
 AC3. Bound repeated execution and test unrelated tasks. Check: a loop cannot silently consume
@@ -41,5 +42,9 @@ execute an independent check, and textual turn limits are not hard process budge
 Production CI policy and automatic issue closure.
 
 ## Notes
+
+2026-11-16: Owner requires multi-harness setups for every task. If this experiment is selected,
+exercise its supported Codex path live here, check other adapters/configuration statically and
+record runtime limitations. Unavailable Claude/OpenCode access is not a completion gate.
 
 2026-11-15: Conditional experiment inherited from the prior staff audit, not a required feature.

@@ -173,6 +173,12 @@ Per `docs/principles.md` (6 and 12), try each on real work and delete guidance t
 ## Verification before implementation
 
 The missing connection was a pre-code verification plan, rather than another testing tool.
+
+The [2026-11-16 cross-harness trial](evidence/1-verification-before-implementation/multi-harness.md)
+found that OpenCode read the shared guidance but omitted required checks. A five-line omission
+reminder did not resolve the failures in a fresh run and was removed. Codex's planning runs
+passed; Claude's account restriction prevented a response. These are planning observations,
+not evidence of universal compliance or a controlled usefulness comparison.
 The workflow now asks the implementer to record a compact mapping in the task or existing plan:
 
 **criterion/example → expected result and its source → risk → smallest sufficient check/tool

@@ -31,6 +31,9 @@ AC1. Held-out tasks cover a bug, business rule, UI state, token violation and tr
 Check: freeze expected outcomes and scoring before running either configuration.
 AC2. Old/new configurations use the same model, budget and fixtures with repeated trials.
 Check: retain transcripts, tool exits, costs and failure evidence; do not score by self-report.
+Run the live old/new comparison with Codex here and keep shared guidance/installations usable
+by Claude Code and OpenCode. Report their unmeasured runtime effectiveness explicitly; if
+those runtimes become available, compare within each harness rather than pooling results.
 AC3. Report defect detection, unnecessary tests/dependencies, false alarms, flakiness and
 elapsed/cost differences. Check: reproducible table with denominators and limitations.
 AC4. Make a keep/change/remove recommendation. Check: every retained prescription has an
@@ -73,6 +76,11 @@ Automatic promotion of instruction changes, model/provider selection, a feedback
 service, new native transcript exporters, or cross-project synchronization.
 
 ## Notes
+
+2026-11-16: Owner clarified multi-harness setup scope for all tasks, with only Codex required
+for live validation here. AC2 preserves portable artifacts while limiting empirical claims
+to the harness actually evaluated. Unavailable Claude/OpenCode access does not block this
+comparison; results must not be generalized to their runtime behavior.
 
 2026-11-15: Owner requested adding learning from human feedback and agent mistakes. Expanded
 this inbox task accordingly; this is an authorized scope addition, not a change to make an

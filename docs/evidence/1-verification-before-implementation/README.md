@@ -1,5 +1,13 @@
 # Task 1 evidence
 
+Latest evidence, 2026-11-16: [multi-harness setup and Codex validation](multi-harness.md).
+The owner clarified that every task targets portable setups, with Codex used for live validation
+here. Shared packaging and live Codex planning pass; unavailable Claude access is no longer a
+task gate. Exploratory OpenCode plans failed requirements and remain negative evidence.
+No extra guidance was retained from the unsuccessful correction trial. The implementation
+described below is now committed in history; the following records describe the original run
+and its original Claude-specific acceptance gate, superseded by the owner's clarification.
+
 2026-11-15. Base: `main` at `b8ce42c`; branch:
 `task/1-verification-before-implementation`. Changes are uncommitted.
 

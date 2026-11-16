@@ -7,7 +7,7 @@ and `refs/notes/model-routes-glm-deepseek-kimi.md`.
 **Validation scope:** the original setup was tried with Claude Code and config loading in
 OpenCode 1.3.10. On 2026-11-15, local inspection also found Codex CLI 0.169.0 with native goals
 enabled. Installation/feature detection is not validation of the full Codex harness; see
-the current [task evidence](plans/1-verification-before-implementation.md) for the limited
+the current [task evidence](evidence/1-verification-before-implementation/multi-harness.md) for the limited
 scratch exercise. Kimi Code, Qwen Code, Gemini CLI and vendor endpoints remain documentation-only.
 
 On 2026-11-16, a fresh combined setup also passed actual Codex/OpenCode discovery of all 12

@@ -209,7 +209,7 @@ This audit covers the named page titles and relevant saved evidence, not all tho
 corpus items, every staff member's posts, or every Office Hours episode. The exact context/spec
 reply and community hierarchy remain unverified. No source text was treated as instructions.
 Baseline repository checks passed (all 10). Final implementation evidence is recorded in
-`docs/plans/1-verification-before-implementation.md`; no claim of optimal test ratios follows
+`docs/evidence/1-verification-before-implementation/multi-harness.md`; no claim of optimal test ratios follows
 from this research.
 
 Fifteen primary references were newly saved, including the later Codex clarification.

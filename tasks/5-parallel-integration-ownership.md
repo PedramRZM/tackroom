@@ -41,4 +41,8 @@ Global agent configuration or additional paid services.
 
 ## Notes
 
+2026-11-16: Owner requires multi-harness setups for every task. Keep ownership and review
+guidance shared across Codex, Claude Code and OpenCode; exercise it live in Codex here and
+check other harness packaging/configuration without claiming unrun runtime equivalence.
+
 2026-11-15: Optional follow-up; existing independent review remains the default.
