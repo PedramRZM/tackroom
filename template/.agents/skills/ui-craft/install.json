@@ -1,0 +1,11 @@
+{
+  "base": false,
+  "applies_to": "UI applications, independent of framework",
+  "requires": [
+    "verify",
+    "write-tests"
+  ],
+  "profiles": {
+    "ui": "Apps with a user interface"
+  }
+}

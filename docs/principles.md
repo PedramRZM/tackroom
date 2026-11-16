@@ -27,7 +27,7 @@ shipped `check` is a convenience of mine; replace it with the project's exact co
 
 ## 2. What must always happen is a hook or a rule, not a sentence
 
-Template: `.claude/hooks/guard.py` blocks reads of secret-looking files, recursive deletes of
+Template: `.agents/hooks/guard.py` blocks reads of secret-looking files, recursive deletes of
 the repository or home, force-pushes and pushes to a protected branch. `stop-check.py` runs the
 quick checks when a turn ends with changed files and sends failures back. Preferences stay in
 prose.

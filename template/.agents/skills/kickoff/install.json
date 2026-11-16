@@ -1,0 +1,8 @@
+{
+  "base": false,
+  "applies_to": "New projects before implementation",
+  "requires": [],
+  "profiles": {
+    "new-project": "Start a new application"
+  }
+}

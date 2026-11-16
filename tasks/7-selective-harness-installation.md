@@ -2,7 +2,7 @@
 id: 7
 title: Install a shared harness selectively from any app
 type: epic
-status: inbox
+status: in-progress
 priority: p1
 epic:
 blocked-by: []
@@ -45,6 +45,11 @@ policy in `docs/decisions/multi-harness-validation.md` and report runtime gaps.
 Cross-project management, background updates, global configuration and authoring new skills.
 
 ## Notes
+
+2026-11-16: Owner explicitly requested start and finish of the epic, then added easy sync
+that preserves project memory and dream reports. Task 11 extends the original scope with
+project-local update tracking; the no-update exclusion in task 10 is superseded for task 11.
+No global registry or background sync is introduced. Original acceptance criteria remain intact.
 
 2026-11-16: Filed from the owner's request. Suggested order: 8 → 9 → 10. Publishing these
 planning files to main does not mean the installer has been implemented.

@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "agents": {
+    "claude": {
+      "CLAUDE.md": {
+        "format": "text",
+        "value": "@AGENTS.md\n\n<!--\nClaude Code reads this file; Codex, OpenCode and the others read AGENTS.md. The import above\ngives Claude the same text, so write shared guidance in AGENTS.md and put only Claude-specific\nnotes below this comment. Keep the two files side by side: if CLAUDE.md is deleted Claude Code\nfalls back to AGENTS.md on its own, but a CLAUDE.md without the import hides AGENTS.md from it.\n-->\n"
+      },
+      ".claude/settings.json": {
+        "format": "json",
+        "value": {
+          "$schema": "https://json.schemastore.org/claude-code-settings.json",
+          "permissions": {
+            "allow": [
+              "Bash(scripts/agent/check *)",
+              "Bash(scripts/agent/next-task *)",
+              "Bash(scripts/agent/ratchet *)"
+            ],
+            "ask": [
+              "Bash(gh pr merge *)",
+              "Bash(dangerouslyDisableSandbox:true)"
+            ],
+            "deny": [
+              "Read(.env)",
+              "Read(.env.*)",
+              "Read(!.env.example)",
+              "Read(!.env.sample)",
+              "Read(!.env.template)",
+              "Read(*.pem)",
+              "Read(id_rsa)",
+              "Read(id_ed25519)",
+              "Read(~/.aws/**)",
+              "Read(~/.gnupg/**)",
+              "Read(~/.kube/**)",
+              "Read(~/.netrc)",
+              "Read(~/.git-credentials)",
+              "Read(~/.docker/config.json)"
+            ]
+          },
+          "sandbox": {
+            "credentials": {
+              "envVars": [
+                {
+                  "name": "ANTHROPIC_API_KEY",
+                  "mode": "deny"
+                },
+                {
+                  "name": "ANTHROPIC_AUTH_TOKEN",
+                  "mode": "deny"
+                },
+                {
+                  "name": "ZAI_API_KEY",
+                  "mode": "deny"
+                },
+                {
+                  "name": "DEEPSEEK_API_KEY",
+                  "mode": "deny"
+                },
+                {
+                  "name": "MOONSHOT_API_KEY",
+                  "mode": "deny"
+                },
+                {
+                  "name": "KIMI_API_KEY",
+                  "mode": "deny"
+                }
+              ]
+            },
+            "network": {
+              "allowedDomains": [
+                "registry.npmjs.org",
+                "pypi.org",
+                "files.pythonhosted.org",
+                "crates.io",
+                "static.crates.io",
+                "index.crates.io"
+              ]
+            }
+          },
+          "hooks": {
+            "PreToolUse": [
+              {
+                "matcher": "Bash|Read|Edit|Write|NotebookEdit",
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "/usr/bin/python3",
+                    "args": [
+                      "${CLAUDE_PROJECT_DIR}/.agents/hooks/guard.py"
+                    ],
+                    "timeout": 10,
+                    "onFailure": "block"
+                  }
+                ]
+              }
+            ],
+            "PostToolUse": [
+              {
+                "matcher": "Edit|Write",
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "/usr/bin/python3",
+                    "args": [
+                      "${CLAUDE_PROJECT_DIR}/.agents/hooks/format.py"
+                    ],
+                    "timeout": 30
+                  }
+                ]
+              }
+            ],
+            "Stop": [
+              {
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "/usr/bin/python3",
+                    "args": [
+                      "${CLAUDE_PROJECT_DIR}/.agents/hooks/stop-check.py"
+                    ],
+                    "timeout": 300,
+                    "statusMessage": "Running quick checks"
+                  }
+                ]
+              }
+            ],
+            "SessionStart": [
+              {
+                "matcher": "startup|resume|compact",
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "${CLAUDE_PROJECT_DIR}/.agents/hooks/session-context.sh",
+                    "args": [],
+                    "timeout": 10
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "codex": {
+      ".codex/config.toml": {
+        "format": "text",
+        "value": "#:schema https://developers.openai.com/codex/config-schema.json\n# Project settings for Codex. Loaded only after you trust this project in Codex.\n# Written from the Codex documentation (0.167, November 2026). UI skill discovery/read was\n# exercised with CLI 0.169; full hook/permission behavior is not validated. Check and adjust.\n# Shared project skills are in ../.agents/skills/ (including ui-craft), not this directory.\n#\n# A model provider cannot be chosen here: Codex ignores `model_provider` and `model_providers`\n# in project config. See docs/model-routes.md in tackroom for the launcher approach.\n\napproval_policy = \"on-request\"\nsandbox_mode = \"workspace-write\"\n\n[sandbox_workspace_write]\nnetwork_access = false\n\n# By default Codex passes variables whose names contain KEY, SECRET or TOKEN through to the\n# commands it runs. Turn that off so a command cannot pick up API keys from the environment.\n[shell_environment_policy]\nignore_default_excludes = false\n"
+      },
+      ".codex/hooks.json": {
+        "format": "json",
+        "value": {
+          "description": "Shares the guard and stop-check scripts with Claude Code (.agents/hooks/). Codex asks you to review and trust each hook before it runs, and again whenever a script changes.",
+          "hooks": {
+            "PreToolUse": [
+              {
+                "matcher": "Bash|apply_patch",
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/.agents/hooks/guard.py\"",
+                    "timeout": 10,
+                    "statusMessage": "Checking against project guardrails"
+                  }
+                ]
+              }
+            ],
+            "Stop": [
+              {
+                "hooks": [
+                  {
+                    "type": "command",
+                    "command": "/usr/bin/python3 \"$(git rev-parse --show-toplevel)/.agents/hooks/stop-check.py\"",
+                    "timeout": 300,
+                    "statusMessage": "Running quick checks"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "opencode": {
+      "opencode.json": {
+        "format": "json",
+        "value": {
+          "$schema": "https://opencode.ai/config.json",
+          "permission": {
+            "read": {
+              "*": "allow",
+              "*.env": "deny",
+              "*.env.*": "deny",
+              "*.env.example": "allow",
+              "*.pem": "deny",
+              "*id_rsa": "deny",
+              "*id_ed25519": "deny"
+            },
+            "edit": {
+              "*": "allow",
+              ".agents/memory/*": "deny",
+              ".agents/memory/inbox.md": "allow",
+              "*.env": "deny",
+              "*.env.*": "deny"
+            },
+            "bash": {
+              "*": "ask",
+              "ls*": "allow",
+              "pwd": "allow",
+              "cat *": "allow",
+              "head *": "allow",
+              "tail *": "allow",
+              "wc *": "allow",
+              "grep *": "allow",
+              "rg *": "allow",
+              "find *": "allow",
+              "git status*": "allow",
+              "git diff*": "allow",
+              "git log*": "allow",
+              "git show*": "allow",
+              "git branch*": "allow",
+              "git switch *": "allow",
+              "git add *": "allow",
+              "git commit *": "allow",
+              "scripts/agent/check*": "allow",
+              "scripts/agent/next-task*": "allow",
+              "scripts/agent/ratchet*": "allow",
+              "cat *.env*": "deny",
+              "git push*": "ask",
+              "git push*--force*": "deny",
+              "git push* -f*": "deny",
+              "git push* main": "deny",
+              "git push* master": "deny",
+              "gh pr merge*": "ask"
+            },
+            "external_directory": "ask",
+            "doom_loop": "ask"
+          },
+          "provider": {
+            "zai": {
+              "npm": "@ai-sdk/openai-compatible",
+              "name": "Z.ai GLM (coding plan)",
+              "options": {
+                "baseURL": "https://api.z.ai/api/coding/paas/v4",
+                "apiKey": "{env:ZAI_API_KEY}"
+              },
+              "models": {
+                "glm-5.3": {
+                  "name": "GLM-5.3",
+                  "limit": {
+                    "context": 1000000,
+                    "output": 65536
+                  }
+                },
+                "glm-5.3-flash": {
+                  "name": "GLM-5.3 Flash",
+                  "limit": {
+                    "context": 1000000,
+                    "output": 65536
+                  }
+                }
+              }
+            },
+            "deepseek-direct": {
+              "npm": "@ai-sdk/openai-compatible",
+              "name": "DeepSeek",
+              "options": {
+                "baseURL": "https://api.deepseek.com",
+                "apiKey": "{env:DEEPSEEK_API_KEY}"
+              },
+              "models": {
+                "deepseek-flash": {
+                  "name": "DeepSeek Flash",
+                  "limit": {
+                    "context": 1000000,
+                    "output": 65536
+                  }
+                },
+                "deepseek-v4-pro": {
+                  "name": "DeepSeek V4 Pro",
+                  "limit": {
+                    "context": 1000000,
+                    "output": 65536
+                  }
+                }
+              }
+            },
+            "kimi": {
+              "npm": "@ai-sdk/openai-compatible",
+              "name": "Moonshot Kimi (platform)",
+              "options": {
+                "baseURL": "https://api.moonshot.ai/v1",
+                "apiKey": "{env:MOONSHOT_API_KEY}"
+              },
+              "models": {
+                "kimi-k3.1-pro": {
+                  "name": "Kimi K3.1 Pro",
+                  "limit": {
+                    "context": 1000000,
+                    "output": 65536
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

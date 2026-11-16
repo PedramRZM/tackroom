@@ -1,0 +1,12 @@
+{
+  "base": true,
+  "applies_to": "All projects",
+  "requires": [
+    "write-tests",
+    "verify",
+    "second-opinion",
+    "wrap-up",
+    "spec"
+  ],
+  "profiles": {}
+}

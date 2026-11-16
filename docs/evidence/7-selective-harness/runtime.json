@@ -1,0 +1,32 @@
+{
+  "scratch": "/tmp/tackroom-epic7-live-vuyldgmm",
+  "codex": {
+    "version": "0.169.0",
+    "exit_code": 0,
+    "commands": [
+      {
+        "command": "/usr/bin/zsh -lc 'pwd && ls -ld .agents .agents/skills .agents/skills/ui-craft .agents/skills/verify .codex .claude 2>/dev/null; cat .agents/skills/ui-craft/SKILL.md .agents/skills/ui-craft/references/motion.md .agents/skills/verify/SKILL.md .codex/hooks.json'",
+        "exit_code": 0,
+        "output_sha256": "258db6e01f85adcc58312c652efa69ed5ae779b57bb0bd8752c4cc187ec0ddc7"
+      },
+      {
+        "command": "/usr/bin/zsh -lc 'ls -ld .agents/hooks .agents/hooks/guard.py .agents/hooks/stop-check.py .agents/skills/ui-craft/SKILL.md .agents/skills/ui-craft/references/motion.md .agents/skills/verify/SKILL.md .codex/hooks.json; if [ -d .claude ]; then ls -ld .claude; else test ! -e .claude && echo '\"'.claude: absent'; fi\"",
+        "exit_code": 0,
+        "output_sha256": "51207b41dca35de1dabe10b8f11bbced80d6ef4559a43fcd926801a367a3c13e"
+      }
+    ],
+    "limit": "Project-local config was untrusted and disabled. File reading proves discovery/path usability, not hook enforcement."
+  },
+  "claude": {
+    "is_error": true,
+    "api_error_status": 403,
+    "api_error_code": "verification_required",
+    "total_cost_usd": 0
+  },
+  "opencode": "Static config and installation checks only; no provider call.",
+  "not_run": [
+    "full trusted hook/permission lifecycle",
+    "vendor launcher live endpoint",
+    "live OpenCode model"
+  ]
+}

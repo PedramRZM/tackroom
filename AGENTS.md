@@ -3,13 +3,14 @@
 A personal library of agentic coding setups, built from a saved body of research. `template/`
 mirrors a project root and is copied into projects by hand (or with `tools/setup`). `refs/` is
 the research. `docs/` explains the choices and cites the research. This repository does not
-manage other projects: no registry, no sync, no drift tracking. That was decided by the owner.
+manage other projects: no registry or background sync. Explicit project-local updates preserve
+local edits and project memory; the owner requested this on 2026-11-16.
 
 ## Checks
 
 - `scripts/agent/check` runs everything: compile, config parsing, the guard hook's tests, the
   size limits, and Claude Code's own validators. `scripts/agent/check --quick` skips the validators.
-- Guard hook tests alone: `template/.claude/hooks/tests/test_guard.sh`
+- Guard hook tests alone: `template/.agents/hooks/tests/test_guard.sh`
 - Research index: `tools/refs index`. New or changed sources: `tools/refs watch`.
 
 Before saying work is done, run the checks and show their output. A change to a hook, a skill
@@ -19,8 +20,9 @@ been run under Codex, and the vendor launchers have not been run against a live 
 
 ## How this repository works
 
-- Change `template/` first. The root `.claude/`, `CLAUDE.md` and three `scripts/agent/` files
-  are copies kept for dogfooding, and the check fails when they differ from `template/`.
+- Change `template/` first; shared skills/hooks/briefs live in `template/.agents/`. Run
+  `tools/render-harness --write --dogfood` to refresh generated root adapters and links. The template has no native agent directories.
+  The check fails on stale generated files. Never edit generated adapters separately.
 - A rule, skill, hook or workflow in `template/` should trace to a source in `refs/`. Cite it
   in `docs/`. Something that cannot be tied to a source is labelled as a judgement call.
 - Prefer removing guidance to adding it. Instruction files are read every session.

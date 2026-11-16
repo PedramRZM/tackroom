@@ -50,9 +50,9 @@ The thinking behind it, in order of how much it matters:
    git, and a separate pass (`/dream`) rereads finished sessions, fixes the notes, and proposes
    changes to the instructions for you to accept or reject.
 8. **Each project owns its copy.** You copy the template into a project and then it is that
-   project's code. There is no package to install and nothing to keep in sync. Projects differ,
+   project's code. There is no package to install. Explicit updates preserve local edits and project memory. Projects differ,
    and harness parts go out of date as models improve, so each project should prune and adapt
-   its own copy. Take improvements from here by hand when you want them.
+   its own copy. Use `--update` to receive unchanged harness files; merge conflicts by hand.
 9. **Everything says how far to trust it.** Each part says whether it was run and observed,
    written from documentation only, or not done. A setup that claims more than it has shown
    teaches you to stop checking.
@@ -100,14 +100,16 @@ word with their sources. The check verifies the quotes against the saved texts.
 
 | Path | What it is |
 |---|---|
-| `template/` | The harness. It mirrors a project root, so its files go where they would live in your project. |
+| `template/` | Agent-neutral harness sources. The CLI generates native agent configuration from them. |
 | `docs/` | Why the template is shaped this way, with citations. Start with `principles.md`. |
 | `refs/` | The research: the index of sources and the distilled notes. |
 | `prompts/` | Reusable prompts, quoted from their authors. |
 | `tools/` | `setup` copies the template into a project. `refs` fetches and indexes the research. |
 
-This repository runs on its own template. The root `.claude/`, `CLAUDE.md` and
-`scripts/agent/` files are copies of `template/`, and the check fails if they drift apart.
+This repository runs on its own template. Shared content lives under `template/.agents/`;
+the CLI generates native config in each destination. There are no per-agent setup directories
+in the template. `tools/render-harness --write --dogfood` refreshes this repository's gitignored
+runtime outputs and skill links. Add a skill in one folder; no second registry needs editing.
 
 ### What a project gets
 
@@ -118,7 +120,7 @@ This repository runs on its own template. The root `.claude/`, `CLAUDE.md` and
 - **Guardrails**: hooks that block reading secret-looking files, wide deletes, force-pushes,
   pushes to protected branches and merges. Sandbox settings are included, switched off until
   you have checked they work on your machine.
-- **Skills**: twelve of them, each doing one thing. The model can call eight of them: `spec`,
+- **Skills**: nine base skills and three optional skills, each doing one thing. The model can call eight of them: `spec`,
   `task`, `verify`, `write-tests`, `performance`, `ui-craft`, `second-opinion` and `wrap-up`. Four only run
   when you start them, so they cost no context until then: `kickoff`, `dream`, `careful` and
   `lock-tests`.
@@ -140,23 +142,28 @@ This repository runs on its own template. The root `.claude/`, `CLAUDE.md` and
 
 ## Put it in a project
 
-    tools/setup ~/code/my-app                 # Claude Code; asks whether tasks live in issues or files
-    tools/setup ~/code/my-app --codex --opencode --tracker files --dry-run
+From your app directory (Python 3.10+, curl, Linux/macOS/WSL):
 
-It copies the files that are missing and lists the ones it left alone. It never overwrites,
-commits or keeps track of anything. Copying by hand works too:
-`cp -rn template/. ~/code/my-app/`.
+```sh
+set -o pipefail
+curl -fsSL https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install | python3 - --agents codex
+```
 
-Then, in the project:
+Choose `claude`, `codex`, `opencode`, or a comma-separated combination. Add `--profile ui`
+for UI craft, `--skills performance` for performance work, or `--profile new-project` for
+kickoff. The common base is always included; optional skills are selected explicitly.
+Use `--dry-run` to preview and `--list` to see the catalog.
 
-1. Fill in `AGENTS.md`: the name, the three commands, the first gotcha. Keep it short.
-2. Put the project's real commands in `scripts/agent/check` and run it.
-3. In `WORKFLOW.md`, keep the tracker line that applies.
-4. Start Claude Code there once and accept the trust prompt, so the hooks and allow rules load.
-5. Optional: run `/sandbox` to turn on the Bash sandbox (read `docs/claude-code.md` first).
+Get the latest harness changes later, keeping the same selections:
 
-For a brand-new project, `/kickoff` takes you from an idea to a small, running repository that
-an agent can work in.
+```sh
+curl -fsSL https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install | python3 - --update
+```
+
+Updates replace only unchanged managed harness files. Local edits are kept and reported.
+Project memory, dream reports, transcripts and notes are preserved. No central registry or
+background sync. See [installation and updates](docs/installation.md) for revision pinning,
+conflicts, local-checkout usage, legacy flags and the post-install customization steps.
 
 ## How far to trust it
 

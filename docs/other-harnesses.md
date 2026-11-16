@@ -31,19 +31,20 @@ hook/permission workflow or make Claude-specific controls portable.
 So the template keeps one copy of what can be shared and a thin file per harness:
 
 - `AGENTS.md` and `WORKFLOW.md` are the shared text.
-- Skills live in `.claude/skills/`. Every `tools/setup` run links each one into `.agents/skills/`,
-  which is where Codex, Kimi Code and Qwen Code look. Only `name` and `description` are
+- Skills live in `.agents/skills/`. Selected Claude skills link there from `.claude/skills/`;
+  Codex and OpenCode can be installed independently without a Claude setup. Only `name` and `description` are
   universally portable front matter. Other metadata and enforcement differ by host; OpenCode
   recognizes `disable-model-invocation`, but Claude skill hooks and tool restrictions do not
   automatically become equivalent controls elsewhere. `ui-craft` needs only the portable fields.
 - The hook scripts (`guard.py`, `stop-check.py`) are shared with Codex, which uses the same
   contract: JSON on stdin, exit code 2 to block.
 - Claude and Codex both ship `reviewer`, `memory-analyzer` and `memory-organizer`.
-  Their descriptions and instruction bodies match; OpenCode has its own reviewer.
+  Their descriptions and instruction bodies are generated from `.agents/briefs/` and
+  each brief's sibling metadata; OpenCode's reviewer uses that same canonical brief with its native metadata.
 
 ## Codex
 
-`template/.codex/`: approvals on request, a workspace-write sandbox with the network off, and a
+Generated `.codex/`: approvals on request, a workspace-write sandbox with the network off, and a
 setting that stops Codex passing variables named like keys or tokens to the commands it runs
 (by default it passes them through). Hooks point at the shared scripts.
 
@@ -72,7 +73,7 @@ Limits to know (`refs/notes/harness-codex-opencode-standards.md`, section 1):
 
 ## OpenCode
 
-`template/opencode.json`: read rules that deny env files and keys, edit rules that keep curated
+Generated `opencode.json`: read rules that deny env files and keys, edit rules that keep curated
 memory read-only, and a shell allowlist with everything else set to ask. It is written with the
 1.x key names, which 2.x still loads.
 
@@ -89,7 +90,7 @@ memory read-only, and a shell allowlist with everything else set to ask. It is w
 ## Kimi Code, Qwen Code, Gemini CLI
 
 From their documentation only (`refs/notes/model-routes-glm-deepseek-kimi.md`): Kimi Code and
-Qwen Code read `AGENTS.md` and `.agents/skills/` directly, so a default `tools/setup` gives them
+Qwen Code read `AGENTS.md` and `.agents/skills/` directly, so a selected base install gives them
 the shared files; `--codex` is only needed for Codex-specific configuration.
 Gemini CLI reads `GEMINI.md` unless `context.fileName` in
 `.gemini/settings.json` names `AGENTS.md`. None of their own config is in the template.

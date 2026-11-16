@@ -1,0 +1,8 @@
+{
+  "description": "Reads one session transcript and updates the project memory in .agents/memory with what it shows. Used only by the dream skill, one instance per transcript.",
+  "claude": {
+    "tools": "Read, Write, Edit, Glob, Grep",
+    "model": "haiku"
+  },
+  "codex": {}
+}

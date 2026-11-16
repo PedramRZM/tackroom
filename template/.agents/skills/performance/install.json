@@ -1,0 +1,9 @@
+{
+  "base": false,
+  "applies_to": "Measured performance work in any stack",
+  "requires": [
+    "verify",
+    "write-tests"
+  ],
+  "profiles": {}
+}

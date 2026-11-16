@@ -2,7 +2,7 @@
 id: 10
 title: Bootstrap the selected harness from GitHub without a local checkout
 type: task
-status: inbox
+status: in-progress
 priority: p1
 epic: 7
 blocked-by: [9]

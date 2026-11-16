@@ -8,7 +8,13 @@ can fetch the template from GitHub without a local tackroom checkout. All common
 one maintained source under `template/`.
 
 Scope is authorized in [decision 0001](../decisions/0001-selective-harness-installation.md).
-This document specifies future behavior; it does not describe a shipped CLI.
+The implementation and update commands are described in [installation](../installation.md).
+
+**Owner follow-up, 2026-11-16:** easy sync/updates are now required, while project memory,
+dream reports, transcripts and notes must remain intact. [Task 11](../../tasks/11-safe-harness-updates.md)
+supersedes the original no-update exclusion below. It adds only per-project fingerprints and
+remembered choices, no central registry or background service. Locally edited harness files
+are preserved and reported; unchanged managed files can receive upstream updates.
 
 ## Starting point
 

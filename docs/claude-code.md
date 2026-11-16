@@ -107,7 +107,7 @@ will prompt and you can allow it locally.
   manager's shim added about 0.2 seconds to every tool call on the build machine.
 - The guard is fail-closed (`onFailure: "block"`): if the script itself crashes, the tool call
   is blocked. That is loud on purpose. If every tool call is being refused, run
-  `template/.claude/hooks/tests/test_guard.sh` to see why.
+  `template/.agents/hooks/tests/test_guard.sh` to see why.
 - On Linux and macOS Claude Code searches through Bash, not through Grep and Glob tools, so the
   guard watches Bash commands for secret file names as well
   (`refs/notes/claude-code-docs-settings-security.md`, closing notes).

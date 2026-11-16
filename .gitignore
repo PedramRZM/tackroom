@@ -16,3 +16,8 @@ refs/articles/**/article.md
 refs/videos/**/transcript.md
 refs/videos/**/captions.vtt
 refs/posts/**/post.md
+
+# Native dogfooding files are generated from template/; never author copies here.
+/.claude/
+/.codex/agents/
+/CLAUDE.md

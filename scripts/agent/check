@@ -16,28 +16,23 @@ full() { [ "$quick" -eq 0 ] && run "$@"; return 0; }
 
 py() { uv run --quiet --no-project --python '>=3.11' python "$@"; }
 compile_all() {
-  python3 -m py_compile template/.claude/hooks/*.py template/scripts/agent/next-task \
-    template/.claude/skills/dream/scripts/*.py template/scripts/agent/ratchet tools/setup &&
-  py -m py_compile tools/refs.py tools/check-codex-agents.py tools/check-skill-setup.py &&
-  bash -n template/.claude/hooks/session-context.sh template/scripts/agent/check \
+  python3 -m py_compile template/.agents/hooks/*.py template/scripts/agent/next-task \
+    template/.agents/skills/dream/scripts/*.py template/scripts/agent/ratchet tools/setup tools/install tools/render-harness &&
+  py -m py_compile tools/refs.py tools/check-codex-agents.py tools/check-skill-setup.py tools/test_setup.py &&
+  bash -n template/.agents/hooks/session-context.sh template/scripts/agent/check \
     template/scripts/agent/claude-with template/scripts/agent/github-labels tools/refs
 }
 parse_config() {
   py -c "
 import json, tomllib
 from pathlib import Path
-for f in ('template/.claude/settings.json', 'template/opencode.json', 'template/.codex/hooks.json'):
-    json.load(open(f))
-for f in [*Path('template/.codex').rglob('*.toml'), Path('refs/sources/watch.toml')]:
-    tomllib.load(open(f, 'rb'))
+json.load(open('template/.agents/adapters.json'))
+tomllib.load(open('refs/sources/watch.toml', 'rb'))
 "
 }
 # This repository runs on its own template. The copy at the root must not drift from template/.
-same_as_template() {
-  diff -r -x tests -x __pycache__ -x settings.local.json -x worktrees template/.claude .claude &&
-  diff template/CLAUDE.md CLAUDE.md &&
-  for f in next-task claude-with keys.example ratchet; do diff "template/scripts/agent/$f" "scripts/agent/$f" || return 1; done
-}
+same_as_template() { python3 tools/render-harness; }
+
 short_instructions() { # AGENTS.md files are read every session; keep them small
   local n; for f in AGENTS.md template/AGENTS.md; do n=$(wc -l < "$f"); [ "$n" -le 100 ] || { echo "$f has $n lines (limit 100)"; return 1; }; done
 }
@@ -46,7 +41,7 @@ skill_limits() { # portable skill front matter: name matches folder, description
 import re, sys
 from pathlib import Path
 bad = []
-for skill in sorted(Path("template/.claude/skills").iterdir()):
+for skill in sorted(Path("template/.agents/skills").iterdir()):
     text = (skill / "SKILL.md").read_text()
     front = text.split("---", 2)[1]
     name = re.search(r"(?m)^name:\s*(.+)$", front).group(1).strip()
@@ -80,15 +75,17 @@ PY
 
 run  compile            compile_all
 run  config-parses      parse_config
+run  generated-harness  python3 tools/render-harness
+run  installer-tests    python3 tools/test_setup.py
 run  codex-agent-parity  py tools/check-codex-agents.py
 run  shared-skill-setup  python3 tools/check-skill-setup.py
-run  guard-tests        template/.claude/hooks/tests/test_guard.sh
+run  guard-tests        template/.agents/hooks/tests/test_guard.sh
 run  root-matches-template same_as_template
 run  instruction-size   short_instructions
 run  skill-limits       skill_limits
 run  prompts-verbatim   prompts_verbatim
-full skills-validate    claude plugin validate template/.claude/skills
-full agents-validate    claude plugin validate template/.claude/agents
+full skills-validate    claude plugin validate template/.agents/skills
+full agents-validate    claude plugin validate .claude/agents
 
 [ "$failed" -eq 0 ] && echo "all $ran checks passed" || echo "$failed of $ran checks failed"
 [ "$failed" -eq 0 ]

@@ -2,7 +2,7 @@
 id: 8
 title: Centralize shared harness content and catalog optional capabilities
 type: task
-status: inbox
+status: in-progress
 priority: p1
 epic: 7
 blocked-by: []

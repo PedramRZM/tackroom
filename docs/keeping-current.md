@@ -53,7 +53,7 @@ that it prevents recurrence; evaluate a proposed change before adopting it.
 
 ## Changing the template
 
-- Edit `template/`, then copy to the root (`.claude/`, `CLAUDE.md`, the three scripts) and run
+- Edit canonical files in `template/`, run `tools/render-harness --write --dogfood`, then run
   `scripts/agent/check`. The check fails if the root copies differ.
 - Try a changed hook, skill or settings file in a scratch project before relying on it:
   `tools/setup /tmp/<name> --codex --opencode`, then exercise it with the available harness.

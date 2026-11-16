@@ -6,13 +6,11 @@ skill had substantial coverage. Copying that whole skill would import unrelated 
 framework assumptions and considerable context. The new `ui-craft` skill keeps a short entry
 point and loads craft, motion/vocabulary and verification references only when applicable.
 
-The different name also avoids the known personal/project skill-name collision. No global
-personal configuration was changed. Every `tools/setup` run now creates `.agents/skills/` links,
-including the default and OpenCode-only paths. `--codex` only adds Codex-specific configuration.
-The template's shared `AGENTS.md` points directly to UI craft for agents without skill discovery.
-The links are also present in `template/.agents/skills/` itself, so copying the template with
-symlinks preserved works without running the installer. Codex does not need a `.codex/skills/`
-directory; `.codex/` holds its configuration, hooks and agent definitions.
+The different name avoids the known personal/project skill-name collision. No global
+personal configuration is changed. Select `--profile ui` or `--skills ui-craft` during install.
+Canonical skills live in `template/.agents/skills/`; Claude discovery links point there, while
+Codex and OpenCode read `.agents/skills/` directly. UI craft and its resources are absent from
+base-only installations. See [installation](installation.md) for selection and updates.
 
 ## Every requested detail
 

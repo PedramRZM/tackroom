@@ -1,0 +1,8 @@
+{
+  "description": "Tidies the whole project memory in .agents/memory after the analyzers have finished. Merges duplicates, resolves conflicts, completes the index. Used only by the dream skill, once per run.",
+  "claude": {
+    "tools": "Read, Write, Edit, Glob, Grep",
+    "model": "haiku"
+  },
+  "codex": {}
+}

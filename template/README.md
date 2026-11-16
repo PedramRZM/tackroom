@@ -1,62 +1,31 @@
 # template/
 
-A project root in miniature. Copy what you want into a project (`tools/setup <project>` does it
-without overwriting anything). This file is not copied.
+The agent-neutral source of the harness. There are no native agent setup directories here.
+The CLI reads these sources and builds native configuration only in the destination project.
+See [installation and updates](../docs/installation.md).
 
-## Every project
-
-| File | What it is for | After copying |
-|---|---|---|
-| `AGENTS.md` | The instructions every harness reads at session start | Fill in; keep under about 100 lines |
-| `CLAUDE.md` | One line that imports `AGENTS.md` for Claude Code | Leave as is |
-| `WORKFLOW.md` | How a task moves from idea to merged | Keep the tracker line that applies |
-| `scripts/agent/check` | The one command that says the repository is healthy | Replace the detection with real commands |
-| `scripts/agent/next-task` | Picks the next ready task by a fixed rule | Nothing |
-| `scripts/agent/ratchet` | Guards a number so it can only get better | Call it from `check` for what you measure |
-| `.agents/memory/` | Project memory: index, inbox, files written by the dream pass | Nothing |
-| `.agents/skills/` | Shared skill links shipped in the template, including UI craft; Codex discovers these | Keep their `.claude/skills/` targets with them |
-| `docs/decisions/`, `docs/specs/`, `docs/plans/` | Decision records, specs for larger work, plans in flight | Nothing |
-| `.github/pull_request_template.md` | Evidence per acceptance criterion, risk, how to revert | Nothing |
-| `gitignore.additions` | Lines appended to the project's `.gitignore` | Nothing |
-
-## Claude Code (`.claude/`)
-
-| File | What it does |
+| Source | Author here once |
 |---|---|
-| `settings.json` | Permission rules, sandbox configuration, the four hooks |
-| `hooks/guard.py` | Blocks secret files, wide deletes, force-push, pushes to protected branches, writes to curated memory |
-| `hooks/stop-check.py` | Runs the quick checks when a turn ends with changes, and sends failures back once |
-| `hooks/format.py` | Formats an edited file with the project's own formatter, if it has one |
-| `hooks/session-context.sh` | Prints branch, task id and plan file at session start |
-| `hooks/tests/test_guard.sh` | Tests for the guard (not copied into projects) |
-| `skills/verify` | Prove a change works: checks, behaviour, evidence per criterion |
-| `skills/ui-craft` | Stable states, typography/icons, intent-aware motion and interaction checks |
-| `skills/spec` | Turn a request into tasks with acceptance criteria |
-| `skills/task` | Work one task through to a pull request |
-| `skills/write-tests` | Which level to test at, and how to write a test that can fail |
-| `skills/performance` | Measure, change one thing, prove the gain, guard it |
-| `skills/second-opinion` | Fresh-context review against the task |
-| `skills/wrap-up` | Leave the work so a new session can continue |
-| `skills/kickoff` | From an idea to a small, running, agent-ready repository (you start it) |
-| `skills/dream` | Review finished sessions, correct memory, propose instruction changes (you start it) |
-| `skills/careful` | Block destructive commands for the session (you start it) |
-| `skills/lock-tests` | Block edits to tests for the session (you start it) |
-| `agents/reviewer.md` | The reviewer used by `second-opinion` |
-| `agents/memory-analyzer.md`, `agents/memory-organizer.md` | The two workers of the dream pass |
+| `AGENTS.md`, `WORKFLOW.md` | Common instructions and task workflow |
+| `.agents/skills/<name>/SKILL.md` and resources | Skill text, references and scripts |
+| `.agents/skills/<name>/install.json` | That skill's base/optional status, applicability, dependencies and profiles |
+| `.agents/hooks/` | Shared hook implementations |
+| `.agents/briefs/<name>.md` and sibling JSON | Shared agent instructions, description and supported native metadata |
+| `.agents/adapters.json` | Native configuration definitions; CLI builds selected output files |
+| `scripts/agent/` | Check placeholder, task selection, ratchet and optional vendor launcher |
+| `.agents/memory/`, `docs/`, `tasks/` | Initial project skeletons; existing knowledge is never updated |
+| `.github/` | PR template and optional issue tracker forms |
+| `gitignore.additions` | Missing entries appended to a project's ignore file |
 
-## Task tracking: one of
+Add or edit a skill only in its folder. The CLI discovers it without a separate maintained
+catalog or generated manifest. Common briefs render into native agent files at install time;
+Claude discovery links point to the same `.agents/skills/` read by Codex and OpenCode.
+Native controls still differ; no equivalent enforcement is claimed where a host lacks it.
 
-| Files | For |
-|---|---|
-| `.github/ISSUE_TEMPLATE/task.yml`, `epic.yml`, `scripts/agent/github-labels` | Tasks as GitHub issues |
-| `tasks/TEMPLATE.md`, `tasks/README.md` | Tasks as files in the repository |
+For this repository's own runtime, run `tools/render-harness --write --dogfood`, then
+`scripts/agent/check`. Generated native root files are gitignored. They are outputs, not sources.
+Copying this directory alone no longer installs native configuration: use the CLI to generate it.
 
-## Optional
-
-| Files | For | Status |
-|---|---|---|
-| `.codex/config.toml`, `hooks.json`, `agents/reviewer.toml` | Codex | From documentation; not run |
-| `opencode.json`, `.opencode/agents/reviewer.md` | OpenCode | Config loads in 1.3.10; nothing else tried |
-| `scripts/agent/claude-with`, `scripts/agent/keys.example` | Claude Code on GLM, DeepSeek or Kimi endpoints | From vendor documentation; not run |
-
-Why each piece exists, and what it rests on: `../docs/principles.md`.
+After installation, customize `AGENTS.md` and `scripts/agent/check`, select the workflow tracker,
+and review native trust prompts. Later `--update` remembers choices, updates unchanged harness
+files, preserves local edits, and never overwrites existing memory, dream reports or project notes.

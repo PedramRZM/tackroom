@@ -1,130 +1,523 @@
 #!/usr/bin/env python3
-"""Copy the template into one project. A convenience for doing by hand what `cp` would do.
-
-    tools/setup <project-dir> [--codex] [--opencode] [--tracker issues|files] [--dry-run]
-
-Always copied: AGENTS.md, CLAUDE.md, WORKFLOW.md, .claude/ (settings, hooks, skills, agents),
-.agents/memory/, scripts/agent/, docs/ skeleton, the pull request template.
-Always linked: .agents/skills/<name> to the shared skills in .claude/skills/.
---codex      adds .codex/ configuration, hooks and agents
---opencode   adds opencode.json and .opencode/
---tracker    issues: GitHub issue forms and the label script; files: tasks/
-             (default: issues when the project has a github.com remote, otherwise files)
-
-Existing files are never overwritten: they are listed as "kept" so you can compare by hand.
-Nothing is committed. This script keeps no record of what it copied and manages nothing
-afterwards; the project owns the files from here on.
-"""
-
+"""Install/update selected tackroom files. Python 3.10+, standard library only."""
 from __future__ import annotations
-
 import argparse
+import hashlib
+import json
 import os
-import shutil
+import posixpath
+import re
+import stat
 import subprocess
 import sys
-from pathlib import Path
+import tempfile
+import urllib.parse
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path, PurePosixPath
 
-TEMPLATE = Path(__file__).resolve().parent.parent / "template"
-CODEX = (".codex/",)
-OPENCODE = ("opencode.json", ".opencode/")
-ISSUES = (".github/ISSUE_TEMPLATE/", "scripts/agent/github-labels")
-FILES = ("tasks/",)
-NEVER = ("gitignore.additions", "README.md")
-
-
-def selected(rel: str, args: argparse.Namespace) -> bool:
-    def under(groups: tuple[str, ...]) -> bool:
-        return any(rel == g or rel.startswith(g) for g in groups)
-
-    if rel in NEVER or "/tests/" in rel or "__pycache__" in rel:
-        return False
-    if under(CODEX):
-        return args.codex
-    if under(OPENCODE):
-        return args.opencode
-    if under(ISSUES):
-        return args.tracker == "issues"
-    if under(FILES):
-        return args.tracker == "files"
-    return True
+TEMPLATE = Path(__file__).resolve().parent.parent / 'template'
+REPO = 'PedramRZM/tackroom'
+API = 'https://api.github.com'
+RAW = 'https://raw.githubusercontent.com'
+STATE = '.agents/tackroom-install.json'
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("project")
-    parser.add_argument("--codex", action="store_true")
-    parser.add_argument("--opencode", action="store_true")
-    parser.add_argument("--tracker", choices=("issues", "files"))
-    parser.add_argument("--dry-run", action="store_true")
-    args = parser.parse_args()
+def digest(data):
+    return hashlib.sha256(data).hexdigest()
 
-    project = Path(args.project).expanduser().resolve()
-    if not project.is_dir():
-        sys.exit(f"not a directory: {project}")
-    if project == TEMPLATE.parent or TEMPLATE in project.parents or project == TEMPLATE:
-        sys.exit("that is the template repository itself")
-    if not args.tracker:
-        remote = subprocess.run(["git", "-C", str(project), "remote", "get-url", "origin"],
-                                capture_output=True, text=True, check=False).stdout
-        args.tracker = "issues" if "github.com" in remote else "files"
 
-    copied, kept = [], []
-    for source in sorted(TEMPLATE.rglob("*")):
-        if source.is_dir():
+def path_ok(value):
+    if (not isinstance(value, str) or not value or '\\' in value
+            or any(ord(c) < 32 for c in value) or value.startswith('/')
+            or any(p in ('', '.', '..', '.git') for p in value.split('/'))):
+        raise ValueError(f'unsafe path: {value!r}')
+    return value
+
+
+def protected(path):
+    return path.startswith(('.agents/memory/', 'docs/', 'tasks/')) or path == '.agents/dream-report.md'
+
+
+def fetch(url):
+    request = urllib.request.Request(url, headers={'User-Agent': 'tackroom-installer'})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = response.read(8 * 1024 * 1024 + 1)
+        if len(data) > 8 * 1024 * 1024:
+            raise ValueError(f'download too large: {url}')
+        return data
+
+
+def resolve_revision(ref):
+    if re.fullmatch(r'[0-9a-f]{40}', ref):
+        return ref
+    result = json.loads(fetch(f'{API}/repos/{REPO}/commits/{urllib.parse.quote(ref, safe="")}'))
+    sha = result.get('sha', '')
+    if not re.fullmatch(r'[0-9a-f]{40}', sha):
+        raise ValueError('GitHub did not return a commit SHA')
+    return sha
+
+
+def git_digest(data):
+    return hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+
+
+def inventory(template):
+    entries = {}
+    for path in sorted(template.rglob('*')):
+        rel = path.relative_to(template).as_posix()
+        if '__pycache__' in rel or '/tests/' in rel or rel == 'README.md':
             continue
-        rel = source.relative_to(TEMPLATE).as_posix()
-        if not selected(rel, args):
+        if path.is_symlink():
+            raise ValueError(f'canonical template must not contain symlinks: {rel}')
+        if path.is_file():
+            entries[rel] = {'mode': 0o755 if path.stat().st_mode & 0o111 else 0o644,
+                            'sha256': digest(path.read_bytes())}
+    return entries
+
+
+def remote_inventory(revision):
+    prefix = f'{API}/repos/{REPO}/git/trees/'
+    root = json.loads(fetch(prefix + revision))
+    if root.get('truncated'):
+        raise ValueError('truncated root tree')
+    matches = [p for p in root['tree'] if p['path'] == 'template' and p['type'] == 'tree']
+    if len(matches) != 1 or not re.fullmatch(r'[0-9a-f]{40}', matches[0]['sha']):
+        raise ValueError('missing template tree')
+    tree = json.loads(fetch(prefix + matches[0]['sha'] + '?recursive=1'))
+    if tree.get('truncated'):
+        raise ValueError('truncated template tree')
+    entries = {}
+    for item in tree['tree']:
+        rel = path_ok(item['path'])
+        if item['type'] == 'tree':
             continue
-        target = project / rel
-        if target.exists() or target.is_symlink():
-            kept.append(rel)
+        if item['type'] != 'blob' or item['mode'] not in ('100644', '100755'):
+            raise ValueError(f'unsupported source type: {rel}')
+        if not re.fullmatch(r'[0-9a-f]{40}', item['sha']) or rel in entries:
+            raise ValueError(f'invalid source entry: {rel}')
+        if '__pycache__' in rel or '/tests/' in rel or rel == 'README.md':
             continue
-        copied.append(rel)
-        if not args.dry_run:
+        entries[rel] = {'mode': int(item['mode'], 8) & 0o777, 'git_sha1': item['sha']}
+    return entries
+
+
+def conditions(path):
+    parts = path.split('/')
+    if path.startswith('.agents/skills/'):
+        return ['skill:' + parts[2]]
+    if path in ('scripts/agent/claude-with', 'scripts/agent/keys.example'):
+        return ['agent:claude']
+    if path.startswith('.github/ISSUE_TEMPLATE/') or path == 'scripts/agent/github-labels':
+        return ['tracker:issues']
+    if path.startswith('tasks/'):
+        return ['tracker:files']
+    return []
+
+
+def build_catalog(entries, read):
+    """Discover source metadata and render native files in memory, never into template/."""
+    adapters = json.loads(read('.agents/adapters.json'))
+    if adapters.get('version') != 1 or set(adapters['agents']) != {'claude', 'codex', 'opencode'}:
+        raise ValueError('unsupported adapter definitions')
+    skills, profiles, briefs = {}, {}, {}
+    for rel in sorted(entries):
+        parts = rel.split('/')
+        if len(parts) == 4 and parts[:2] == ['.agents', 'skills'] and parts[3] == 'install.json':
+            name = parts[2]
+            skills[name] = json.loads(read(rel))
+            for profile, description in skills[name].pop('profiles', {}).items():
+                if profile in profiles and profiles[profile]['description'] != description:
+                    raise ValueError(f'conflicting profile descriptions: {profile}')
+                profiles.setdefault(profile, {'description': description, 'skills': []})['skills'].append(name)
+        elif rel.startswith('.agents/briefs/') and rel.endswith('.json'):
+            name = Path(rel).stem
+            briefs[name] = json.loads(read(rel))
+    actual_skills = {p.split('/')[2] for p in entries if p.startswith('.agents/skills/')}
+    if actual_skills != set(skills):
+        raise ValueError('each skill needs its own install.json metadata')
+    bodies = {Path(p).stem for p in entries if p.startswith('.agents/briefs/') and p.endswith('.md')}
+    if bodies != set(briefs):
+        raise ValueError('each brief needs matching markdown and metadata')
+    files, generated = {}, {}
+    for rel, entry in entries.items():
+        if rel == '.agents/adapters.json' or (rel.startswith('.agents/briefs/') and rel.endswith('.json')) or (rel.startswith('.agents/skills/') and rel.endswith('/install.json')):
+            continue
+        if rel.startswith(('.claude/', '.codex/', '.opencode/')) or rel in ('CLAUDE.md', 'opencode.json'):
+            raise ValueError(f'native output cannot be a template source: {rel}')
+        files[rel] = {**entry, 'select': conditions(rel)}
+
+    def emit(path, data, select):
+        path_ok(path)
+        if path in files:
+            raise ValueError(f'adapter output collides: {path}')
+        generated[path] = data.encode('utf-8')
+        files[path] = {'sha256': digest(generated[path]), 'mode': 0o644, 'select': select}
+
+    for agent, definitions in adapters['agents'].items():
+        for path, definition in definitions.items():
+            if definition['format'] == 'json':
+                text = json.dumps(definition['value'], indent=2) + '\n'
+            elif definition['format'] == 'text' and isinstance(definition['value'], str):
+                text = definition['value']
+            else:
+                raise ValueError(f'unknown adapter format: {path}')
+            emit(path, text, ['agent:' + agent])
+    for name, meta in briefs.items():
+        body = read(f'.agents/briefs/{name}.md').decode('utf-8').strip() + '\n'
+        for agent in ('claude', 'codex', 'opencode'):
+            if agent not in meta:
+                continue
+            if agent == 'codex':
+                data = {'name': name, 'description': meta['description'], **meta[agent], 'developer_instructions': body}
+                text = '# Generated by tackroom from the shared brief.\n' + '\n'.join(f'{k} = {json.dumps(v)}' for k, v in data.items()) + '\n'
+                path = f'.codex/agents/{name}.toml'
+            else:
+                front = {'description': meta['description'], **meta[agent]}
+                if agent == 'claude':
+                    front = {'name': name, **front}
+                header = '\n'.join(f'{k}: {json.dumps(v)}' for k, v in front.items())
+                text = f'---\n{header}\n---\n\n{body}'
+                path = f'.{agent}/agents/{name}.md'
+            emit(path, text, ['agent:' + agent])
+    for name in skills:
+        files[f'.claude/skills/{name}'] = {'link': f'../../.agents/skills/{name}', 'select': ['agent:claude', 'skill:' + name]}
+    catalog = {'version': 1, 'agents': ['claude', 'codex', 'opencode'], 'skills': skills, 'profiles': profiles, 'files': files}
+    validate_catalog(catalog)
+    return catalog, generated
+
+
+def validate_catalog(catalog):
+    if catalog.get('version') != 1 or catalog['agents'] != ['claude', 'codex', 'opencode']:
+        raise ValueError('unsupported catalog version or agents')
+    skills, profiles, files = catalog['skills'], catalog['profiles'], catalog['files']
+    visiting, visited = set(), set()
+
+    def visit(name):
+        if name not in skills:
+            raise ValueError(f'unknown skill dependency: {name}')
+        if name in visiting:
+            raise ValueError(f'cyclic skill dependency: {name}')
+        if name in visited:
+            return
+        if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', name):
+            raise ValueError(f'invalid skill name: {name}')
+        if type(skills[name]['base']) is not bool or not skills[name]['applies_to']:
+            raise ValueError(f'invalid skill metadata: {name}')
+        visiting.add(name)
+        for dep in skills[name]['requires']:
+            visit(dep)
+        visiting.remove(name)
+        visited.add(name)
+    for name in skills:
+        visit(name)
+        if f'.agents/skills/{name}/SKILL.md' not in files:
+            raise ValueError(f'missing skill source: {name}')
+    for profile in profiles.values():
+        for name in profile['skills']:
+            visit(name)
+    valid = {'agent:' + a for a in catalog['agents']} | {'skill:' + s for s in skills} | {'tracker:files', 'tracker:issues'}
+    for path, entry in files.items():
+        path_ok(path)
+        if path == STATE or path.startswith('.agents/memory/.transcripts/') or path == '.agents/dream-report.md':
+            raise ValueError(f'project-owned path in catalog: {path}')
+        if not isinstance(entry['select'], list) or not set(entry['select']) <= valid:
+            raise ValueError(f'unknown selection for {path}')
+        if 'link' in entry:
+            link = entry['link']
+            if not isinstance(link, str) or '\\' in link or link.startswith('/'):
+                raise ValueError(f'unsafe link: {path}')
+            resolved = posixpath.normpath(posixpath.join(posixpath.dirname(path), link))
+            path_ok(resolved)
+            targets = [p for p in files if p == resolved or p.startswith(resolved + '/')]
+            if not targets or any('link' in files[p] for p in targets):
+                raise ValueError(f'missing or chained link target: {path}')
+            if any(not set(files[p]['select']) <= set(entry['select']) for p in targets):
+                raise ValueError(f'unselected link target: {path}')
+        elif entry['mode'] not in (0o644, 0o755) or not (re.fullmatch(r'[0-9a-f]{64}', entry.get('sha256', '')) or re.fullmatch(r'[0-9a-f]{40}', entry.get('git_sha1', ''))):
+            raise ValueError(f'invalid file metadata: {path}')
+        if any(str(parent) in files for parent in PurePosixPath(path).parents if str(parent) != '.'):
+            raise ValueError(f'file/directory collision: {path}')
+    if 'gitignore.additions' not in files:
+        raise ValueError('missing ignore-file source')
+
+
+def safe_target(project, rel):
+    path_ok(rel)
+    target = project / rel
+    for parent in reversed(target.parents):
+        if parent == project or project in parent.parents:
+            if parent.is_symlink():
+                try:
+                    parent.resolve().relative_to(project)
+                except (ValueError, RuntimeError):
+                    raise ValueError(f'symlink parent escapes project: {parent}') from None
+                if not parent.is_dir():
+                    raise ValueError(f'broken symlink parent: {parent}')
+            if parent.exists() and not parent.is_dir():
+                raise ValueError(f'not a directory: {parent}')
+    if target.is_symlink():
+        try:
+            target.resolve().relative_to(project)
+        except (ValueError, RuntimeError):
+            raise ValueError(f'link escapes project: {rel}') from None
+    resolved = target.resolve().relative_to(project).as_posix()
+    if protected(resolved) and not protected(rel):
+        raise ValueError(f'harness path aliases project data: {rel}')
+    return target
+
+
+def fingerprint(path):
+    if path.is_symlink():
+        return {'link': os.readlink(path)}
+    if not path.exists():
+        return None
+    info = path.stat()
+    if not stat.S_ISREG(info.st_mode) or info.st_nlink > 1:
+        return {'special': True}
+    return {'sha256': digest(path.read_bytes()), 'mode': stat.S_IMODE(info.st_mode)}
+
+
+def desired(entry):
+    return {k: entry[k] for k in ('link', 'sha256', 'mode') if k in entry}
+
+
+def read_state(project):
+    path = safe_target(project, STATE)
+    if path.is_symlink() or (path.exists() and fingerprint(path).get('special')):
+        raise ValueError('installation state must be a regular file')
+    if not path.exists():
+        return None
+    state = json.loads(path.read_text())
+    if state.get('version') != 1 or not isinstance(state['files'], dict):
+        raise ValueError('invalid installation state; preserve it and compare manually')
+    for rel in state['files']:
+        path_ok(rel)
+    return state
+
+
+def csv(values):
+    return sorted({name for value in (values or []) for name in value.split(',') if name})
+
+
+def selection(args, catalog, previous):
+    old = previous['selection'] if previous else {}
+    legacy = args.legacy or args.codex or args.opencode
+    if legacy and (args.agents or args.skills or args.profile):
+        raise ValueError('legacy flags cannot be combined with --agents/--skills/--profile')
+    if legacy:
+        print('Legacy selection: Claude plus requested adapters and all skills. Prefer --agents.')
+        agents = ['claude'] + (['codex'] if args.codex else []) + (['opencode'] if args.opencode else [])
+        skills, profiles = sorted(catalog['skills']), []
+    else:
+        agents = csv(args.agents) if args.agents is not None else old.get('agents', [])
+        skills = csv(args.skills) if args.skills is not None else old.get('skills', [])
+        profiles = csv(args.profile) if args.profile is not None else old.get('profiles', [])
+    if not agents:
+        raise ValueError('select --agents claude,codex,opencode (one or more); use --list to see options')
+    for values, available, kind in ((agents, catalog['agents'], 'agent'), (skills, catalog['skills'], 'skill'), (profiles, catalog['profiles'], 'profile')):
+        unknown = set(values) - set(available)
+        if unknown:
+            raise ValueError(f'unknown {kind}: {", ".join(sorted(unknown))}')
+    selected = {name for name, meta in catalog['skills'].items() if meta['base']} | set(skills)
+    for name in profiles:
+        selected.update(catalog['profiles'][name]['skills'])
+    pending = list(selected)
+    while pending:
+        for name in catalog['skills'][pending.pop()]['requires']:
+            if name not in selected:
+                selected.add(name)
+                pending.append(name)
+    tracker = args.tracker or old.get('tracker')
+    if not tracker:
+        try:
+            remote = subprocess.run(['git', '-C', str(args.project), 'remote', 'get-url', 'origin'], capture_output=True, text=True).stdout
+        except FileNotFoundError:
+            remote = ''
+        tracker = 'issues' if 'github.com' in remote else 'files'
+    choices = {'agents': sorted(agents), 'skills': skills, 'profiles': profiles, 'tracker': tracker}
+    conditions = {'agent:' + a for a in agents} | {'skill:' + s for s in selected} | {'tracker:' + tracker}
+    return choices, {p: e for p, e in catalog['files'].items() if set(e['select']) <= conditions}
+
+
+def atomic_write(path, data, mode):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, temporary = tempfile.mkstemp(prefix='.tackroom-', dir=path.parent)
+    try:
+        with os.fdopen(fd, 'wb') as handle:
+            handle.write(data)
+            os.fchmod(handle.fileno(), mode)
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary):
+            os.unlink(temporary)
+
+
+def install(project, files, payloads, choices, previous, source, update=False, dry_run=False):
+    baseline = dict(previous['files']) if previous else {}
+    actions, conflicts = [], []
+    for rel, entry in sorted(files.items()):
+        if rel == 'gitignore.additions':
+            continue
+        target = safe_target(project, rel)
+        current, want = fingerprint(target), desired(entry)
+        if protected(rel) and (current is not None or previous):
+            if current and (current.get('special') or ('link' in current and not target.is_file())):
+                print(f'  conflict (kept project data; required file is not readable): {rel}')
+                conflicts.append(rel)
+            else:
+                print(f'  kept project data: {rel}')
+        elif current is None:
+            actions.append(('add', rel, entry, current))
+            baseline[rel] = want
+        elif current == want:
+            print(f'  kept: {rel}')
+            baseline[rel] = want
+        elif update and baseline.get(rel) == want and not current.get('special') and (target.is_dir() if 'link' in entry else target.is_file()):
+            print(f'  kept local customization (source unchanged): {rel}')
+        elif update and baseline.get(rel) == current and not current.get('special'):
+            actions.append(('update', rel, entry, current))
+            baseline[rel] = want
+        else:
+            print(f'  conflict (kept local): {rel}')
+            conflicts.append(rel)
+    # Never prune old paths: they may be used by project code or contain local knowledge.
+    for rel in sorted(set(baseline) - set(files)):
+        print(f'  retained unselected/obsolete: {rel}')
+    ignore = safe_target(project, '.gitignore')
+    before_ignore = fingerprint(ignore)
+    if ignore.is_symlink() or (before_ignore and before_ignore.get('special')):
+        raise ValueError('.gitignore must be a regular file, not a link or directory')
+    original = ignore.read_bytes() if ignore.exists() else b''
+    wanted = payloads['gitignore.additions'].decode('utf-8').splitlines()
+    present = original.decode('utf-8').splitlines()
+    missing = [line for line in wanted if line and not line.startswith('#') and line not in present]
+    ignore_data = original
+    if missing:
+        ignore_data += b'\n' if original and not original.endswith(b'\n') else b''
+        ignore_data += ('\n# agent tooling (from tackroom)\n' + '\n'.join(missing) + '\n').encode()
+        print('  ' + ('would update' if dry_run else 'update') + ': .gitignore (add missing entries)')
+    state_path = safe_target(project, STATE)
+    state_before = fingerprint(state_path)
+    state = {'version': 1, 'source': source, 'selection': choices, 'files': baseline}
+    state_data = (json.dumps(state, indent=2, sort_keys=True) + '\n').encode()
+    for action, rel, _, _ in actions:
+        print(f'  {"would " if dry_run else ""}{action}: {rel}')
+    print(f'  {"would record" if dry_run else "record"}: {STATE}')
+    if not dry_run:
+        for _, rel, _, before in actions:
+            if fingerprint(safe_target(project, rel)) != before:
+                raise ValueError(f'file changed during install: {rel}')
+        if fingerprint(ignore) != before_ignore or fingerprint(state_path) != state_before:
+            raise ValueError('project metadata changed during install; rerun')
+        for _, rel, entry, _ in actions:
+            target = safe_target(project, rel)
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(source, target)  # keeps the executable bit
-
-    links = []
-    for skill in sorted((TEMPLATE / ".claude/skills").iterdir()):
-        link = project / ".agents/skills" / skill.name
-        if link.exists() or link.is_symlink():
-            kept.append(f".agents/skills/{skill.name}")
-            continue
-        links.append(f".agents/skills/{skill.name}")
-        if not args.dry_run:
-            link.parent.mkdir(parents=True, exist_ok=True)
-            os.symlink(f"../../.claude/skills/{skill.name}", link)
-
-    ignore = project / ".gitignore"
-    wanted = [line for line in (TEMPLATE / "gitignore.additions").read_text(encoding="utf-8").splitlines()]
-    present = set(ignore.read_text(encoding="utf-8").splitlines()) if ignore.exists() else set()
-    missing = [line for line in wanted if line and (line.startswith("#") or line not in present)]
-    add_ignore = any(not line.startswith("#") and line not in present for line in wanted if line)
-    if add_ignore and not args.dry_run:
-        with ignore.open("a", encoding="utf-8") as handle:
-            handle.write(("\n" if present else "") + "\n".join(missing) + "\n")
-
-    verb = "would copy" if args.dry_run else "copied"
-    print(f"{project}\n  tracker: {args.tracker}   codex: {args.codex}   opencode: {args.opencode}")
-    print(f"  {verb} {len(copied)} files" + (f", linked {len(links)} skills into .agents/skills" if links else ""))
-    for rel in copied:
-        print(f"    + {rel}")
-    if kept:
-        print(f"  kept {len(kept)} existing (compare with template/ by hand):")
-        for rel in kept:
-            print(f"    = {rel}")
-    if add_ignore:
-        print("  .gitignore: " + ("would add" if args.dry_run else "added") + " the agent tooling entries")
-    print("\nNext, in the project:")
-    print("  1. Fill in AGENTS.md (name, the three commands, the first gotcha). Keep it short.")
-    print("  2. Put the real commands in scripts/agent/check and run it.")
-    print("  3. In WORKFLOW.md, keep the tracker line that applies and delete the other.")
-    if args.tracker == "issues":
-        print("  4. Run scripts/agent/github-labels once to create the labels.")
-    print("  5. Start your chosen harness there and review its project trust/configuration prompts.")
+            if 'link' in entry:
+                if target.is_symlink() or target.is_file():
+                    target.unlink()
+                target.symlink_to(entry['link'])
+            else:
+                atomic_write(target, payloads[rel], entry['mode'])
+        if missing:
+            atomic_write(ignore, ignore_data, before_ignore['mode'] if before_ignore else 0o644)
+        if not state_path.exists() or state_path.read_bytes() != state_data:
+            atomic_write(state_path, state_data, 0o644)
+    if conflicts:
+        print(f'Incomplete: {len(conflicts)} local conflicts preserved; compare with the selected source. No force overwrite.')
+        return 2
+    print('Dry run complete; no project files changed.' if dry_run else 'Harness installed. Project data preserved.')
+    print('Next: customize AGENTS.md and scripts/agent/check; review WORKFLOW.md and agent trust prompts.')
     return 0
 
 
-if __name__ == "__main__":
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('project', nargs='?', default='.', help='existing project directory (default: current)')
+    parser.add_argument('--agents', action='append', help='comma-separated claude,codex,opencode; repeatable')
+    parser.add_argument('--skills', action='append', help='optional skill names, comma-separated; repeatable')
+    parser.add_argument('--profile', action='append', help='optional app profile, e.g. ui; repeatable')
+    parser.add_argument('--tracker', choices=('issues', 'files'))
+    parser.add_argument('--list', action='store_true', help='show agents, base/optional skills and profiles')
+    parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--update', action='store_true', help='update unchanged managed files; remember previous selections')
+    parser.add_argument('--legacy', action='store_true', help='old default: Claude and all skills')
+    parser.add_argument('--codex', action='store_true', help='legacy: add Codex to Claude and all skills')
+    parser.add_argument('--opencode', action='store_true', help='legacy: add OpenCode to Claude and all skills')
+    parser.add_argument('--remote', action='store_true', help='fetch from GitHub instead of this checkout')
+    parser.add_argument('--ref', default='main', help='GitHub branch, tag or full commit SHA (default: main)')
+    args = parser.parse_args(argv)
+    try:
+        project = Path(args.project).expanduser().absolute()
+        for parent in (project, *project.parents):
+            if parent.is_symlink():
+                raise ValueError(f'symlink project path: {parent}')
+        project = project.resolve()
+        if not project.is_dir():
+            raise ValueError(f'not a directory: {project}')
+        if not args.list and (project == TEMPLATE.parent or project == TEMPLATE or TEMPLATE in project.parents):
+            raise ValueError('cannot install into the template repository itself')
+        args.project = project
+        remote = args.remote or not TEMPLATE.is_dir()
+        if remote:
+            revision = resolve_revision(args.ref)
+            prefix = f'{RAW}/{REPO}/{revision}/template/'
+            raw_read = lambda rel: fetch(prefix + urllib.parse.quote(rel, safe='/'))
+            entries = remote_inventory(revision)
+            source = {'repository': REPO, 'commit': revision}
+            print(f'Source: {REPO}@{revision}')
+        else:
+            entries = inventory(TEMPLATE)
+            raw_read = lambda rel: (TEMPLATE / rel).read_bytes()
+            source = {'local': str(TEMPLATE)}
+            print(f'Source: {TEMPLATE}')
+        cache = {}
+        def read(rel):
+            if rel not in cache:
+                entry = entries[rel]
+                data = raw_read(rel)
+                actual = git_digest(data) if 'git_sha1' in entry else digest(data)
+                expected = entry.get('git_sha1', entry.get('sha256'))
+                if actual != expected:
+                    raise ValueError(f'content hash mismatch: {rel}')
+                cache[rel] = data
+            return cache[rel]
+        metadata = [rel for rel in entries if rel == '.agents/adapters.json'
+                    or rel.startswith('.agents/briefs/') or rel.endswith('/install.json')]
+        with ThreadPoolExecutor(max_workers=8 if remote else 1) as pool:
+            list(pool.map(read, metadata))
+        catalog, generated = build_catalog(entries, read)
+        if args.list:
+            print('Agents: ' + ', '.join(catalog['agents']))
+            for name, meta in catalog['skills'].items():
+                print(f'  {name}: {"base" if meta["base"] else "optional"} — {meta["applies_to"]} (requires: {", ".join(meta["requires"]) or "none"})')
+            for name, meta in catalog['profiles'].items():
+                print(f'Profile {name}: {meta["description"]} — {", ".join(meta["skills"])}')
+            return 0
+        previous = read_state(project)
+        choices, files = selection(args, catalog, previous)
+        def download(rel):
+            data = generated[rel] if rel in generated else read(rel)
+            files[rel]['sha256'] = digest(data)
+            return rel, data
+        paths = sorted(p for p, entry in files.items() if 'link' not in entry)
+        with ThreadPoolExecutor(max_workers=8 if remote else 1) as pool:
+            payloads = dict(pool.map(download, paths))
+        for rel, data in payloads.items():
+            if rel.startswith('.agents/skills/') and rel.endswith('.md'):
+                own = '/'.join(rel.split('/')[:3]) + '/'
+                for link in re.findall(r'\]\(([^) #]+)(?:#[^)]*)?\)', data.decode('utf-8')):
+                    if urllib.parse.urlsplit(link).scheme or link.startswith('/'):
+                        continue
+                    target = posixpath.normpath(posixpath.join(posixpath.dirname(rel), link))
+                    if target.startswith(own) and target not in files and not any(p.startswith(target + '/') for p in files):
+                        raise ValueError(f'missing skill resource: {target}')
+        print(f'Project: {project}\nAgents: {", ".join(choices["agents"])}; tracker: {choices["tracker"]}')
+        return install(project, files, payloads, choices, previous, source, args.update, args.dry_run)
+    except (OSError, ValueError, KeyError, TypeError, AttributeError) as exc:
+        print(f'setup: {exc}', file=sys.stderr)
+        return 1
+
+
+if __name__ == '__main__':
     sys.exit(main())
