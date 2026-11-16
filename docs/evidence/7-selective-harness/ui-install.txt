@@ -1,0 +1,70 @@
+Tackroom source: PedramRZM/tackroom@b6f68d8e58ba63a33374a8a5b5740f13a689f578
+Source: PedramRZM/tackroom@b6f68d8e58ba63a33374a8a5b5740f13a689f578
+Project: /tmp/tackroom-public-p57fbc0j/ui
+Agents: claude, codex, opencode; tracker: files
+  update: .gitignore (add missing entries)
+  add: .agents/README.md
+  add: .agents/briefs/memory-analyzer.md
+  add: .agents/briefs/memory-organizer.md
+  add: .agents/briefs/reviewer.md
+  add: .agents/hooks/format.py
+  add: .agents/hooks/guard.py
+  add: .agents/hooks/session-context.sh
+  add: .agents/hooks/stop-check.py
+  add: .agents/memory/.gitignore
+  add: .agents/memory/_index.md
+  add: .agents/memory/inbox.md
+  add: .agents/skills/careful/SKILL.md
+  add: .agents/skills/dream/SKILL.md
+  add: .agents/skills/dream/scripts/export-transcripts.py
+  add: .agents/skills/lock-tests/SKILL.md
+  add: .agents/skills/second-opinion/SKILL.md
+  add: .agents/skills/spec/SKILL.md
+  add: .agents/skills/task/SKILL.md
+  add: .agents/skills/task/plan-template.md
+  add: .agents/skills/ui-craft/SKILL.md
+  add: .agents/skills/ui-craft/references/craft.md
+  add: .agents/skills/ui-craft/references/motion.md
+  add: .agents/skills/ui-craft/references/verification.md
+  add: .agents/skills/verify/SKILL.md
+  add: .agents/skills/wrap-up/SKILL.md
+  add: .agents/skills/write-tests/SKILL.md
+  add: .agents/skills/write-tests/references/verification-tools.md
+  add: .claude/agents/memory-analyzer.md
+  add: .claude/agents/memory-organizer.md
+  add: .claude/agents/reviewer.md
+  add: .claude/settings.json
+  add: .claude/skills/careful
+  add: .claude/skills/dream
+  add: .claude/skills/lock-tests
+  add: .claude/skills/second-opinion
+  add: .claude/skills/spec
+  add: .claude/skills/task
+  add: .claude/skills/ui-craft
+  add: .claude/skills/verify
+  add: .claude/skills/wrap-up
+  add: .claude/skills/write-tests
+  add: .codex/agents/memory-analyzer.toml
+  add: .codex/agents/memory-organizer.toml
+  add: .codex/agents/reviewer.toml
+  add: .codex/config.toml
+  add: .codex/hooks.json
+  add: .github/pull_request_template.md
+  add: .opencode/agents/reviewer.md
+  add: AGENTS.md
+  add: CLAUDE.md
+  add: WORKFLOW.md
+  add: docs/decisions/README.md
+  add: docs/plans/.gitkeep
+  add: docs/specs/.gitkeep
+  add: opencode.json
+  add: scripts/agent/check
+  add: scripts/agent/claude-with
+  add: scripts/agent/keys.example
+  add: scripts/agent/next-task
+  add: scripts/agent/ratchet
+  add: tasks/README.md
+  add: tasks/TEMPLATE.md
+  record: .agents/tackroom-install.json
+Harness installed. Project data preserved.
+Next: customize AGENTS.md and scripts/agent/check; review WORKFLOW.md and agent trust prompts.

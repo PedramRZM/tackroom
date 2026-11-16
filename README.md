@@ -1,209 +1,308 @@
 # tackroom
 
-Dotfiles for coding agents. A tack room is where riders keep, mend and fit the harness,
-bridle and saddle before a ride. This repository does the same job for coding agents: it
-holds the instruction files, settings, hooks, skills, subagents, memory and workflow that make
-Claude Code (and, less tested, Codex and OpenCode) work well on a real project. Every piece
-comes with the research it is based on.
+**One source for your coding-agent harness. Install the parts your project needs.**
 
-## The idea
+tackroom is a research-grounded collection of instructions, skills, hooks, agent roles and
+workflows for **Claude Code, Codex and OpenCode**. Its CLI builds each agent's native setup
+from a shared template, then installs it into your project. Explicit updates bring in upstream
+harness changes while preserving local edits, project memory and dream reports.
 
-Coding agents can do a lot, but you can't count on them. The same model does good work in one
-repository and makes a mess in another, and the difference is mostly not the model. It is the
-setup around it: whether the agent can check its own work, what it is stopped from doing, what
-it knows about the project, what it remembers from last time, and who reviews the result. That
-setup is called the harness.
+A tack room is where riders keep and maintain their equipment. This repository serves that
+purpose for coding agents: a place to understand, improve and reuse the setup around them.
 
-A harness is just files: markdown, JSON, a few scripts. So you can treat it like any other
-configuration. You can version it, review it, test it, and carry it from project to project.
-This repository is one such harness, written down with reasons.
+[Quick start](#quick-start) · [Updates](#update-an-existing-project) ·
+[Philosophy](#philosophy) · [Source layout](#one-source-generated-adapters) ·
+[Extending the harness](#extend-the-harness) · [Documentation](#documentation)
 
-The thinking behind it, in order of how much it matters:
+## Why a harness?
 
-1. **An agent is only as good as the check it can run.** The most consistent finding across
-   the research is that a single command that says "this is healthy" or "this is broken, here
-   is why" improves results more than a better prompt, more effort or a bigger model. The check
-   should print almost nothing when things pass and say exactly what failed when they don't, so
-   it costs little context to run often.
-2. **Rules that must always hold go in code, not in prose.** A model can skip an instruction,
-   however it is worded. If something must never happen (reading secret files, force-pushing,
-   deleting the repository), a hook or a permission blocks it. Prose is kept for preferences
-   and judgement.
-3. **A hook is a guardrail, not a wall.** A determined or confused agent can get around a hook
-   through the shell. Real safety comes from what the agent cannot reach: a sandbox, and
-   credentials kept out of its environment. The template says this plainly instead of
-   overselling its hooks.
-4. **Instructions are short, and get shorter.** Instruction files are read at the start of
-   every session, and every line competes for the model's attention. Newer models do better
-   with less: Anthropic cut over 80% of Claude Code's own system prompt with no measured loss.
-   The template's `AGENTS.md` is a skeleton under 50 lines, and removing guidance is preferred
-   to adding it.
-5. **Whoever wrote the code doesn't get to grade it.** An agent that checks its own work tends
-   to approve it. Review comes from a separate agent with fresh context, given the task and the
-   original branch rather than the author's summary, and told to look for what is wrong. Tests
-   that define "done" can be locked so they can't be edited to pass.
-6. **Work lives in files, not in the chat.** Tasks, plans, evidence and handoff notes are
-   plain files or tracker issues. A new session, a different model or a person can pick up
-   where the last one stopped.
-7. **Memory has to be corrected, not just collected.** Notes an agent writes in the middle of
-   a task are sometimes wrong, and the next session trusts them. So memory is plain markdown in
-   git, and a separate pass (`/dream`) rereads finished sessions, fixes the notes, and proposes
-   changes to the instructions for you to accept or reject.
-8. **Each project owns its copy.** You copy the template into a project and then it is that
-   project's code. There is no package to install. Explicit updates preserve local edits and project memory. Projects differ,
-   and harness parts go out of date as models improve, so each project should prune and adapt
-   its own copy. Use `--update` to receive unchanged harness files; merge conflicts by hand.
-9. **Everything says how far to trust it.** Each part says whether it was run and observed,
-   written from documentation only, or not done. A setup that claims more than it has shown
-   teaches you to stop checking.
+An agent needs more than a model and a prompt. It needs to know how a project works, how to
+check a change, which actions require care, how work is tracked, and what previous sessions
+learned. Those surrounding instructions and tools form its **harness**.
 
-`docs/principles.md` goes through each of these in detail: what the template does, the
-sources behind it, where the sources disagree, and how well it has been tested.
+tackroom makes that setup explicit and reviewable. It favors small files, executable checks
+and clear limits over a large framework. The project owns its installed files; tackroom is
+neither a hosted agent platform nor a service that manages your repositories.
 
-## Where the ideas come from
+## Quick start
 
-Almost nothing here is original. It is collected from the people who build these tools and the
-people who use them heavily, then cross-checked:
-
-- **Anthropic**: the engineering and research blog, the Claude Code team's blog, and the Claude
-  Code documentation. The main sources for checks, hooks, skills, sandboxing, context, memory
-  and long-running agents.
-- **People on the Claude Code team and around it**, mostly from their posts: Boris Cherny,
-  Thariq Shihipar, Addy Osmani.
-- **OpenAI**, for its harness-engineering account (Ryan Lopopolo) and the Codex documentation.
-- **AI Native DevCon (June 2026)**: 57 talks and clips on skills, context, memory,
-  verification, teams and security, transcribed.
-- **Practitioners writing from experience**: Simon Willison, Andrej Karpathy, Kent C. Dodds,
-  Steve Yegge, Geoffrey Huntley, Peter Steinberger and others.
-
-That comes to about 1,650 talks, articles, docs and posts, indexed in `refs/INDEX.md` with
-author, date and URL. Each topic is distilled in `refs/notes/` with short quotes and locators,
-so a claim can be traced back to the sentence it rests on. Where the sources disagree, the notes
-and `docs/principles.md` say so. Two examples: whether adversarial review is worth its cost,
-and how many skills a repository should have at all. Anything without a source is labelled as a
-judgement call.
-
-The research also decided what is left out:
-
-- **Language and framework rules.** The docs say to write down only what the agent can't find
-  by reading the code. Add a rule in a project when the same correction keeps coming up.
-- **Role-named subagents** (planner, architect, tester). Several independent teams found them
-  unhelpful. Subagents earn their cost by isolating context and by reviewing independently.
-- **A spec framework.** None of the frontier teams in the research uses one as its process.
-- **MCP servers by default.** A command-line tool with a few lines of usage beat an MCP server
-  in six independent accounts, and connected servers take up context even when idle.
-
-`prompts/README.md` collects prompts that named people shared as things to type, quoted word for
-word with their sources. The check verifies the quotes against the saved texts.
-
-## How it is set up
-
-| Path | What it is |
-|---|---|
-| `template/` | Agent-neutral harness sources. The CLI generates native agent configuration from them. |
-| `docs/` | Why the template is shaped this way, with citations. Start with `principles.md`. |
-| `refs/` | The research: the index of sources and the distilled notes. |
-| `prompts/` | Reusable prompts, quoted from their authors. |
-| `tools/` | `setup` copies the template into a project. `refs` fetches and indexes the research. |
-
-This repository runs on its own template. Shared content lives under `template/.agents/`;
-the CLI generates native config in each destination. There are no per-agent setup directories
-in the template. `tools/render-harness --write --dogfood` refreshes this repository's gitignored
-runtime outputs and skill links. Add a skill in one folder; no second registry needs editing.
-
-### What a project gets
-
-- **Instructions**: `AGENTS.md` is the single file every harness reads. `CLAUDE.md` is one
-  line that imports it, so Claude Code, Codex and OpenCode share the same text.
-- **A check**: `scripts/agent/check`, the one command for "is this healthy". The `verify` skill
-  runs it, and a hook runs it again when a turn ends with changed files.
-- **Guardrails**: hooks that block reading secret-looking files, wide deletes, force-pushes,
-  pushes to protected branches and merges. Sandbox settings are included, switched off until
-  you have checked they work on your machine.
-- **Skills**: nine base skills and three optional skills, each doing one thing. The model can call eight of them: `spec`,
-  `task`, `verify`, `write-tests`, `performance`, `ui-craft`, `second-opinion` and `wrap-up`. Four only run
-  when you start them, so they cost no context until then: `kickoff`, `dream`, `careful` and
-  `lock-tests`.
-  [UI craft](docs/ui-craft.md) covers stable states, visual detail and intent-aware interactions.
-- **A reviewer**: a subagent that gets the task and the base branch, and tries to show the
-  change is wrong.
-- **A workflow**: `WORKFLOW.md` describes how a task moves from idea to merged pull request.
-  Tasks have acceptance criteria written as checks, live in GitHub issues or in files, and end
-  with evidence on the pull request.
-- **A ratchet**: `scripts/agent/ratchet` guards any number you care about (bundle size, queries
-  per request, a score), so it can only get better.
-- **Memory**: notes in `.agents/memory/`, an inbox for new lessons, and the `dream` pass that
-  corrects them.
-- **Other harnesses and models**: Codex and OpenCode config, and
-  `scripts/agent/claude-with glm|deepseek|kimi|kimi-code` to run Claude Code against other
-  vendors' endpoints.
-
-`template/README.md` lists every file and what to do with it after copying.
-
-## Put it in a project
-
-From your app directory (Python 3.10+, curl, Linux/macOS/WSL):
+Run from the project you want to set up. The installer needs **Python 3.10+**, **curl**, GitHub
+network access and a filesystem supporting symlinks. The workflow targets Linux, macOS and WSL;
+the recorded end-to-end tests ran on Ubuntu. Install your chosen coding-agent client separately.
+Git is recommended for the harness workflow, but not required just to copy the setup.
 
 ```sh
-set -o pipefail
+cd /path/to/your-project
+set -o pipefail  # bash/zsh: propagate a failed download
 curl -fsSL https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install | python3 - --agents codex
 ```
 
-Choose `claude`, `codex`, `opencode`, or a comma-separated combination. Add `--profile ui`
-for UI craft, `--skills performance` for performance work, or `--profile new-project` for
-kickoff. The common base is always included; optional skills are selected explicitly.
-Use `--dry-run` to preview and `--list` to see the catalog.
+No tackroom clone, package manager or global configuration change is required. The command
+resolves `main` to a commit and prints that revision. It downloads the installer and selected
+source files from that commit, verifies their contents, and generates native configuration.
 
-Get the latest harness changes later, keeping the same selections:
+For a UI application using all three agents:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install | python3 - --agents claude,codex,opencode --profile ui
+```
+
+Use `--dry-run` before applying an installation. Use `--list` to see agents, base skills,
+optional capabilities and profiles. Review downloaded code before executing it if that is your
+normal policy; the bootstrap and installer are small Python scripts under [`tools/`](tools/).
+
+### Finish the project setup
+
+1. Fill in `AGENTS.md`: project purpose, exact commands and the gotchas an agent cannot infer.
+2. Replace the placeholder in `scripts/agent/check` with your actual checks, then run it.
+3. Keep the appropriate tracker line in `WORKFLOW.md`. Choose `--tracker files` or
+   `--tracker issues` explicitly when installing if needed.
+4. Start the selected agent and review its project trust/configuration prompts.
+
+Installing a configuration does not make it trusted or prove its hooks are active. Existing
+files are preserved and reported, so resolve any installation conflicts before relying on the
+setup. The installer does not commit your project or change your global agent settings.
+
+## Choose what to install
+
+The common base is included for every selected agent. UI, performance and new-project
+capabilities are optional; the CLI does not infer a stack or silently install every skill.
+
+| Selection | What it provides |
+|---|---|
+| Common base | Instructions, workflow, checks, memory skeleton, shared hooks and agent roles |
+| Base skills | `spec`, `task`, `write-tests`, `verify`, `second-opinion`, `wrap-up`, `dream`, `careful`, `lock-tests` |
+| `--profile ui` or `--skills ui-craft` | UI states, layout, typography, motion and interaction verification |
+| `--profile new-project` or `--skills kickoff` | Take a new project idea to a small, running repository |
+| `--skills performance` | Measure a performance problem, improve it and verify the gain |
+
+Select agents independently with `--agents claude`, `--agents codex`, `--agents opencode`,
+or a comma-separated combination. Codex-only installation does not create a `.claude/`
+directory. Dependencies and skill resources travel with each selected capability.
+
+| Option | Behavior |
+|---|---|
+| `[project-directory]` | Install into an explicit existing directory; defaults to the current directory |
+| `--agents <names>` | Select one or more agents; required for a new untracked project |
+| `--skills <names>` | Add optional skills; repeat the option or use comma-separated names |
+| `--profile <names>` | Select groups of skills for an app type |
+| `--tracker files\|issues` | Choose task storage; defaults to issues for a GitHub origin, files otherwise |
+| `--list` | Show the available catalog without modifying the project |
+| `--dry-run` | Preview additions, updates, retained files and conflicts without writing |
+| `--ref <branch\|tag\|SHA>` | Select a GitHub revision; defaults to `main` |
+| `--update` | Update unchanged managed files, remembering the project's previous selections |
+
+Profiles currently cover UI applications and new projects. They reuse the same skill sources;
+there are no separate React, Python or Rust copies of the shared harness. Skills should apply
+only where their guidance is relevant, and projects should remove guidance they do not need.
+
+## Update an existing project
+
+Run this from the project to get the latest version of its selected harness:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install | python3 - --update
 ```
 
-Updates replace only unchanged managed harness files. Local edits are kept and reported.
-Project memory, dream reports, transcripts and notes are preserved. No central registry or
-background sync. See [installation and updates](docs/installation.md) for revision pinning,
-conflicts, local-checkout usage, legacy flags and the post-install customization steps.
+The CLI remembers selections and installed source fingerprints in
+`.agents/tackroom-install.json`. Keep that file in version control with the harness.
+It contains no memory or transcript content.
 
-## How far to trust it
+| Existing content | What an update does |
+|---|---|
+| Harness file unchanged locally | Applies the upstream version |
+| Locally edited harness file, upstream unchanged | Keeps the customization |
+| Both local and upstream versions changed | Keeps the local file and reports a conflict |
+| Existing memory, inbox, index, dream reports, transcripts, project docs and tasks | Preserves them; never replaces or deletes project knowledge |
+| File removed upstream or no longer selected | Retains it and reports it; no automatic pruning |
 
-Run and observed on one machine (Ubuntu 24.04, Claude Code 2.1.322): the hooks, skills and
-agents loading, the memory rules, task selection, the setup script and one full dream pass.
+Conflicts return exit code **2**. Nonconflicting files can still update; compare the named paths
+with the printed source commit and merge manually. There is no force-overwrite switch.
+`AGENTS.md`, `WORKFLOW.md` and your customized check script follow the same preservation rules.
 
-Codex UI-skill discovery and a read-only fixture review have now run; OpenCode discovers the
-same shared skill. See [UI-craft evidence](docs/evidence/ui-craft/README.md).
-Written from documentation but not fully run: the broader Codex configuration, the vendor launchers, the Bash
-sandbox configuration and claiming tasks on GitHub. Each of those files says so at the top.
+Use `--update --dry-run` to preview. Downloads and source validation finish before project
+writes begin, so a failed download leaves project files and tracking unchanged. Individual
+file writes are atomic; local disk or permission failures can leave earlier files installed.
+Run updates while other tools are not changing the same files, and rerun after resolving a failure.
 
-Not done at all: evals for the skills, and a real task taken through the whole workflow. The
-three newest skills (`kickoff`, `write-tests`, `performance`) have only been validated for
-format, not used. `docs/keeping-current.md` lists the gaps in order.
+For a project without tracking, run an installation with explicit selections once. Missing
+files are installed, identical files can be adopted, and different existing files remain
+untouched. See the [installation guide](docs/installation.md) for legacy layouts and conflicts.
 
-## The research texts
+There is **no central registry, background sync or cross-project management**. Updates happen
+only when you run the command in a project. For reproducible installs, pass a full commit SHA
+with `--ref`; pin the bootstrap URL to that SHA as well when you need the bootstrap itself fixed.
 
-The saved texts are other people's writing, so they are not in this repository. Git tracks
-only each source's `meta.json` (URL, author, date). To read a source locally, fetch it with
-`tools/refs` (see `refs/README.md`). The `prompts-verbatim` check needs the sources that
-`prompts/README.md` cites, and fails on a fresh clone until they are fetched.
+## Philosophy
 
-## Docs
+The template is opinionated about the process, but its reasoning is available for inspection.
+Each principle links to the research and implementation notes in [the design rationale](docs/principles.md).
 
-- `docs/principles.md`: the principles, what each rests on, and how well it is tested
-- `docs/claude-code.md`: the Claude Code files, what belongs in personal settings, the sandbox
-- `docs/memory-and-dreaming.md`: the memory tiers and the dream pass
-- `docs/loops.md`: turn, goal, time and proactive loops, with the lines to type
-- `docs/tasks.md`: tasks, backlog and epics
-- `docs/new-project.md`: from an idea to an agent-ready repository; choosing stack and architecture
-- `docs/testing.md`: what to test, how to get a model to write real tests, performance
-- `docs/other-harnesses.md`: Codex, OpenCode, vendor CLIs, and GLM, DeepSeek and Kimi models
-- `docs/keeping-current.md`: the upkeep routine and known gaps
+1. **Make verification executable.** A project-specific check command is more useful than a
+   promise to “be careful.” A change should end with evidence that someone else can reproduce.
+2. **Separate writing from judging.** Tests, actual user journeys and independent review can
+   expose mistakes that the author shares with its own explanation. No single check proves everything.
+3. **Use code for enforceable boundaries.** Hooks and permissions can block defined actions;
+   prose expresses preferences. A hook is a guardrail, not a sandbox or an external trust boundary.
+4. **Keep instructions small.** Session-start text competes for attention. Put task-specific
+   detail in skills and references, and remove guidance the code already makes clear.
+5. **Keep work durable.** Tasks, decisions, evidence and handoffs belong in project files or a
+   tracker, so another person or agent can continue without reconstructing a conversation.
+6. **Treat memory as something to maintain.** Sessions append observations; the dream workflow
+   reviews and corrects them. An installer must never treat project knowledge as replaceable boilerplate.
+7. **Share sources, respect host differences.** A skill or agent brief is authored once.
+   Native configuration is generated, while unsupported permissions or hooks remain explicitly unsupported.
+8. **Let the project own its setup.** Installed files are editable. Updates preserve local
+   choices instead of enforcing a global configuration or silently resetting a project.
+9. **State the limits of the evidence.** Configuration parsing, skill discovery, model behavior
+   and enforcement are different claims. A successful install should not be presented as proof of all four.
 
-## Checks
+These are design choices informed by research, not a guarantee that one harness improves every
+model or project. Packaging, profile defaults and update policy are explicitly documented as
+product judgments in the [decision record](docs/decisions/0001-selective-harness-installation.md).
 
-    scripts/agent/check           # compile, config parsing, guard tests, size limits, validators
-    scripts/agent/check --quick   # skip the slower validators
+## One source, generated adapters
+
+There are no `.claude/`, `.codex/` or `.opencode/` setup directories in `template/`.
+
+```text
+template/
+├── AGENTS.md                       # Shared project instructions
+├── WORKFLOW.md                     # Shared task workflow
+├── .agents/
+│   ├── adapters.json               # Native configuration definitions
+│   ├── skills/<name>/
+│   │   ├── SKILL.md                # One skill body
+│   │   ├── install.json            # Applicability, dependencies and profiles
+│   │   └── references/             # Optional supporting material
+│   ├── briefs/<name>.md            # One agent-role instruction body
+│   ├── briefs/<name>.json          # Description and supported native metadata
+│   ├── hooks/                      # Shared executable hook logic
+│   └── memory/                     # Initial project-memory skeleton
+├── scripts/agent/                  # Check, task selection and supporting tools
+├── docs/                           # Initial decision/spec/plan structure
+├── tasks/                          # Optional file tracker
+└── .github/                        # PR and optional issue templates
+```
+
+The installer discovers the source files and renders only the selected native setup. Claude
+skill discovery points to the same `.agents/skills/` content that Codex and OpenCode read.
+Agent-role instructions render into each host's required format; native permissions and event
+mappings remain host-specific. No generated adapter copy or download manifest is maintained
+inside the template.
+
+This repository also uses its own harness. Its root shared paths point to the canonical
+sources; native runtime files are generated and gitignored. Refresh them with:
+
+```sh
+tools/render-harness --write --dogfood
+```
+
+## Extend the harness
+
+**Add or edit a skill in one folder:** `template/.agents/skills/<name>/`. Keep the skill text
+and resources there, with an `install.json` such as:
+
+```json
+{
+  "base": false,
+  "applies_to": "Projects that need this capability",
+  "requires": ["verify"],
+  "profiles": {}
+}
+```
+
+The CLI discovers the folder automatically; there is no second catalog or per-agent copy to
+edit. `profiles` maps profile names to descriptions. Dependencies must name existing skills
+and cannot form cycles. Keep `SKILL.md` front matter valid and its name consistent with the folder.
+
+**Change an agent role once:** edit its body and metadata under `template/.agents/briefs/`.
+The CLI builds supported native role files from that body. **Change native configuration** in
+`template/.agents/adapters.json`, and **change shared hook logic** in `template/.agents/hooks/`.
+Native syntax differences do not imply equivalent runtime support across agents.
+
+New guidance should trace to the research in `refs/` and explain its reasoning in `docs/`.
+Label unsupported choices as judgments. Prefer a focused improvement or removal to accumulating
+more instructions. Refresh dogfooding outputs and run the checks before submitting a change.
+
+## Work from a local checkout
+
+```sh
+git clone https://github.com/PedramRZM/tackroom.git
+cd tackroom
+tools/render-harness --write --dogfood
+tools/setup /path/to/project --agents codex --profile ui --dry-run
+tools/setup /path/to/project --agents codex --profile ui
+```
+
+`tools/setup` uses the checkout's local template. Add `--remote` to fetch GitHub instead.
+`tools/setup /path/to/project --update` applies local source changes with the same preservation
+rules as the public bootstrap.
+
+Legacy `--codex` and `--opencode` flags mean “add to Claude with all skills” and print a notice.
+Use `--agents` for independent selection. `--legacy` explicitly requests the old default;
+a bare new installation now requires a selection. Copying `template/` alone does not generate
+native configuration—use the CLI. See [migration details](docs/installation.md#local-checkout-and-compatibility).
+
+## Verification and supported scope
+
+```sh
+scripts/agent/check           # Full repository checks and native validators
+scripts/agent/check --quick   # Skip the slower native validators
+python3 tools/test_setup.py  # Focused installer/update regression suite
+```
+
+The check covers compilation, configuration parsing, canonical-source/native-output parity,
+installation and update behavior, guard tests, instruction limits, source quotes and validators.
+The repository's tooling also uses `uv` for Python 3.11+ parsing checks and Claude Code for its
+native validators; the installer itself needs only Python 3.10's standard library.
+
+Current installation evidence includes **24 regression tests**, an independent review, and
+actual GitHub bootstrap/install/update runs. Fixtures cover one-agent and combined selections,
+resources, modes, links, dry runs, local edits, protected project data, bad downloads and malformed
+remote file trees. See [the acceptance evidence](docs/evidence/7-selective-harness/README.md).
+
+| Target | Observed validation | Remaining limits |
+|---|---|---|
+| Codex | Native configuration parses; shared files read in bounded live scratch runs | Untrusted project configuration was disabled; full hook/permission lifecycle is unverified |
+| Claude Code | Generated installation, configuration checks and native validators | Latest live probe stopped at account verification before a model response |
+| OpenCode | Generated installation and configuration checks | No live model trial for this installer change |
+
+Claude-specific skill hooks and tool restrictions do not automatically become equivalent
+controls elsewhere. The dream exporter currently targets Claude transcripts; Codex role
+availability does not establish a complete native Codex dream workflow. Vendor launchers have
+not been exercised against live endpoints. See [portability and limitations](docs/other-harnesses.md).
+
+## Research and attribution
+
+The library draws on published work from Anthropic, OpenAI, agent-tool maintainers and
+practitioners, together with conference talks and saved primary documentation. Sources are
+indexed in [`refs/INDEX.md`](refs/INDEX.md); topical notes connect individual claims to their
+sources and record disagreements and limits. [`prompts/`](prompts/README.md) contains attributed,
+verbatim prompt examples rather than unattributed rewrites.
+
+Saved third-party article text and transcripts are not distributed in git. The repository
+tracks source metadata; use `tools/refs` to fetch texts locally. A fresh clone cannot pass the
+`prompts-verbatim` check until the sources cited by `prompts/README.md` have been fetched.
+See [the research workflow](refs/README.md) before adding or refreshing sources.
+
+## Documentation
+
+| Guide | Covers |
+|---|---|
+| [Installation and updates](docs/installation.md) | Commands, revision pinning, preservation, conflicts and migration |
+| [Principles](docs/principles.md) | Design choices, source evidence and tradeoffs |
+| [Claude Code](docs/claude-code.md) | Native settings, trust, hooks and sandbox considerations |
+| [Other harnesses](docs/other-harnesses.md) | Codex/OpenCode portability and known differences |
+| [Tasks and workflow](docs/tasks.md) | Acceptance criteria, trackers, review and handoff |
+| [Testing](docs/testing.md) | Verification planning, test selection and evidence |
+| [UI craft](docs/ui-craft.md) | Interface behavior, visual details and relevant checks |
+| [Memory and dreaming](docs/memory-and-dreaming.md) | Memory ownership, correction and review |
+| [Starting projects](docs/new-project.md) | Kickoff, scope and architectural decisions |
+| [Loops](docs/loops.md) | Native goals, execution limits and bounded runs |
+| [Keeping current](docs/keeping-current.md) | Source maintenance and known validation gaps |
 
 ## License
 
-MIT, see `LICENSE`. That covers the template, tools and docs. Quotes in `refs/notes/` and
-`prompts/README.md` remain their authors' and are credited where they appear.
+[MIT](LICENSE) covers the original template, tools and documentation. Quoted third-party material
+remains its authors' work and is attributed at its source.

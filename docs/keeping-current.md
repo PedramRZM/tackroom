@@ -54,14 +54,15 @@ that it prevents recurrence; evaluate a proposed change before adopting it.
 ## Changing the template
 
 - Edit canonical files in `template/`, run `tools/render-harness --write --dogfood`, then run
-  `scripts/agent/check`. The check fails if the root copies differ.
+  `scripts/agent/check`. The check fails if generated root outputs are stale.
 - Try a changed hook, skill or settings file in a scratch project before relying on it:
-  `tools/setup /tmp/<name> --codex --opencode`, then exercise it with the available harness.
+  `tools/setup /tmp/<name> --agents claude,codex,opencode`, then exercise it with the available harness.
   Here Codex is the live validation target; retain static packaging checks for Claude Code
   and OpenCode and state their runtime gaps. See the
   [owner's validation scope](decisions/multi-harness-validation.md).
-- A project that already has the template does not update itself. Compare by hand:
-  `diff -r template/.claude <project>/.claude`.
+- A project does not update itself in the background. Run `tools/setup <project> --update`
+  for explicit local-source updates, or use the [GitHub update command](installation.md).
+  Preview with `--dry-run`; locally edited files and project knowledge remain protected.
 
 ## Known gaps
 

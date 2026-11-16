@@ -2,7 +2,7 @@
 id: 8
 title: Centralize shared harness content and catalog optional capabilities
 type: task
-status: in-progress
+status: done
 priority: p1
 epic: 7
 blocked-by: []
@@ -60,3 +60,7 @@ unsupported controls have equivalents. Keep project-side Python compatible with 
 ## Out of scope / do not change
 
 Remote fetching, the new selection interface, changing skill behavior, and new skill authoring.
+
+## Notes
+
+2026-11-16: Completed; the owner explicitly authorized finishing the epic, marking its tasks done and merging to main. Evidence: `docs/evidence/7-selective-harness/README.md`; 24 installer tests, 13 full checks, independent review, actual GitHub install/update and final live Codex read. Claude runtime remains blocked by account verification; other limitations are recorded.

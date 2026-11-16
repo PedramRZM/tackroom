@@ -196,7 +196,7 @@ the reason for failure. For trivial edits, reuse existing checks and direct insp
 exhaustive edge cases to cheap tests; use a small integrated journey set to prove wiring.
 Neither the pyramid nor the trophy establishes a universal optimum. The portable synthesis
 and worked invoice example are in
-[`write-tests/references/verification-tools.md`](../template/.claude/skills/write-tests/references/verification-tools.md).
+[`write-tests/references/verification-tools.md`](../template/.agents/skills/write-tests/references/verification-tools.md).
 Sources: [Vocke's practical pyramid](https://martinfowler.com/articles/practical-test-pyramid.html),
 [Dodds's classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications).
 

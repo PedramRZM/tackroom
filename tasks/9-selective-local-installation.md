@@ -2,7 +2,7 @@
 id: 9
 title: Install selected agents and app capabilities from the shared template
 type: task
-status: in-progress
+status: done
 priority: p1
 epic: 7
 blocked-by: [8]
@@ -62,3 +62,7 @@ Do not infer an app stack and silently add optional capabilities. Projects own i
 ## Out of scope / do not change
 
 GitHub bootstrap, automatic updates, registry/sync, and destructive migration of existing apps.
+
+## Notes
+
+2026-11-16: Completed; the owner explicitly authorized finishing the epic, marking its tasks done and merging to main. Evidence: `docs/evidence/7-selective-harness/README.md`; 24 installer tests, 13 full checks, independent review, actual GitHub install/update and final live Codex read. Claude runtime remains blocked by account verification; other limitations are recorded.

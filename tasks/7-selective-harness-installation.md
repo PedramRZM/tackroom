@@ -2,7 +2,7 @@
 id: 7
 title: Install a shared harness selectively from any app
 type: epic
-status: in-progress
+status: done
 priority: p1
 epic:
 blocked-by: []
@@ -45,6 +45,8 @@ policy in `docs/decisions/multi-harness-validation.md` and report runtime gaps.
 Cross-project management, background updates, global configuration and authoring new skills.
 
 ## Notes
+
+2026-11-16: Completed; the owner explicitly authorized finishing the epic, marking its tasks done and merging to main. Evidence: `docs/evidence/7-selective-harness/README.md`; 24 installer tests, 13 full checks, independent review, actual GitHub install/update and final live Codex read. Claude runtime remains blocked by account verification; other limitations are recorded.
 
 2026-11-16: Owner explicitly requested start and finish of the epic, then added easy sync
 that preserves project memory and dream reports. Task 11 extends the original scope with

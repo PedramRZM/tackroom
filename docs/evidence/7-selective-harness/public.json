@@ -1,0 +1,64 @@
+{
+  "bootstrap_url": "https://raw.githubusercontent.com/PedramRZM/tackroom/main/tools/install",
+  "bootstrap_sha256": "b8d6bcd56bf9dc6b90b5cc753e25953ed9cd87aa05e4c108d84b35845f4780eb",
+  "runs": [
+    {
+      "project": "/tmp/tackroom-public-p57fbc0j/codex",
+      "install_args": [
+        "--agents",
+        "codex",
+        "--tracker",
+        "files"
+      ],
+      "update_args": [
+        "--update",
+        "--ref",
+        "b6f68d8e58ba63a33374a8a5b5740f13a689f578"
+      ],
+      "source_commit": "b6f68d8e58ba63a33374a8a5b5740f13a689f578",
+      "install_exit": 0,
+      "update_exit": 0,
+      "unchanged_snapshot_files": 45,
+      "elapsed_seconds": 33.57,
+      "selected": {
+        "agents": [
+          "codex"
+        ],
+        "profiles": [],
+        "skills": [],
+        "tracker": "files"
+      }
+    },
+    {
+      "project": "/tmp/tackroom-public-p57fbc0j/ui",
+      "install_args": [
+        "--agents",
+        "claude,codex,opencode",
+        "--profile",
+        "ui",
+        "--tracker",
+        "files"
+      ],
+      "update_args": [
+        "--update"
+      ],
+      "source_commit": "b6f68d8e58ba63a33374a8a5b5740f13a689f578",
+      "install_exit": 0,
+      "update_exit": 0,
+      "unchanged_snapshot_files": 68,
+      "elapsed_seconds": 23.0,
+      "selected": {
+        "agents": [
+          "claude",
+          "codex",
+          "opencode"
+        ],
+        "profiles": [
+          "ui"
+        ],
+        "skills": [],
+        "tracker": "files"
+      }
+    }
+  ]
+}

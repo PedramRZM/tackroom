@@ -1,20 +1,22 @@
 # Claude Code setup
 
-What each file under `template/.claude/` does, what belongs in your personal settings instead,
-and how to switch on the sandbox. Facts about Claude Code come from its documentation as saved
+What the CLI generates for Claude Code, what belongs in your personal settings instead,
+and how to switch on the sandbox. Native config comes from `template/.agents/adapters.json`;
+skills, hooks and briefs have shared sources under `template/.agents/`. There is no native
+Claude setup directory in the template. Facts about Claude Code come from its documentation as saved
 on 2026-11-10 (version 2.1.322); the digests are `refs/notes/claude-code-docs-*.md`.
 
 ## Files
 
 | File | What it does |
 |---|---|
-| `settings.json` | Permission rules, sandbox configuration and the four hooks. Shared and committed. |
-| `hooks/guard.py` | Runs before Bash, Read, Edit and Write. Blocks secret-looking files, wide recursive deletes, force-pushes, pushes to a protected branch, and writes to curated memory outside the dream pass. |
-| `hooks/stop-check.py` | Runs when a turn ends. If files changed since the last passing run, runs `scripts/agent/check --quick` and sends a failure back to the agent once. |
-| `hooks/format.py` | Formats an edited file with the formatter the project already uses (Biome, Prettier, Ruff, rustfmt, gofmt). Does nothing when it finds none. |
-| `hooks/session-context.sh` | At session start, resume and after compaction: prints the branch, the task id, and the task's plan file if there is one. |
-| `skills/` | `verify`, `spec`, `task`, `write-tests`, `performance`, `ui-craft`, `second-opinion`, `wrap-up`, and four you start yourself: `kickoff`, `dream`, `careful`, `lock-tests`. |
-| `agents/` | `reviewer` (fresh-context review), `memory-analyzer` and `memory-organizer` (used by `dream`). |
+| `.claude/settings.json` | Generated permission rules, sandbox configuration and hook mappings. |
+| `.agents/hooks/guard.py` | Runs before Bash, Read, Edit and Write. Blocks secret-looking files, wide recursive deletes, force-pushes, pushes to a protected branch, and writes to curated memory outside the dream pass. |
+| `.agents/hooks/stop-check.py` | Runs when a turn ends. If files changed since the last passing run, runs `scripts/agent/check --quick` and sends a failure back to the agent once. |
+| `.agents/hooks/format.py` | Formats an edited file with the formatter the project already uses (Biome, Prettier, Ruff, rustfmt, gofmt). Does nothing when it finds none. |
+| `.agents/hooks/session-context.sh` | At session start, resume and after compaction: prints the branch, the task id, and the task's plan file if there is one. |
+| `.claude/skills/` | Generated discovery links to common base skills and selected optional skills in `.agents/skills/`. |
+| `.claude/agents/` | Generated `reviewer`, `memory-analyzer` and `memory-organizer` files from the shared briefs. |
 
 Edit the lists at the top of `guard.py` to fit a project: `PROTECTED_BRANCHES`,
 `SECRET_NAMES`, the careful-mode patterns.

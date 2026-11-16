@@ -1,0 +1,23 @@
+{
+  "source_commit": "b6f68d8e58ba63a33374a8a5b5740f13a689f578",
+  "scratch": "/tmp/tackroom-public-p57fbc0j/codex",
+  "exit_code": 0,
+  "commands": [
+    {
+      "command": "/usr/bin/zsh -lc \"pwd; rg --files --hidden -g 'SKILL.md' -g 'hooks.json' -g 'verification-tools.md' -g '\"'!node_modules'\"' -g '\"'!.git'\"'; ls -ld .agents/skills .codex/skills .claude .claude/skills .agents/skills/ui-craft .codex/skills/ui-craft\"",
+      "exit_code": 2,
+      "output_sha256": "18ba2fdb970787736ec4098e1ea37e9f9c85ef9d55d4f43ba67b4b4519fff4c1"
+    },
+    {
+      "command": "/usr/bin/zsh -lc 'cat .agents/skills/verify/SKILL.md .agents/skills/write-tests/references/verification-tools.md .codex/hooks.json'",
+      "exit_code": 0,
+      "output_sha256": "0015b3b105220873625a047c967fe2ea0897b71728c0c7dbf44256fcfc568fa5"
+    },
+    {
+      "command": "/usr/bin/zsh -lc \"find .agents/skills -mindepth 1 -maxdepth 1 -type d -print; find . -type d \\\\( -name .claude -o -name ui-craft \\\\) -print\"",
+      "exit_code": 0,
+      "output_sha256": "2425fff7e0d618d54b0f47baef075edc23e4807f28f0a5fb0f3ff5c3c8dcdd23"
+    }
+  ],
+  "limit": "Project config disabled as untrusted; readable files and paths only, not runtime enforcement."
+}

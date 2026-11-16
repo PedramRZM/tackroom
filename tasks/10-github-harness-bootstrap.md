@@ -2,7 +2,7 @@
 id: 10
 title: Bootstrap the selected harness from GitHub without a local checkout
 type: task
-status: in-progress
+status: done
 priority: p1
 epic: 7
 blocked-by: [9]
@@ -63,3 +63,7 @@ scope. Source commit identity provides reproducibility; it is not a claim of sig
 ## Out of scope / do not change
 
 Package registry publication, hosted services, fleet management, automatic upgrades and new agents.
+
+## Notes
+
+2026-11-16: Completed; the owner explicitly authorized finishing the epic, marking its tasks done and merging to main. Evidence: `docs/evidence/7-selective-harness/README.md`; 24 installer tests, 13 full checks, independent review, actual GitHub install/update and final live Codex read. Claude runtime remains blocked by account verification; other limitations are recorded.
