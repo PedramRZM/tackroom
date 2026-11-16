@@ -25,6 +25,14 @@ equivalence from static checks. This scope is the owner's 2026-11-16 clarificati
 | [4](4-task-completion-gate-trial.md) | Evaluate an opt-in deterministic completion gate | inbox |
 | [5](5-parallel-integration-ownership.md) | Integration ownership and review-finding validation | inbox |
 | [6](6-hard-limits-for-goal-examples.md) | Correct misleading prose limits in the loop recipe | done |
+| [7](7-selective-harness-installation.md) | Epic: shared template and selective GitHub installation | inbox |
+| [8](8-centralize-harness-template.md) | One canonical harness source, adapters and capability catalog | inbox |
+| [9](9-selective-local-installation.md) | Select agents and optional app capabilities during installation | inbox |
+| [10](10-github-harness-bootstrap.md) | Bootstrap from GitHub in an app without a local checkout | inbox |
 
 Suggested order: 1, 6, 2, 3. Evaluate 4 and 5 only if the pilot demonstrates the corresponding
 problem. Their existence is not a decision to install more hooks or agents.
+
+Selective-installation work follows 8 → 9 → 10 under epic 7. These are newly filed inbox tasks,
+not an implemented installer. See the [spec](../docs/specs/selective-harness-installation.md)
+and [owner-directed scope decision](../docs/decisions/0001-selective-harness-installation.md).
