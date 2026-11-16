@@ -1,0 +1,10 @@
+{
+  "good": {
+    "approver": true,
+    "viewer": true
+  },
+  "missing_commit": {
+    "approver": false,
+    "viewer": true
+  }
+}

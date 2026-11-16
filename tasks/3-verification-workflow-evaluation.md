@@ -2,7 +2,7 @@
 id: 3
 title: Evaluate verification and feedback-driven harness improvements
 type: task
-status: inbox
+status: done
 priority: p2
 epic: 0
 blocked-by: [1, 2]
@@ -75,7 +75,43 @@ criteria, alter permissions, or silently promote a proposal to make the comparis
 Automatic promotion of instruction changes, model/provider selection, a feedback collection
 service, new native transcript exporters, or cross-project synchronization.
 
+## Verification evidence
+
+[Evaluation and reproduction](../docs/evidence/3-verification-workflow-evaluation/README.md).
+
+- AC1: five categories and fixed expected outcomes in `fixture/`, `rubric.md`, `score.py`;
+  `frozen.json` hashes precede trials and still match.
+- AC2: old/new Codex runs repeated twice at the same model/low reasoning/180s ceiling;
+  all seven coding/planning attempts retained with full events, exits, usage and artifacts.
+- AC3: four coding outputs pass 17/17 assertions and both final suite runs, no clean-path
+  regression, added dependency or heading-only test; actual timings and limits tabulated.
+  The independent persistence supplement is explicitly post-freeze.
+- AC4: prescription inventory links evidence or untested risks; current guidance retained
+  provisionally, with no claim of coding superiority. Recurrence and human-time gaps disclosed.
+- AC5: `feedback.md` links one owner scope clarification and one observed OpenCode failure
+  into the existing inbox/dream flow. No new collector or memory format.
+- AC6: reminder comparison covers original/related/clean planning cases; independent review
+  finds three omissions repaired, clean coverage retained, one invoice-usability omission
+  remaining. Exact diff and rollback retained for human acceptance; template unchanged.
+  Deliberately harmful prose rejected; no induced output regression claimed.
+- Final repository checks: `all 11 checks passed`; offline re-scoring, controls, frozen
+  hashes, Python 3.10 syntax and report links pass. Output retained with the evidence.
+
 ## Notes
+
+2026-11-16: Owner accepted the reviewed evaluation and requested commit, merge and done
+status. Task 3 is complete; merge into local main, with no remote push requested. The five-line
+reminder remains a separate proposal, not an installed change. Existing dream capture is
+sufficient; the accepted evaluation does not add a feedback system. Evidence and all limits
+are linked above. No next task is started.
+
+2026-11-16: Owner requested starting task 3 and keeping the human-feedback portion simple:
+inspect the existing dream report and reuse it if sufficient. `.agents/dream-report.md`
+already records a quoted owner correction, source session, proposed disposition and a case
+where no new guidance is needed. Keep that capture flow; no new feedback collector, schema
+or memory store. Link one human clarification and one measured agent failure to existing
+inbox/evidence instead. The remaining work is a small bounded evaluation and keep/prune
+recommendation, not another learning system. Branch `task/3-verification-workflow-evaluation`.
 
 2026-11-16: Owner clarified multi-harness setup scope for all tasks, with only Codex required
 for live validation here. AC2 preserves portable artifacts while limiting empirical claims

@@ -45,13 +45,21 @@ Cherny describes deleting them and re-adding only what the model still gets wron
 `/dream`, then review `git diff .agents/memory` and `.agents/dream-report.md`. Accept
 proposals one at a time. See `docs/memory-and-dreaming.md`.
 
+The existing report already captures human corrections and their disposition. Link measured
+agent failures and explicit owner corrections from the inbox; do not create a second feedback
+store. [Task 3's trace](evidence/3-verification-workflow-evaluation/feedback.md) shows both,
+including a correction that needs no additional instruction. Recording a lesson is not proof
+that it prevents recurrence; evaluate a proposed change before adopting it.
+
 ## Changing the template
 
 - Edit `template/`, then copy to the root (`.claude/`, `CLAUDE.md`, the three scripts) and run
   `scripts/agent/check`. The check fails if the root copies differ.
 - Try a changed hook, skill or settings file in a scratch project before relying on it:
-  `tools/setup /tmp/<name>`, then `claude -p --setting-sources project "<a prompt that
-  exercises it>"` there.
+  `tools/setup /tmp/<name> --codex --opencode`, then exercise it with the available harness.
+  Here Codex is the live validation target; retain static packaging checks for Claude Code
+  and OpenCode and state their runtime gaps. See the
+  [owner's validation scope](decisions/multi-harness-validation.md).
 - A project that already has the template does not update itself. Compare by hand:
   `diff -r template/.claude <project>/.claude`.
 
@@ -59,16 +67,19 @@ proposals one at a time. See `docs/memory-and-dreaming.md`.
 
 Things the sources recommend that this repository does not have yet, most important first:
 
-1. **Evals for the skills.** The sources treat an eval as the test of a skill and the gate for
+1. **Representative evals for the skills.** The sources treat an eval as the test of a skill and the gate for
    changing one (`refs/notes/devcon-1-skills-context-memory.md` (a);
    `refs/notes/anthropic-claude-dev-blog.md` (i)). Start small: ten to twenty real prompts per
-   skill that should and should not trigger it.
+   skill that should and should not trigger it. Task 3's bounded synthetic comparison is
+   initial evidence, not a representative benchmark or a skill-discovery evaluation.
 2. **A run of the whole task loop on real work**, and a few weeks of dream passes, to find out
    what in `WORKFLOW.md` is friction. The same goes for `kickoff` on a real idea.
 3. **Two research passes were stopped early**: testing and performance, and new projects and
    stack selection. `docs/testing.md` and `docs/new-project.md` say which parts rest on few
    sources (server-side performance, random-input testing, any comparison of stacks).
-4. **Codex and the vendor launchers have not been run.**
+4. **Vendor launchers have not been run against live endpoints.** Codex now has bounded
+   task 1 planning and task 2 implementation evidence; the full hook/permission lifecycle
+   and comparative Claude/OpenCode effectiveness remain unverified.
 5. **The sandbox has not been run** on the build machine (`docs/claude-code.md`).
 6. **Saved articles sometimes lose tables, code blocks and figures.** Notes that relied on a
    live page say so.

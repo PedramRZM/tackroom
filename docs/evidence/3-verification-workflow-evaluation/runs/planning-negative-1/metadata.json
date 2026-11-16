@@ -1,0 +1,69 @@
+{
+  "config": "negative",
+  "revision": "9731d984e1d835544b5c06a9b6148b884ffedcec",
+  "fixture": "planning.md",
+  "root": "/tmp/tackroom-eval-planning-negative-1-asbjohhy",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "180s",
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "-c",
+    "approval_policy=\"never\"",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "--json",
+    "--color",
+    "never",
+    "-o",
+    "/home/pedrum/Dev/tackroom/docs/evidence/3-verification-workflow-evaluation/runs/planning-negative-1/answer.md",
+    "Read task.md and the named skills, then carry out the request. Work only in this scratch directory."
+  ],
+  "exit": 0,
+  "elapsed_seconds": 98.235,
+  "guidance": {
+    ".agents/skills/ui-craft/SKILL.md": {
+      "sha256": "5cb433363d25958f8f6d3d919986f6d23daedd4ac32490cc531828079e01e051",
+      "bytes": 2712,
+      "lines": 42
+    },
+    ".agents/skills/ui-craft/references/craft.md": {
+      "sha256": "411a0699d7d9f9561453507890e3d16c5b85c93018ba38a87d242e746bb73603",
+      "bytes": 7030,
+      "lines": 100
+    },
+    ".agents/skills/ui-craft/references/motion.md": {
+      "sha256": "fb608639e9064b31472fae0f23fca11ac1cf3637ae2aa9269d09414e78e08ec4",
+      "bytes": 8149,
+      "lines": 110
+    },
+    ".agents/skills/ui-craft/references/verification.md": {
+      "sha256": "c001b5885b84596c00c7ebe77d441b14988f1106f6565a6dfd77e7068081b3ca",
+      "bytes": 6249,
+      "lines": 74
+    },
+    ".agents/skills/verify/SKILL.md": {
+      "sha256": "ac75d2238677fe1566bcdb685523e89be44e631103410ef729569ac552bfcef3",
+      "bytes": 5581,
+      "lines": 93
+    },
+    ".agents/skills/write-tests/SKILL.md": {
+      "sha256": "466c66ae99cde2ec240646621c281609a74d8e3778ab6da3a377d7a023e466b7",
+      "bytes": 5837,
+      "lines": 98
+    },
+    ".agents/skills/write-tests/references/verification-tools.md": {
+      "sha256": "b34b6570b4f99826b4fab9d115c30be864f6f6f41420a7e572f99552e0e2f179",
+      "bytes": 8386,
+      "lines": 106
+    }
+  }
+}

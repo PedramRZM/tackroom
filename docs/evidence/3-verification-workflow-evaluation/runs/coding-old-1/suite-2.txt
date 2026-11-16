@@ -1,0 +1,13 @@
+test_exact_allowed_values (test_app.ColorValues) ... ok
+test_other_values_rejected (test_app.ColorValues) ... ok
+test_free_delivery_threshold (test_app.DeliveryBoundary) ... ok
+test_color (test_app.Existing) ... ok
+test_delivery (test_app.Existing) ... ok
+test_approver_persists_pending_approval (test_app.InvoiceApproval) ... ok
+test_rejections_leave_storage_unchanged (test_app.InvoiceApproval) ... ok
+test_save_results_preserve_input_and_unrelated_fields (test_app.SaveResult) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.037s
+
+OK

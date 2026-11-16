@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-11-16T09:37:22.198063+00:00",
+  "files": {
+    "controls.py": "7134919c81481999d46ce0cb83231d7efcf202eeecb8d1e046ec30530929b84a",
+    "fixture/app.py": "46ee9ad0128b55e0379d36b3c3b01eda584a50f9936d3ee747589f93b5e95e49",
+    "fixture/heading.txt": "d838fc9cdc20d8a4d0ed85df0b5791e11f2c1cfe4a4f0200ffc21672708b898b",
+    "fixture/scripts/agent/check": "d0fed3291562507de0bc3dd6f527b3a4236ac542577f8eecd4545583151b162b",
+    "fixture/task.md": "6a424f56ae3dd9a8303025d5324c41abf487439aff4266fbf8d781369ff88127",
+    "fixture/test_app.py": "f28a55f20f3f24f1f4653b641cb14bd9401df8903bfdf294abfa0aced30bc0c5",
+    "planning.md": "713b852886129f4e9b1587a4de2879ebed2dcdc621fdd25f7f360f9d6942e669",
+    "rubric.md": "96f27cd1e50406480c8ea41e6f9a68f9516aede8424b0d0e87f5e29fe1e93615",
+    "run.py": "519f12bce2a6058c8e5cac5b71de9011984b8f578c9fbe91602921f73510f9c6",
+    "score.py": "e0bb24739cbc5f2b636434ced63b0772f8f499d1736afb6a60d46162e88ab6e2"
+  }
+}

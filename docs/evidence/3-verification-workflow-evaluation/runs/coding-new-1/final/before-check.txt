@@ -1,0 +1,130 @@
+test_approver_persists_pending_approval (test_changes.ApprovalTests) ... ok
+test_denials_preserve_storage (test_changes.ApprovalTests) ... test_exact_allowed_values (test_changes.ColorTests) ... ok
+test_rejects_other_values (test_changes.ColorTests) ... test_free_delivery_boundary (test_changes.DeliveryTests) ... test_results_preserve_input_and_unrelated_fields (test_changes.SaveTests) ... 
+======================================================================
+FAIL: test_denials_preserve_storage (test_changes.ApprovalTests) (role='viewer', invoice_id=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 42, in test_denials_preserve_storage
+    self.assertIs(approve(self.db, role, invoice_id), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_denials_preserve_storage (test_changes.ApprovalTests) (role='unknown', invoice_id=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 42, in test_denials_preserve_storage
+    self.assertIs(approve(self.db, role, invoice_id), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_denials_preserve_storage (test_changes.ApprovalTests) (role='approver', invoice_id=99)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 42, in test_denials_preserve_storage
+    self.assertIs(approve(self.db, role, invoice_id), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_denials_preserve_storage (test_changes.ApprovalTests) (role='approver', invoice_id=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 42, in test_denials_preserve_storage
+    self.assertIs(approve(self.db, role, invoice_id), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_denials_preserve_storage (test_changes.ApprovalTests) (role='approver', invoice_id=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 42, in test_denials_preserve_storage
+    self.assertIs(approve(self.db, role, invoice_id), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--anything)')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--other-text)')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--color-text')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--color-text))')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--color-text, red)')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--color-text) trailing')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_rejects_other_values (test_changes.ColorTests) (value='var(--color-text)\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 76, in test_rejects_other_values
+    self.assertIs(valid_color(value), False)
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_free_delivery_boundary (test_changes.DeliveryTests) (cents=5000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 14, in test_free_delivery_boundary
+    self.assertEqual(delivery_fee(cents), fee)
+AssertionError: 500 != 0
+
+======================================================================
+FAIL: test_results_preserve_input_and_unrelated_fields (test_changes.SaveTests) (succeeded=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tackroom-eval-coding-new-1-vuq27dkc/test_changes.py", line 56, in test_results_preserve_input_and_unrelated_fields
+    self.assertEqual(result, dict(
+AssertionError: {'saved': 'new', 'draft': 'new', 'saving': False, 'e[31 chars][1]}} != {'saved': 'old', 'draft': 'new', 'saving': False, 'e[40 chars][1]}}
+  {'draft': 'new',
+-  'error': None,
++  'error': 'Save failed',
+   'extra': {'keep': [1]},
+-  'saved': 'new',
+?            ^^^
+
++  'saved': 'old',
+?            ^^^
+
+   'saving': False}
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.031s
+
+FAILED (failures=14)

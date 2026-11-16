@@ -1,0 +1,12 @@
+test_approver_persists_pending_approval (test_app.Approval) ... ok
+test_rejected_approvals_leave_storage_unchanged (test_app.Approval) ... ok
+test_color (test_app.Existing) ... ok
+test_delivery (test_app.Existing) ... ok
+test_color_allowlist (test_app.Regression) ... ok
+test_delivery_boundary (test_app.Regression) ... ok
+test_save_results (test_app.Regression) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.034s
+
+OK

@@ -21,3 +21,12 @@ Task 2 applied this scope to the owner-selected agent-dev-infra CLI: isolated ex
 fixtures and actual CLI output are appropriate evidence for command behavior. They do not
 establish live company infrastructure or browser-application behavior. The accepted
 [pilot recipe and limits](../evidence/2-project-verification-pilot/README.md) remain the record.
+
+Task 3's accepted [evaluation](../evidence/3-verification-workflow-evaluation/README.md) reuses
+existing dream reports and inbox entries for feedback; no additional collector or memory
+format is needed. The small Codex comparison does not establish coding superiority or runtime
+effectiveness in other harnesses. The evaluated five-line reminder remains a separate
+human-review proposal; accepting the evidence does not silently install it. Retain current
+shared guidance provisionally and use new cases for future comparisons, because the retained
+fixtures are now exposed. Synthetic controls and the separately labelled persistence
+supplement remain evidence, not production checks added to copied projects.

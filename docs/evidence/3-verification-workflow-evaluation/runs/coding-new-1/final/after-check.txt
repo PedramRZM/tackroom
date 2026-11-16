@@ -1,0 +1,13 @@
+test_color (test_app.Existing) ... ok
+test_delivery (test_app.Existing) ... ok
+test_approver_persists_pending_approval (test_changes.ApprovalTests) ... ok
+test_denials_preserve_storage (test_changes.ApprovalTests) ... ok
+test_exact_allowed_values (test_changes.ColorTests) ... ok
+test_rejects_other_values (test_changes.ColorTests) ... ok
+test_free_delivery_boundary (test_changes.DeliveryTests) ... ok
+test_results_preserve_input_and_unrelated_fields (test_changes.SaveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.025s
+
+OK

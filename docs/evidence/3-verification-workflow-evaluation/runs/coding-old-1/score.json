@@ -1,0 +1,19 @@
+{
+  "bug.boundary": true,
+  "clean.delivery": true,
+  "business.viewer": true,
+  "business.stranger": true,
+  "business.missing": true,
+  "business.already": true,
+  "clean.approver": true,
+  "ui.failure": true,
+  "clean.ui_success": true,
+  "token.reject_0": true,
+  "token.reject_1": true,
+  "token.reject_2": true,
+  "token.reject_3": true,
+  "token.reject_4": true,
+  "token.reject_5": true,
+  "clean.tokens": true,
+  "trivial.exact": true
+}

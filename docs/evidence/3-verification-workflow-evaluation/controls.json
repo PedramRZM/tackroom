@@ -1,0 +1,95 @@
+{
+  "broken": {
+    "bug.boundary": {
+      "error": "AssertionError",
+      "detail": "500 != 0"
+    },
+    "clean.delivery": true,
+    "business.viewer": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "business.stranger": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "business.missing": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "business.already": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "clean.approver": true,
+    "ui.failure": {
+      "error": "AssertionError",
+      "detail": "{'saved': 'new', 'draft': 'new', 'saving': False, 'error': None, 'id': 7} != {'saved': 'old', 'draft': 'new', 'saving': False, 'error': 'Save failed', 'id': 7}"
+    },
+    "clean.ui_success": true,
+    "token.reject_0": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "token.reject_1": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "token.reject_2": true,
+    "token.reject_3": true,
+    "token.reject_4": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "token.reject_5": true,
+    "clean.tokens": true,
+    "trivial.exact": {
+      "error": "AssertionError",
+      "detail": "'Invoices list\\n' != 'Invoices\\n'"
+    }
+  },
+  "good": {
+    "bug.boundary": true,
+    "clean.delivery": true,
+    "business.viewer": true,
+    "business.stranger": true,
+    "business.missing": true,
+    "business.already": true,
+    "clean.approver": true,
+    "ui.failure": true,
+    "clean.ui_success": true,
+    "token.reject_0": true,
+    "token.reject_1": true,
+    "token.reject_2": true,
+    "token.reject_3": true,
+    "token.reject_4": true,
+    "token.reject_5": true,
+    "clean.tokens": true,
+    "trivial.exact": true
+  },
+  "regressing": {
+    "bug.boundary": true,
+    "clean.delivery": true,
+    "business.viewer": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "business.stranger": {
+      "error": "AssertionError",
+      "detail": "True != False"
+    },
+    "business.missing": true,
+    "business.already": true,
+    "clean.approver": true,
+    "ui.failure": true,
+    "clean.ui_success": true,
+    "token.reject_0": true,
+    "token.reject_1": true,
+    "token.reject_2": true,
+    "token.reject_3": true,
+    "token.reject_4": true,
+    "token.reject_5": true,
+    "clean.tokens": true,
+    "trivial.exact": true
+  }
+}

@@ -1,0 +1,50 @@
+diff --git a/app.py b/app.py
+index 2a7d823..fa05452 100644
+--- a/app.py
++++ b/app.py
+@@ -2,18 +2,34 @@
+ 
+ 
+ def delivery_fee(cents):
+-    return 0 if cents > 5000 else 500
++    return 0 if cents >= 5000 else 500
+ 
+ 
+ def approve(db, role, invoice_id):
+-    db.execute("UPDATE invoices SET status='approved' WHERE id=?", (invoice_id,))
++    if role != "approver":
++        return False
++    cursor = db.execute(
++        "UPDATE invoices SET status='approved' WHERE id=? AND status='pending'",
++        (invoice_id,),
++    )
++    if cursor.rowcount == 0:
++        return False
+     db.commit()
+     return True
+ 
+ 
+ def finish_save(state, succeeded):
+-    return {**state, "saved": state["draft"], "saving": False, "error": None}
++    return {
++        **state,
++        "saved": state["draft"] if succeeded else state["saved"],
++        "saving": False,
++        "error": None if succeeded else "Save failed",
++    }
+ 
+ 
+ def valid_color(value):
+-    return value.startswith("var(--")
++    return value in (
++        "var(--color-text)",
++        "var(--color-surface)",
++        "var(--color-danger)",
++    )
+diff --git a/heading.txt b/heading.txt
+index 93a097a..5aafd9a 100644
+--- a/heading.txt
++++ b/heading.txt
+@@ -1 +1 @@
+-Invoices list
++Invoices

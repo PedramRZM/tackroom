@@ -1,0 +1,49 @@
+{
+  "config": "old",
+  "revision": "b8ce42c948765fac39a57fb0c88be159dce2d6ec",
+  "fixture": "fixture",
+  "root": "/tmp/tackroom-eval-coding-old-1-0oub2hak",
+  "command": [
+    "timeout",
+    "--signal=TERM",
+    "--kill-after=10s",
+    "180s",
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--sandbox",
+    "workspace-write",
+    "-c",
+    "approval_policy=\"never\"",
+    "-m",
+    "gpt-6.1-sol",
+    "-c",
+    "model_reasoning_effort=\"low\"",
+    "--json",
+    "--color",
+    "never",
+    "-o",
+    "/home/pedrum/Dev/tackroom/docs/evidence/3-verification-workflow-evaluation/runs/coding-old-1/answer.md",
+    "Read task.md and the named skills, then carry out the request. Work only in this scratch directory."
+  ],
+  "exit": 0,
+  "elapsed_seconds": 62.079,
+  "guidance": {
+    ".agents/skills/verify/SKILL.md": {
+      "sha256": "404481be24d76bd3316b4e1e508f310699f3c4eb79023ad0fb1ce84a3d1194ab",
+      "bytes": 3293,
+      "lines": 61
+    },
+    ".agents/skills/write-tests/SKILL.md": {
+      "sha256": "75a4d940bd4c05b691036694c490fc762d104290e8d2cae70f52bcf8b65c0167",
+      "bytes": 3552,
+      "lines": 64
+    }
+  },
+  "score_exit": 0,
+  "suite_exits": [
+    0,
+    0
+  ]
+}

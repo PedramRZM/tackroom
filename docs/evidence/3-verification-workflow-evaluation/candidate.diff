@@ -1,0 +1,15 @@
+--- new/write-tests/SKILL.md
++++ candidate/write-tests/SKILL.md
+@@ -30,6 +30,12 @@
+ When choosing tools, enforcing a code/design constraint, or testing a UI, read
+ [verification-tools.md](references/verification-tools.md). Recommend the smallest useful
+ addition with its limits and maintenance cost; do not install a catalog of tools by default.
++
++Before returning the plan, check for omitted evidence: persistence claims need assertions at
++the storage boundary; enforcement rules need passing/failing fixtures for each used syntax,
++cost and coverage gaps. For UI, explicitly separate interaction, visual comparison,
++accessibility and representative-user usability evidence, naming what remains unverified.
++A grep or screenshot alone cannot stand in for these checks.
+ 
+ ## Which level
+ 

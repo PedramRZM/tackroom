@@ -21,7 +21,7 @@ equivalence from static checks. This scope is the owner's 2026-11-16 clarificati
 | [0](0-verifiable-harness.md) | Epic: verification before implementation | in-progress |
 | [1](1-verification-before-implementation.md) | Portable verification planning and tool selection | done |
 | [2](2-project-verification-pilot.md) | agent-dev-infra readiness CLI verification pilot | done |
-| [3](3-verification-workflow-evaluation.md) | Learn from corrections; evaluate old/new guidance on held-out tasks | inbox |
+| [3](3-verification-workflow-evaluation.md) | Reuse dream feedback; evaluate old/new guidance | done |
 | [4](4-task-completion-gate-trial.md) | Evaluate an opt-in deterministic completion gate | inbox |
 | [5](5-parallel-integration-ownership.md) | Integration ownership and review-finding validation | inbox |
 | [6](6-hard-limits-for-goal-examples.md) | Correct misleading prose limits in the loop recipe | done |
