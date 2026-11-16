@@ -17,7 +17,7 @@ marked done until the owner accepts it. Work remains uncommitted until requested
 | [3](3-verification-workflow-evaluation.md) | Learn from corrections; evaluate old/new guidance on held-out tasks | inbox |
 | [4](4-task-completion-gate-trial.md) | Evaluate an opt-in deterministic completion gate | inbox |
 | [5](5-parallel-integration-ownership.md) | Integration ownership and review-finding validation | inbox |
-| [6](6-hard-limits-for-goal-examples.md) | Correct misleading prose limits in the loop recipe | inbox |
+| [6](6-hard-limits-for-goal-examples.md) | Correct misleading prose limits in the loop recipe | done |
 
 Suggested order: 1, 6, 2, 3. Evaluate 4 and 5 only if the pilot demonstrates the corresponding
 problem. Their existence is not a decision to install more hooks or agents.

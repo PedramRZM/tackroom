@@ -10,6 +10,12 @@ enabled. Installation/feature detection is not validation of the full Codex harn
 the current [task evidence](plans/1-verification-before-implementation.md) for the limited
 scratch exercise. Kimi Code, Qwen Code, Gemini CLI and vendor endpoints remain documentation-only.
 
+On 2026-11-16, a fresh combined setup also passed actual Codex/OpenCode discovery of all 12
+shared skills and no-provider headless timeout probes. Native budget parsing, skill discovery
+and runtime enforcement are separate checks; see [bounded headless work](loops.md#bounded-headless-work-across-harnesses)
+for the per-harness controls and their tested limits. This does not validate the full
+hook/permission workflow or make Claude-specific controls portable.
+
 ## What each harness reads from a project
 
 | | Claude Code | Codex | OpenCode |
