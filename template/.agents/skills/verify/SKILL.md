@@ -5,6 +5,8 @@ description: Prove a change works before calling it done. Runs the project's che
 
 # Verify
 
+Verification workflow v2 — 2026-11-17.
+
 A successful edit is not evidence. Work is verified when someone who did not write it could
 look at what you show and agree it works.
 
@@ -20,11 +22,24 @@ look at what you show and agree it works.
      form, read the result. Take a screenshot before and after, and read the browser console.
 3. **Nothing nearby broke.** Exercise the closest existing behaviour that shares code with the change.
 
-If any step fails, fix the cause and start again from step 1. Do not hand back work that is
-partly verified without saying which part.
+On failure, record the cause and attempt, fix it, and rerun the focused check first. Run the
+full checks again before handoff. After three unsuccessful repair rounds on the same check,
+stop with the output, attempts and smallest reproduction; follow a stricter project limit
+(such as stopping after the same fix fails twice). Do not retry unchanged code for a green run.
 
 Use the pre-implementation verification plan when one exists. Report an uncovered criterion
 as a gap; do not substitute a cheaper check that cannot establish the same result.
+Read the diff against a pinned base revision, including staged, unstaged and relevant new files.
+Apply matching reliability checks from the base revision's `REVIEW.md`, when present. Report
+the matched rule IDs, results and gaps; proposed rule edits do not replace the current rubric.
+
+Use the local app and data in the active development workspace unless the project explicitly
+requires a different target. Publish final after-change screenshots and AC results on the task,
+through the same evidence path used during scoping. A seeded PR preview can be handed to a
+human without becoming an automated test target. Do not add GitHub Actions or preview testing
+as a new review gate merely because a preview exists; follow `WORKFLOW.md`.
+Check that preview fixtures distinguish the approved filter/date/empty cases. Record observed
+required configuration; a declaration that a flag is required is not evidence that it is on.
 
 ## UI and product evidence
 
@@ -51,13 +66,20 @@ These checks answer different questions:
 
 ## Report
 
-Identify the tested revision (and uncommitted changes), environment or preview, and necessary
-data/role. One line per criterion, then checks, then what you could not verify:
+Identify the tested commit and pinned base, environment, and necessary data/role. For an
+uncommitted tree, retain a diff and a content-hashed snapshot/manifest of relevant files,
+including new files; HEAD plus a dirty flag cannot identify what was tested. Keep artifacts
+outside the snapshot or exclude them explicitly. One line per criterion, then checks and gaps:
 
     AC1  pnpm test cart.test.ts            4 passed
     AC2  /cart at 412px and 1440px         total updates on quantity change, console clean (screenshots: ...)
     Checks  scripts/agent/check            all 3 checks passed
     Not verified  payment webhook          needs the provider sandbox key
+
+Record status as **verified**, **partial**, or **none**, plus evidence location and reason for
+any gap. These are evidence records, not automatic commit stamps or an enforced gate. A skill
+invocation alone is not proof. A review verdict covers only its recorded commit or snapshot;
+later edits require affected checks and review to be refreshed before handoff.
 
 Paste the lines the command printed. Do not describe a result you did not see.
 Include skips, quarantines and retry-green/flaky results rather than hiding them in a pass
@@ -91,4 +113,7 @@ here are the ones that let an agent drive the real app without help:
 - the command that resets state.
 
 When these steps are repeated often, put them in one small command-line script the agent can
-call, and keep this section pointing at it.
+call, and keep this section pointing at it. Reuse the project's feature map if one exists.
+When changing this recipe, try a clean start, reset and repeat run; retain duration and a
+deliberate failure's diagnostics (failed step, expected/actual result, logs or trace). Prove
+setup failure cannot be reported as a passing smoke test.

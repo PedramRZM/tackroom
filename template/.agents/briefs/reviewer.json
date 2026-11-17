@@ -1,5 +1,5 @@
 {
-  "description": "Fresh-context reviewer that checks a change against its task's acceptance criteria and tries to show it is wrong. Use before a pull request on larger tasks, or when a second opinion on correctness is wanted. Give it the task text, the base branch and the task branch. Does not edit files.",
+  "description": "Fresh-context reviewer that checks a change against its task's acceptance criteria and tries to show it is wrong. Use before a pull request on larger tasks, or when a second opinion on correctness is wanted. Give it the task text and pinned base/candidate commits, or a frozen uncommitted snapshot with its manifest. Does not edit files.",
   "claude": {
     "disallowedTools": "Edit, Write, NotebookEdit"
   },

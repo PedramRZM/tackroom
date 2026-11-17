@@ -16,6 +16,9 @@ Door: <!-- two-way (easy to change later) | one-way (data, contracts, security, 
      usability with real users unless it was observed. -->
 
 - AC1:
+- Verification: <!-- verified | partial | none; reason and evidence location -->
+- Tested commit/snapshot and base:
+- Reliability rules: <!-- matched base REVIEW.md IDs and results, or none/absent -->
 - Checks: `scripts/agent/check` ->
 - Not verified:
 

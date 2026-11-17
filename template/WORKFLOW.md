@@ -62,10 +62,13 @@ present, never by an unattended run.
 6. **Build in small steps.** For a bug or meaningful new behavior, confirm a focused test
    fails for the right reason, then implement and refactor while it passes. Trivial changes
    can use existing checks and direct evidence. Commit after each step that leaves the checks passing.
-7. **Verify.** Run the checks. Exercise each acceptance criterion the way its check says. For
-   anything a user sees, look at it in the running app.
+7. **Verify.** Use `verify` (workflow v2): cheap focused checks first, full local checks before
+   push or PR, then evidence for each criterion and the assembled changed flow. Apply matching
+   reliability checks from the pinned base's `REVIEW.md`. Record verified/partial/none and gaps.
 8. **Get a second opinion on larger work.** For a task that needed a plan, have a fresh-context
-   reviewer check the change against the acceptance criteria before the user looks.
+   reviewer check a fixed commit against the criteria and base rubric before the user looks.
+   Reuse that reviewer for repair rounds. An uncommitted snapshot review is provisional; do
+   not commit just to obtain review when the owner has not authorized commits.
 9. **Open the pull request** with the evidence section filled in: one line per criterion, with
    the command and its output or the screenshot, and a line for anything not verified.
 10. **Hand over.** Mark the task in review. If you must stop before a pull request exists, push
@@ -73,6 +76,38 @@ present, never by an unattended run.
     is blocking, the branch name.
 
 ## Rules that hold throughout
+
+### Verification environment and evidence
+
+Run checks and browser journeys against the local application in the active development
+workspace, whether on an engineer's machine or a retained remote worker. Follow an explicit
+project requirement if it names another target. Attach the final after-change screenshots,
+tested revision and AC results to the task using the same publication path as scoping evidence.
+Keep deferred baseline failures visible and require the task's focused checks to pass.
+
+A PR preview for human verification is a separate handoff: prepare equivalent scenario data
+and give the reviewer a link and reproducible steps. Include data that distinguishes each
+approved filter, date and empty-state scenario, and record the configuration required for the
+walkthrough. Matching headline counts alone does not establish equivalent data.
+Its existence does not authorize moving
+tests into GitHub Actions or running the agent's tests against the preview. Only add those
+requirements when the project or owner explicitly asks. Apply the same rules in local and
+automated board workflows.
+
+### Review and repair
+
+Use one reviewer across follow-up rounds with previous findings and the intervening diff.
+A changed commit or working tree invalidates the old verdict for the changed scope. Check
+the final tree before handoff. Stop after three unsuccessful repairs of a check, or sooner
+when the same fix has failed twice; report attempts and reproduction evidence.
+
+Project owners maintain `REVIEW.md`: diff trigger, check, rationale, incident/PR source and
+owner for each rule. Proposed rubric or gate edits cannot approve themselves. Workspace
+hooks and base-file reads are feedback, not tamper-proof enforcement; a trusted gate needs
+reviewed policy outside the implementer's write access. New blocking gates start in observe
+mode and need measured false positives and owner approval before enforcement.
+
+### Task boundaries
 
 - The task's goal and acceptance criteria are the user's. If one is wrong or cannot be met, say
   so on the task, mark it needs-human and stop. Do not edit them to fit the code.

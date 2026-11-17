@@ -1,0 +1,8 @@
+{
+  "is_error": true,
+  "result": "API Error: Your account can't receive replies from Claude right now. [Account-specific portal link omitted.]",
+  "total_cost_usd": 0,
+  "permission_denials": [],
+  "process_exit": 1,
+  "redaction": "Account-specific portal link and unrelated runtime metadata omitted; raw result retained locally in /tmp/tackroom-v2-claude-raw.json."
+}

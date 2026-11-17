@@ -244,3 +244,28 @@ feedback mechanisms, not an unchangeable acceptance gate. The project's own CI/v
 run reviewed checks when that assurance is needed. The [follow-up tasks](../tasks/README.md)
 cover the real-app setup pilot and a comparative eval; no application-specific lint or browser
 suite is claimed to have been installed by this portable template change.
+## Owner-directed verification placement
+
+Design judgement, requested by the Scinito owner on 2026-11-17: local development and retained
+workers should run the same local checks and browser journeys, publish final screenshots on
+the issue, and prepare equivalent preview data for human verification. A preview is not an
+implicit requirement to run tests in GitHub Actions or against a deployed app. The template
+workflow and verify skill now state this default while preserving explicit project exceptions.
+This is an owner-selected workflow policy, not a research claim that local tests certify a
+deployment. Use `tools/setup PROJECT --update` to sync it; merge customized project workflows
+without replacing their board states, checks or memory.
+
+The same owner-directed policy requires distinguishable preview fixtures: a single date's
+headline count cannot reproduce a date-filter check that needs recent and historical data.
+Record observed configuration required for the human walkthrough, rather than treating a
+required-flag declaration as activation evidence. This is a workflow judgment drawn from
+the Scinito pagination pilot's independent review, not a claim of deployed-browser coverage.
+
+## Verification workflow v2
+
+The [2026-11-17 comparison and revision](verification-v2.md) builds on the existing harness
+and preserves the policy above. It adds base-revision review rubrics, selective reliability
+checks, fixed review targets, bounded repairs and stronger property/differential recipes.
+The [source audit](../refs/notes/2026-11-17-verification-v2.md) traces these to Osmani's
+November 16 article and labels local judgments. Commit gates and improved effectiveness
+remain unclaimed; see the comparison for deliberate differences and remaining gaps.

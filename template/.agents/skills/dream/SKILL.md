@@ -64,6 +64,18 @@ contradicted by what happened, or restates what the agent does anyway. `AGENTS.m
 the start of every session, so a wrong line there reaches all of them. It should get shorter
 as often as it gets longer.
 
+For proposed reliability rules, include a diff-visible trigger, executable check, owner and
+incident/PR links in `REVIEW.md`. Prefer patterns from two independent changes; a single
+serious incident needs a reproducible replay. Challenge each proposal with a counterexample
+and a similar clean change before adoption. This extends the existing proposal process, not
+permission to install a rule silently.
+
+When tuning reviewers, separate development examples from a fixed evaluation set. Use known
+incidents/reverts and size-matched stable changes; score raw findings, verified findings and
+final reports separately, including severity and false positives. Record cost and regressions.
+Propose pruning rules that no longer earn their cost. New blocking gates start in observe
+mode; record would-block reasons and false positives before proposing enforcement.
+
 ## Report format
 
     # Dream report: <date>

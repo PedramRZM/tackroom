@@ -45,7 +45,9 @@ expensive:
    with the network stubbed at the boundary. Favor these when interaction between parts is the
    risk; logic-heavy libraries may need more unit/property tests. No fixed ratio fits every app.
 4. **End to end**: the running app driven like a user. Keep these to the few flows that must
-   never break (sign in, pay, the core action), because they are slow and can be flaky.
+   never break (sign in, pay, the core action). Prove the assembled changed flow even when its
+   units pass; keep exhaustive edge cases at cheaper boundaries. Retain the failing step,
+   expected/actual result and relevant trace, screenshot or service logs.
 
 ## Writing one
 
@@ -60,8 +62,12 @@ expensive:
   copy and confirm it goes red. Preserve the working change; never discard someone else's edits.
 - Where code has an invariant, test the property over generated inputs instead of a few
   examples: a round trip (encode then decode), something that must always hold, doing it twice
-  equals doing it once, two implementations agreeing. For a rewrite or migration, run old and
-  new on the same inputs and compare.
+  equals doing it once, two implementations agreeing. Define the valid input domain and keep
+  the generator seed, shrunk counterexample and regression case so failure can be replayed.
+- For a rewrite or migration, pin the old revision and run old and new on the same generated
+  inputs or approved, sanitized recorded cases. Normalize only irrelevant differences; list
+  intentional differences and their approval separately. Compare errors and side effects when
+  observable. Equality preserves old behavior, including old bugs; it is not proof of correctness.
 - Keep the inner loop deterministic: seed randomness, control time, replace uncontrolled
   external services at their boundary. Integration/E2E checks may use real isolated services
   when that boundary is what must be proved; name that environment and its reset procedure.
@@ -70,7 +76,8 @@ expensive:
 
 - Mock the thing under test, or assert on a value the test itself just computed.
 - Add a retry, a sleep or a looser assertion to get a pass. A flaky test is a bug: fix the
-  cause, or quarantine it and file a task saying so.
+  cause; if unresolved, report it with reproduction evidence. Quarantine only with explicit
+  owner approval, a repair task and an expiry; report the resulting coverage gap.
 - Weaken, skip or delete an existing test to make a change pass. If a test is wrong, stop and
   say which one and why. When an expectation legitimately changes with the code, say why in the
   pull request.

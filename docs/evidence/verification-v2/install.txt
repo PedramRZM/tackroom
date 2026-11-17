@@ -1,0 +1,76 @@
+Scratch: /tmp/tackroom-v2-smoke-afppbmii
+PASS installed REVIEW.md
+PASS installed .agents/skills/verify/SKILL.md
+PASS installed .agents/skills/write-tests/SKILL.md
+PASS installed .agents/skills/second-opinion/SKILL.md
+PASS installed WORKFLOW.md
+PASS reviewer adapter .claude/agents/reviewer.md
+PASS reviewer adapter .codex/agents/reviewer.toml
+PASS reviewer adapter .opencode/agents/reviewer.md
+PASS update preserves customized REVIEW.md and project memory
+
+Update output:
+Source: /home/pedrum/Dev/tackroom/template
+Project: /tmp/tackroom-v2-smoke-afppbmii
+Agents: claude, codex, opencode; tracker: files
+  kept: .agents/README.md
+  kept: .agents/briefs/memory-analyzer.md
+  kept: .agents/briefs/memory-organizer.md
+  kept: .agents/briefs/reviewer.md
+  kept: .agents/hooks/format.py
+  kept: .agents/hooks/guard.py
+  kept: .agents/hooks/session-context.sh
+  kept: .agents/hooks/stop-check.py
+  kept project data: .agents/memory/.gitignore
+  kept project data: .agents/memory/_index.md
+  kept project data: .agents/memory/inbox.md
+  kept: .agents/skills/careful/SKILL.md
+  kept: .agents/skills/dream/SKILL.md
+  kept: .agents/skills/dream/scripts/export-transcripts.py
+  kept: .agents/skills/lock-tests/SKILL.md
+  kept: .agents/skills/second-opinion/SKILL.md
+  kept: .agents/skills/spec/SKILL.md
+  kept: .agents/skills/task/SKILL.md
+  kept: .agents/skills/task/plan-template.md
+  kept: .agents/skills/verify/SKILL.md
+  kept: .agents/skills/wrap-up/SKILL.md
+  kept: .agents/skills/write-tests/SKILL.md
+  kept: .agents/skills/write-tests/references/verification-tools.md
+  kept: .claude/agents/memory-analyzer.md
+  kept: .claude/agents/memory-organizer.md
+  kept: .claude/agents/reviewer.md
+  kept: .claude/settings.json
+  kept: .claude/skills/careful
+  kept: .claude/skills/dream
+  kept: .claude/skills/lock-tests
+  kept: .claude/skills/second-opinion
+  kept: .claude/skills/spec
+  kept: .claude/skills/task
+  kept: .claude/skills/verify
+  kept: .claude/skills/wrap-up
+  kept: .claude/skills/write-tests
+  kept: .codex/agents/memory-analyzer.toml
+  kept: .codex/agents/memory-organizer.toml
+  kept: .codex/agents/reviewer.toml
+  kept: .codex/config.toml
+  kept: .codex/hooks.json
+  kept: .github/pull_request_template.md
+  kept: .opencode/agents/reviewer.md
+  kept: AGENTS.md
+  kept: CLAUDE.md
+  kept local customization (source unchanged): REVIEW.md
+  kept: WORKFLOW.md
+  kept project data: docs/decisions/README.md
+  kept project data: docs/plans/.gitkeep
+  kept project data: docs/specs/.gitkeep
+  kept: opencode.json
+  kept: scripts/agent/check
+  kept: scripts/agent/claude-with
+  kept: scripts/agent/keys.example
+  kept: scripts/agent/next-task
+  kept: scripts/agent/ratchet
+  kept project data: tasks/README.md
+  kept project data: tasks/TEMPLATE.md
+  record: .agents/tackroom-install.json
+Harness installed. Project data preserved.
+Next: customize AGENTS.md and scripts/agent/check; review WORKFLOW.md and agent trust prompts.

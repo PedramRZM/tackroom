@@ -26,3 +26,7 @@ how you found out. The `dream` pass folds these into the memory files and emptie
 - 2026-11-16: During epic 7 the owner explicitly added easy project-local sync/update with memory and dream reports untouched. Task 11 supersedes the prior no-update scope, while no central registry/background service remains. Shared sources now live in template/.agents; regenerate adapters/catalog/root links with tools/render-harness --write --dogfood.
 
 - 2026-11-16: Owner rejected even checked-in generated per-agent template outputs. Final epic 7 uses no native template directories or catalog: skill folders include install.json, brief bodies have sibling metadata, adapters.json defines native config, CLI generates destination files. Root native outputs are gitignored; .agents/skills points to canonical template skills. GitHub installs inventory only the pinned template tree.
+- 2026-11-17: Owner-selected Scinito verification policy: local worker/machine tests and final
+  issue screenshots; equivalent preview data is for humans, with no inferred GitHub/preview
+  test stage. Change template WORKFLOW/verify first, then explicit CLI update preserving the
+  project's board, baseline checks, local customizations and memory.

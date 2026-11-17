@@ -13,8 +13,15 @@ produced any mistake. Hand the judgement to a reviewer that starts from nothing.
 Start the `reviewer` subagent (in a harness without subagents, a new session) and give it:
 
 - the task text with its acceptance criteria, word for word;
-- the base branch to compare against, and the task branch name;
+- pinned base and candidate commit IDs, plus the task branch name;
 - how to run the checks (`scripts/agent/check`).
+
+Resolve branch names once before review. For an authorized uncommitted review, supply a frozen
+scratch snapshot and content manifest including relevant untracked files, plus the base ID;
+label its verdict provisional. Do not create commits solely to get a review without permission.
+Read `REVIEW.md` and scoped rubrics from the pinned base, not candidate edits. If none exist,
+report that and use the criteria and existing checks. Workspace checks remain editable;
+base-rubric review is not a tamper-proof execution boundary.
 
 Do not give it your summary, your plan or your reasoning. It should read the code as it is on
 the branch against the base, and decide for itself.
@@ -24,8 +31,11 @@ the branch against the base, and decide for itself.
 - Each finding must come with evidence: the file and line, and the input or command that shows
   the problem. Treat a finding without evidence as a question, and check it yourself.
 - Fix what is Important. Leave Nits unless they are free.
-- After fixing, ask for a re-review of only what changed since the last round. Three rounds at
-  most. If a round returns only nits, stop.
+- After fixing, reuse the reviewer with its prior findings, new candidate ID/snapshot and the
+  intervening diff. Recheck fixes and affected criteria, including cross-cutting effects;
+  retain unaffected evidence with its original revision. Three rounds at most; unresolved
+  important findings go to the human with reproduction evidence. If only nits remain, stop.
+- Report pre-existing defects separately with base evidence; do not attribute them to this change.
 - If you disagree with a finding, do not argue it away silently. Put the finding and your
   reason in the pull request so the user decides.
 
