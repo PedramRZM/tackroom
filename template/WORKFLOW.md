@@ -85,14 +85,15 @@ project requirement if it names another target. Attach the final after-change sc
 tested revision and AC results to the task using the same publication path as scoping evidence.
 Keep deferred baseline failures visible and require the task's focused checks to pass.
 
-A PR preview for human verification is a separate handoff: prepare equivalent scenario data
-and give the reviewer a link and reproducible steps. Include data that distinguishes each
-approved filter, date and empty-state scenario, and record the configuration required for the
-walkthrough. Matching headline counts alone does not establish equivalent data.
-Its existence does not authorize moving
-tests into GitHub Actions or running the agent's tests against the preview. Only add those
-requirements when the project or owner explicitly asks. Apply the same rules in local and
-automated board workflows.
+For projects with PR previews, open or reuse a draft when the first task commit is published.
+Keep it in draft through verification. When the owner or project authorizes preview tests,
+resolve the deployment and fixture database for the current branch and commit, exercise the
+approved scenarios, and record the URL, revision and results for the human walkthrough.
+Keep destructive integration suites on their isolated test database.
+
+After checks and independent review pass, mark the PR ready and move the task to human
+review. Waiting for automated publication or deployment is pipeline work. Request human
+input for a decision or a concrete blocker that prevents further progress.
 
 ### Review and repair
 
