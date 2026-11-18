@@ -83,3 +83,6 @@ customizations and memory and reports conflicts to merge. A customized verify sk
 manual reconciliation. A clean install receives `REVIEW.md`; an existing customized rubric must
 not be overwritten. v2 is a guidance identifier; source fingerprints/commit IDs remain installation
 provenance. This revision uses the normal repository commit; no release tag is created.
+
+On November 18 the owner clarified that each adopting project chooses its PR timing, test
+environments and deployment process. The shared workflow covers verification and handoff.

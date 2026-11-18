@@ -79,20 +79,12 @@ present, never by an unattended run.
 
 ### Verification environment and evidence
 
-Run checks and browser journeys against the local application in the active development
-workspace, whether on an engineer's machine or a retained remote worker. Follow an explicit
-project requirement if it names another target. Attach the final after-change screenshots,
-tested revision and AC results to the task using the same publication path as scoping evidence.
-Keep deferred baseline failures visible and require the task's focused checks to pass.
+Use the project's documented test environments and checks. Record the tested revision,
+the environment, the results for each acceptance criterion and any outstanding failures.
+Projects decide when to open a draft PR and where to publish evidence.
 
-A PR preview for human verification is a separate handoff: prepare equivalent scenario data
-and give the reviewer a link and reproducible steps. Include data that distinguishes each
-approved filter, date and empty-state scenario, and record the configuration required for the
-walkthrough. Matching headline counts alone does not establish equivalent data.
-Its existence does not authorize moving
-tests into GitHub Actions or running the agent's tests against the preview. Only add those
-requirements when the project or owner explicitly asks. Apply the same rules in local and
-automated board workflows.
+When verification and independent review pass, hand the PR to the human reviewer.
+Ask for human input when a decision or a concrete blocker prevents further progress.
 
 ### Review and repair
 
