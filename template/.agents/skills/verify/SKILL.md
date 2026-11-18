@@ -33,12 +33,8 @@ Read the diff against a pinned base revision, including staged, unstaged and rel
 Apply matching reliability checks from the base revision's `REVIEW.md`, when present. Report
 the matched rule IDs, results and gaps; proposed rule edits do not replace the current rubric.
 
-Use the local app and data in the active development workspace unless the project explicitly
-requires a different target. Publish final after-change screenshots and AC results on the task,
-through the same evidence path used during scoping. When the owner or project authorizes preview tests, resolve
-the current commit's deployment and run relevant checks there. Record the URL and results.
-Check that preview fixtures distinguish the approved filter/date/empty cases. Record observed
-required configuration; a declaration that a flag is required is not evidence that it is on.
+Use the project's verification instructions to choose the environment, fixtures and evidence
+location. Record the tested revision and observed results so the reviewer can repeat the check.
 
 ## UI and product evidence
 

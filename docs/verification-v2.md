@@ -84,5 +84,5 @@ manual reconciliation. A clean install receives `REVIEW.md`; an existing customi
 not be overwritten. v2 is a guidance identifier; source fingerprints/commit IDs remain installation
 provenance. This revision uses the normal repository commit; no release tag is created.
 
-On November 18 the owner requested early draft PRs and agent-run verification of a deployed
-branch. Projects select their verification environments and scope their test data.
+On November 18 the owner clarified that each adopting project chooses its PR timing, test
+environments and deployment process. The shared workflow covers verification and handoff.

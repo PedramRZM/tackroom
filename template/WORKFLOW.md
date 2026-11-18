@@ -79,21 +79,12 @@ present, never by an unattended run.
 
 ### Verification environment and evidence
 
-Run checks and browser journeys against the local application in the active development
-workspace, whether on an engineer's machine or a retained remote worker. Follow an explicit
-project requirement if it names another target. Attach the final after-change screenshots,
-tested revision and AC results to the task using the same publication path as scoping evidence.
-Keep deferred baseline failures visible and require the task's focused checks to pass.
+Use the project's documented test environments and checks. Record the tested revision,
+the environment, the results for each acceptance criterion and any outstanding failures.
+Projects decide when to open a draft PR and where to publish evidence.
 
-For projects with PR previews, open or reuse a draft when the first task commit is published.
-Keep it in draft through verification. When the owner or project authorizes preview tests,
-resolve the deployment and fixture database for the current branch and commit, exercise the
-approved scenarios, and record the URL, revision and results for the human walkthrough.
-Keep destructive integration suites on their isolated test database.
-
-After checks and independent review pass, mark the PR ready and move the task to human
-review. Waiting for automated publication or deployment is pipeline work. Request human
-input for a decision or a concrete blocker that prevents further progress.
+When verification and independent review pass, hand the PR to the human reviewer.
+Ask for human input when a decision or a concrete blocker prevents further progress.
 
 ### Review and repair
 
