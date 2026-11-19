@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 from functools import lru_cache
+import hashlib
 import json
 import os
 import re
@@ -314,7 +315,8 @@ def main() -> int:
     for extra in args.extra:
         for path in sorted(Path(extra).expanduser().glob("*")):
             if path.suffix.lower() in (".txt", ".md", ".log", ".json", ".jsonl") and path.stat().st_size:
-                name = "extra-" + re.sub(r"[^A-Za-z0-9._-]", "_", path.name)
+                identity = hashlib.sha256(os.fsencode(path.resolve())).hexdigest()[:16]
+                name = "extra-" + identity + "-" + re.sub(r"[^A-Za-z0-9._-]", "_", path.name)[:150]
                 print(f"{'would copy' if args.dry_run else 'copy'}   {name}")
                 if not args.dry_run:
                     (out / name).write_text(redact(path.read_text(encoding="utf-8", errors="replace")), encoding="utf-8")

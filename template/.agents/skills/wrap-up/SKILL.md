@@ -35,3 +35,15 @@ Finish by telling the user, in a few lines, where things stand and what the next
 - A handoff note that says "almost done" helps nobody. Name the next command to run.
 - Do not mark the task in review or done from here. That happens when a pull request exists
   and when the user merges.
+
+
+## Before the human merge handoff
+
+A passing review ends the automated task. When a repair, repeated failure or owner
+correction revealed a reusable lesson, run a task-sized Dream before handing the PR
+to its human reviewer. Put the task ID, base and candidate revisions, observed
+failure and verified outcome in a private text file. Run
+`python3 .agents/skills/dream/scripts/scheduled-dream.py handoff --evidence PATH`
+from the repository root. Include the suggested lesson and evidence in the review
+handoff. An unavailable Dream can be deferred to weekly consolidation. Preserve
+the reviewed revision and leave the merge to the owner.
