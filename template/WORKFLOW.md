@@ -83,7 +83,11 @@ Use the project's documented test environments and checks. Record the tested rev
 the environment, the results for each acceptance criterion and any outstanding failures.
 Projects decide when to open a draft PR and where to publish evidence.
 
-When verification and independent review pass, hand the PR to the human reviewer.
+When verification and independent review pass, consider a task-sized Dream before human review.
+If the task exposed a regression, repeated failure or owner correction, run the Dream skill’s
+`scheduled-dream.py handoff --evidence PATH` on the verified findings and include the proposed
+lesson in the handoff. Defer an unavailable retrospective to weekly Dream. Leave the tested
+revision intact and hand the PR to the human reviewer for the merge decision.
 Ask for human input when a decision or a concrete blocker prevents further progress.
 
 ### Review and repair
