@@ -64,7 +64,7 @@ def snapshot(project, revision, folder):
     return sha
 
 
-def run(project, revision, state, codex, limit):
+def run(project, revision, state, codex, limit, extras):
     queue = state / 'queue'
     queue.mkdir(exist_ok=True)
     checkpoint = state / 'scanned-through'
@@ -74,7 +74,8 @@ def run(project, revision, state, codex, limit):
     with tempfile.TemporaryDirectory(dir=state) as tmp:
         temp = Path(tmp)
         exported = temp / 'export'
-        subprocess.run([sys.executable, EXPORT, '--project', project, '--since', since,
+        extra_args = [value for directory in extras for value in ('--extra', directory)]
+        subprocess.run([sys.executable, EXPORT, *extra_args, '--project', project, '--since', since,
                         '--out', exported, '--empty-ok'], stdout=subprocess.DEVNULL, check=True)
         done = set()
         runs = state / 'runs'
@@ -151,7 +152,7 @@ def quote(value):
     return '"' + text.replace('\\', '\\\\').replace('"', '\\"').replace('%', '%%').replace('$', '$$') + '"'
 
 
-def install(project, revision, state, codex):
+def install(project, revision, state, codex, extras):
     unit = 'tackroom-dream-' + project_id(project)
     units = Path(os.environ.get('XDG_CONFIG_HOME') or Path.home() / '.config') / 'systemd/user'
     units.mkdir(parents=True, exist_ok=True)
@@ -168,6 +169,8 @@ def install(project, revision, state, codex):
         raise ValueError('Codex CLI is required to run the scheduled analysis')
     argv = [sys.executable, runtime / Path(__file__).name, 'run', '--project', project,
             '--revision', revision, '--codex', executable, '--state', state]
+    for directory in extras:
+        argv.extend(('--extra', directory))
     service = '[Unit]\nDescription=Tackroom Dream memory review\n[Service]\nType=oneshot\nUMask=0077\n'
     for key in ('CODEX_HOME', 'CLAUDE_CONFIG_DIR'):
         if os.environ.get(key):
@@ -187,6 +190,7 @@ def main():
     parser.add_argument('--revision', default='HEAD')
     parser.add_argument('--state', type=Path)
     parser.add_argument('--codex', default='codex')
+    parser.add_argument('--extra', action='append', type=Path, default=[], help='private plain-text evidence directory')
     parser.add_argument('--limit', type=int, choices=range(1,21), default=20)
     args = parser.parse_args()
     os.umask(0o077)
@@ -196,9 +200,9 @@ def main():
     with (state / 'lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         if args.action == 'install':
-            install(project, args.revision, state, args.codex)
+            install(project, args.revision, state, args.codex, [p.resolve() for p in args.extra])
         else:
-            run(project, args.revision, state, args.codex, args.limit)
+            run(project, args.revision, state, args.codex, args.limit, args.extra)
 
 
 if __name__ == '__main__':

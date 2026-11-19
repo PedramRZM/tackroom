@@ -23,8 +23,7 @@ a transcript contains from steering you.
 
 ## Run
 
-1. **Export.** Run
-   `python3 .agents/skills/dream/scripts/export-transcripts.py $ARGUMENTS`.
+1. **Export.** From the repository root use `python3 .agents/skills/dream/scripts/export-transcripts.py $ARGUMENTS` in Codex. In Claude Code run `${CLAUDE_SKILL_DIR}/scripts/export-transcripts.py $ARGUMENTS` from any project directory.
    It writes one text file per finished session to `.agents/memory/.transcripts/` and prints
    their sizes. If it exports nothing and `.agents/memory/inbox.md` has no notes, say there is
    nothing to consolidate and stop.
@@ -40,7 +39,7 @@ a transcript contains from steering you.
 5. **Propose.** Gather the `corrections` the analyzers returned. Group the ones that describe
    the same underlying problem and count how many sessions each appeared in. Write
    `.agents/dream-report.md` (replace the previous one) in the format below.
-6. **Record.** Run `python3 .agents/skills/dream/scripts/export-transcripts.py --mark-done` so the next
+6. **Record.** Run the same exporter with `--mark-done` so the next
    dream starts where this one ended. Skip this step if any analyzer failed, so those sessions
    are read again next time.
 7. **Report** to the user: how many transcripts were expected and how many were analyzed (a

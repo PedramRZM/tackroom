@@ -97,7 +97,7 @@ def render_input(tool_input, limit: int) -> str:
     return "\n".join(lines)
 
 
-def render_session(path: Path, limit: int) -> tuple[str, dict]:
+def render_session(path: Path, limit: int, roots=None) -> tuple[str, dict]:
     title, started, branch, tool_names = "", "", "", {}
     blocks: list[str] = []
     counts = {"user": 0, "agent": 0, "tool_calls": 0, "errors": 0}
@@ -111,6 +111,10 @@ def render_session(path: Path, limit: int) -> tuple[str, dict]:
             if kind == "ai-title":
                 title = entry.get("aiTitle") or title
                 continue
+            if roots is not None and kind in ("user", "assistant"):
+                cwd = entry.get("cwd")
+                if not cwd or not in_project(Path(cwd), roots):
+                    continue
             if kind not in ("user", "assistant") or entry.get("isMeta"):
                 continue
             started = started or entry.get("timestamp", "")
@@ -152,6 +156,11 @@ def session_checkout(cwd: Path):
     return Path(result.stdout.strip()).resolve() if result and result.returncode == 0 else None
 
 
+def in_project(cwd: Path, roots: set[Path]) -> bool:
+    cwd = cwd.resolve()
+    return cwd in roots or (any(root in cwd.parents for root in roots) and session_checkout(cwd) in roots)
+
+
 def codex_session(path: Path, roots: set[Path], excluded: set[str], limit: int):
     """Match the session header before reading any turns. Ignore internal/model context."""
     with path.open(encoding="utf-8", errors="replace") as stream:
@@ -162,7 +171,7 @@ def codex_session(path: Path, roots: set[Path], excluded: set[str], limit: int):
             if header["type"] != "session_meta" or session in excluded:
                 return None
             cwd = Path(meta["cwd"]).resolve()
-            if cwd not in roots and not (any(root in cwd.parents for root in roots) and session_checkout(cwd) in roots):
+            if not in_project(cwd, roots):
                 return None
         except (StopIteration, KeyError, TypeError, ValueError):
             return None
@@ -279,7 +288,7 @@ def main() -> int:
         if modified > cutoff_active:
             print(f"skip   {path.stem[:8]}  still active (changed in the last {ACTIVE_MINUTES} minutes)")
             continue
-        text, info = render_session(path, args.max_result_chars)
+        text, info = render_session(path, args.max_result_chars, None if args.source else roots)
         if info["tool_calls"] == 0 and info["user"] <= 1:
             continue  # nothing happened in it
         name = f"{modified:%Y%m%d-%H%M}-{path.stem[:8]}.txt"

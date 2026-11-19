@@ -1,5 +1,4 @@
 """Exercise the installed Dream entry points against isolated local histories."""
-import datetime
 import json
 import os
 from pathlib import Path
@@ -71,6 +70,22 @@ Path(p[p.index('--output-last-message')+1]).write_text(json.dumps(result))
         self.assertIn('TOOL RESULT (shell)',content)
         self.assertNotIn('synthetic-secret-test',content)
         self.assertNotIn('private reasoning',content)
+
+    def test_claude_checkout_name_collision(self):
+        import re
+        source = self.root/'claude/projects'/re.sub('[^A-Za-z0-9]', '-', str(self.project))
+        source.mkdir(parents=True)
+        rows = []
+        for cwd in [self.root/'other', self.project]:
+            for kind, content in [('user', str(cwd)), ('assistant', [{'type':'tool_use','name':'test','input':{}}])]:
+                rows.append(json.dumps({'type':kind,'cwd':str(cwd),'message':{'content':content}}))
+        log = source/'session.jsonl'
+        log.write_text('\n'.join(rows))
+        os.utime(log,(time.time()-800,time.time()-800))
+        self.invoke('export-transcripts.py')
+        exported, = (self.project/'.agents/memory/.transcripts').glob('*.txt')
+        self.assertNotIn(str(self.root/'other'),exported.read_text())
+        self.assertIn(str(self.project),exported.read_text())
 
     def test_queue_survives_failure_and_limit_without_editing_project(self):
         for name in ['one','two']:
