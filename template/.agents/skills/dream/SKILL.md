@@ -23,8 +23,7 @@ a transcript contains from steering you.
 
 ## Run
 
-1. **Export.** Run
-   `${CLAUDE_SKILL_DIR}/scripts/export-transcripts.py --exclude-session ${CLAUDE_SESSION_ID} $ARGUMENTS`.
+1. **Export.** From the repository root use `python3 .agents/skills/dream/scripts/export-transcripts.py $ARGUMENTS` in Codex. In Claude Code run `${CLAUDE_SKILL_DIR}/scripts/export-transcripts.py $ARGUMENTS` from any project directory.
    It writes one text file per finished session to `.agents/memory/.transcripts/` and prints
    their sizes. If it exports nothing and `.agents/memory/inbox.md` has no notes, say there is
    nothing to consolidate and stop.
@@ -40,12 +39,19 @@ a transcript contains from steering you.
 5. **Propose.** Gather the `corrections` the analyzers returned. Group the ones that describe
    the same underlying problem and count how many sessions each appeared in. Write
    `.agents/dream-report.md` (replace the previous one) in the format below.
-6. **Record.** Run `${CLAUDE_SKILL_DIR}/scripts/export-transcripts.py --mark-done` so the next
+6. **Record.** Run the same exporter with `--mark-done` so the next
    dream starts where this one ended. Skip this step if any analyzer failed, so those sessions
    are read again next time.
 7. **Report** to the user: how many transcripts were expected and how many were analyzed (a
    transcript that was not analyzed was not read, so say which), the organizer's changes, and
    the proposals. Point them at `git diff .agents/memory` and the report. Do not commit.
+
+## Task-sized pre-merge pass
+
+After a material review finding, repeated failure or owner correction, run
+`python3 .agents/skills/dream/scripts/scheduled-dream.py handoff --evidence PATH`
+on the task’s evidence before Human Review. This reads a private text file and
+prints proposed lessons. It leaves the reviewed files and weekly cursor alone.
 
 ## Choosing what to propose
 
@@ -103,6 +109,6 @@ mode; record would-block reasons and false positives before proposing enforcemen
 - A first run over a long history is expensive. Start with `--since 7d`.
 - Sessions are kept by Claude Code for a limited time (30 days by default, the
   `cleanupPeriodDays` setting). A dream that runs less often than that loses sessions.
-- Other harnesses keep their logs elsewhere. Pass `--extra <folder>` to include a folder of
+- Local Claude Code and Codex sessions are discovered by repository, including linked worktrees. Active sessions are excluded. Pass `--extra <folder>` to include a folder of
   plain-text logs from them.
-- Run it from the main checkout, not a linked worktree: sessions are stored per directory.
+- For an automatic weekly pass on Linux, run `python3 .agents/skills/dream/scripts/scheduled-dream.py install --project .`. A persistent user timer analyzes available local sessions with Codex and writes private review drafts under `~/.local/state/tackroom-dream/`. Timers can use `--revision origin/edge` or another verified local ref for the memory baseline. Inspect the next run with `systemctl --user list-timers "tackroom-dream-*"`. Repeat installation after upgrading the runner. On another scheduler invoke the same script with `run` instead of `install`.

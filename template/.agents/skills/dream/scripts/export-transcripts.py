@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export this project's finished Claude Code sessions as plain-text transcripts for /dream.
+"""Export this project's finished Claude Code and Codex sessions as plain-text transcripts for /dream.
 
     export-transcripts.py [--since 7d|2026-11-01|last] [--out DIR] [--exclude-session ID]
                           [--source DIR] [--extra DIR] [--max-result-chars N] [--dry-run]
@@ -24,6 +24,8 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+from functools import lru_cache
+import hashlib
 import json
 import os
 import re
@@ -96,7 +98,7 @@ def render_input(tool_input, limit: int) -> str:
     return "\n".join(lines)
 
 
-def render_session(path: Path, limit: int) -> tuple[str, dict]:
+def render_session(path: Path, limit: int, roots=None) -> tuple[str, dict]:
     title, started, branch, tool_names = "", "", "", {}
     blocks: list[str] = []
     counts = {"user": 0, "agent": 0, "tool_calls": 0, "errors": 0}
@@ -110,6 +112,10 @@ def render_session(path: Path, limit: int) -> tuple[str, dict]:
             if kind == "ai-title":
                 title = entry.get("aiTitle") or title
                 continue
+            if roots is not None and kind in ("user", "assistant"):
+                cwd = entry.get("cwd")
+                if not cwd or not in_project(Path(cwd), roots):
+                    continue
             if kind not in ("user", "assistant") or entry.get("isMeta"):
                 continue
             started = started or entry.get("timestamp", "")
@@ -144,6 +150,77 @@ def render_session(path: Path, limit: int) -> tuple[str, dict]:
     return redact(header + "\n\n" + body + "\n"), {**counts, "title": title, "started": started}
 
 
+@lru_cache(maxsize=512)
+def session_checkout(cwd: Path):
+    result = subprocess.run(["git", "-C", cwd, "rev-parse", "--show-toplevel"],
+                            capture_output=True, text=True) if cwd.is_dir() else None
+    return Path(result.stdout.strip()).resolve() if result and result.returncode == 0 else None
+
+
+def in_project(cwd: Path, roots: set[Path]) -> bool:
+    cwd = cwd.resolve()
+    return cwd in roots or (any(root in cwd.parents for root in roots) and session_checkout(cwd) in roots)
+
+
+def codex_session(path: Path, roots: set[Path], excluded: set[str], limit: int):
+    """Match the session header before reading any turns. Ignore internal/model context."""
+    with path.open(encoding="utf-8", errors="replace") as stream:
+        try:
+            header = json.loads(next(stream))
+            meta = header["payload"]
+            session = meta["id"]
+            if header["type"] != "session_meta" or session in excluded:
+                return None
+            cwd = Path(meta["cwd"]).resolve()
+            if not in_project(cwd, roots):
+                return None
+        except (StopIteration, KeyError, TypeError, ValueError):
+            return None
+        blocks = []
+        tools = {}
+        users = 0
+        lifecycle = None
+        for line in stream:
+            try:
+                entry = json.loads(line)
+            except ValueError:
+                continue
+            item = entry.get("payload") or {}
+            if not isinstance(item, dict):
+                continue
+            kind = item.get("type")
+            if entry.get("type") == "event_msg" and kind in ("task_started", "task_complete", "turn_aborted"):
+                lifecycle = kind
+            if entry.get("type") != "response_item":
+                continue
+            if kind == "message" and item.get("role") in ("user", "assistant"):
+                body = "\n".join(b.get("text", "") for b in item.get("content", [])
+                                 if isinstance(b, dict) and b.get("type") in ("input_text", "output_text", "text"))
+                if not body.strip() or body.lstrip().startswith(("# AGENTS.md instructions", "<environment_context", "<subagent_notification>")):
+                    continue
+                label = "USER" if item["role"] == "user" else "AGENT"
+                users += label == "USER"
+            elif kind in ("function_call", "custom_tool_call"):
+                name = item.get("name", "tool")
+                tools[item.get("call_id")] = name
+                label, body = "TOOL CALL " + name, item.get("arguments", item.get("input", ""))
+            elif kind in ("function_call_output", "custom_tool_call_output"):
+                label, body = "TOOL RESULT (" + tools.get(item.get("call_id"), "tool") + ")", item.get("output", "")
+            else:
+                continue
+            if not isinstance(body, str):
+                body = json.dumps(body, ensure_ascii=False)
+            blocks.append(protect_labels(label + ":\n" + clip(redact(REMINDER.sub("", body)), limit)))
+    if lifecycle in ("task_started", "turn_aborted") or (not tools and users <= 1):
+        return None
+    return "SESSION Codex " + str(session) + "\n\n" + "\n\n".join(blocks) + "\n"
+
+
+def checkout_roots(project: Path) -> set[Path]:
+    listing = subprocess.check_output(["git", "-C", str(project), "worktree", "list", "--porcelain", "-z"])
+    return {Path(os.fsdecode(line[9:])).resolve() for line in listing.split(b"\0") if line.startswith(b"worktree ")}
+
+
 def project_dir(root: Path) -> Path:
     base = Path(os.environ.get("CLAUDE_CONFIG_DIR") or Path.home() / ".claude")
     return base / "projects" / re.sub(r"[^A-Za-z0-9]", "-", str(root))
@@ -174,9 +251,15 @@ def main() -> int:
     parser.add_argument("--max-result-chars", type=int, default=2500)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--mark-done", action="store_true", help="record now as the point the next run starts from")
+    parser.add_argument("--project", type=Path, help="repository whose local session histories to export")
+    parser.add_argument("--codex-home", type=Path, help="Codex state directory (defaults to CODEX_HOME or ~/.codex)")
+    parser.add_argument("--harness", choices=("both", "claude", "codex"), default="both")
+    parser.add_argument("--empty-ok", action="store_true", help="return success for an empty export")
     args = parser.parse_args()
 
     root = Path(subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True, check=False).stdout.strip() or ".").resolve()
+    if args.project:
+        root = args.project.resolve()
     if args.mark_done:
         state = root / STATE_FILE
         state.parent.mkdir(parents=True, exist_ok=True)
@@ -188,23 +271,25 @@ def main() -> int:
     source = Path(args.source).expanduser() if args.source else project_dir(root)
     out = (root / args.out) if not os.path.isabs(args.out) else Path(args.out)
     cutoff_active = dt.datetime.now(dt.timezone.utc) - dt.timedelta(minutes=ACTIVE_MINUTES)
-    if not source.is_dir():
-        print(f"no session folder at {source}")
-        return 1
+    roots = checkout_roots(root)
+    os.umask(0o077)
 
     written = 0
     if not args.dry_run:
         out.mkdir(parents=True, exist_ok=True)
         for old in out.glob("*.txt"):
             old.unlink()
-    for path in sorted(source.glob("*.jsonl")):
+    sources = {source} if args.source else {project_dir(r) for r in roots}
+    claude_paths = sorted(p for d in sources for p in d.glob("*.jsonl")) if args.harness != "codex" else []
+    excluded = set(args.exclude_session) | {os.environ.get("CLAUDE_SESSION_ID"), os.environ.get("CODEX_THREAD_ID")}
+    for path in claude_paths:
         modified = dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc)
-        if modified < since or path.stem in args.exclude_session:
+        if modified < since or path.stem in excluded:
             continue
         if modified > cutoff_active:
             print(f"skip   {path.stem[:8]}  still active (changed in the last {ACTIVE_MINUTES} minutes)")
             continue
-        text, info = render_session(path, args.max_result_chars)
+        text, info = render_session(path, args.max_result_chars, None if args.source else roots)
         if info["tool_calls"] == 0 and info["user"] <= 1:
             continue  # nothing happened in it
         name = f"{modified:%Y%m%d-%H%M}-{path.stem[:8]}.txt"
@@ -213,16 +298,31 @@ def main() -> int:
         if not args.dry_run:
             (out / name).write_text(text, encoding="utf-8")
         written += 1
+    if args.harness != "claude":
+        codex = args.codex_home or Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
+        for folder in ("sessions", "archived_sessions"):
+            for path in sorted((codex / folder).rglob("*.jsonl")):
+                modified = dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc)
+                if not since <= modified <= cutoff_active:
+                    continue
+                transcript = codex_session(path, roots, excluded, args.max_result_chars)
+                if transcript:
+                    name = f"{modified:%Y%m%d-%H%M}-codex-{path.stem}.txt"
+                    print(f"{'would export' if args.dry_run else 'export'} {name}  {len(transcript) // 1000}k chars")
+                    if not args.dry_run:
+                        (out / name).write_text(transcript, encoding="utf-8")
+                    written += 1
     for extra in args.extra:
         for path in sorted(Path(extra).expanduser().glob("*")):
             if path.suffix.lower() in (".txt", ".md", ".log", ".json", ".jsonl") and path.stat().st_size:
-                name = "extra-" + re.sub(r"[^A-Za-z0-9._-]", "_", path.name)
+                identity = hashlib.sha256(os.fsencode(path.resolve())).hexdigest()[:16]
+                name = "extra-" + identity + "-" + re.sub(r"[^A-Za-z0-9._-]", "_", path.name)[:150]
                 print(f"{'would copy' if args.dry_run else 'copy'}   {name}")
                 if not args.dry_run:
                     (out / name).write_text(redact(path.read_text(encoding="utf-8", errors="replace")), encoding="utf-8")
                 written += 1
     print(f"{written} transcript(s) since {since:%Y-%m-%d %H:%M}Z in {out if not args.dry_run else '(dry run)'}")
-    return 0 if written else 1
+    return 0 if written or args.empty_ok else 1
 
 
 if __name__ == "__main__":
