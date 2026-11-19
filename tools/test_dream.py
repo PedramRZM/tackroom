@@ -33,6 +33,7 @@ import json,sys
 from pathlib import Path
 p=sys.argv
 assert '--ephemeral' in p and p[p.index('--sandbox')+1]=='read-only'
+if Path('task.txt').exists():assert 'synthetic-secret-test' not in Path('task.txt').read_text()
 if Path('session.txt').exists() or Path('task.txt').exists():result={'summary':'observed','lessons':[]}
 else:result={'files':[{'name':'fixture.md','content':'draft'}],'report':'Review pending.'}
 Path(p[p.index('--output-last-message')+1]).write_text(json.dumps(result))
@@ -81,6 +82,7 @@ Path(p[p.index('--output-last-message')+1]).write_text(json.dumps(result))
         self.invoke('export-transcripts.py', *args)
         files = (self.project/'.agents/memory/.transcripts').glob('extra-*.txt')
         self.assertEqual({p.read_text() for p in files}, {'a','b'})
+        (self.root/'a/session.txt').write_text('Authorization: Bearer synthetic-secret-test')
         result = self.invoke('scheduled-dream.py','handoff','--evidence',self.root/'a/session.txt','--codex',self.cli)
         self.assertEqual(json.loads(result.stdout)['summary'], 'observed')
         self.assertFalse(self.state.exists())
