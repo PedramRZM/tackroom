@@ -54,7 +54,7 @@ Mukta's production requirements map onto plain repository features
 
 ### The dream pass
 
-`/dream` in Claude Code. It follows Anthropic's own recipe for building a dream
+The project Dream skill in Claude Code or Codex. It follows Anthropic's own recipe for building a dream
 ([`refs/articles/platform.claude.com/cookbook-managed-agents-cma-dreaming-with-a-dynamic-workflow/article.md`](https://platform.claude.com/cookbook/managed-agents-cma-dreaming-with-a-dynamic-workflow)),
 adapted from their managed service to a local repository:
 
@@ -111,11 +111,16 @@ figures.
 ## Running it
 
 - By hand: `/dream` (since the last dream), or `/dream --since 7d`.
-- On a schedule: transcripts live on your machine, so a cloud routine cannot see them. Use a
-  local cron entry or a Desktop scheduled task that runs
-  `claude -p "/dream" --permission-mode acceptEdits` in the project. `/loop` cannot start it,
-  because a scheduled fire only runs skills the model may invoke on its own
-  (`refs/notes/claude-code-docs-extending.md` 4.4), and `dream` is user-only by design.
+- To enable weekly consolidation on a host with the local sessions and an authenticated Codex CLI, run
+  `python3 .agents/skills/dream/scripts/scheduled-dream.py install --project .`. The user timer runs
+  on Sunday between 03:00 and 04:00 local time and catches up after downtime. Use `systemctl --user
+  list-timers --all` to inspect it. Repeat installation after a harness upgrade. For cron or other
+  schedulers invoke the same command with `run` in place of `install`.
+- Both Claude Code and Codex logs are selected by checkout, including linked worktrees. Automatic runs
+  queue redacted inputs privately, analyze at most 20 per run, and publish a report, proposed memory
+  and source revision in `~/.local/state/tackroom-dream/<project-id>/runs/`. Failed batches stay in
+  the queue. The read-only Codex passes operate in temporary directories. Review the draft before
+  applying memory or rules. Scheduled runs see histories on that machine and the selected Git ref.
 - Weekly is a reasonable start. Claude Code deletes transcripts after 30 days by default
   (`cleanupPeriodDays`), so a longer gap loses sessions.
 - Other harnesses: pass `--extra <folder>` with plain-text logs. Exporters for Codex and

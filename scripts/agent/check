@@ -77,6 +77,7 @@ run  compile            compile_all
 run  config-parses      parse_config
 run  generated-harness  python3 tools/render-harness
 run  installer-tests    python3 tools/test_setup.py
+run  dream-tests        python3 tools/test_dream.py
 run  codex-agent-parity  py tools/check-codex-agents.py
 run  shared-skill-setup  python3 tools/check-skill-setup.py
 run  guard-tests        template/.agents/hooks/tests/test_guard.sh
