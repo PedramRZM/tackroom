@@ -30,6 +30,7 @@ equivalence from static checks. This scope is the owner's 2026-11-16 clarificati
 | [9](9-selective-local-installation.md) | Select agents and optional app capabilities during installation | done |
 | [10](10-github-harness-bootstrap.md) | Bootstrap from GitHub in an app without a local checkout | done |
 | [11](11-safe-harness-updates.md) | Explicit updates preserving local edits and project knowledge | done |
+| [12](12-prune-tests-skill.md) | Review redundant or obsolete tests and prove retained coverage | inbox |
 
 Suggested order: 1, 6, 2, 3. Evaluate 4 and 5 only if the pilot demonstrates the corresponding
 problem. Their existence is not a decision to install more hooks or agents.
